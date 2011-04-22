@@ -1,7 +1,7 @@
 require 'helper'
 
 class TestAppjam < Test::Unit::TestCase
-  should "probably rename this file and start testing for real" do
-    flunk "hey buddy, you should probably rename this file and start testing for real"
+  should "have module AppJam" do
+    assert_not_nil defined?(AppJam)
   end
 end
