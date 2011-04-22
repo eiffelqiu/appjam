@@ -1,6 +1,6 @@
 = appjam
 
-Description goes here.
+appjam is iphone app generator, Generate iphone app skeleton based on pure mvc framework.
 
 == Contributing to appjam
  
