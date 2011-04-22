@@ -1,0 +1,9 @@
+#!/usr/bin/env ruby
+require 'rubygems' unless defined?(Gem) 
+require '../lib/appjam/version.rb'
+require '../lib/appjam/appjam.rb'
+
+if %w(-v --version).include? ARGV.first
+  puts "#{File.basename($0)} #{AppJam::VERSION}"
+  exit(0)
+end

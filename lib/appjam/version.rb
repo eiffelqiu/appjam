@@ -1,4 +1,4 @@
-class AppJam
+class Appjam
   module Version
     MAJOR = 0
     MINOR = 1

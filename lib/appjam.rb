@@ -1,1 +1,1 @@
-require 'app-jam/version.rb'
+require 'appjam/version.rb'
