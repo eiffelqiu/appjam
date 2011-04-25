@@ -1,9 +1,17 @@
 #!/usr/bin/env ruby
 require 'rubygems' unless defined?(Gem) 
-require '../lib/appjam/version.rb'
-require '../lib/appjam/appjam.rb'
 
-if %w(-v --version).include? ARGV.first
-  puts "#{File.basename($0)} #{AppJam::VERSION}"
-  exit(0)
+lib_dir = File.expand_path(File.join(File.dirname(__FILE__),'..','lib'))
+unless $LOAD_PATH.include?(lib_dir)
+  $LOAD_PATH << lib_dir
+end
+
+require 'appjam'
+require File.expand_path(File.dirname(__FILE__) + '/../lib/appjam/generators/app')
+
+begin
+  Appjam::Generators::App.start(ARGV)
+rescue => e
+  STDERR.puts "appjam: unknown generator #{e}\n"
+  exit -1
 end
