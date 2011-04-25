@@ -12,6 +12,6 @@ require File.expand_path(File.dirname(__FILE__) + '/../lib/appjam/generators/app
 begin
   Appjam::Generators::App.start(ARGV)
 rescue => e
-  STDERR.puts "appjam: unknown generator #{e}\n"
+  STDERR.puts "Error: #{e}\n"
   exit -1
 end

@@ -33,39 +33,45 @@ module Appjam
 
       def create_app
         self.destination_root = options[:root]
-        @class_name = name.gsub(/\W/, "_").capitalize #.underscore.classify
-        if in_app_root?
-          # directory("Classes/", destination_root(name))
-          app = options[:app]
-          self.behavior = :revoke if options[:destroy]
+        @project_name = name.gsub(/\W/, "_").downcase
+        @class_name = name.gsub(/\W/, "_").capitalize 
+        app = options[:app]
+        self.behavior = :revoke if options[:destroy]
+        empty_directory "#{@project_name}"
+        template "Contacts_Prefix.pch.tt", "#{@project_name}/Contacts_Prefix.pch"
+        template "Contacts-Info.plist.tt", "#{@project_name}/Contacts-Info.plist"
+        directory "Contacts.xcodeproj", "#{@project_name}/Contacts.xcodeproj"
+        template "main.m.tt", "#{@project_name}/main.m"
+        
+        # empty_directory "#{@project_name}"
+        # empty_directory "#{@project_name}/Classes"
+        # template "ApplicationFacade.h.tt", "#{@project_name}/Classes/ApplicationFacade.h" 
+        # template "ApplicationFacade.m.tt", "#{@project_name}/Classes/ApplicationFacade.m" 
+        # empty_directory "#{@project_name}/Classes/controllers"
+        # empty_directory "#{@project_name}/Classes/models" 
+        # empty_directory "#{@project_name}/Classes/models/enum" 
+        # empty_directory "#{@project_name}/Classes/models/vo"
+        # empty_directory "#{@project_name}/Classes/views" 
+        # empty_directory "#{@project_name}/Classes/views/components"
+        empty_directory "#{@project_name}/Classes/utils"
 
-          #return if self.behavior == :revoke
-          template "ApplicationFacade.h.tt", "Classes/ApplicationFacade.h" 
-          template "ApplicationFacade.m.tt", "Classes/ApplicationFacade.m" 
-          empty_directory "Classes/controllers"
-          empty_directory "Classes/models" 
-          empty_directory "Classes/models/enum" 
-          empty_directory "Classes/models/vo"
-          empty_directory "Classes/views" 
-          empty_directory "Classes/views/components"
-          empty_directory "Classes/utils"
+        copy_file "utils/NSStringWhiteSpace.h", "#{@project_name}/Classes/utils/NSStringWhiteSpace.h"
+        copy_file "utils/NSStringWhiteSpace.m", "#{@project_name}/Classes/utils/NSStringWhiteSpace.m"   
+        copy_file "utils/UIDevice.h", "#{@project_name}/Classes/utils/UIDevice.h"  
+        copy_file "utils/UIDevice.m", "#{@project_name}/Classes/utils/UIDevice.m" 
+        copy_file "utils/URLEncodeString.h", "#{@project_name}/Classes/utils/URLEncodeString.h"  
+        copy_file "utils/URLEncodeString.m", "#{@project_name}/Classes/utils/URLEncodeString.m"
+        
+        directory "Classes", "#{@project_name}/Classes"
+        
 
-          copy_file "utils/NSStringWhiteSpace.h", "Classes/utils/NSStringWhiteSpace.h"
-          copy_file "utils/NSStringWhiteSpace.m", "Classes/utils/NSStringWhiteSpace.m"   
-          copy_file "utils/UIDevice.h", "Classes/utils/UIDevice.h"  
-          copy_file "utils/UIDevice.m", "Classes/utils/UIDevice.m" 
-          copy_file "utils/URLEncodeString.h", "Classes/utils/URLEncodeString.h"  
-          copy_file "utils/URLEncodeString.m", "Classes/utils/URLEncodeString.m"    
-          say (<<-TEXT).gsub(/ {10}/,'')
-
-          =================================================================
-          Your #{@class_name} application has been generated.
-          =================================================================
-
-          TEXT
-        else
-          say "You are not at the root of a iPhone application!" and exit unless in_app_root?
-        end
+        say (<<-TEXT).gsub(/ {10}/,'')
+      
+      =================================================================
+      Your #{@class_name} application has been generated.
+      =================================================================
+      
+      TEXT
       end
     end # App
   end # Generators
