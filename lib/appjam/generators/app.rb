@@ -35,18 +35,21 @@ module Appjam
         self.destination_root = options[:root]
         @class_name = name.gsub(/\W/, "_").capitalize #.underscore.classify
         if in_app_root?
-          #directory("Classes/", destination_root(name))
+          # directory("Classes/", destination_root(name))
+          app = options[:app]
+          self.behavior = :revoke if options[:destroy]
 
           #return if self.behavior == :revoke
           template "ApplicationFacade.h.tt", "Classes/ApplicationFacade.h" 
           template "ApplicationFacade.m.tt", "Classes/ApplicationFacade.m" 
-          directory "controllers/", "Classes/controllers/" 
-          directory "models/", "Classes/models/" 
-          directory "models/enum/", "Classes/models/enum/" 
-          directory "models/vo/", "Classes/models/vo/" 
-          directory "views/", "Classes/views/" 
-          directory "views/components/", "Classes/views/components/" 
-          directory "utils/", "Classes/utils/"  
+          empty_directory "Classes/controllers"
+          empty_directory "Classes/models" 
+          empty_directory "Classes/models/enum" 
+          empty_directory "Classes/models/vo"
+          empty_directory "Classes/views" 
+          empty_directory "Classes/views/components"
+          empty_directory "Classes/utils"
+
           copy_file "utils/NSStringWhiteSpace.h", "Classes/utils/NSStringWhiteSpace.h"
           copy_file "utils/NSStringWhiteSpace.m", "Classes/utils/NSStringWhiteSpace.m"   
           copy_file "utils/UIDevice.h", "Classes/utils/UIDevice.h"  
