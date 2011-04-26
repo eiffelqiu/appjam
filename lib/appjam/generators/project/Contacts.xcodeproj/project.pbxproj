@@ -12,20 +12,20 @@
 		1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D30AB110D05D00D00671497 /* Foundation.framework */; };
 		1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DF5F4DF0D08C38300B7A737 /* UIKit.framework */; };
 		288765FD0DF74451002DB57D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 288765FC0DF74451002DB57D /* CoreGraphics.framework */; };
-		C59074C213657FCD000E113F /* ApplicationFacade.m in Sources */ = {isa = PBXBuildFile; fileRef = C59074A113657FCD000E113F /* ApplicationFacade.m */; };
-		C59074C313657FCD000E113F /* CreateUserCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = C59074A413657FCD000E113F /* CreateUserCommand.m */; };
-		C59074C413657FCD000E113F /* DeleteUserCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = C59074A613657FCD000E113F /* DeleteUserCommand.m */; };
-		C59074C513657FCD000E113F /* GetUsersCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = C59074A813657FCD000E113F /* GetUsersCommand.m */; };
-		C59074C613657FCD000E113F /* StartupCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = C59074AA13657FCD000E113F /* StartupCommand.m */; };
-		C59074C713657FCD000E113F /* UpdateUserCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = C59074AC13657FCD000E113F /* UpdateUserCommand.m */; };
-		C59074C813657FCD000E113F /* UserProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = C59074B013657FCD000E113F /* UserProxy.m */; };
-		C59074C913657FCD000E113F /* UserVO.m in Sources */ = {isa = PBXBuildFile; fileRef = C59074B313657FCD000E113F /* UserVO.m */; };
-		C59074CA13657FCD000E113F /* Contacts.m in Sources */ = {isa = PBXBuildFile; fileRef = C59074B713657FCD000E113F /* Contacts.m */; };
-		C59074CB13657FCD000E113F /* UserForm.m in Sources */ = {isa = PBXBuildFile; fileRef = C59074B913657FCD000E113F /* UserForm.m */; };
-		C59074CC13657FCD000E113F /* UserList.m in Sources */ = {isa = PBXBuildFile; fileRef = C59074BB13657FCD000E113F /* UserList.m */; };
-		C59074CD13657FCD000E113F /* ContactsMediator.m in Sources */ = {isa = PBXBuildFile; fileRef = C59074BD13657FCD000E113F /* ContactsMediator.m */; };
-		C59074CE13657FCD000E113F /* UserFormMediator.m in Sources */ = {isa = PBXBuildFile; fileRef = C59074BF13657FCD000E113F /* UserFormMediator.m */; };
-		C59074CF13657FCD000E113F /* UserListMediator.m in Sources */ = {isa = PBXBuildFile; fileRef = C59074C113657FCD000E113F /* UserListMediator.m */; };
+		C590756213668DBA000E113F /* ApplicationFacade.m in Sources */ = {isa = PBXBuildFile; fileRef = C590754113668DBA000E113F /* ApplicationFacade.m */; };
+		C590756313668DBA000E113F /* CreateUserCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = C590754413668DBA000E113F /* CreateUserCommand.m */; };
+		C590756413668DBA000E113F /* DeleteUserCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = C590754613668DBA000E113F /* DeleteUserCommand.m */; };
+		C590756513668DBA000E113F /* GetUsersCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = C590754813668DBA000E113F /* GetUsersCommand.m */; };
+		C590756613668DBA000E113F /* StartupCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = C590754A13668DBA000E113F /* StartupCommand.m */; };
+		C590756713668DBA000E113F /* UpdateUserCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = C590754C13668DBA000E113F /* UpdateUserCommand.m */; };
+		C590756813668DBA000E113F /* UserProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = C590755013668DBA000E113F /* UserProxy.m */; };
+		C590756913668DBA000E113F /* UserVO.m in Sources */ = {isa = PBXBuildFile; fileRef = C590755313668DBA000E113F /* UserVO.m */; };
+		C590756A13668DBA000E113F /* Contacts.m in Sources */ = {isa = PBXBuildFile; fileRef = C590755713668DBA000E113F /* Contacts.m */; };
+		C590756B13668DBA000E113F /* UserForm.m in Sources */ = {isa = PBXBuildFile; fileRef = C590755913668DBA000E113F /* UserForm.m */; };
+		C590756C13668DBA000E113F /* UserList.m in Sources */ = {isa = PBXBuildFile; fileRef = C590755B13668DBA000E113F /* UserList.m */; };
+		C590756D13668DBA000E113F /* ContactsMediator.m in Sources */ = {isa = PBXBuildFile; fileRef = C590755D13668DBA000E113F /* ContactsMediator.m */; };
+		C590756E13668DBA000E113F /* UserFormMediator.m in Sources */ = {isa = PBXBuildFile; fileRef = C590755F13668DBA000E113F /* UserFormMediator.m */; };
+		C590756F13668DBA000E113F /* UserListMediator.m in Sources */ = {isa = PBXBuildFile; fileRef = C590756113668DBA000E113F /* UserListMediator.m */; };
 		C5A9BAE2130B670300A7F169 /* Controller.m in Sources */ = {isa = PBXBuildFile; fileRef = C5A9BABC130B670300A7F169 /* Controller.m */; };
 		C5A9BAE3130B670300A7F169 /* Model.m in Sources */ = {isa = PBXBuildFile; fileRef = C5A9BABE130B670300A7F169 /* Model.m */; };
 		C5A9BAE4130B670300A7F169 /* View.m in Sources */ = {isa = PBXBuildFile; fileRef = C5A9BAC0130B670300A7F169 /* View.m */; };
@@ -49,34 +49,34 @@
 		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		32CA4F630368D1EE00C91783 /* Contacts_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Contacts_Prefix.pch; sourceTree = "<group>"; };
 		8D1107310486CEB800E47090 /* Contacts-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Contacts-Info.plist"; plistStructureDefinitionIdentifier = "com.apple.xcode.plist.structure-definition.iphone.info-plist"; sourceTree = "<group>"; };
-		C59074A013657FCD000E113F /* ApplicationFacade.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ApplicationFacade.h; sourceTree = "<group>"; };
-		C59074A113657FCD000E113F /* ApplicationFacade.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ApplicationFacade.m; sourceTree = "<group>"; };
-		C59074A313657FCD000E113F /* CreateUserCommand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CreateUserCommand.h; sourceTree = "<group>"; };
-		C59074A413657FCD000E113F /* CreateUserCommand.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CreateUserCommand.m; sourceTree = "<group>"; };
-		C59074A513657FCD000E113F /* DeleteUserCommand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DeleteUserCommand.h; sourceTree = "<group>"; };
-		C59074A613657FCD000E113F /* DeleteUserCommand.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DeleteUserCommand.m; sourceTree = "<group>"; };
-		C59074A713657FCD000E113F /* GetUsersCommand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GetUsersCommand.h; sourceTree = "<group>"; };
-		C59074A813657FCD000E113F /* GetUsersCommand.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GetUsersCommand.m; sourceTree = "<group>"; };
-		C59074A913657FCD000E113F /* StartupCommand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StartupCommand.h; sourceTree = "<group>"; };
-		C59074AA13657FCD000E113F /* StartupCommand.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StartupCommand.m; sourceTree = "<group>"; };
-		C59074AB13657FCD000E113F /* UpdateUserCommand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UpdateUserCommand.h; sourceTree = "<group>"; };
-		C59074AC13657FCD000E113F /* UpdateUserCommand.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UpdateUserCommand.m; sourceTree = "<group>"; };
-		C59074AF13657FCD000E113F /* UserProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserProxy.h; sourceTree = "<group>"; };
-		C59074B013657FCD000E113F /* UserProxy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserProxy.m; sourceTree = "<group>"; };
-		C59074B213657FCD000E113F /* UserVO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserVO.h; sourceTree = "<group>"; };
-		C59074B313657FCD000E113F /* UserVO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserVO.m; sourceTree = "<group>"; };
-		C59074B613657FCD000E113F /* Contacts.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Contacts.h; sourceTree = "<group>"; };
-		C59074B713657FCD000E113F /* Contacts.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Contacts.m; sourceTree = "<group>"; };
-		C59074B813657FCD000E113F /* UserForm.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserForm.h; sourceTree = "<group>"; };
-		C59074B913657FCD000E113F /* UserForm.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserForm.m; sourceTree = "<group>"; };
-		C59074BA13657FCD000E113F /* UserList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserList.h; sourceTree = "<group>"; };
-		C59074BB13657FCD000E113F /* UserList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserList.m; sourceTree = "<group>"; };
-		C59074BC13657FCD000E113F /* ContactsMediator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContactsMediator.h; sourceTree = "<group>"; };
-		C59074BD13657FCD000E113F /* ContactsMediator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContactsMediator.m; sourceTree = "<group>"; };
-		C59074BE13657FCD000E113F /* UserFormMediator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserFormMediator.h; sourceTree = "<group>"; };
-		C59074BF13657FCD000E113F /* UserFormMediator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserFormMediator.m; sourceTree = "<group>"; };
-		C59074C013657FCD000E113F /* UserListMediator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserListMediator.h; sourceTree = "<group>"; };
-		C59074C113657FCD000E113F /* UserListMediator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserListMediator.m; sourceTree = "<group>"; };
+		C590754013668DBA000E113F /* ApplicationFacade.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ApplicationFacade.h; sourceTree = "<group>"; };
+		C590754113668DBA000E113F /* ApplicationFacade.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ApplicationFacade.m; sourceTree = "<group>"; };
+		C590754313668DBA000E113F /* CreateUserCommand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CreateUserCommand.h; sourceTree = "<group>"; };
+		C590754413668DBA000E113F /* CreateUserCommand.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CreateUserCommand.m; sourceTree = "<group>"; };
+		C590754513668DBA000E113F /* DeleteUserCommand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DeleteUserCommand.h; sourceTree = "<group>"; };
+		C590754613668DBA000E113F /* DeleteUserCommand.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DeleteUserCommand.m; sourceTree = "<group>"; };
+		C590754713668DBA000E113F /* GetUsersCommand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GetUsersCommand.h; sourceTree = "<group>"; };
+		C590754813668DBA000E113F /* GetUsersCommand.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GetUsersCommand.m; sourceTree = "<group>"; };
+		C590754913668DBA000E113F /* StartupCommand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StartupCommand.h; sourceTree = "<group>"; };
+		C590754A13668DBA000E113F /* StartupCommand.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StartupCommand.m; sourceTree = "<group>"; };
+		C590754B13668DBA000E113F /* UpdateUserCommand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UpdateUserCommand.h; sourceTree = "<group>"; };
+		C590754C13668DBA000E113F /* UpdateUserCommand.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UpdateUserCommand.m; sourceTree = "<group>"; };
+		C590754F13668DBA000E113F /* UserProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserProxy.h; sourceTree = "<group>"; };
+		C590755013668DBA000E113F /* UserProxy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserProxy.m; sourceTree = "<group>"; };
+		C590755213668DBA000E113F /* UserVO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserVO.h; sourceTree = "<group>"; };
+		C590755313668DBA000E113F /* UserVO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserVO.m; sourceTree = "<group>"; };
+		C590755613668DBA000E113F /* Contacts.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Contacts.h; sourceTree = "<group>"; };
+		C590755713668DBA000E113F /* Contacts.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Contacts.m; sourceTree = "<group>"; };
+		C590755813668DBA000E113F /* UserForm.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserForm.h; sourceTree = "<group>"; };
+		C590755913668DBA000E113F /* UserForm.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserForm.m; sourceTree = "<group>"; };
+		C590755A13668DBA000E113F /* UserList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserList.h; sourceTree = "<group>"; };
+		C590755B13668DBA000E113F /* UserList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserList.m; sourceTree = "<group>"; };
+		C590755C13668DBA000E113F /* ContactsMediator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContactsMediator.h; sourceTree = "<group>"; };
+		C590755D13668DBA000E113F /* ContactsMediator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContactsMediator.m; sourceTree = "<group>"; };
+		C590755E13668DBA000E113F /* UserFormMediator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserFormMediator.h; sourceTree = "<group>"; };
+		C590755F13668DBA000E113F /* UserFormMediator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserFormMediator.m; sourceTree = "<group>"; };
+		C590756013668DBA000E113F /* UserListMediator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserListMediator.h; sourceTree = "<group>"; };
+		C590756113668DBA000E113F /* UserListMediator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserListMediator.m; sourceTree = "<group>"; };
 		C5A9BABB130B670300A7F169 /* Controller.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Controller.h; sourceTree = "<group>"; };
 		C5A9BABC130B670300A7F169 /* Controller.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Controller.m; sourceTree = "<group>"; };
 		C5A9BABD130B670300A7F169 /* Model.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Model.h; sourceTree = "<group>"; };
@@ -128,7 +128,7 @@
 		080E96DDFE201D6D7F000001 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				C590749E13657FB7000E113F /* app */,
+				C590749E13657FB7000E113F /* apps */,
 				C5A9BAAD130B66C900A7F169 /* puremvc */,
 				1D3623240D0F684500981E51 /* ContactsAppDelegate.h */,
 				1D3623250D0F684500981E51 /* ContactsAppDelegate.m */,
@@ -183,93 +183,93 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		C590749E13657FB7000E113F /* app */ = {
+		C590749E13657FB7000E113F /* apps */ = {
 			isa = PBXGroup;
 			children = (
-				C590749F13657FCD000E113F /* users */,
+				C590753F13668DBA000E113F /* contacts */,
 			);
-			name = app;
+			name = apps;
 			sourceTree = "<group>";
 		};
-		C590749F13657FCD000E113F /* users */ = {
+		C590753F13668DBA000E113F /* contacts */ = {
 			isa = PBXGroup;
 			children = (
-				C59074A013657FCD000E113F /* ApplicationFacade.h */,
-				C59074A113657FCD000E113F /* ApplicationFacade.m */,
-				C59074A213657FCD000E113F /* controller */,
-				C59074AD13657FCD000E113F /* model */,
-				C59074B413657FCD000E113F /* view */,
+				C590754013668DBA000E113F /* ApplicationFacade.h */,
+				C590754113668DBA000E113F /* ApplicationFacade.m */,
+				C590754213668DBA000E113F /* controller */,
+				C590754D13668DBA000E113F /* model */,
+				C590755413668DBA000E113F /* view */,
 			);
-			path = users;
+			path = contacts;
 			sourceTree = "<group>";
 		};
-		C59074A213657FCD000E113F /* controller */ = {
+		C590754213668DBA000E113F /* controller */ = {
 			isa = PBXGroup;
 			children = (
-				C59074A313657FCD000E113F /* CreateUserCommand.h */,
-				C59074A413657FCD000E113F /* CreateUserCommand.m */,
-				C59074A513657FCD000E113F /* DeleteUserCommand.h */,
-				C59074A613657FCD000E113F /* DeleteUserCommand.m */,
-				C59074A713657FCD000E113F /* GetUsersCommand.h */,
-				C59074A813657FCD000E113F /* GetUsersCommand.m */,
-				C59074A913657FCD000E113F /* StartupCommand.h */,
-				C59074AA13657FCD000E113F /* StartupCommand.m */,
-				C59074AB13657FCD000E113F /* UpdateUserCommand.h */,
-				C59074AC13657FCD000E113F /* UpdateUserCommand.m */,
+				C590754313668DBA000E113F /* CreateUserCommand.h */,
+				C590754413668DBA000E113F /* CreateUserCommand.m */,
+				C590754513668DBA000E113F /* DeleteUserCommand.h */,
+				C590754613668DBA000E113F /* DeleteUserCommand.m */,
+				C590754713668DBA000E113F /* GetUsersCommand.h */,
+				C590754813668DBA000E113F /* GetUsersCommand.m */,
+				C590754913668DBA000E113F /* StartupCommand.h */,
+				C590754A13668DBA000E113F /* StartupCommand.m */,
+				C590754B13668DBA000E113F /* UpdateUserCommand.h */,
+				C590754C13668DBA000E113F /* UpdateUserCommand.m */,
 			);
 			path = controller;
 			sourceTree = "<group>";
 		};
-		C59074AD13657FCD000E113F /* model */ = {
+		C590754D13668DBA000E113F /* model */ = {
 			isa = PBXGroup;
 			children = (
-				C59074AE13657FCD000E113F /* enum */,
-				C59074AF13657FCD000E113F /* UserProxy.h */,
-				C59074B013657FCD000E113F /* UserProxy.m */,
-				C59074B113657FCD000E113F /* vo */,
+				C590754E13668DBA000E113F /* enum */,
+				C590754F13668DBA000E113F /* UserProxy.h */,
+				C590755013668DBA000E113F /* UserProxy.m */,
+				C590755113668DBA000E113F /* vo */,
 			);
 			path = model;
 			sourceTree = "<group>";
 		};
-		C59074AE13657FCD000E113F /* enum */ = {
+		C590754E13668DBA000E113F /* enum */ = {
 			isa = PBXGroup;
 			children = (
 			);
 			path = enum;
 			sourceTree = "<group>";
 		};
-		C59074B113657FCD000E113F /* vo */ = {
+		C590755113668DBA000E113F /* vo */ = {
 			isa = PBXGroup;
 			children = (
-				C59074B213657FCD000E113F /* UserVO.h */,
-				C59074B313657FCD000E113F /* UserVO.m */,
+				C590755213668DBA000E113F /* UserVO.h */,
+				C590755313668DBA000E113F /* UserVO.m */,
 			);
 			path = vo;
 			sourceTree = "<group>";
 		};
-		C59074B413657FCD000E113F /* view */ = {
+		C590755413668DBA000E113F /* view */ = {
 			isa = PBXGroup;
 			children = (
-				C59074B513657FCD000E113F /* components */,
-				C59074BC13657FCD000E113F /* ContactsMediator.h */,
-				C59074BD13657FCD000E113F /* ContactsMediator.m */,
-				C59074BE13657FCD000E113F /* UserFormMediator.h */,
-				C59074BF13657FCD000E113F /* UserFormMediator.m */,
-				C59074C013657FCD000E113F /* UserListMediator.h */,
-				C59074C113657FCD000E113F /* UserListMediator.m */,
+				C590755513668DBA000E113F /* components */,
+				C590755C13668DBA000E113F /* ContactsMediator.h */,
+				C590755D13668DBA000E113F /* ContactsMediator.m */,
+				C590755E13668DBA000E113F /* UserFormMediator.h */,
+				C590755F13668DBA000E113F /* UserFormMediator.m */,
+				C590756013668DBA000E113F /* UserListMediator.h */,
+				C590756113668DBA000E113F /* UserListMediator.m */,
 			);
 			path = view;
 			sourceTree = "<group>";
 		};
-		C59074B513657FCD000E113F /* components */ = {
+		C590755513668DBA000E113F /* components */ = {
 			isa = PBXGroup;
 			children = (
-				C59074B613657FCD000E113F /* Contacts.h */,
-				C59074B713657FCD000E113F /* Contacts.m */,
-				C59074B813657FCD000E113F /* UserForm.h */,
-				C59074B913657FCD000E113F /* UserForm.m */,
-				C59074BA13657FCD000E113F /* UserList.h */,
-				C59074BB13657FCD000E113F /* UserList.m */,
+				C590755613668DBA000E113F /* Contacts.h */,
+				C590755713668DBA000E113F /* Contacts.m */,
+				C590755813668DBA000E113F /* UserForm.h */,
+				C590755913668DBA000E113F /* UserForm.m */,
+				C590755A13668DBA000E113F /* UserList.h */,
+				C590755B13668DBA000E113F /* UserList.m */,
 			);
 			path = components;
 			sourceTree = "<group>";
@@ -473,20 +473,20 @@
 				C5A9BAEA130B670300A7F169 /* Notifier.m in Sources */,
 				C5A9BAEB130B670300A7F169 /* Observer.m in Sources */,
 				C5A9BAEC130B670300A7F169 /* Proxy.m in Sources */,
-				C59074C213657FCD000E113F /* ApplicationFacade.m in Sources */,
-				C59074C313657FCD000E113F /* CreateUserCommand.m in Sources */,
-				C59074C413657FCD000E113F /* DeleteUserCommand.m in Sources */,
-				C59074C513657FCD000E113F /* GetUsersCommand.m in Sources */,
-				C59074C613657FCD000E113F /* StartupCommand.m in Sources */,
-				C59074C713657FCD000E113F /* UpdateUserCommand.m in Sources */,
-				C59074C813657FCD000E113F /* UserProxy.m in Sources */,
-				C59074C913657FCD000E113F /* UserVO.m in Sources */,
-				C59074CA13657FCD000E113F /* Contacts.m in Sources */,
-				C59074CB13657FCD000E113F /* UserForm.m in Sources */,
-				C59074CC13657FCD000E113F /* UserList.m in Sources */,
-				C59074CD13657FCD000E113F /* ContactsMediator.m in Sources */,
-				C59074CE13657FCD000E113F /* UserFormMediator.m in Sources */,
-				C59074CF13657FCD000E113F /* UserListMediator.m in Sources */,
+				C590756213668DBA000E113F /* ApplicationFacade.m in Sources */,
+				C590756313668DBA000E113F /* CreateUserCommand.m in Sources */,
+				C590756413668DBA000E113F /* DeleteUserCommand.m in Sources */,
+				C590756513668DBA000E113F /* GetUsersCommand.m in Sources */,
+				C590756613668DBA000E113F /* StartupCommand.m in Sources */,
+				C590756713668DBA000E113F /* UpdateUserCommand.m in Sources */,
+				C590756813668DBA000E113F /* UserProxy.m in Sources */,
+				C590756913668DBA000E113F /* UserVO.m in Sources */,
+				C590756A13668DBA000E113F /* Contacts.m in Sources */,
+				C590756B13668DBA000E113F /* UserForm.m in Sources */,
+				C590756C13668DBA000E113F /* UserList.m in Sources */,
+				C590756D13668DBA000E113F /* ContactsMediator.m in Sources */,
+				C590756E13668DBA000E113F /* UserFormMediator.m in Sources */,
+				C590756F13668DBA000E113F /* UserListMediator.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
