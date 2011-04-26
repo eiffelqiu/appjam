@@ -1,2 +1,0 @@
-I am foo, you are bar
-<%= name.camelize %>

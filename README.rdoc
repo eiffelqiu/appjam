@@ -1,6 +1,12 @@
 = appjam
 
-appjam is iphone app generator, Generate iphone app skeleton based on pure mvc framework.
+appjam is iphone app generator, generate iphone app skeleton based on pure mvc framework.
+
+== Usage
+
+run command below in your favorite shell, appjam will generate your iphone app skeleton.
+
+$ appjam User # Model name(like User)
 
 == Contributing to appjam
  
