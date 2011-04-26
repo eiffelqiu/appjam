@@ -5,7 +5,7 @@ require 'active_support/core_ext/string'
 
 module Appjam
   module Generators
-    class App < Thor::Group
+    class Project < Thor::Group
 
       # Add this generator to our appjam
       Appjam::Generators.add_generator(:app, self)
@@ -38,10 +38,10 @@ module Appjam
         app = options[:app]
         self.behavior = :revoke if options[:destroy]
         empty_directory "#{@project_name}"
-        template "Contacts_Prefix.pch.tt", "#{@project_name}/Contacts_Prefix.pch"
-        template "Contacts-Info.plist.tt", "#{@project_name}/Contacts-Info.plist"
-        directory "Contacts.xcodeproj", "#{@project_name}/Contacts.xcodeproj"
-        template "main.m.tt", "#{@project_name}/main.m"
+        template "project/Contacts_Prefix.pch.tt", "#{@project_name}/Contacts_Prefix.pch"
+        template "project/Contacts-Info.plist.tt", "#{@project_name}/Contacts-Info.plist"
+        directory "project/Contacts.xcodeproj", "#{@project_name}/Contacts.xcodeproj"
+        template "project/main.m.tt", "#{@project_name}/main.m"
         
         # empty_directory "#{@project_name}"
         # empty_directory "#{@project_name}/Classes"
@@ -55,14 +55,14 @@ module Appjam
         # empty_directory "#{@project_name}/Classes/views/components"
         empty_directory "#{@project_name}/Classes/utils"
 
-        copy_file "utils/NSStringWhiteSpace.h", "#{@project_name}/Classes/utils/NSStringWhiteSpace.h"
-        copy_file "utils/NSStringWhiteSpace.m", "#{@project_name}/Classes/utils/NSStringWhiteSpace.m"   
-        copy_file "utils/UIDevice.h", "#{@project_name}/Classes/utils/UIDevice.h"  
-        copy_file "utils/UIDevice.m", "#{@project_name}/Classes/utils/UIDevice.m" 
-        copy_file "utils/URLEncodeString.h", "#{@project_name}/Classes/utils/URLEncodeString.h"  
-        copy_file "utils/URLEncodeString.m", "#{@project_name}/Classes/utils/URLEncodeString.m"
+        copy_file "project/utils/NSStringWhiteSpace.h", "#{@project_name}/Classes/utils/NSStringWhiteSpace.h"
+        copy_file "project/utils/NSStringWhiteSpace.m", "#{@project_name}/Classes/utils/NSStringWhiteSpace.m"   
+        copy_file "project/utils/UIDevice.h", "#{@project_name}/Classes/utils/UIDevice.h"  
+        copy_file "project/utils/UIDevice.m", "#{@project_name}/Classes/utils/UIDevice.m" 
+        copy_file "project/utils/URLEncodeString.h", "#{@project_name}/Classes/utils/URLEncodeString.h"  
+        copy_file "project/utils/URLEncodeString.m", "#{@project_name}/Classes/utils/URLEncodeString.m"
         
-        directory "Classes", "#{@project_name}/Classes"
+        directory "project/Classes", "#{@project_name}/Classes"
         
 
         say (<<-TEXT).gsub(/ {10}/,'')

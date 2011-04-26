@@ -47,4 +47,4 @@ end # IphoneMvc
 ##
 # We add our generators to Appjam::Genererator
 #
-Appjam::Generators.load_paths << Dir[File.dirname(__FILE__) + '/appjam/generators/app.rb']
+Appjam::Generators.load_paths << Dir[File.dirname(__FILE__) + '/appjam/generators/project.rb']

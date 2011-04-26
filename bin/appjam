@@ -7,11 +7,11 @@ unless $LOAD_PATH.include?(lib_dir)
 end
 
 require 'appjam'
-require File.expand_path(File.dirname(__FILE__) + '/../lib/appjam/generators/app')
+require File.expand_path(File.dirname(__FILE__) + '/../lib/appjam/generators/project')
 
 begin
-  Appjam::Generators::App.start(ARGV)
+  Appjam::Generators::Project.start(ARGV)
 rescue => e
-  STDERR.puts "Error: #{e}\n"
+  STDERR.puts "Error: #{e}"
   exit -1
 end

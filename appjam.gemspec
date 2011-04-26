@@ -5,7 +5,7 @@
 
 Gem::Specification.new do |s|
   s.name = %q{appjam}
-  s.version = "0.1.0.pre3"
+  s.version = "0.1.0.pre4"
 
   s.required_rubygems_version = Gem::Requirement.new("> 1.3.1") if s.respond_to? :required_rubygems_version=
   s.authors = ["Eiffel Q"]
@@ -87,7 +87,7 @@ Gem::Specification.new do |s|
     "lib/appjam/generators/Contacts.xcodeproj/eiffel.perspectivev3",
     "lib/appjam/generators/Contacts.xcodeproj/project.pbxproj",
     "lib/appjam/generators/Contacts_Prefix.pch.tt",
-    "lib/appjam/generators/app.rb",
+    "lib/appjam/generators/project.rb",
     "lib/appjam/generators/main.m.tt",
     "lib/appjam/generators/utils/NSStringWhiteSpace.h",
     "lib/appjam/generators/utils/NSStringWhiteSpace.m",
