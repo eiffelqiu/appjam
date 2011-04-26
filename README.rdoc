@@ -6,6 +6,8 @@ appjam is iphone app generator, generate iphone app skeleton based on pure mvc f
 
 run command below in your favorite shell, appjam will generate your iphone app skeleton.
 
+$ gem install appjam 
+
 $ appjam User # Model name(like User)
 
 == Contributing to appjam
