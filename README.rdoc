@@ -1,6 +1,8 @@
 = appjam
 
-appjam is iphone app generator, generate iphone app skeleton based on pure mvc framework.
+appjam is iphone app generator, which generate iphone app skeleton based on PureMVC framework Objective C port.
+
+for PureMVC framework, see http://trac.puremvc.org/PureMVC_ObjectiveC/
 
 == Usage
 

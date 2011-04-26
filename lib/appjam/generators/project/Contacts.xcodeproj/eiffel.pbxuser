@@ -54,90 +54,49 @@
 					PBXFileDataSource_Target_ColumnID,
 				);
 			};
-			PBXPerProjectTemplateStateSaveDate = 325418838;
-			PBXWorkspaceStateSaveDate = 325418838;
+			PBXPerProjectTemplateStateSaveDate = 325481212;
+			PBXWorkspaceStateSaveDate = 325481212;
 		};
 		perUserProjectItems = {
-			C5265BE8131CC97200FE1599 = C5265BE8131CC97200FE1599 /* PBXTextBookmark */;
-			C5265BE9131CC97200FE1599 = C5265BE9131CC97200FE1599 /* PBXTextBookmark */;
-			C5265BEA131CC97200FE1599 = C5265BEA131CC97200FE1599 /* PBXTextBookmark */;
-			C5265BEC131CC97200FE1599 = C5265BEC131CC97200FE1599 /* PBXTextBookmark */;
-			C5265BEE131CC97200FE1599 = C5265BEE131CC97200FE1599 /* PBXTextBookmark */;
-			C5265BF0131CC97200FE1599 = C5265BF0131CC97200FE1599 /* PBXTextBookmark */;
-			C5265BF1131CC97200FE1599 = C5265BF1131CC97200FE1599 /* PBXTextBookmark */;
-			C5265BF2131CC97200FE1599 = C5265BF2131CC97200FE1599 /* PBXTextBookmark */;
-			C5265BF3131CC97200FE1599 = C5265BF3131CC97200FE1599 /* PBXTextBookmark */;
-			C5265BF5131CC97200FE1599 = C5265BF5131CC97200FE1599 /* PBXTextBookmark */;
-			C5265BF6131CC97200FE1599 = C5265BF6131CC97200FE1599 /* PBXTextBookmark */;
-			C5265BF7131CC97200FE1599 = C5265BF7131CC97200FE1599 /* PBXTextBookmark */;
-			C5265BF8131CC97200FE1599 = C5265BF8131CC97200FE1599 /* PBXTextBookmark */;
-			C5265BF9131CC97200FE1599 = C5265BF9131CC97200FE1599 /* PBXTextBookmark */;
-			C5265BFA131CC97200FE1599 = C5265BFA131CC97200FE1599 /* PBXTextBookmark */;
-			C5265BFB131CC97200FE1599 = C5265BFB131CC97200FE1599 /* PBXTextBookmark */;
-			C53FFC5C1314EBD90040633F = C53FFC5C1314EBD90040633F /* PBXTextBookmark */;
-			C56555FF131BAA5D0016CE3A = C56555FF131BAA5D0016CE3A /* PBXTextBookmark */;
-			C5655600131BAA5D0016CE3A = C5655600131BAA5D0016CE3A /* PBXTextBookmark */;
-			C5655602131BAA5D0016CE3A = C5655602131BAA5D0016CE3A /* PBXTextBookmark */;
-			C5655603131BAA5D0016CE3A = C5655603131BAA5D0016CE3A /* PBXTextBookmark */;
-			C5655604131BAA5D0016CE3A = C5655604131BAA5D0016CE3A /* PBXTextBookmark */;
-			C5655605131BAA5D0016CE3A = C5655605131BAA5D0016CE3A /* PBXTextBookmark */;
-			C5655606131BAA5D0016CE3A = C5655606131BAA5D0016CE3A /* PBXTextBookmark */;
-			C5655607131BAA5D0016CE3A = C5655607131BAA5D0016CE3A /* PBXTextBookmark */;
-			C5655608131BAA5D0016CE3A = C5655608131BAA5D0016CE3A /* PBXTextBookmark */;
-			C565560A131BAA5D0016CE3A = C565560A131BAA5D0016CE3A /* PBXTextBookmark */;
-			C565560B131BAA5D0016CE3A = C565560B131BAA5D0016CE3A /* PBXTextBookmark */;
-			C565560C131BAA5D0016CE3A = C565560C131BAA5D0016CE3A /* PBXTextBookmark */;
-			C565560D131BAA5D0016CE3A = C565560D131BAA5D0016CE3A /* PBXTextBookmark */;
-			C565560E131BAA5D0016CE3A = C565560E131BAA5D0016CE3A /* PBXTextBookmark */;
-			C5655613131BAA5D0016CE3A = C5655613131BAA5D0016CE3A /* PBXTextBookmark */;
-			C5655617131BAA5D0016CE3A = C5655617131BAA5D0016CE3A /* PBXTextBookmark */;
-			C565561D131BAA5D0016CE3A = C565561D131BAA5D0016CE3A /* PBXTextBookmark */;
-			C565561E131BAA5D0016CE3A = C565561E131BAA5D0016CE3A /* PBXTextBookmark */;
-			C5655622131BAA5D0016CE3A = C5655622131BAA5D0016CE3A /* PBXTextBookmark */;
-			C5655623131BAA5D0016CE3A = C5655623131BAA5D0016CE3A /* PBXTextBookmark */;
-			C5655624131BAA5D0016CE3A = C5655624131BAA5D0016CE3A /* PBXTextBookmark */;
-			C5655625131BAA5D0016CE3A = C5655625131BAA5D0016CE3A /* PBXTextBookmark */;
-			C5655626131BAA5D0016CE3A = C5655626131BAA5D0016CE3A /* PBXTextBookmark */;
-			C5655627131BAA5D0016CE3A = C5655627131BAA5D0016CE3A /* PBXTextBookmark */;
-			C5655628131BAA5D0016CE3A = C5655628131BAA5D0016CE3A /* PBXTextBookmark */;
-			C5655629131BAA5D0016CE3A = C5655629131BAA5D0016CE3A /* PBXTextBookmark */;
-			C565562A131BAA5D0016CE3A = C565562A131BAA5D0016CE3A /* PBXTextBookmark */;
-			C5655633131BAA5D0016CE3A = C5655633131BAA5D0016CE3A /* PBXTextBookmark */;
-			C5655637131BAA5D0016CE3A = C5655637131BAA5D0016CE3A /* PBXTextBookmark */;
-			C590737C13656650000E113F = C590737C13656650000E113F /* PBXTextBookmark */;
-			C590738013656650000E113F = C590738013656650000E113F /* PBXTextBookmark */;
-			C590738213656650000E113F = C590738213656650000E113F /* PBXTextBookmark */;
-			C590738613656650000E113F = C590738613656650000E113F /* PBXTextBookmark */;
-			C59073BE13656C02000E113F = C59073BE13656C02000E113F /* PBXTextBookmark */;
-			C59073BF13656C02000E113F = C59073BF13656C02000E113F /* PBXTextBookmark */;
-			C59073C013656C02000E113F = C59073C013656C02000E113F /* PBXTextBookmark */;
-			C59073C113656C02000E113F = C59073C113656C02000E113F /* PBXTextBookmark */;
-			C59073C313656C02000E113F = C59073C313656C02000E113F /* PBXTextBookmark */;
-			C59073C413656C02000E113F = C59073C413656C02000E113F /* PBXTextBookmark */;
-			C59073C913656C02000E113F = C59073C913656C02000E113F /* PBXTextBookmark */;
-			C59073CA13656C02000E113F = C59073CA13656C02000E113F /* PBXTextBookmark */;
-			C59073CC13656C02000E113F = C59073CC13656C02000E113F /* PBXTextBookmark */;
-			C59073CD13656C02000E113F = C59073CD13656C02000E113F /* PBXTextBookmark */;
-			C59073CE13656C02000E113F = C59073CE13656C02000E113F /* PBXTextBookmark */;
-			C59073F113656D50000E113F = C59073F113656D50000E113F /* PBXTextBookmark */;
-			C590742C13656F90000E113F = C590742C13656F90000E113F /* PBXTextBookmark */;
-			C5907450136570EF000E113F = C5907450136570EF000E113F /* PBXTextBookmark */;
-			C5907451136570EF000E113F = C5907451136570EF000E113F /* PBXTextBookmark */;
-			C5907452136570EF000E113F = C5907452136570EF000E113F /* PBXTextBookmark */;
-			C5907453136570EF000E113F = C5907453136570EF000E113F /* PBXTextBookmark */;
-			C5907454136570EF000E113F = C5907454136570EF000E113F /* PBXTextBookmark */;
-			C5907455136570EF000E113F = C5907455136570EF000E113F /* PBXTextBookmark */;
-			C5907456136570EF000E113F = C5907456136570EF000E113F /* PBXTextBookmark */;
-			C590745F13657129000E113F = C590745F13657129000E113F /* PBXTextBookmark */;
-			C590746013657129000E113F = C590746013657129000E113F /* PBXTextBookmark */;
-			C59074651365713A000E113F = C59074651365713A000E113F /* PlistBookmark */;
-			C590748513657F32000E113F = C590748513657F32000E113F /* PlistBookmark */;
-			C590749913657F6D000E113F /* PlistBookmark */ = C590749913657F6D000E113F /* PlistBookmark */;
-			C59074D213657FD0000E113F /* PlistBookmark */ = C59074D213657FD0000E113F /* PlistBookmark */;
-			C59074D313657FD1000E113F /* PlistBookmark */ = C59074D313657FD1000E113F /* PlistBookmark */;
-			C59074D913657FD6000E113F /* PlistBookmark */ = C59074D913657FD6000E113F /* PlistBookmark */;
-			C59074DA13657FDA000E113F /* PlistBookmark */ = C59074DA13657FDA000E113F /* PlistBookmark */;
-			C5A9BB14130B7C9E00A7F169 = C5A9BB14130B7C9E00A7F169 /* PBXTextBookmark */;
+			C5265BE8131CC97200FE1599 /* PBXTextBookmark */ = C5265BE8131CC97200FE1599 /* PBXTextBookmark */;
+			C5265BE9131CC97200FE1599 /* PBXTextBookmark */ = C5265BE9131CC97200FE1599 /* PBXTextBookmark */;
+			C5265BEA131CC97200FE1599 /* PBXTextBookmark */ = C5265BEA131CC97200FE1599 /* PBXTextBookmark */;
+			C5265BEC131CC97200FE1599 /* PBXTextBookmark */ = C5265BEC131CC97200FE1599 /* PBXTextBookmark */;
+			C5265BEE131CC97200FE1599 /* PBXTextBookmark */ = C5265BEE131CC97200FE1599 /* PBXTextBookmark */;
+			C5265BF0131CC97200FE1599 /* PBXTextBookmark */ = C5265BF0131CC97200FE1599 /* PBXTextBookmark */;
+			C5265BF1131CC97200FE1599 /* PBXTextBookmark */ = C5265BF1131CC97200FE1599 /* PBXTextBookmark */;
+			C5265BF2131CC97200FE1599 /* PBXTextBookmark */ = C5265BF2131CC97200FE1599 /* PBXTextBookmark */;
+			C5265BF3131CC97200FE1599 /* PBXTextBookmark */ = C5265BF3131CC97200FE1599 /* PBXTextBookmark */;
+			C5265BF5131CC97200FE1599 /* PBXTextBookmark */ = C5265BF5131CC97200FE1599 /* PBXTextBookmark */;
+			C5265BF6131CC97200FE1599 /* PBXTextBookmark */ = C5265BF6131CC97200FE1599 /* PBXTextBookmark */;
+			C5265BF7131CC97200FE1599 /* PBXTextBookmark */ = C5265BF7131CC97200FE1599 /* PBXTextBookmark */;
+			C5265BF8131CC97200FE1599 /* PBXTextBookmark */ = C5265BF8131CC97200FE1599 /* PBXTextBookmark */;
+			C5265BF9131CC97200FE1599 /* PBXTextBookmark */ = C5265BF9131CC97200FE1599 /* PBXTextBookmark */;
+			C5265BFA131CC97200FE1599 /* PBXTextBookmark */ = C5265BFA131CC97200FE1599 /* PBXTextBookmark */;
+			C5265BFB131CC97200FE1599 /* PBXTextBookmark */ = C5265BFB131CC97200FE1599 /* PBXTextBookmark */;
+			C53FFC5C1314EBD90040633F /* PBXTextBookmark */ = C53FFC5C1314EBD90040633F /* PBXTextBookmark */;
+			C5655613131BAA5D0016CE3A /* PBXTextBookmark */ = C5655613131BAA5D0016CE3A /* PBXTextBookmark */;
+			C5655617131BAA5D0016CE3A /* PBXTextBookmark */ = C5655617131BAA5D0016CE3A /* PBXTextBookmark */;
+			C565561D131BAA5D0016CE3A /* PBXTextBookmark */ = C565561D131BAA5D0016CE3A /* PBXTextBookmark */;
+			C565561E131BAA5D0016CE3A /* PBXTextBookmark */ = C565561E131BAA5D0016CE3A /* PBXTextBookmark */;
+			C5655622131BAA5D0016CE3A /* PBXTextBookmark */ = C5655622131BAA5D0016CE3A /* PBXTextBookmark */;
+			C5655623131BAA5D0016CE3A /* PBXTextBookmark */ = C5655623131BAA5D0016CE3A /* PBXTextBookmark */;
+			C5655624131BAA5D0016CE3A /* PBXTextBookmark */ = C5655624131BAA5D0016CE3A /* PBXTextBookmark */;
+			C5655625131BAA5D0016CE3A /* PBXTextBookmark */ = C5655625131BAA5D0016CE3A /* PBXTextBookmark */;
+			C5655626131BAA5D0016CE3A /* PBXTextBookmark */ = C5655626131BAA5D0016CE3A /* PBXTextBookmark */;
+			C590737C13656650000E113F /* PBXTextBookmark */ = C590737C13656650000E113F /* PBXTextBookmark */;
+			C590738213656650000E113F /* PBXTextBookmark */ = C590738213656650000E113F /* PBXTextBookmark */;
+			C590738613656650000E113F /* PBXTextBookmark */ = C590738613656650000E113F /* PBXTextBookmark */;
+			C59073BE13656C02000E113F /* PBXTextBookmark */ = C59073BE13656C02000E113F /* PBXTextBookmark */;
+			C59073BF13656C02000E113F /* PBXTextBookmark */ = C59073BF13656C02000E113F /* PBXTextBookmark */;
+			C59073C013656C02000E113F /* PBXTextBookmark */ = C59073C013656C02000E113F /* PBXTextBookmark */;
+			C59073C113656C02000E113F /* PBXTextBookmark */ = C59073C113656C02000E113F /* PBXTextBookmark */;
+			C5907455136570EF000E113F /* PBXTextBookmark */ = C5907455136570EF000E113F /* PBXTextBookmark */;
+			C5907456136570EF000E113F /* PBXTextBookmark */ = C5907456136570EF000E113F /* PBXTextBookmark */;
+			C590745F13657129000E113F /* PBXTextBookmark */ = C590745F13657129000E113F /* PBXTextBookmark */;
+			C590746013657129000E113F /* PBXTextBookmark */ = C590746013657129000E113F /* PBXTextBookmark */;
+			C590750F1366728F000E113F /* PlistBookmark */ = C590750F1366728F000E113F /* PlistBookmark */;
+			C590752D13667315000E113F /* PlistBookmark */ = C590752D13667315000E113F /* PlistBookmark */;
 		};
 		sourceControlManager = C5A9BAAB130B668600A7F169 /* Source Control */;
 		userBuildSettings = {
@@ -334,146 +293,6 @@
 		vrLen = 835;
 		vrLoc = 3905;
 	};
-	C56555FF131BAA5D0016CE3A /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = C5A9BA95130B668500A7F169 /* UserRolesMediator.m */;
-		name = "UserRolesMediator.m: 1";
-		rLen = 0;
-		rLoc = 0;
-		rType = 0;
-		vrLen = 755;
-		vrLoc = 386;
-	};
-	C5655600131BAA5D0016CE3A /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = C5A9BA6C130B668500A7F169 /* DeleteUserCommand.m */;
-		name = "DeleteUserCommand.m: 16";
-		rLen = 6;
-		rLoc = 401;
-		rType = 0;
-		vrLen = 516;
-		vrLoc = 0;
-	};
-	C5655602131BAA5D0016CE3A /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = C5A9BA70130B668500A7F169 /* GetUsersCommand.m */;
-		name = "GetUsersCommand.m: 19";
-		rLen = 0;
-		rLoc = 512;
-		rType = 0;
-		vrLen = 519;
-		vrLoc = 0;
-	};
-	C5655603131BAA5D0016CE3A /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = C5A9BA6F130B668500A7F169 /* GetUsersCommand.h */;
-		name = "GetUsersCommand.h: 13";
-		rLen = 13;
-		rLoc = 263;
-		rType = 0;
-		vrLen = 288;
-		vrLoc = 0;
-	};
-	C5655604131BAA5D0016CE3A /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = C5A9BA69130B668500A7F169 /* CreateUserCommand.h */;
-		name = "CreateUserCommand.h: 1";
-		rLen = 0;
-		rLoc = 0;
-		rType = 0;
-		vrLen = 291;
-		vrLoc = 0;
-	};
-	C5655605131BAA5D0016CE3A /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = C5A9BA6B130B668500A7F169 /* DeleteUserCommand.h */;
-		name = "DeleteUserCommand.h: 1";
-		rLen = 0;
-		rLoc = 0;
-		rType = 0;
-		vrLen = 291;
-		vrLoc = 0;
-	};
-	C5655606131BAA5D0016CE3A /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = C5A9BA6A130B668500A7F169 /* CreateUserCommand.m */;
-		name = "CreateUserCommand.m: 1";
-		rLen = 0;
-		rLoc = 0;
-		rType = 0;
-		vrLen = 687;
-		vrLoc = 0;
-	};
-	C5655607131BAA5D0016CE3A /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = C5A9BA73130B668500A7F169 /* UpdateUserCommand.h */;
-		name = "UpdateUserCommand.h: 1";
-		rLen = 0;
-		rLoc = 0;
-		rType = 0;
-		vrLen = 291;
-		vrLoc = 0;
-	};
-	C5655608131BAA5D0016CE3A /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = C5A9BA74130B668500A7F169 /* UpdateUserCommand.m */;
-		name = "UpdateUserCommand.m: 1";
-		rLen = 0;
-		rLoc = 0;
-		rType = 0;
-		vrLen = 687;
-		vrLoc = 0;
-	};
-	C565560A131BAA5D0016CE3A /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = C5A9BA7A130B668500A7F169 /* UserRolesEnum.m */;
-		name = "UserRolesEnum.m: 1";
-		rLen = 0;
-		rLoc = 0;
-		rType = 0;
-		vrLen = 554;
-		vrLoc = 0;
-	};
-	C565560B131BAA5D0016CE3A /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = C5A9BA7D130B668500A7F169 /* UserRolesProxy.h */;
-		name = "UserRolesProxy.h: 1";
-		rLen = 0;
-		rLoc = 0;
-		rType = 0;
-		vrLen = 388;
-		vrLoc = 0;
-	};
-	C565560C131BAA5D0016CE3A /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = C5A9BA7E130B668500A7F169 /* UserRolesProxy.m */;
-		name = "UserRolesProxy.m: 1";
-		rLen = 0;
-		rLoc = 0;
-		rType = 0;
-		vrLen = 1159;
-		vrLoc = 393;
-	};
-	C565560D131BAA5D0016CE3A /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = C5A9BA80130B668500A7F169 /* UserRolesVO.h */;
-		name = "UserRolesVO.h: 1";
-		rLen = 0;
-		rLoc = 0;
-		rType = 0;
-		vrLen = 490;
-		vrLoc = 0;
-	};
-	C565560E131BAA5D0016CE3A /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = C5A9BA81130B668500A7F169 /* UserRolesVO.m */;
-		name = "UserRolesVO.m: 1";
-		rLen = 0;
-		rLoc = 0;
-		rType = 0;
-		vrLen = 671;
-		vrLoc = 0;
-	};
 	C5655613131BAA5D0016CE3A /* PBXTextBookmark */ = {
 		isa = PBXTextBookmark;
 		fRef = C5A9BACF130B670300A7F169 /* MacroCommand.m */;
@@ -564,66 +383,6 @@
 		vrLen = 1026;
 		vrLoc = 72;
 	};
-	C5655627131BAA5D0016CE3A /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = C5A9BA7B130B668500A7F169 /* UserProxy.h */;
-		name = "UserProxy.h: 18";
-		rLen = 0;
-		rLoc = 348;
-		rType = 0;
-		vrLen = 354;
-		vrLoc = 0;
-	};
-	C5655628131BAA5D0016CE3A /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = C5A9BA7C130B668500A7F169 /* UserProxy.m */;
-		name = "UserProxy.m: 52";
-		rLen = 0;
-		rLoc = 1557;
-		rType = 0;
-		vrLen = 1235;
-		vrLoc = 268;
-	};
-	C5655629131BAA5D0016CE3A /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = C5A9BA82130B668500A7F169 /* UserVO.h */;
-		name = "UserVO.h: 23";
-		rLen = 0;
-		rLoc = 753;
-		rType = 0;
-		vrLen = 753;
-		vrLoc = 0;
-	};
-	C565562A131BAA5D0016CE3A /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = C5A9BA83130B668500A7F169 /* UserVO.m */;
-		name = "UserVO.m: 1";
-		rLen = 0;
-		rLoc = 0;
-		rType = 0;
-		vrLen = 1088;
-		vrLoc = 0;
-	};
-	C5655633131BAA5D0016CE3A /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = C5A9BA71130B668500A7F169 /* StartupCommand.h */;
-		name = "StartupCommand.h: 1";
-		rLen = 0;
-		rLoc = 0;
-		rType = 0;
-		vrLen = 308;
-		vrLoc = 0;
-	};
-	C5655637131BAA5D0016CE3A /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = C5A9BA75130B668500A7F169 /* UpdateUserRolesCommand.h */;
-		name = "UpdateUserRolesCommand.h: 1";
-		rLen = 0;
-		rLoc = 0;
-		rType = 0;
-		vrLen = 301;
-		vrLoc = 0;
-	};
 	C590737C13656650000E113F /* PBXTextBookmark */ = {
 		isa = PBXTextBookmark;
 		fRef = C5A9BADE130B670300A7F169 /* Observer.m */;
@@ -633,16 +392,6 @@
 		rType = 0;
 		vrLen = 420;
 		vrLoc = 1249;
-	};
-	C590738013656650000E113F /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = C5A9BA8B130B668500A7F169 /* UserList.m */;
-		name = "UserList.m: 54";
-		rLen = 0;
-		rLoc = 1846;
-		rType = 0;
-		vrLen = 524;
-		vrLoc = 1371;
 	};
 	C590738213656650000E113F /* PBXTextBookmark */ = {
 		isa = PBXTextBookmark;
@@ -704,146 +453,6 @@
 		vrLen = 315;
 		vrLoc = 2082;
 	};
-	C59073C313656C02000E113F /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = C5A9BA8A130B668500A7F169 /* UserList.h */;
-		name = "UserList.h: 30";
-		rLen = 0;
-		rLoc = 712;
-		rType = 0;
-		vrLen = 296;
-		vrLoc = 422;
-	};
-	C59073C413656C02000E113F /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = C5A9BA67130B668500A7F169 /* ApplicationFacade.m */;
-		name = "ApplicationFacade.m: 13";
-		rLen = 28;
-		rLoc = 324;
-		rType = 0;
-		vrLen = 250;
-		vrLoc = 206;
-	};
-	C59073C913656C02000E113F /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = C5A9BA93130B668500A7F169 /* UserListMediator.m */;
-		name = "UserListMediator.m: 52";
-		rLen = 0;
-		rLoc = 1099;
-		rType = 0;
-		vrLen = 227;
-		vrLoc = 677;
-	};
-	C59073CA13656C02000E113F /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = C5A9BA92130B668500A7F169 /* UserListMediator.h */;
-		name = "UserListMediator.h: 1";
-		rLen = 0;
-		rLoc = 0;
-		rType = 0;
-		vrLen = 178;
-		vrLoc = 206;
-	};
-	C59073CC13656C02000E113F /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = C5A9BA91130B668500A7F169 /* UserFormMediator.m */;
-		name = "UserFormMediator.m: 39";
-		rLen = 0;
-		rLoc = 818;
-		rType = 0;
-		vrLen = 44;
-		vrLoc = 1305;
-	};
-	C59073CD13656C02000E113F /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = C5A9BA90130B668500A7F169 /* UserFormMediator.h */;
-		name = "UserFormMediator.h: 1";
-		rLen = 0;
-		rLoc = 0;
-		rType = 0;
-		vrLen = 113;
-		vrLoc = 272;
-	};
-	C59073CE13656C02000E113F /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = C5A9BA88130B668500A7F169 /* UserForm.h */;
-		name = "UserForm.h: 15";
-		rLen = 0;
-		rLoc = 371;
-		rType = 0;
-		vrLen = 451;
-		vrLoc = 222;
-	};
-	C59073F113656D50000E113F /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = C5A9BA89130B668500A7F169 /* UserForm.m */;
-		name = "UserForm.m: 28";
-		rLen = 0;
-		rLoc = 835;
-		rType = 0;
-		vrLen = 470;
-		vrLoc = 0;
-	};
-	C590742C13656F90000E113F /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = C5A9BA66130B668500A7F169 /* ApplicationFacade.h */;
-		name = "ApplicationFacade.h: 16";
-		rLen = 0;
-		rLoc = 423;
-		rType = 0;
-		vrLen = 349;
-		vrLoc = 387;
-	};
-	C5907450136570EF000E113F /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = C5A9BA72130B668500A7F169 /* StartupCommand.m */;
-		name = "StartupCommand.m: 24";
-		rLen = 0;
-		rLoc = 593;
-		rType = 0;
-		vrLen = 506;
-		vrLoc = 50;
-	};
-	C5907451136570EF000E113F /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = C5A9BA86130B668500A7F169 /* Contacts.h */;
-		name = "Contacts.h: 2";
-		rLen = 0;
-		rLoc = 15;
-		rType = 0;
-		vrLen = 377;
-		vrLoc = 0;
-	};
-	C5907452136570EF000E113F /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = C5A9BA87130B668500A7F169 /* Contacts.m */;
-		name = "Contacts.m: 2";
-		rLen = 0;
-		rLoc = 15;
-		rType = 0;
-		vrLen = 370;
-		vrLoc = 0;
-	};
-	C5907453136570EF000E113F /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = C5A9BA8E130B668500A7F169 /* ContactsMediator.h */;
-		name = "ContactsMediator.h: 11";
-		rLen = 0;
-		rLoc = 247;
-		rType = 0;
-		vrLen = 278;
-		vrLoc = 0;
-	};
-	C5907454136570EF000E113F /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = C5A9BA8F130B668500A7F169 /* ContactsMediator.m */;
-		name = "ContactsMediator.m: 24";
-		rLen = 0;
-		rLoc = 486;
-		rType = 0;
-		vrLen = 348;
-		vrLoc = 341;
-	};
 	C5907455136570EF000E113F /* PBXTextBookmark */ = {
 		isa = PBXTextBookmark;
 		fRef = 1D3623240D0F684500981E51 /* ContactsAppDelegate.h */;
@@ -884,19 +493,7 @@
 		vrLen = 365;
 		vrLoc = 0;
 	};
-	C59074651365713A000E113F /* PlistBookmark */ = {
-		isa = PlistBookmark;
-		fRef = 8D1107310486CEB800E47090 /* Contacts-Info.plist */;
-		fallbackIsa = PBXBookmark;
-		isK = 0;
-		kPath = (
-			LSRequiresIPhoneOS,
-		);
-		name = "/Users/eiffel/Documents/EmployeeAdmin/Contacts-Info.plist";
-		rLen = 0;
-		rLoc = 9223372036854775808;
-	};
-	C590748513657F32000E113F /* PlistBookmark */ = {
+	C590750F1366728F000E113F /* PlistBookmark */ = {
 		isa = PlistBookmark;
 		fRef = 8D1107310486CEB800E47090 /* Contacts-Info.plist */;
 		fallbackIsa = PBXBookmark;
@@ -907,51 +504,7 @@
 		rLen = 0;
 		rLoc = 9223372036854775808;
 	};
-	C590749913657F6D000E113F /* PlistBookmark */ = {
-		isa = PlistBookmark;
-		fRef = 8D1107310486CEB800E47090 /* Contacts-Info.plist */;
-		fallbackIsa = PBXBookmark;
-		isK = 0;
-		kPath = (
-		);
-		name = "/Users/eiffel/Documents/EmployeeAdmin/Contacts-Info.plist";
-		rLen = 0;
-		rLoc = 9223372036854775807;
-	};
-	C59074D213657FD0000E113F /* PlistBookmark */ = {
-		isa = PlistBookmark;
-		fRef = 8D1107310486CEB800E47090 /* Contacts-Info.plist */;
-		fallbackIsa = PBXBookmark;
-		isK = 0;
-		kPath = (
-		);
-		name = "/Users/eiffel/Documents/EmployeeAdmin/Contacts-Info.plist";
-		rLen = 0;
-		rLoc = 9223372036854775807;
-	};
-	C59074D313657FD1000E113F /* PlistBookmark */ = {
-		isa = PlistBookmark;
-		fRef = 8D1107310486CEB800E47090 /* Contacts-Info.plist */;
-		fallbackIsa = PBXBookmark;
-		isK = 0;
-		kPath = (
-		);
-		name = "/Users/eiffel/Documents/EmployeeAdmin/Contacts-Info.plist";
-		rLen = 0;
-		rLoc = 9223372036854775807;
-	};
-	C59074D913657FD6000E113F /* PlistBookmark */ = {
-		isa = PlistBookmark;
-		fRef = 8D1107310486CEB800E47090 /* Contacts-Info.plist */;
-		fallbackIsa = PBXBookmark;
-		isK = 0;
-		kPath = (
-		);
-		name = "/Users/eiffel/Documents/EmployeeAdmin/Contacts-Info.plist";
-		rLen = 0;
-		rLoc = 9223372036854775807;
-	};
-	C59074DA13657FDA000E113F /* PlistBookmark */ = {
+	C590752D13667315000E113F /* PlistBookmark */ = {
 		isa = PlistBookmark;
 		fRef = 8D1107310486CEB800E47090 /* Contacts-Info.plist */;
 		fallbackIsa = PBXBookmark;
@@ -989,434 +542,6 @@
 		showTypeColumn = 0;
 		sourceDirectories = (
 		);
-	};
-	C5A9BA66130B668500A7F169 /* ApplicationFacade.h */ = {
-		isa = PBXFileReference;
-		fileEncoding = 4;
-		lastKnownFileType = sourcecode.c.h;
-		name = ApplicationFacade.h;
-		path = /Users/eiffel/Documents/EmployeeAdmin/Classes/employeeadmin/ApplicationFacade.h;
-		sourceTree = "<absolute>";
-		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1540, 1024}}";
-			sepNavSelRange = "{423, 0}";
-			sepNavVisRange = "{387, 349}";
-		};
-	};
-	C5A9BA67130B668500A7F169 /* ApplicationFacade.m */ = {
-		isa = PBXFileReference;
-		fileEncoding = 4;
-		lastKnownFileType = sourcecode.c.objc;
-		name = ApplicationFacade.m;
-		path = /Users/eiffel/Documents/EmployeeAdmin/Classes/employeeadmin/ApplicationFacade.m;
-		sourceTree = "<absolute>";
-		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1540, 1088}}";
-			sepNavSelRange = "{324, 28}";
-			sepNavVisRange = "{206, 250}";
-		};
-	};
-	C5A9BA69130B668500A7F169 /* CreateUserCommand.h */ = {
-		isa = PBXFileReference;
-		fileEncoding = 4;
-		lastKnownFileType = sourcecode.c.h;
-		name = CreateUserCommand.h;
-		path = /Users/eiffel/Documents/EmployeeAdmin/Classes/employeeadmin/controller/CreateUserCommand.h;
-		sourceTree = "<absolute>";
-		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1495, 858}}";
-			sepNavSelRange = "{0, 0}";
-			sepNavVisRange = "{0, 291}";
-		};
-	};
-	C5A9BA6A130B668500A7F169 /* CreateUserCommand.m */ = {
-		isa = PBXFileReference;
-		fileEncoding = 4;
-		lastKnownFileType = sourcecode.c.objc;
-		name = CreateUserCommand.m;
-		path = /Users/eiffel/Documents/EmployeeAdmin/Classes/employeeadmin/controller/CreateUserCommand.m;
-		sourceTree = "<absolute>";
-		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1495, 858}}";
-			sepNavSelRange = "{0, 0}";
-			sepNavVisRange = "{0, 687}";
-		};
-	};
-	C5A9BA6B130B668500A7F169 /* DeleteUserCommand.h */ = {
-		isa = PBXFileReference;
-		fileEncoding = 4;
-		lastKnownFileType = sourcecode.c.h;
-		name = DeleteUserCommand.h;
-		path = /Users/eiffel/Documents/EmployeeAdmin/Classes/employeeadmin/controller/DeleteUserCommand.h;
-		sourceTree = "<absolute>";
-		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1495, 858}}";
-			sepNavSelRange = "{0, 0}";
-			sepNavVisRange = "{0, 291}";
-		};
-	};
-	C5A9BA6C130B668500A7F169 /* DeleteUserCommand.m */ = {
-		isa = PBXFileReference;
-		fileEncoding = 4;
-		lastKnownFileType = sourcecode.c.objc;
-		name = DeleteUserCommand.m;
-		path = /Users/eiffel/Documents/EmployeeAdmin/Classes/employeeadmin/controller/DeleteUserCommand.m;
-		sourceTree = "<absolute>";
-		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1495, 858}}";
-			sepNavSelRange = "{401, 6}";
-			sepNavVisRange = "{0, 516}";
-		};
-	};
-	C5A9BA6F130B668500A7F169 /* GetUsersCommand.h */ = {
-		isa = PBXFileReference;
-		fileEncoding = 4;
-		lastKnownFileType = sourcecode.c.h;
-		name = GetUsersCommand.h;
-		path = /Users/eiffel/Documents/EmployeeAdmin/Classes/employeeadmin/controller/GetUsersCommand.h;
-		sourceTree = "<absolute>";
-		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1495, 858}}";
-			sepNavSelRange = "{263, 13}";
-			sepNavVisRange = "{0, 288}";
-		};
-	};
-	C5A9BA70130B668500A7F169 /* GetUsersCommand.m */ = {
-		isa = PBXFileReference;
-		fileEncoding = 4;
-		lastKnownFileType = sourcecode.c.objc;
-		name = GetUsersCommand.m;
-		path = /Users/eiffel/Documents/EmployeeAdmin/Classes/employeeadmin/controller/GetUsersCommand.m;
-		sourceTree = "<absolute>";
-		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1495, 858}}";
-			sepNavSelRange = "{512, 0}";
-			sepNavVisRange = "{0, 519}";
-		};
-	};
-	C5A9BA71130B668500A7F169 /* StartupCommand.h */ = {
-		isa = PBXFileReference;
-		fileEncoding = 4;
-		lastKnownFileType = sourcecode.c.h;
-		name = StartupCommand.h;
-		path = /Users/eiffel/Documents/EmployeeAdmin/Classes/employeeadmin/controller/StartupCommand.h;
-		sourceTree = "<absolute>";
-		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1495, 858}}";
-			sepNavSelRange = "{0, 0}";
-			sepNavVisRange = "{0, 308}";
-		};
-	};
-	C5A9BA72130B668500A7F169 /* StartupCommand.m */ = {
-		isa = PBXFileReference;
-		fileEncoding = 4;
-		lastKnownFileType = sourcecode.c.objc;
-		name = StartupCommand.m;
-		path = /Users/eiffel/Documents/EmployeeAdmin/Classes/employeeadmin/controller/StartupCommand.m;
-		sourceTree = "<absolute>";
-		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1540, 960}}";
-			sepNavSelRange = "{593, 0}";
-			sepNavVisRange = "{50, 506}";
-		};
-	};
-	C5A9BA73130B668500A7F169 /* UpdateUserCommand.h */ = {
-		isa = PBXFileReference;
-		fileEncoding = 4;
-		lastKnownFileType = sourcecode.c.h;
-		name = UpdateUserCommand.h;
-		path = /Users/eiffel/Documents/EmployeeAdmin/Classes/employeeadmin/controller/UpdateUserCommand.h;
-		sourceTree = "<absolute>";
-		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1495, 858}}";
-			sepNavSelRange = "{0, 0}";
-			sepNavVisRange = "{0, 291}";
-		};
-	};
-	C5A9BA74130B668500A7F169 /* UpdateUserCommand.m */ = {
-		isa = PBXFileReference;
-		fileEncoding = 4;
-		lastKnownFileType = sourcecode.c.objc;
-		name = UpdateUserCommand.m;
-		path = /Users/eiffel/Documents/EmployeeAdmin/Classes/employeeadmin/controller/UpdateUserCommand.m;
-		sourceTree = "<absolute>";
-		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1495, 858}}";
-			sepNavSelRange = "{0, 0}";
-			sepNavVisRange = "{0, 687}";
-		};
-	};
-	C5A9BA75130B668500A7F169 /* UpdateUserRolesCommand.h */ = {
-		isa = PBXFileReference;
-		fileEncoding = 4;
-		lastKnownFileType = sourcecode.c.h;
-		name = UpdateUserRolesCommand.h;
-		path = /Users/eiffel/Documents/EmployeeAdmin/Classes/employeeadmin/controller/UpdateUserRolesCommand.h;
-		sourceTree = "<absolute>";
-	};
-	C5A9BA76130B668500A7F169 /* UpdateUserRolesCommand.m */ = {
-		isa = PBXFileReference;
-		fileEncoding = 4;
-		lastKnownFileType = sourcecode.c.objc;
-		name = UpdateUserRolesCommand.m;
-		path = /Users/eiffel/Documents/EmployeeAdmin/Classes/employeeadmin/controller/UpdateUserRolesCommand.m;
-		sourceTree = "<absolute>";
-	};
-	C5A9BA7A130B668500A7F169 /* UserRolesEnum.m */ = {
-		isa = PBXFileReference;
-		fileEncoding = 4;
-		lastKnownFileType = sourcecode.c.objc;
-		name = UserRolesEnum.m;
-		path = /Users/eiffel/Documents/EmployeeAdmin/Classes/employeeadmin/model/enum/UserRolesEnum.m;
-		sourceTree = "<absolute>";
-	};
-	C5A9BA7B130B668500A7F169 /* UserProxy.h */ = {
-		isa = PBXFileReference;
-		fileEncoding = 4;
-		lastKnownFileType = sourcecode.c.h;
-		name = UserProxy.h;
-		path = /Users/eiffel/Documents/EmployeeAdmin/Classes/employeeadmin/model/UserProxy.h;
-		sourceTree = "<absolute>";
-		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1495, 858}}";
-			sepNavSelRange = "{348, 0}";
-			sepNavVisRange = "{0, 354}";
-		};
-	};
-	C5A9BA7C130B668500A7F169 /* UserProxy.m */ = {
-		isa = PBXFileReference;
-		fileEncoding = 4;
-		lastKnownFileType = sourcecode.c.objc;
-		name = UserProxy.m;
-		path = /Users/eiffel/Documents/EmployeeAdmin/Classes/employeeadmin/model/UserProxy.m;
-		sourceTree = "<absolute>";
-		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {2021.13, 1500}}";
-			sepNavSelRange = "{1557, 0}";
-			sepNavVisRange = "{268, 1235}";
-		};
-	};
-	C5A9BA7D130B668500A7F169 /* UserRolesProxy.h */ = {
-		isa = PBXFileReference;
-		fileEncoding = 4;
-		lastKnownFileType = sourcecode.c.h;
-		name = UserRolesProxy.h;
-		path = /Users/eiffel/Documents/EmployeeAdmin/Classes/employeeadmin/model/UserRolesProxy.h;
-		sourceTree = "<absolute>";
-	};
-	C5A9BA7E130B668500A7F169 /* UserRolesProxy.m */ = {
-		isa = PBXFileReference;
-		fileEncoding = 4;
-		lastKnownFileType = sourcecode.c.objc;
-		name = UserRolesProxy.m;
-		path = /Users/eiffel/Documents/EmployeeAdmin/Classes/employeeadmin/model/UserRolesProxy.m;
-		sourceTree = "<absolute>";
-	};
-	C5A9BA80130B668500A7F169 /* UserRolesVO.h */ = {
-		isa = PBXFileReference;
-		fileEncoding = 4;
-		lastKnownFileType = sourcecode.c.h;
-		name = UserRolesVO.h;
-		path = /Users/eiffel/Documents/EmployeeAdmin/Classes/employeeadmin/model/vo/UserRolesVO.h;
-		sourceTree = "<absolute>";
-	};
-	C5A9BA81130B668500A7F169 /* UserRolesVO.m */ = {
-		isa = PBXFileReference;
-		fileEncoding = 4;
-		lastKnownFileType = sourcecode.c.objc;
-		name = UserRolesVO.m;
-		path = /Users/eiffel/Documents/EmployeeAdmin/Classes/employeeadmin/model/vo/UserRolesVO.m;
-		sourceTree = "<absolute>";
-	};
-	C5A9BA82130B668500A7F169 /* UserVO.h */ = {
-		isa = PBXFileReference;
-		fileEncoding = 4;
-		lastKnownFileType = sourcecode.c.h;
-		name = UserVO.h;
-		path = /Users/eiffel/Documents/EmployeeAdmin/Classes/employeeadmin/model/vo/UserVO.h;
-		sourceTree = "<absolute>";
-		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {2528.81, 858}}";
-			sepNavSelRange = "{753, 0}";
-			sepNavVisRange = "{0, 753}";
-		};
-	};
-	C5A9BA83130B668500A7F169 /* UserVO.m */ = {
-		isa = PBXFileReference;
-		fileEncoding = 4;
-		lastKnownFileType = sourcecode.c.objc;
-		name = UserVO.m;
-		path = /Users/eiffel/Documents/EmployeeAdmin/Classes/employeeadmin/model/vo/UserVO.m;
-		sourceTree = "<absolute>";
-		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {2539.61, 1200}}";
-			sepNavSelRange = "{0, 0}";
-			sepNavVisRange = "{0, 1088}";
-		};
-	};
-	C5A9BA86130B668500A7F169 /* Contacts.h */ = {
-		isa = PBXFileReference;
-		fileEncoding = 4;
-		lastKnownFileType = sourcecode.c.h;
-		name = Contacts.h;
-		path = /Users/eiffel/Documents/EmployeeAdmin/Classes/employeeadmin/view/components/Contacts.h;
-		sourceTree = "<absolute>";
-		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1540, 928}}";
-			sepNavSelRange = "{15, 0}";
-			sepNavVisRange = "{0, 377}";
-		};
-	};
-	C5A9BA87130B668500A7F169 /* Contacts.m */ = {
-		isa = PBXFileReference;
-		fileEncoding = 4;
-		lastKnownFileType = sourcecode.c.objc;
-		name = Contacts.m;
-		path = /Users/eiffel/Documents/EmployeeAdmin/Classes/employeeadmin/view/components/Contacts.m;
-		sourceTree = "<absolute>";
-		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1540, 1504}}";
-			sepNavSelRange = "{15, 0}";
-			sepNavVisRange = "{0, 370}";
-		};
-	};
-	C5A9BA88130B668500A7F169 /* UserForm.h */ = {
-		isa = PBXFileReference;
-		fileEncoding = 4;
-		lastKnownFileType = sourcecode.c.h;
-		name = UserForm.h;
-		path = /Users/eiffel/Documents/EmployeeAdmin/Classes/employeeadmin/view/components/UserForm.h;
-		sourceTree = "<absolute>";
-		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {2388.39, 1248}}";
-			sepNavSelRange = "{371, 0}";
-			sepNavVisRange = "{222, 451}";
-		};
-	};
-	C5A9BA89130B668500A7F169 /* UserForm.m */ = {
-		isa = PBXFileReference;
-		fileEncoding = 4;
-		lastKnownFileType = sourcecode.c.objc;
-		name = UserForm.m;
-		path = /Users/eiffel/Documents/EmployeeAdmin/Classes/employeeadmin/view/components/UserForm.m;
-		sourceTree = "<absolute>";
-		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {2373.98, 3648}}";
-			sepNavSelRange = "{835, 0}";
-			sepNavVisRange = "{945, 446}";
-		};
-	};
-	C5A9BA8A130B668500A7F169 /* UserList.h */ = {
-		isa = PBXFileReference;
-		fileEncoding = 4;
-		lastKnownFileType = sourcecode.c.h;
-		name = UserList.h;
-		path = /Users/eiffel/Documents/EmployeeAdmin/Classes/employeeadmin/view/components/UserList.h;
-		sourceTree = "<absolute>";
-		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1540, 1024}}";
-			sepNavSelRange = "{712, 0}";
-			sepNavVisRange = "{422, 296}";
-		};
-	};
-	C5A9BA8B130B668500A7F169 /* UserList.m */ = {
-		isa = PBXFileReference;
-		fileEncoding = 4;
-		lastKnownFileType = sourcecode.c.objc;
-		name = UserList.m;
-		path = /Users/eiffel/Documents/EmployeeAdmin/Classes/employeeadmin/view/components/UserList.m;
-		sourceTree = "<absolute>";
-		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {2143.55, 2272}}";
-			sepNavSelRange = "{1846, 0}";
-			sepNavVisRange = "{1371, 524}";
-		};
-	};
-	C5A9BA8E130B668500A7F169 /* ContactsMediator.h */ = {
-		isa = PBXFileReference;
-		fileEncoding = 4;
-		lastKnownFileType = sourcecode.c.h;
-		name = ContactsMediator.h;
-		path = /Users/eiffel/Documents/EmployeeAdmin/Classes/employeeadmin/view/ContactsMediator.h;
-		sourceTree = "<absolute>";
-		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1540, 544}}";
-			sepNavSelRange = "{247, 0}";
-			sepNavVisRange = "{0, 278}";
-		};
-	};
-	C5A9BA8F130B668500A7F169 /* ContactsMediator.m */ = {
-		isa = PBXFileReference;
-		fileEncoding = 4;
-		lastKnownFileType = sourcecode.c.objc;
-		name = ContactsMediator.m;
-		path = /Users/eiffel/Documents/EmployeeAdmin/Classes/employeeadmin/view/ContactsMediator.m;
-		sourceTree = "<absolute>";
-		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1540, 1376}}";
-			sepNavSelRange = "{486, 0}";
-			sepNavVisRange = "{341, 348}";
-		};
-	};
-	C5A9BA90130B668500A7F169 /* UserFormMediator.h */ = {
-		isa = PBXFileReference;
-		fileEncoding = 4;
-		lastKnownFileType = sourcecode.c.h;
-		name = UserFormMediator.h;
-		path = /Users/eiffel/Documents/EmployeeAdmin/Classes/employeeadmin/view/UserFormMediator.h;
-		sourceTree = "<absolute>";
-		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1540, 576}}";
-			sepNavSelRange = "{0, 0}";
-			sepNavVisRange = "{272, 113}";
-		};
-	};
-	C5A9BA91130B668500A7F169 /* UserFormMediator.m */ = {
-		isa = PBXFileReference;
-		fileEncoding = 4;
-		lastKnownFileType = sourcecode.c.objc;
-		name = UserFormMediator.m;
-		path = /Users/eiffel/Documents/EmployeeAdmin/Classes/employeeadmin/view/UserFormMediator.m;
-		sourceTree = "<absolute>";
-		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1540, 1856}}";
-			sepNavSelRange = "{818, 0}";
-			sepNavVisRange = "{1305, 44}";
-		};
-	};
-	C5A9BA92130B668500A7F169 /* UserListMediator.h */ = {
-		isa = PBXFileReference;
-		fileEncoding = 4;
-		lastKnownFileType = sourcecode.c.h;
-		name = UserListMediator.h;
-		path = /Users/eiffel/Documents/EmployeeAdmin/Classes/employeeadmin/view/UserListMediator.h;
-		sourceTree = "<absolute>";
-		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1540, 576}}";
-			sepNavSelRange = "{0, 0}";
-			sepNavVisRange = "{206, 178}";
-		};
-	};
-	C5A9BA93130B668500A7F169 /* UserListMediator.m */ = {
-		isa = PBXFileReference;
-		fileEncoding = 4;
-		lastKnownFileType = sourcecode.c.objc;
-		name = UserListMediator.m;
-		path = /Users/eiffel/Documents/EmployeeAdmin/Classes/employeeadmin/view/UserListMediator.m;
-		sourceTree = "<absolute>";
-		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1540, 1920}}";
-			sepNavSelRange = "{1099, 0}";
-			sepNavVisRange = "{677, 227}";
-		};
-	};
-	C5A9BA95130B668500A7F169 /* UserRolesMediator.m */ = {
-		isa = PBXFileReference;
-		fileEncoding = 4;
-		lastKnownFileType = sourcecode.c.objc;
-		name = UserRolesMediator.m;
-		path = /Users/eiffel/Documents/EmployeeAdmin/Classes/employeeadmin/view/UserRolesMediator.m;
-		sourceTree = "<absolute>";
 	};
 	C5A9BAAB130B668600A7F169 /* Source Control */ = {
 		isa = PBXSourceControlManager;
@@ -1657,15 +782,5 @@
 			sepNavSelRange = "{297, 0}";
 			sepNavVisRange = "{706, 703}";
 		};
-	};
-	C5A9BB14130B7C9E00A7F169 /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = C5A9BA76130B668500A7F169 /* UpdateUserRolesCommand.m */;
-		name = "UpdateUserRolesCommand.m: 1";
-		rLen = 0;
-		rLoc = 0;
-		rType = 0;
-		vrLen = 588;
-		vrLoc = 0;
 	};
 }

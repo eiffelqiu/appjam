@@ -128,7 +128,7 @@
 		080E96DDFE201D6D7F000001 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				C590749E13657FB7000E113F /* users */,
+				C590749E13657FB7000E113F /* app */,
 				C5A9BAAD130B66C900A7F169 /* puremvc */,
 				1D3623240D0F684500981E51 /* ContactsAppDelegate.h */,
 				1D3623250D0F684500981E51 /* ContactsAppDelegate.m */,
@@ -183,12 +183,12 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		C590749E13657FB7000E113F /* users */ = {
+		C590749E13657FB7000E113F /* app */ = {
 			isa = PBXGroup;
 			children = (
 				C590749F13657FCD000E113F /* users */,
 			);
-			name = users;
+			name = app;
 			sourceTree = "<group>";
 		};
 		C590749F13657FCD000E113F /* users */ = {
