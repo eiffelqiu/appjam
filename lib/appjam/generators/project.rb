@@ -17,7 +17,7 @@ module Appjam
       # Include related modules
       include Thor::Actions
 
-      desc "Description:\n\n\tappjam app generates a new PureMvc application for iphone"
+      desc "Description:\n\n\tappjam will generates an new PureMvc application for iphone"
 
       argument :name, :desc => "The name of your puremvc application"
 
@@ -37,22 +37,13 @@ module Appjam
         @class_name = name.gsub(/\W/, "_").capitalize 
         app = options[:app]
         self.behavior = :revoke if options[:destroy]
+        
         empty_directory "#{@project_name}"
         template "project/Contacts_Prefix.pch.tt", "#{@project_name}/Contacts_Prefix.pch"
         template "project/Contacts-Info.plist.tt", "#{@project_name}/Contacts-Info.plist"
         directory "project/Contacts.xcodeproj", "#{@project_name}/Contacts.xcodeproj"
         template "project/main.m.tt", "#{@project_name}/main.m"
         
-        # empty_directory "#{@project_name}"
-        # empty_directory "#{@project_name}/Classes"
-        # template "ApplicationFacade.h.tt", "#{@project_name}/Classes/ApplicationFacade.h" 
-        # template "ApplicationFacade.m.tt", "#{@project_name}/Classes/ApplicationFacade.m" 
-        # empty_directory "#{@project_name}/Classes/controllers"
-        # empty_directory "#{@project_name}/Classes/models" 
-        # empty_directory "#{@project_name}/Classes/models/enum" 
-        # empty_directory "#{@project_name}/Classes/models/vo"
-        # empty_directory "#{@project_name}/Classes/views" 
-        # empty_directory "#{@project_name}/Classes/views/components"
         empty_directory "#{@project_name}/Classes/utils"
 
         copy_file "project/utils/NSStringWhiteSpace.h", "#{@project_name}/Classes/utils/NSStringWhiteSpace.h"
@@ -63,7 +54,6 @@ module Appjam
         copy_file "project/utils/URLEncodeString.m", "#{@project_name}/Classes/utils/URLEncodeString.m"
         
         directory "project/Classes", "#{@project_name}/Classes"
-        
 
         say (<<-TEXT).gsub(/ {10}/,'')
       
