@@ -63,6 +63,6 @@ module Appjam
       
       TEXT
       end
-    end # App
+    end # Project
   end # Generators
-end # IphoneMvc
+end # Appjam
