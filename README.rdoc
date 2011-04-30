@@ -10,7 +10,7 @@ run command below in your favorite shell, appjam will generate your iphone app s
 
 $ gem install appjam --pre
 
-$ appjam User # Model name(like User)
+$ appjam project contact 
 
 == Contributing to appjam
  

@@ -2,13 +2,14 @@ require 'thor'
 require 'thor/group'
 require 'thor/actions'
 require 'active_support/core_ext/string'
+require File.dirname(__FILE__) + '/actions'
 
 module Appjam
   module Generators
     class Project < Thor::Group
 
       # Add this generator to our appjam
-      Appjam::Generators.add_generator(:app, self)
+      Appjam::Generators.add_generator(:project, self)
 
       # Define the source template root
       def self.source_root; File.expand_path(File.dirname(__FILE__)); end
@@ -16,6 +17,7 @@ module Appjam
 
       # Include related modules
       include Thor::Actions
+      include Appjam::Generators::Actions      
 
       desc "Description:\n\n\tappjam will generates an new PureMvc application for iphone"
 
@@ -32,10 +34,11 @@ module Appjam
       end     
 
       def create_app
-        self.destination_root = options[:root]
-        @project_name = name.gsub(/\W/, "_").downcase
+        valid_constant?(options[:project] || name)
+        @project_name = (options[:app] || name).gsub(/\W/, "_").downcase
         @class_name = name.gsub(/\W/, "_").capitalize 
-        app = options[:app]
+        self.destination_root = options[:root]
+        project = options[:project]
         self.behavior = :revoke if options[:destroy]
         
         empty_directory "#{@project_name}"

@@ -8,7 +8,7 @@ module Appjam
     class Model < Thor::Group
 
       # Add this generator to our appjam
-      Appjam::Generators.add_generator(:app, self)
+      Appjam::Generators.add_generator(:model, self)
 
       # Define the source template root
       def self.source_root; File.expand_path(File.dirname(__FILE__)); end
@@ -35,7 +35,7 @@ module Appjam
         self.destination_root = options[:root]
         @project_name = name.gsub(/\W/, "_").downcase
         @class_name = name.gsub(/\W/, "_").capitalize 
-        app = options[:app]
+        app = options[:model]
         self.behavior = :revoke if options[:destroy]
 
         say (<<-TEXT).gsub(/ {10}/,'')

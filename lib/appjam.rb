@@ -40,6 +40,14 @@ module Appjam
       def add_generator(name, klass)
         mappings[name] = klass
       end
+      
+      ##
+      # Load Global Actions and Component Actions then all files in +load_path+.
+      #
+      def load_components!
+        require 'appjam/generators/actions'
+        load_paths.flatten.each { |file| require file  }
+      end      
     end
   end # Generators
 end # IphoneMvc
