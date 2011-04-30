@@ -33,15 +33,14 @@ module Appjam
 
       def create_app
         self.destination_root = options[:root]
-        @project_name = name.gsub(/\W/, "_").downcase
-        @class_name = name.gsub(/\W/, "_").capitalize 
+        @model_name = name.gsub(/\W/, "_").downcase
         app = options[:model]
         self.behavior = :revoke if options[:destroy]
 
         say (<<-TEXT).gsub(/ {10}/,'')
       
       =================================================================
-      Your #{@class_name} Model app has been generated.
+      Your #{@model_name} Model app has been generated.
       =================================================================
       
       TEXT

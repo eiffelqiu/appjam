@@ -5,7 +5,7 @@
 
 Gem::Specification.new do |s|
   s.name = %q{appjam}
-  s.version = "0.1.0.pre9"
+  s.version = "0.1.0.pre10"
 
   s.required_rubygems_version = Gem::Requirement.new("> 1.3.1") if s.respond_to? :required_rubygems_version=
   s.authors = ["Eiffel Q"]
@@ -121,8 +121,6 @@ Gem::Specification.new do |s|
       s.add_development_dependency(%q<rack-test>, [">= 0.5.0"])
       s.add_development_dependency(%q<fakeweb>, [">= 1.2.8"])
       s.add_development_dependency(%q<webrat>, ["= 0.5.1"])
-      s.add_development_dependency(%q<erubis>, [">= 2.7.0"])
-      s.add_development_dependency(%q<slim>, [">= 0.9.2"])
       s.add_development_dependency(%q<shoulda>, [">= 2.10.3"])
       s.add_development_dependency(%q<uuid>, [">= 2.3.1"])
       s.add_development_dependency(%q<builder>, [">= 2.1.2"])
@@ -132,7 +130,6 @@ Gem::Specification.new do |s|
       s.add_development_dependency(%q<i18n>, [">= 0"])
       s.add_development_dependency(%q<ruby-prof>, [">= 0.9.1"])
       s.add_development_dependency(%q<system_timer>, [">= 1.0"])
-      s.add_development_dependency(%q<jruby-openssl>, [">= 0"])
       s.add_runtime_dependency(%q<activesupport>, [">= 0"])
       s.add_runtime_dependency(%q<grit>, [">= 0"])
     else
@@ -143,8 +140,6 @@ Gem::Specification.new do |s|
       s.add_dependency(%q<rack-test>, [">= 0.5.0"])
       s.add_dependency(%q<fakeweb>, [">= 1.2.8"])
       s.add_dependency(%q<webrat>, ["= 0.5.1"])
-      s.add_dependency(%q<erubis>, [">= 2.7.0"])
-      s.add_dependency(%q<slim>, [">= 0.9.2"])
       s.add_dependency(%q<shoulda>, [">= 2.10.3"])
       s.add_dependency(%q<uuid>, [">= 2.3.1"])
       s.add_dependency(%q<builder>, [">= 2.1.2"])
@@ -154,7 +149,6 @@ Gem::Specification.new do |s|
       s.add_dependency(%q<i18n>, [">= 0"])
       s.add_dependency(%q<ruby-prof>, [">= 0.9.1"])
       s.add_dependency(%q<system_timer>, [">= 1.0"])
-      s.add_dependency(%q<jruby-openssl>, [">= 0"])
       s.add_dependency(%q<activesupport>, [">= 0"])
       s.add_dependency(%q<grit>, [">= 0"])
     end
@@ -166,8 +160,6 @@ Gem::Specification.new do |s|
     s.add_dependency(%q<rack-test>, [">= 0.5.0"])
     s.add_dependency(%q<fakeweb>, [">= 1.2.8"])
     s.add_dependency(%q<webrat>, ["= 0.5.1"])
-    s.add_dependency(%q<erubis>, [">= 2.7.0"])
-    s.add_dependency(%q<slim>, [">= 0.9.2"])
     s.add_dependency(%q<shoulda>, [">= 2.10.3"])
     s.add_dependency(%q<uuid>, [">= 2.3.1"])
     s.add_dependency(%q<builder>, [">= 2.1.2"])
@@ -177,7 +169,6 @@ Gem::Specification.new do |s|
     s.add_dependency(%q<i18n>, [">= 0"])
     s.add_dependency(%q<ruby-prof>, [">= 0.9.1"])
     s.add_dependency(%q<system_timer>, [">= 1.0"])
-    s.add_dependency(%q<jruby-openssl>, [">= 0"])
     s.add_dependency(%q<activesupport>, [">= 0"])
     s.add_dependency(%q<grit>, [">= 0"])
   end

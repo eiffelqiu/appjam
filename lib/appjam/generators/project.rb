@@ -2,6 +2,7 @@ require 'thor'
 require 'thor/group'
 require 'thor/actions'
 require 'active_support/core_ext/string'
+require 'active_support/inflector'
 require File.dirname(__FILE__) + '/actions'
 
 module Appjam
@@ -36,7 +37,6 @@ module Appjam
       def create_app
         valid_constant?(options[:project] || name)
         @project_name = (options[:app] || name).gsub(/\W/, "_").downcase
-        @class_name = name.gsub(/\W/, "_").capitalize 
         self.destination_root = options[:root]
         project = options[:project]
         self.behavior = :revoke if options[:destroy]
@@ -61,7 +61,7 @@ module Appjam
         say (<<-TEXT).gsub(/ {10}/,'')
       
       =================================================================
-      Your #{@class_name} application has been generated.
+      Your #{@project_name} application has been generated.
       =================================================================
       
       TEXT
