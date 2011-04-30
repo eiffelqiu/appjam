@@ -2,9 +2,6 @@
 //  ContactsAppDelegate.m
 //  Contacts
 //
-//  Created by eiffel on 11-2-16.
-//  Copyright 2011 Redsafi. All rights reserved.
-//
 
 #import "ContactsAppDelegate.h"
 #import "ApplicationFacade.h"

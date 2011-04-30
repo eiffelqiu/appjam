@@ -2,9 +2,6 @@
 //  ContactsAppDelegate.h
 //  Contacts
 //
-//  Created by eiffel on 11-2-16.
-//  Copyright 2011 Redsafi. All rights reserved.
-//
 
 #import <UIKit/UIKit.h>
 
