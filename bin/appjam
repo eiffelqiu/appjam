@@ -9,9 +9,4 @@ end
 require 'appjam'
 require File.expand_path(File.dirname(__FILE__) + '/../lib/appjam/generators/project')
 
-begin
-  Appjam::Generators::Project.start(ARGV)
-rescue => e
-  STDERR.puts "Error: #{e}"
-  exit -1
-end
+Appjam::Generators::Project.start(ARGV)
