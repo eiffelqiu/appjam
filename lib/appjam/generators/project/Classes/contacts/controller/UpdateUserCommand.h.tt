@@ -1,12 +1,12 @@
 //
-//  UpdateUserCommand.h
+//  Update<%= @class_name %>Command.h
 //  PureMVC_ObjectiveC
 //
 
 #import "SimpleCommand.h"
 
 
-@interface UpdateUserCommand : SimpleCommand {
+@interface Update<%= @class_name %>Command : SimpleCommand {
 	
 }
 

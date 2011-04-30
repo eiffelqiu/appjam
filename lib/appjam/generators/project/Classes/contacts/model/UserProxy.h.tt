@@ -1,12 +1,12 @@
 //
-//  UserProxy.h
+//  <%= @class_name %>Proxy.h
 //  PureMVC_ObjectiveC
 //
 
 #import <UIKit/UIKit.h>
 #import "Proxy.h"
 
-@interface UserProxy : Proxy {
+@interface <%= @class_name %>Proxy : Proxy {
 }
 
 -(void)create:(id)item;

@@ -7,16 +7,16 @@
 #import "Facade.h"
 
 #define Startup @"Startup"
-#define ShowNewUser @"ShowNewUser"
-#define ShowEditUser @"ShowEditUser"
-#define ShowUserForm @"ShowUserForm"
-#define ShowUserList @"ShowUserList"
+#define ShowNew<%= @class_name %> @"ShowNew<%= @class_name %>"
+#define ShowEdit<%= @class_name %> @"ShowEdit<%= @class_name %>"
+#define Show<%= @class_name %>Form @"Show<%= @class_name %>Form"
+#define Show<%= @class_name %>List @"Show<%= @class_name %>List"
 #define ShowError @"ShowError"
-#define CreateUser @"CreateUser"
-#define UpdateUser @"UpdateUser"
-#define DeleteUser @"DeleteUser"
-#define GetUsers @"GetUsers"
-#define GetUsersSuccess @"GetUsersSuccess"
+#define Create<%= @class_name %> @"Create<%= @class_name %>"
+#define Update<%= @class_name %> @"Update<%= @class_name %>"
+#define Delete<%= @class_name %> @"Delete<%= @class_name %>"
+#define Get<%= @class_name %>s @"Get<%= @class_name %>s"
+#define Get<%= @class_name %>sSuccess @"Get<%= @class_name %>sSuccess"
 
 @interface ApplicationFacade : Facade {
 }

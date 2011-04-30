@@ -5,9 +5,9 @@
 
 #import "ApplicationFacade.h"
 #import "StartupCommand.h"
-#import "CreateUserCommand.h"
-#import "UpdateUserCommand.h"
-#import "GetUsersCommand.h"
+#import "Create<%= @class_name %>Command.h"
+#import "Update<%= @class_name %>Command.h"
+#import "Get<%= @class_name %>sCommand.h"
 
 @implementation ApplicationFacade
 
@@ -22,9 +22,9 @@
 -(void)initializeController {
 	[super initializeController];
 	[self registerCommand:Startup commandClassRef:[StartupCommand class]];
-	[self registerCommand:CreateUser commandClassRef:[CreateUserCommand class]];
-	[self registerCommand:UpdateUser commandClassRef:[UpdateUserCommand class]];
-	[self registerCommand:GetUsers commandClassRef:[GetUsersCommand class]];
+	[self registerCommand:Create<%= @class_name %> commandClassRef:[Create<%= @class_name %>Command class]];
+	[self registerCommand:Update<%= @class_name %> commandClassRef:[Update<%= @class_name %>Command class]];
+	[self registerCommand:Get<%= @class_name %>s commandClassRef:[Get<%= @class_name %>sCommand class]];
 }
 
 @end

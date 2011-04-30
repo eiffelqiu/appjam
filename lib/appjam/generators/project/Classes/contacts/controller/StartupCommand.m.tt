@@ -4,23 +4,23 @@
 //
 
 #import "StartupCommand.h"
-#import "Contacts.h"
+#import "<%= @class_name %>.h"
 #import "ApplicationFacade.h"
-#import "UserListMediator.h"
-#import "UserProxy.h"
-#import "ContactsMediator.h"
-#import "UserFormMediator.h"
+#import "<%= @class_name %>ListMediator.h"
+#import "<%= @class_name %>Proxy.h"
+#import "<%= @class_name %>Mediator.h"
+#import "<%= @class_name %>FormMediator.h"
 
 @implementation StartupCommand
 
 -(void)execute:(id<INotification>)notification {
-	[facade registerProxy:[UserProxy proxy]];
+	[facade registerProxy:[<%= @class_name %>Proxy proxy]];
 	
-	Contacts *app = [notification body];
+	<%= @class_name %> *app = [notification body];
 	
-	[facade registerMediator:[ContactsMediator withViewComponent:app]];
-	[facade registerMediator:[UserListMediator withViewComponent:app.userList]];
-	[facade registerMediator:[UserFormMediator withViewComponent:app.userForm]];
+	[facade registerMediator:[<%= @class_name %>Mediator withViewComponent:app]];
+	[facade registerMediator:[<%= @class_name %>ListMediator withViewComponent:app.<%= @project_name %>List]];
+	[facade registerMediator:[<%= @class_name %>FormMediator withViewComponent:app.<%= @project_name %>Form]];
 }
 
 @end

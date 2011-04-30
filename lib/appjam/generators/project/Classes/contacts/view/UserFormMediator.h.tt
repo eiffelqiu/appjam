@@ -1,14 +1,14 @@
 //
-//  UserFormMediator.h
+//  <%= @class_name %>FormMediator.h
 //  PureMVC_ObjectiveC
 //
 
 #import <UIKit/UIKit.h>
 #import "Mediator.h"
-#import "UserForm.h"
+#import "<%= @class_name %>Form.h"
 #import "ApplicationFacade.h"
 
-@interface UserFormMediator : Mediator <UserFormViewControllerDelegate> {
+@interface <%= @class_name %>FormMediator : Mediator <<%= @class_name %>FormViewControllerDelegate> {
 }
 
 @end

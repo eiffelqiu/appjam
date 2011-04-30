@@ -1,22 +1,22 @@
 //
-//  UserFormMediator.m
+//  <%= @class_name %>FormMediator.m
 //  PureMVC_ObjectiveC
 //
 
-#import "UserFormMediator.h"
+#import "<%= @class_name %>FormMediator.h"
 
-@implementation UserFormMediator
+@implementation <%= @class_name %>FormMediator
 
 +(NSString *)NAME {
-	return @"UserFormMediator";
+	return @"<%= @class_name %>FormMediator";
 }
 
--(UserForm *)viewComponent {
+-(<%= @class_name %>Form *)viewComponent {
 	return viewComponent;
 }
 
 -(void)initializeMediator {
-	self.mediatorName = [UserFormMediator NAME];
+	self.mediatorName = [<%= @class_name %>FormMediator NAME];
 }
 
 -(void)onRegister {
@@ -24,27 +24,27 @@
 }
 
 -(NSArray *)listNotificationInterests {
-	return [NSArray arrayWithObjects:ShowEditUser, ShowNewUser, nil];
+	return [NSArray arrayWithObjects:ShowEdit<%= @class_name %>, ShowNew<%= @class_name %>, nil];
 }
 
--(void)createUserSelected:(UserVO *)userVO {
-	[self sendNotification:CreateUser body:userVO];
+-(void)create<%= @class_name %>Selected:(<%= @class_name %>VO *)<%= @project_name %>VO {
+	[self sendNotification:Create<%= @class_name %> body:<%= @project_name %>VO];
 }
 
--(void)updateUserSelected:(UserVO *)userVO {
-	[self sendNotification:UpdateUser body:userVO];
+-(void)update<%= @class_name %>Selected:(<%= @class_name %>VO *)<%= @project_name %>VO {
+	[self sendNotification:Update<%= @class_name %> body:<%= @project_name %>VO];
 }
 
 -(void)handleNotification:(id<INotification>)notification {
 	[self.viewComponent setView:nil];
-	if ([[notification name] isEqualToString:ShowEditUser]) {
-		[self.viewComponent setUserVO:[notification body]];
+	if ([[notification name] isEqualToString:ShowEdit<%= @class_name %>]) {
+		[self.viewComponent set<%= @class_name %>VO:[notification body]];
 		[self.viewComponent setMode:EDIT];
-	} else if ([[notification name] isEqualToString:ShowNewUser]) {
-		[self.viewComponent setUserVO:[[[UserVO alloc] init] autorelease]];
+	} else if ([[notification name] isEqualToString:ShowNew<%= @class_name %>]) {
+		[self.viewComponent set<%= @class_name %>VO:[[[<%= @class_name %>VO alloc] init] autorelease]];
 		[self.viewComponent setMode:NEW];
 	}
-	[self sendNotification:ShowUserForm body:self.viewComponent];
+	[self sendNotification:Show<%= @class_name %>Form body:self.viewComponent];
 }
 
 -(void)dealloc {

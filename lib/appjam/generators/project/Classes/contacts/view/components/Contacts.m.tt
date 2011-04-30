@@ -1,31 +1,31 @@
 //
-//  Contacts.m
+//  <%= @class_name %>.m
 //  PureMVC_ObjectiveC
 //
 
-#import "Contacts.h"
+#import "<%= @class_name %>.h"
 
 
-@implementation Contacts
+@implementation <%= @class_name %>
 
-@synthesize userList, userForm, navigation;
+@synthesize <%= @project_name %>List, <%= @project_name %>Form, navigation;
 
 -(id)initWithFrame:(CGRect)frame {
 	if (self = [super initWithFrame:frame]) {
 		self.navigation = [[[UINavigationController alloc] init] autorelease];
-		self.userList = [[[UserList alloc] init] autorelease];
-		self.userForm = [[[UserForm alloc] init] autorelease];
-		[navigation pushViewController:userList animated:NO];
+		self.<%= @project_name %>List = [[[<%= @class_name %>List alloc] init] autorelease];
+		self.<%= @project_name %>Form = [[[<%= @class_name %>Form alloc] init] autorelease];
+		[navigation pushViewController:<%= @project_name %>List animated:NO];
 		[self addSubview:navigation.view];
 	}
 	return self;
 }
 
--(void)showUserForm {
-	[navigation pushViewController:userForm animated:YES];
+-(void)show<%= @class_name %>Form {
+	[navigation pushViewController:<%= @project_name %>Form animated:YES];
 }
 
--(void)showUserList {
+-(void)show<%= @class_name %>List {
 	[navigation popToRootViewControllerAnimated:YES];
 }
 
@@ -35,8 +35,8 @@
 
 - (void)dealloc {
 	self.navigation = nil;
-	self.userList = nil;
-	self.userForm = nil;
+	self.<%= @project_name %>List = nil;
+	self.<%= @project_name %>Form = nil;
     [super dealloc];
 }
 

@@ -1,15 +1,15 @@
 //
-//  UserForm.h
+//  <%= @class_name %>Form.h
 //  PureMVC_ObjectiveC
 //
 
 #import <UIKit/UIKit.h>
-#import "UserVO.h"
+#import "<%= @class_name %>VO.h"
 
-@protocol UserFormViewControllerDelegate
+@protocol <%= @class_name %>FormViewControllerDelegate
 
--(void)createUserSelected:(UserVO *)userVO;
--(void)updateUserSelected:(UserVO *)userVO;
+-(void)create<%= @class_name %>Selected:(<%= @class_name %>VO *)<%= @project_name %>VO;
+-(void)update<%= @class_name %>Selected:(<%= @class_name %>VO *)<%= @project_name %>VO;
 
 @end
 
@@ -17,17 +17,17 @@ typedef enum {
 	NEW, EDIT
 } Mode;
 
-@interface UserForm : UITableViewController {
-	UserVO *userVO;
-	UITextField *firstNameTextField, *lastNameTextField, *emailTextField, *usernameTextField, *passwordTextField, *confirmPasswordTextField;
+@interface <%= @class_name %>Form : UITableViewController {
+	<%= @class_name %>VO *<%= @project_name %>VO;
+	UITextField *firstNameTextField, *lastNameTextField, *emailTextField, *<%= @project_name %>nameTextField, *passwordTextField, *confirmPasswordTextField;
 	Mode mode;
-	id<UserFormViewControllerDelegate> delegate;
+	id<<%= @class_name %>FormViewControllerDelegate> delegate;
 }
 
-@property(nonatomic, retain) UserVO *userVO;
-@property(nonatomic, retain) UITextField *firstNameTextField, *lastNameTextField, *emailTextField, *usernameTextField, *passwordTextField, *confirmPasswordTextField;
+@property(nonatomic, retain) <%= @class_name %>VO *<%= @project_name %>VO;
+@property(nonatomic, retain) UITextField *firstNameTextField, *lastNameTextField, *emailTextField, *<%= @project_name %>nameTextField, *passwordTextField, *confirmPasswordTextField;
 @property Mode mode;
-@property(nonatomic, retain) id<UserFormViewControllerDelegate> delegate;
+@property(nonatomic, retain) id<<%= @class_name %>FormViewControllerDelegate> delegate;
 
 -(UITextField *)textFieldWithPlaceHolder:(NSString *)placeHolder frame:(CGRect)frame;
 

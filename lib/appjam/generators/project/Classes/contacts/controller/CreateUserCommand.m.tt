@@ -1,23 +1,23 @@
 //
-//  CreateUserCommand.h
+//  Create<%= @class_name %>Command.h
 //  PureMVC_ObjectiveC
 //
 
-#import "CreateUserCommand.h"
+#import "Create<%= @class_name %>Command.h"
 #import "ApplicationFacade.h"
-#import "UserProxy.h"
-#import "UserVO.h"
+#import "<%= @class_name %>Proxy.h"
+#import "<%= @class_name %>VO.h"
 
-@implementation CreateUserCommand
+@implementation Create<%= @class_name %>Command
 
 -(void)execute:(id<INotification>)notification {
-	UserProxy *userProxy = (UserProxy *)[facade retrieveProxy:[UserProxy NAME]];
-	UserVO *userVO = [notification body];
-	if ([userVO isValid]) {
-		[userProxy create:userVO];
-		[facade sendNotification:ShowUserList];
+	<%= @class_name %>Proxy *<%= @project_name %>Proxy = (<%= @class_name %>Proxy *)[facade retrieveProxy:[<%= @class_name %>Proxy NAME]];
+	<%= @class_name %>VO *<%= @project_name %>VO = [notification body];
+	if ([<%= @project_name %>VO isValid]) {
+		[<%= @project_name %>Proxy create:<%= @project_name %>VO];
+		[facade sendNotification:Show<%= @class_name %>List];
 	} else {
-		[facade sendNotification:ShowError body:@"Invalid User"];
+		[facade sendNotification:ShowError body:@"Invalid <%= @class_name %>"];
 	}
 }
 

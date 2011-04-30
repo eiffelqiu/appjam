@@ -1,13 +1,13 @@
 //
-//  ContactsAppDelegate.m
-//  Contacts
+//  <%= @class_name %>AppDelegate.m
+//  <%= @class_name %>
 //
 
-#import "ContactsAppDelegate.h"
+#import "<%= @class_name %>AppDelegate.h"
 #import "ApplicationFacade.h"
-#import "Contacts.h"
+#import "<%= @class_name %>.h"
 
-@implementation ContactsAppDelegate
+@implementation <%= @class_name %>AppDelegate
 
 @synthesize window;
 
@@ -19,9 +19,9 @@
     
     // Override point for customization after application launch.
     window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
-    Contacts *contacts = [[[Contacts alloc] initWithFrame:[window frame]] autorelease];
-	[[ApplicationFacade getInstance] startup:contacts];
-	[window addSubview:contacts];
+    <%= @class_name %> *<%= @project_name %> = [[[<%= @class_name %> alloc] initWithFrame:[window frame]] autorelease];
+	[[ApplicationFacade getInstance] startup:<%= @project_name %>];
+	[window addSubview:<%= @project_name %>];
     [window makeKeyAndVisible];
     
     return YES;
@@ -30,7 +30,7 @@
 
 - (void)applicationWillResignActive:(UIApplication *)application {
     /*
-     Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
+     Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the <%= @project_name %> quits the application and it begins the transition to the background state.
      Use this method to pause ongoing tasks, disable timers, and throttle down OpenGL ES frame rates. Games should use this method to pause the game.
      */
 }
@@ -38,8 +38,8 @@
 
 - (void)applicationDidEnterBackground:(UIApplication *)application {
     /*
-     Use this method to release shared resources, save user data, invalidate timers, and store enough application state information to restore your application to its current state in case it is terminated later. 
-     If your application supports background execution, called instead of applicationWillTerminate: when the user quits.
+     Use this method to release shared resources, save <%= @project_name %> data, invalidate timers, and store enough application state information to restore your application to its current state in case it is terminated later. 
+     If your application supports background execution, called instead of applicationWillTerminate: when the <%= @project_name %> quits.
      */
 }
 
@@ -53,7 +53,7 @@
 
 - (void)applicationDidBecomeActive:(UIApplication *)application {
     /*
-     Restart any tasks that were paused (or not yet started) while the application was inactive. If the application was previously in the background, optionally refresh the user interface.
+     Restart any tasks that were paused (or not yet started) while the application was inactive. If the application was previously in the background, optionally refresh the <%= @project_name %> interface.
      */
 }
 

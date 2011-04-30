@@ -1,11 +1,11 @@
 //
-//  ContactsMediator.h
+//  <%= @class_name %>Mediator.h
 //  PureMVC_ObjectiveC
 //
 
 #import "Mediator.h"
 
-@interface ContactsMediator : Mediator {
+@interface <%= @class_name %>Mediator : Mediator {
 	
 }
 

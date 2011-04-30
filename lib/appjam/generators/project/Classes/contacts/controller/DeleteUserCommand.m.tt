@@ -1,18 +1,18 @@
 //
-//  DeleteUserCommand.m
+//  Delete<%= @class_name %>Command.m
 //  PureMVC_ObjectiveC
 //
 
-#import "DeleteUserCommand.h"
-#import "UserProxy.h"
-#import "UserVO.h"
+#import "Delete<%= @class_name %>Command.h"
+#import "<%= @class_name %>Proxy.h"
+#import "<%= @class_name %>VO.h"
 
-@implementation DeleteUserCommand
+@implementation Delete<%= @class_name %>Command
 
 -(void)execute:(id<INotification>)notification {
-	UserProxy *userProxy = (UserProxy *)[facade retrieveProxy:[UserProxy NAME]];
-	UserVO *userVO = [notification body];
-	[userProxy delete:userVO];
+	<%= @class_name %>Proxy *<%= @project_name %>Proxy = (<%= @class_name %>Proxy *)[facade retrieveProxy:[<%= @class_name %>Proxy NAME]];
+	<%= @class_name %>VO *<%= @project_name %>VO = [notification body];
+	[<%= @project_name %>Proxy delete:<%= @project_name %>VO];
 }
 
 @end

@@ -1,14 +1,14 @@
 //
-//  UserListMediator.h
+//  <%= @class_name %>ListMediator.h
 //  PureMVC_ObjectiveC
 //
 
 #import <UIKit/UIKit.h>
 #import "Mediator.h"
-#import "UserList.h"
+#import "<%= @class_name %>List.h"
 #import "ApplicationFacade.h"
 
-@interface UserListMediator : Mediator <UserListViewControllerDelegate>{
+@interface <%= @class_name %>ListMediator : Mediator <<%= @class_name %>ListViewControllerDelegate>{
 }
 
 @end

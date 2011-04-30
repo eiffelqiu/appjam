@@ -1,5 +1,5 @@
 //
-// Prefix header for all source files of the 'Contacts' target in the '<%= @class_name %>' project
+// Prefix header for all source files of the '<%= @class_name %>' target in the '<%= @project_name %>' project
 //
 
 #ifdef __OBJC__

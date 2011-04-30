@@ -1,18 +1,18 @@
 //
-//  UserVO.h
+//  <%= @class_name %>VO.h
 //  PureMVC_ObjectiveC
 //
 
 #import <UIKit/UIKit.h>
 
 
-@interface UserVO : NSObject {
-	NSString *username, *firstName, *lastName, *email, *password, *confirmPassword, *department;
+@interface <%= @class_name %>VO : NSObject {
+	NSString *<%= @project_name %>name, *firstName, *lastName, *email, *password, *confirmPassword, *department;
 }
 
-@property(nonatomic, retain) NSString *username, *firstName, *lastName, *email, *password, *confirmPassword, *department;
+@property(nonatomic, retain) NSString *<%= @project_name %>name, *firstName, *lastName, *email, *password, *confirmPassword, *department;
 
-+(id)withUserName:(NSString *)username firstName:(NSString *)firstName lastName:(NSString *)lastName email:(NSString *)email password:(NSString *)password confirmPassword:(NSString *)confirmPassword department:(NSString *)department;
++(id)with<%= @class_name %>Name:(NSString *)<%= @project_name %>name firstName:(NSString *)firstName lastName:(NSString *)lastName email:(NSString *)email password:(NSString *)password confirmPassword:(NSString *)confirmPassword department:(NSString *)department;
 -(NSString *)givenName;
 -(BOOL)isValid;
 

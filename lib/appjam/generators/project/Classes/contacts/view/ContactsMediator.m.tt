@@ -1,36 +1,36 @@
 //
-//  ContactsMediator.m
+//  <%= @class_name %>Mediator.m
 //  PureMVC_ObjectiveC
 //
 
-#import "ContactsMediator.h"
-#import "Contacts.h"
+#import "<%= @class_name %>Mediator.h"
+#import "<%= @class_name %>.h"
 #import "ApplicationFacade.h"
 
-@implementation ContactsMediator
+@implementation <%= @class_name %>Mediator
 
 +(NSString *)NAME {
-	return @"ContactsMediator";
+	return @"<%= @class_name %>Mediator";
 }
 
--(Contacts *)viewComponent {
+-(<%= @class_name %> *)viewComponent {
 	return viewComponent;
 }
 
 -(void)initializeMediator {
-	self.mediatorName = [ContactsMediator NAME];
+	self.mediatorName = [<%= @class_name %>Mediator NAME];
 }
 
 -(NSArray *)listNotificationInterests {
-	return [NSArray arrayWithObjects:ShowUserForm, ShowUserList, ShowError, nil];
+	return [NSArray arrayWithObjects:Show<%= @class_name %>Form, Show<%= @class_name %>List, ShowError, nil];
 }
 
 -(void)handleNotification:(id<INotification>)notification {
 	
-	if ([[notification name] isEqualToString:ShowUserForm]) {
-		[self.viewComponent showUserForm];
-	} else if ([[notification name] isEqualToString:ShowUserList]) {
-		[self.viewComponent showUserList];
+	if ([[notification name] isEqualToString:Show<%= @class_name %>Form]) {
+		[self.viewComponent show<%= @class_name %>Form];
+	} else if ([[notification name] isEqualToString:Show<%= @class_name %>List]) {
+		[self.viewComponent show<%= @class_name %>List];
 	} else if ([[notification name] isEqualToString:ShowError]) {
 		[self.viewComponent showError:[notification body]];
 	} 

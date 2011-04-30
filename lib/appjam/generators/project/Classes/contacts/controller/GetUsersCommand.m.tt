@@ -1,17 +1,17 @@
 //
-//  GetUsersCommand.h
+//  Get<%= @class_name %>sCommand.h
 //  PureMVC_ObjectiveC
 //
 
-#import "GetUsersCommand.h"
+#import "Get<%= @class_name %>sCommand.h"
 #import "ApplicationFacade.h"
-#import "UserProxy.h"
+#import "<%= @class_name %>Proxy.h"
 
-@implementation GetUsersCommand
+@implementation Get<%= @class_name %>sCommand
 
 -(void)execute:(id<INotification>)notification {
-	UserProxy *userProxy = (UserProxy *)[facade retrieveProxy:[UserProxy NAME]];
-	[facade sendNotification:GetUsersSuccess body:userProxy.data];
+	<%= @class_name %>Proxy *<%= @project_name %>Proxy = (<%= @class_name %>Proxy *)[facade retrieveProxy:[<%= @class_name %>Proxy NAME]];
+	[facade sendNotification:Get<%= @class_name %>sSuccess body:<%= @project_name %>Proxy.data];
 }
 
 @end

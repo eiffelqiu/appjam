@@ -1,11 +1,11 @@
 //
-//  ContactsAppDelegate.h
-//  Contacts
+//  <%= @class_name %>AppDelegate.h
+//  <%= @class_name %>
 //
 
 #import <UIKit/UIKit.h>
 
-@interface ContactsAppDelegate : NSObject <UIApplicationDelegate> {
+@interface <%= @class_name %>AppDelegate : NSObject <UIApplicationDelegate> {
     UIWindow *window;
 }
 

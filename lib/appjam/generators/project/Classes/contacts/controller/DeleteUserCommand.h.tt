@@ -1,12 +1,12 @@
 //
-//  DeleteUserCommand.h
+//  Delete<%= @class_name %>Command.h
 //  PureMVC_ObjectiveC
 //
 
 #import "SimpleCommand.h"
 
 
-@interface DeleteUserCommand : SimpleCommand {
+@interface Delete<%= @class_name %>Command : SimpleCommand {
 
 }
 

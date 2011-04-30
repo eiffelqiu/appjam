@@ -1,22 +1,22 @@
 //
-//  UserListMediator.m
+//  <%= @class_name %>ListMediator.m
 //  PureMVC_ObjectiveC
 //
 
-#import "UserListMediator.h"
+#import "<%= @class_name %>ListMediator.h"
 
-@implementation UserListMediator
+@implementation <%= @class_name %>ListMediator
 
 +(NSString *)NAME {
-	return @"UserListMediator";
+	return @"<%= @class_name %>ListMediator";
 }
 
--(UserList *)viewComponent {
+-(<%= @class_name %>List *)viewComponent {
 	return viewComponent;
 }
 
 -(void)initializeMediator {
-	self.mediatorName = [UserListMediator NAME];
+	self.mediatorName = [<%= @class_name %>ListMediator NAME];
 }
 
 -(void)onRegister {
@@ -24,29 +24,29 @@
 }
 
 -(NSArray *)listNotificationInterests {
-	return [NSArray arrayWithObjects:GetUsersSuccess, nil];
+	return [NSArray arrayWithObjects:Get<%= @class_name %>sSuccess, nil];
 }
 
 -(void)handleNotification:(id<INotification>)notification {
-	if ([[notification name] isEqualToString:GetUsersSuccess]) {
-		[self.viewComponent reloadUsers:[notification body]];
+	if ([[notification name] isEqualToString:Get<%= @class_name %>sSuccess]) {
+		[self.viewComponent reload<%= @class_name %>s:[notification body]];
 	}
 }
 
--(void)userListAppeared {
-	[self sendNotification:GetUsers];
+-(void)<%= @project_name %>ListAppeared {
+	[self sendNotification:Get<%= @class_name %>s];
 }
 
--(void)userSelected:(UserVO *)userVO {
-	[self sendNotification:ShowEditUser body:userVO];
+-(void)<%= @project_name %>Selected:(<%= @class_name %>VO *)<%= @project_name %>VO {
+	[self sendNotification:ShowEdit<%= @class_name %> body:<%= @project_name %>VO];
 }
 
--(void)deleteUserSelected:(UserVO *)userVO {
-	[self sendNotification:DeleteUser body:userVO];
+-(void)delete<%= @class_name %>Selected:(<%= @class_name %>VO *)<%= @project_name %>VO {
+	[self sendNotification:Delete<%= @class_name %> body:<%= @project_name %>VO];
 }
 
--(void)newUserSelected {
-	[self sendNotification:ShowNewUser];
+-(void)new<%= @class_name %>Selected {
+	[self sendNotification:ShowNew<%= @class_name %>];
 }
 
 -(void)dealloc {

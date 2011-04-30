@@ -1,6 +1,6 @@
 //
 //  main.m
-//  Contacts
+//  <%= @class_name %>
 //
 //  Created by eiffel on 11-2-16.
 //  Copyright 2011 Redsafi. All rights reserved.
@@ -11,7 +11,7 @@
 int main(int argc, char *argv[]) {
     
     NSAutoreleasePool * pool = [[NSAutoreleasePool alloc] init];
-    int retVal = UIApplicationMain(argc, argv, nil, @"ContactsAppDelegate");
+    int retVal = UIApplicationMain(argc, argv, nil, @"<%= @class_name %>AppDelegate");
     [pool release];
     return retVal;
 }

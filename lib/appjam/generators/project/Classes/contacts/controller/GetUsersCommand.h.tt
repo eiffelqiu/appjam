@@ -1,12 +1,12 @@
 //
-//  GetUsersCommand.h
+//  Get<%= @class_name %>sCommand.h
 //  PureMVC_ObjectiveC
 //
 
 #import "SimpleCommand.h"
 
 
-@interface GetUsersCommand : SimpleCommand {
+@interface Get<%= @class_name %>sCommand : SimpleCommand {
 	
 }
 

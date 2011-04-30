@@ -11,6 +11,10 @@ $ gem install appjam --pre
 == Usage
 
 $ appjam project contact 
+$ cd contact
+$ open Contacts.xcodeproj
+
+Xcode build and run 
 
 == Contributing to appjam
  

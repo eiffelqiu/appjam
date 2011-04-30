@@ -23,7 +23,7 @@
  * 
  * <P>
  * In the Command Pattern, an application use-case typically
- * begins with some user action, which results in an <code>INotification</code> being broadcast, which 
+ * begins with some <%= @project_name %> action, which results in an <code>INotification</code> being broadcast, which 
  * is handled by business logic in the <code>execute</code> method of an
  * <code>ICommand</code>.</P>
  * 

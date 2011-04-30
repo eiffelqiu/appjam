@@ -1,28 +1,28 @@
 //
-//  UserList.h
+//  <%= @class_name %>List.h
 //  PureMVC_ObjectiveC
 //
 
 #import <UIKit/UIKit.h>
-#import "UserVO.h"
+#import "<%= @class_name %>VO.h"
 
-@protocol UserListViewControllerDelegate
+@protocol <%= @class_name %>ListViewControllerDelegate
 
--(void)userSelected:(UserVO *)userVO;
--(void)deleteUserSelected:(UserVO *)userVO;
--(void)newUserSelected;
--(void)userListAppeared;
+-(void)<%= @project_name %>Selected:(<%= @class_name %>VO *)<%= @project_name %>VO;
+-(void)delete<%= @class_name %>Selected:(<%= @class_name %>VO *)<%= @project_name %>VO;
+-(void)new<%= @class_name %>Selected;
+-(void)<%= @project_name %>ListAppeared;
 
 @end
 
-@interface UserList : UITableViewController {
-	NSMutableArray *users;
-	id<UserListViewControllerDelegate> delegate;
+@interface <%= @class_name %>List : UITableViewController {
+	NSMutableArray *<%= @project_name %>s;
+	id<<%= @class_name %>ListViewControllerDelegate> delegate;
 }
 
-@property(nonatomic, retain) NSMutableArray *users;
-@property(nonatomic, retain) id<UserListViewControllerDelegate> delegate;
+@property(nonatomic, retain) NSMutableArray *<%= @project_name %>s;
+@property(nonatomic, retain) id<<%= @class_name %>ListViewControllerDelegate> delegate;
 
--(void)reloadUsers:(NSMutableArray *)users;
+-(void)reload<%= @class_name %>s:(NSMutableArray *)<%= @project_name %>s;
 
 @end

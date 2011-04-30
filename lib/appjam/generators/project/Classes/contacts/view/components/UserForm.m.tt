@@ -1,14 +1,14 @@
 //
-//  UserForm.m
+//  <%= @class_name %>Form.m
 //  PureMVC_ObjectiveC
 //
 
-#import "UserForm.h"
+#import "<%= @class_name %>Form.h"
 
 
-@implementation UserForm
+@implementation <%= @class_name %>Form
 
-@synthesize userVO, firstNameTextField, lastNameTextField, emailTextField, usernameTextField, passwordTextField, confirmPasswordTextField, mode, delegate;
+@synthesize <%= @project_name %>VO, firstNameTextField, lastNameTextField, emailTextField, <%= @project_name %>nameTextField, passwordTextField, confirmPasswordTextField, mode, delegate;
 
 -(id)init {
 	return [super initWithStyle:UITableViewStyleGrouped];
@@ -16,8 +16,8 @@
 
 - (void)loadView {
 	[super loadView];
-	self.navigationItem.title = @"User Profile";
-	self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemSave target:self action:@selector(saveUser)];
+	self.navigationItem.title = @"<%= @class_name %> Profile";
+	self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemSave target:self action:@selector(save<%= @class_name %>)];
 	self.tableView.scrollEnabled = NO;
 }
 
@@ -36,36 +36,36 @@
 		switch (indexPath.row) {
 			case 0: { //First and Last Name
 				self.firstNameTextField = [self textFieldWithPlaceHolder:@"First Name" frame:CGRectMake(10,12,135,25)];
-				firstNameTextField.text = userVO.firstName;
+				firstNameTextField.text = <%= @project_name %>VO.firstName;
 				[cell.contentView addSubview:firstNameTextField];
 				
 				self.lastNameTextField = [self textFieldWithPlaceHolder:@"Last Name" frame:CGRectMake(150,12,135,25)];
-				lastNameTextField.text = userVO.lastName;
+				lastNameTextField.text = <%= @project_name %>VO.lastName;
 				[cell.contentView addSubview:lastNameTextField];
 				break;
 			}
-			case 1: { //username and email
+			case 1: { //<%= @project_name %>name and email
 				self.emailTextField = [self textFieldWithPlaceHolder:@"Email" frame:CGRectMake(10,12,155,25)];
-				emailTextField.text = userVO.email;
+				emailTextField.text = <%= @project_name %>VO.email;
 				[cell.contentView addSubview:emailTextField];
 				
-				self.usernameTextField = [self textFieldWithPlaceHolder:@"Username*" frame:CGRectMake(170,12,115,25)];
-				usernameTextField.text = userVO.username;
+				self.<%= @project_name %>nameTextField = [self textFieldWithPlaceHolder:@"<%= @class_name %>name*" frame:CGRectMake(170,12,115,25)];
+				<%= @project_name %>nameTextField.text = <%= @project_name %>VO.<%= @project_name %>name;
 				if (mode == EDIT) {
-					usernameTextField.enabled = NO;
+					<%= @project_name %>nameTextField.enabled = NO;
 				}
-				[cell.contentView addSubview:usernameTextField];
+				[cell.contentView addSubview:<%= @project_name %>nameTextField];
 				break;
 			}
 			case 2: { //password and confirm
 				self.passwordTextField = [self textFieldWithPlaceHolder:@"Password*" frame:CGRectMake(10,12,135,25)];
 				passwordTextField.secureTextEntry = YES;
-				passwordTextField.text = userVO.password;
+				passwordTextField.text = <%= @project_name %>VO.password;
 				[cell.contentView addSubview:passwordTextField];
 				
 				self.confirmPasswordTextField = [self textFieldWithPlaceHolder:@"Confirm*" frame:CGRectMake(150,12,135,25)];
 				confirmPasswordTextField.secureTextEntry = YES;
-				confirmPasswordTextField.text = userVO.password;
+				confirmPasswordTextField.text = <%= @project_name %>VO.password;
 				[cell.contentView addSubview:confirmPasswordTextField];
 				break;
 			}
@@ -78,17 +78,17 @@
 
 }
 
--(void)saveUser {
-	userVO.firstName = firstNameTextField.text;
-	userVO.lastName = lastNameTextField.text;
-	userVO.email = emailTextField.text;
-	userVO.username = usernameTextField.text;
-	userVO.password = passwordTextField.text;
-	userVO.confirmPassword = confirmPasswordTextField.text;
+-(void)save<%= @class_name %> {
+	<%= @project_name %>VO.firstName = firstNameTextField.text;
+	<%= @project_name %>VO.lastName = lastNameTextField.text;
+	<%= @project_name %>VO.email = emailTextField.text;
+	<%= @project_name %>VO.<%= @project_name %>name = <%= @project_name %>nameTextField.text;
+	<%= @project_name %>VO.password = passwordTextField.text;
+	<%= @project_name %>VO.confirmPassword = confirmPasswordTextField.text;
 	if (mode == NEW) {
-		[delegate createUserSelected:userVO];
+		[delegate create<%= @class_name %>Selected:<%= @project_name %>VO];
 	} else if (mode == EDIT) {
-		[delegate updateUserSelected:userVO];
+		[delegate update<%= @class_name %>Selected:<%= @project_name %>VO];
 	}
 }
 
@@ -101,11 +101,11 @@
 }
 
 - (void)dealloc {
-	self.userVO = nil;
+	self.<%= @project_name %>VO = nil;
 	self.firstNameTextField = nil;
 	self.lastNameTextField = nil;
 	self.emailTextField = nil;
-	self.usernameTextField = nil;
+	self.<%= @project_name %>nameTextField = nil;
 	self.passwordTextField = nil;
 	self.confirmPasswordTextField = nil;
 	self.delegate = nil;

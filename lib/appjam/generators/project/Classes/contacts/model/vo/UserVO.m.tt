@@ -1,25 +1,25 @@
 //
-//  UserVO.m
+//  <%= @class_name %>VO.m
 //  PureMVC_ObjectiveC
 //
 
-#import "UserVO.h"
+#import "<%= @class_name %>VO.h"
 
 
-@implementation UserVO
+@implementation <%= @class_name %>VO
 
-@synthesize username, firstName, lastName, email, password, confirmPassword, department;
+@synthesize <%= @project_name %>name, firstName, lastName, email, password, confirmPassword, department;
 
-+(id)withUserName:(NSString *)username firstName:(NSString *)firstName lastName:(NSString *)lastName email:(NSString *)email password:(NSString *)password confirmPassword:(NSString *)confirmPassword department:(NSString *)department {
-	UserVO *userVO = [[[UserVO alloc] init] autorelease];
-	userVO.username = username;
-	userVO.firstName = firstName;
-	userVO.lastName = lastName;
-	userVO.email = email;
-	userVO.password = password;
-	userVO.confirmPassword = confirmPassword;
-	userVO.department = department;
-	return userVO;
++(id)with<%= @class_name %>Name:(NSString *)<%= @project_name %>name firstName:(NSString *)firstName lastName:(NSString *)lastName email:(NSString *)email password:(NSString *)password confirmPassword:(NSString *)confirmPassword department:(NSString *)department {
+	<%= @class_name %>VO *<%= @project_name %>VO = [[[<%= @class_name %>VO alloc] init] autorelease];
+	<%= @project_name %>VO.<%= @project_name %>name = <%= @project_name %>name;
+	<%= @project_name %>VO.firstName = firstName;
+	<%= @project_name %>VO.lastName = lastName;
+	<%= @project_name %>VO.email = email;
+	<%= @project_name %>VO.password = password;
+	<%= @project_name %>VO.confirmPassword = confirmPassword;
+	<%= @project_name %>VO.department = department;
+	return <%= @project_name %>VO;
 }
 
 -(NSString *)givenName {
@@ -27,11 +27,11 @@
 }
 
 -(BOOL)isValid {
-	return username != nil && password != nil && confirmPassword != nil && [password isEqualToString:confirmPassword];
+	return <%= @project_name %>name != nil && password != nil && confirmPassword != nil && [password isEqualToString:confirmPassword];
 }
 
 -(void)dealloc {
-	self.username = nil;
+	self.<%= @project_name %>name = nil;
 	self.firstName = nil;
 	self.lastName = nil;
 	self.email = nil;

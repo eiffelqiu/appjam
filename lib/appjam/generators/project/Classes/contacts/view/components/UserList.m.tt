@@ -1,15 +1,15 @@
 //
-//  UserList.m
+//  <%= @class_name %>List.m
 //  PureMVC_ObjectiveC
 //
 
-#import "UserList.h"
+#import "<%= @class_name %>List.h"
 
-#define USER_CELL_ID @"UserCellID"
+#define USER_CELL_ID @"<%= @class_name %>CellID"
 
-@implementation UserList
+@implementation <%= @class_name %>List
 
-@synthesize users, delegate;
+@synthesize <%= @project_name %>s, delegate;
 
 -(id)init {
 	return [super initWithStyle:UITableViewStylePlain];
@@ -17,55 +17,55 @@
 
 - (void)loadView {
 	[super loadView];
-	self.users = [NSMutableArray array];
+	self.<%= @project_name %>s = [NSMutableArray array];
 	//self.navigationItem.leftBarButtonItem = self.editButtonItem;
-	self.navigationItem.title = @"Users";
-    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAdd target:self action:@selector(newUser)];
+	self.navigationItem.title = @"<%= @class_name %>s";
+    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAdd target:self action:@selector(new<%= @class_name %>)];
 }
 
 -(void)viewDidAppear:(BOOL)animated {
 	[super viewDidAppear:animated];
-	[delegate userListAppeared];
+	[delegate <%= @project_name %>ListAppeared];
 }
 
--(void)reloadUsers:(NSMutableArray *)_users {
-	self.users = _users;
+-(void)reload<%= @class_name %>s:(NSMutableArray *)_<%= @project_name %>s {
+	self.<%= @project_name %>s = _<%= @project_name %>s;
 	[self.tableView reloadData];
 }
 
 - (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath {
-	UserVO *userVO = [[users objectAtIndex:indexPath.row] retain];
-	[users removeObjectAtIndex:indexPath.row];
+	<%= @class_name %>VO *<%= @project_name %>VO = [[<%= @project_name %>s objectAtIndex:indexPath.row] retain];
+	[<%= @project_name %>s removeObjectAtIndex:indexPath.row];
 	[self.tableView deleteRowsAtIndexPaths:[NSArray arrayWithObject:indexPath] withRowAnimation:UITableViewRowAnimationFade];
-	[delegate deleteUserSelected:userVO];
-	[userVO release];
+	[delegate delete<%= @class_name %>Selected:<%= @project_name %>VO];
+	[<%= @project_name %>VO release];
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-	UITableViewCell *userCell = [tableView dequeueReusableCellWithIdentifier:USER_CELL_ID];
-	if (userCell == nil) {
-		userCell = [[[UITableViewCell alloc] initWithFrame:CGRectZero reuseIdentifier:USER_CELL_ID] autorelease];
-		userCell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
+	UITableViewCell *<%= @project_name %>Cell = [tableView dequeueReusableCellWithIdentifier:USER_CELL_ID];
+	if (<%= @project_name %>Cell == nil) {
+		<%= @project_name %>Cell = [[[UITableViewCell alloc] initWithFrame:CGRectZero reuseIdentifier:USER_CELL_ID] autorelease];
+		<%= @project_name %>Cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
 	}
-	UserVO *userVO = [users objectAtIndex:indexPath.row];
-	userCell.textLabel.text = [userVO givenName];
-	return userCell;
+	<%= @class_name %>VO *<%= @project_name %>VO = [<%= @project_name %>s objectAtIndex:indexPath.row];
+	<%= @project_name %>Cell.textLabel.text = [<%= @project_name %>VO givenName];
+	return <%= @project_name %>Cell;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-	return [users count];
+	return [<%= @project_name %>s count];
 }
 
--(void)newUser {
-	[delegate newUserSelected];
+-(void)new<%= @class_name %> {
+	[delegate new<%= @class_name %>Selected];
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
-	[delegate userSelected:[users objectAtIndex:indexPath.row]];
+	[delegate <%= @project_name %>Selected:[<%= @project_name %>s objectAtIndex:indexPath.row]];
 }
 
 - (void)dealloc {
-	self.users = nil;
+	self.<%= @project_name %>s = nil;
 	self.delegate = nil;
     [super dealloc];
 }
