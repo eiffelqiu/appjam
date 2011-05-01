@@ -2,7 +2,7 @@
 //  UIDevice.m
 //  EarthShake
 //
-//  <%= @project_name %> by <%= @developer.capitalize %>
+//  Created by <%= @developer.capitalize %> on <%= created_on %>
 //  Copyright(c) <%= Time.now.year %>, All rights reserved.
 //
 

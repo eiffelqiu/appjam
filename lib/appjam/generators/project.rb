@@ -4,6 +4,7 @@ require 'thor/actions'
 require 'active_support/core_ext/string'
 require 'active_support/inflector'
 require File.dirname(__FILE__) + '/actions'
+require 'date' 
 
 module Appjam
   module Generators
@@ -36,6 +37,7 @@ module Appjam
         @project_name = (options[:app] || name).gsub(/\W/, "_").downcase
         @class_name = (options[:app] || name).gsub(/\W/, "_").capitalize
         @developer = "#{`whoami`.strip}"
+        @created_on = Date.today.to_s
         self.destination_root = options[:root]
         project = options[:project]
         self.behavior = :revoke if options[:destroy]
