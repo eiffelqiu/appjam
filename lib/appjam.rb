@@ -1,3 +1,4 @@
+require 'thread'
 require 'appjam/version.rb'
 require 'active_support' 
 

@@ -4,6 +4,18 @@ Appjam is iphone app generator, which generate iphone app skeleton based on Pure
 
 for PureMVC framework, see http://trac.puremvc.org/PureMVC_ObjectiveC/
 
+== Prerequisites
+
+==== Ruby
+
+Appjam require ruby installed on your mac machine. Since now all Mac OSX system preinstalled ruby enviroment, that's not a big issue. 
+
+==== Rubygem(latest)
+
+Appjam has an dependency on "thor" gem , which require latest rubygem installed, so you need to update your rubygem to latest version, run command below to update your rubygem to the latest one.
+
+$ gem update --system
+
 == Installation
 
 $ gem install appjam
