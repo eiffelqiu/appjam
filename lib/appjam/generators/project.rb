@@ -46,8 +46,7 @@ module Appjam
         template "project/Contacts_Prefix.pch.tt", "#{@project_name}/#{@class_name}_Prefix.pch"
         template "project/Contacts-Info.plist.tt", "#{@project_name}/#{@class_name}-Info.plist"
         directory "project/Contacts.xcodeproj", "#{@project_name}/#{@class_name}.xcodeproj"
-        
-        fileName = "#{@project_name}/#{@class_name}.xcodeproj/project.pbxproj"
+        fileName = "#{options[:root]}/#{@project_name}/#{@class_name}.xcodeproj/project.pbxproj"
         aFile = File.open(fileName, "r")
         aString = aFile.read
         aFile.close
@@ -58,8 +57,8 @@ module Appjam
         aString.gsub!('Contact', "#{@class_name}")
         File.open(fileName, "w") { |file| file << aString }
         
-        system "mv #{@project_name}/#{@class_name}.xcodeproj/eiffel.pbxuser #{@project_name}/#{@class_name}.xcodeproj/#{`whoami`.strip}.pbxuser"
-        system "mv #{@project_name}/#{@class_name}.xcodeproj/eiffel.perspectivev3 #{@project_name}/#{@class_name}.xcodeproj/#{`whoami`.strip}.perspectivev3"
+        system "mv #{options[:root]}/#{@project_name}/#{@class_name}.xcodeproj/eiffel.pbxuser #{options[:root]}/#{@project_name}/#{@class_name}.xcodeproj/#{`whoami`.strip}.pbxuser"
+        system "mv #{options[:root]}/#{@project_name}/#{@class_name}.xcodeproj/eiffel.perspectivev3 #{options[:root]}/#{@project_name}/#{@class_name}.xcodeproj/#{`whoami`.strip}.perspectivev3"
         
         template "project/main.m.tt", "#{@project_name}/main.m"
         
