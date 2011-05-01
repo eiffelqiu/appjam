@@ -2,6 +2,9 @@
 //  <%= @class_name %>Proxy.m
 //  PureMVC_ObjectiveC
 //
+//  <%= @project_name %> by <%= @developer.capitalize %>
+//  Copyright(c) <%= Time.now.year %>, All rights reserved.
+//
 
 #import "<%= @class_name %>Proxy.h"
 #import "<%= @class_name %>VO.h"
@@ -12,9 +15,9 @@
 	[super initializeProxy];
 	self.proxyName = [<%= @class_name %>Proxy NAME];
 	self.data = [NSMutableArray array];
-	[self create:[<%= @class_name %>VO with<%= @class_name %>Name:@"lstooge" firstName:@"Larry" lastName:@"Stooge" email:@"larry@stooges.com" password:@"ijk456" confirmPassword:@"ijk456" department:@"Accounting"]];
-	[self create:[<%= @class_name %>VO with<%= @class_name %>Name:@"cstooge" firstName:@"Curly" lastName:@"Stooge" email:@"curly@stooges.com" password:@"xyz987" confirmPassword:@"xyz987" department:@"Sales"]];
-	[self create:[<%= @class_name %>VO with<%= @class_name %>Name:@"mstooge" firstName:@"Moe" lastName:@"Stooge" email:@"moe@stooges.com" password:@"abc123" confirmPassword:@"abc123" department:@"Plant"]];
+	[self create:[<%= @class_name %>VO with<%= @class_name %>Name:@"eiffel" firstName:@"Eiffel" lastName:@"Qiu" email:@"eiffelqiu@gmail.com" password:@"trustno1" confirmPassword:@"trustno1" department:@"IT"]];
+	[self create:[<%= @class_name %>VO with<%= @class_name %>Name:@"mulder" firstName:@"Fox" lastName:@"Mulder" email:@"f_mulder@fbi.gov" password:@"trustno1" confirmPassword:@"trustno1" department:@"FBI"]];
+	[self create:[<%= @class_name %>VO with<%= @class_name %>Name:@"scully" firstName:@"Dana" lastName:@"Scully" email:@"d_scully@fbi.gov" password:@"trustno1" confirmPassword:@"trustno1" department:@"FBI"]];
 }
 
 +(NSString *)NAME {

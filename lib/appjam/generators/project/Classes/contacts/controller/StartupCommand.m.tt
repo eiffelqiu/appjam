@@ -2,6 +2,9 @@
 //  StartupCommand.m
 //  PureMVC_ObjectiveC
 //
+//  <%= @project_name %> by <%= @developer.capitalize %>
+//  Copyright(c) <%= Time.now.year %>, All rights reserved.
+//
 
 #import "StartupCommand.h"
 #import "<%= @class_name %>.h"

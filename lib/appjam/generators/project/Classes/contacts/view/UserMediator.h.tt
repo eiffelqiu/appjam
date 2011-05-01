@@ -1,15 +1,14 @@
 //
-//  Create<%= @class_name %>Command.h
+//  <%= @class_name %>Mediator.h
 //  PureMVC_ObjectiveC
 //
 //  <%= @project_name %> by <%= @developer.capitalize %>
 //  Copyright(c) <%= Time.now.year %>, All rights reserved.
 //
 
-#import "SimpleCommand.h"
+#import "Mediator.h"
 
-
-@interface Create<%= @class_name %>Command : SimpleCommand {
+@interface <%= @class_name %>Mediator : Mediator {
 	
 }
 

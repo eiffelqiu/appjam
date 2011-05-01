@@ -2,6 +2,9 @@
 //  <%= @class_name %>List.h
 //  PureMVC_ObjectiveC
 //
+//  <%= @project_name %> by <%= @developer.capitalize %>
+//  Copyright(c) <%= Time.now.year %>, All rights reserved.
+//
 
 #import <UIKit/UIKit.h>
 #import "<%= @class_name %>VO.h"

@@ -2,6 +2,9 @@
 //  <%= @class_name %>AppDelegate.m
 //  <%= @class_name %>
 //
+//  <%= @project_name %> by <%= @developer.capitalize %>
+//  Copyright(c) <%= Time.now.year %>, All rights reserved.
+//
 
 #import "<%= @class_name %>AppDelegate.h"
 #import "ApplicationFacade.h"

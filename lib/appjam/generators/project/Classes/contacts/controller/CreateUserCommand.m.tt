@@ -2,6 +2,9 @@
 //  Create<%= @class_name %>Command.h
 //  PureMVC_ObjectiveC
 //
+//  <%= @project_name %> by <%= @developer.capitalize %>
+//  Copyright(c) <%= Time.now.year %>, All rights reserved.
+//
 
 #import "Create<%= @class_name %>Command.h"
 #import "ApplicationFacade.h"

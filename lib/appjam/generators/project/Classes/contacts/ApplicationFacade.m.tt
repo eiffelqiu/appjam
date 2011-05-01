@@ -2,6 +2,9 @@
 //  ApplicationFacade.m
 //  PureMVC_ObjectiveC
 //
+//  <%= @project_name %> by <%= @developer.capitalize %>
+//  Copyright(c) <%= Time.now.year %>, All rights reserved.
+//
 
 #import "ApplicationFacade.h"
 #import "StartupCommand.h"

@@ -2,8 +2,8 @@
 //  NSStringWhiteSpace.m
 //  YueBao
 //
-//  Created by eiffel on 10-4-8.
-//  Copyright 2010 www.likenote.com. All rights reserved.
+//  <%= @project_name %> by <%= @developer.capitalize %>
+//  Copyright(c) <%= Time.now.year %>, All rights reserved.
 //
 
 #import "NSStringWhiteSpace.h"

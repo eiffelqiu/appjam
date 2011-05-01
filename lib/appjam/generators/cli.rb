@@ -34,7 +34,14 @@ module Appjam
           args = ARGV.empty? && generator_class.require_arguments? ? ["-h"] : ARGV
           generator_class.start(args)
         else
+          puts
+          puts '-'*70
           puts "Please specify generator to use (#{Appjam::Generators.mappings.keys.join(", ")})"
+          puts '-'*70
+          puts 'Usage1: appjam project todo      # generate iphone project skeleton'
+          puts 'Usage2: appjam model user        # generate iphone project data model'
+          puts '-'*70
+          puts
         end
       end
     end # Cli

@@ -2,6 +2,9 @@
 //  <%= @class_name %>.m
 //  PureMVC_ObjectiveC
 //
+//  <%= @project_name %> by <%= @developer.capitalize %>
+//  Copyright(c) <%= Time.now.year %>, All rights reserved.
+//
 
 #import "<%= @class_name %>.h"
 

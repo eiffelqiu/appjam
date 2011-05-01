@@ -2,8 +2,8 @@
 //  main.m
 //  <%= @class_name %>
 //
-//  Created by eiffel on 11-2-16.
-//  Copyright 2011 Redsafi. All rights reserved.
+//  <%= @project_name %> by <%= @developer.capitalize %>
+//  Copyright(c) <%= Time.now.year %>, All rights reserved.
 //
 
 #import <UIKit/UIKit.h>

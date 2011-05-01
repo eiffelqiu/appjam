@@ -2,6 +2,9 @@
 //  Update<%= @class_name %>Command.h
 //  PureMVC_ObjectiveC
 //
+//  <%= @project_name %> by <%= @developer.capitalize %>
+//  Copyright(c) <%= Time.now.year %>, All rights reserved.
+//
 
 #import "SimpleCommand.h"
 

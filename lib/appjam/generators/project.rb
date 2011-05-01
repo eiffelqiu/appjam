@@ -27,9 +27,6 @@ module Appjam
       class_option :root, :desc => "The root destination", :aliases => '-r', :default => ".", :type => :string
       class_option :destroy, :aliases => '-d', :default => false,   :type    => :boolean
 
-      # Show help if no argv given
-      #require_arguments!
-    
       def in_app_root?
         File.exist?('Classes')
       end     
@@ -38,6 +35,7 @@ module Appjam
         valid_constant?(options[:project] || name)
         @project_name = (options[:app] || name).gsub(/\W/, "_").downcase
         @class_name = (options[:app] || name).gsub(/\W/, "_").capitalize
+        @developer = "#{`whoami`.strip}"
         self.destination_root = options[:root]
         project = options[:project]
         self.behavior = :revoke if options[:destroy]
@@ -57,7 +55,9 @@ module Appjam
         aString.gsub!('Contacts', "#{@class_name}")
         aString.gsub!('Contact', "#{@class_name}")
         File.open(fileName, "w") { |file| file << aString }
-
+        
+        system "mv #{@project_name}/#{@class_name}.xcodeproj/eiffel.pbxuser #{@project_name}/#{@class_name}.xcodeproj/#{`whoami`.strip}.pbxuser"
+        system "mv #{@project_name}/#{@class_name}.xcodeproj/eiffel.perspectivev3 #{@project_name}/#{@class_name}.xcodeproj/#{`whoami`.strip}.perspectivev3"
         
         template "project/main.m.tt", "#{@project_name}/main.m"
         
@@ -90,8 +90,8 @@ module Appjam
         template "project/Classes/contacts/model/UserProxy.m.tt" , "#{@project_name}/Classes/#{@project_name}/model/#{@class_name}Proxy.m"
         template "project/Classes/contacts/model/vo/UserVO.h.tt" , "#{@project_name}/Classes/#{@project_name}/model/vo/#{@class_name}VO.h"
         template "project/Classes/contacts/model/vo/UserVO.m.tt" , "#{@project_name}/Classes/#{@project_name}/model/vo/#{@class_name}VO.m"
-        template "project/Classes/contacts/view/ContactsMediator.h.tt" , "#{@project_name}/Classes/#{@project_name}/view/#{@class_name}Mediator.h"
-        template "project/Classes/contacts/view/ContactsMediator.m.tt" , "#{@project_name}/Classes/#{@project_name}/view/#{@class_name}Mediator.m"
+        template "project/Classes/contacts/view/UserMediator.h.tt" , "#{@project_name}/Classes/#{@project_name}/view/#{@class_name}Mediator.h"
+        template "project/Classes/contacts/view/UserMediator.m.tt" , "#{@project_name}/Classes/#{@project_name}/view/#{@class_name}Mediator.m"
         template "project/Classes/contacts/view/UserFormMediator.h.tt" , "#{@project_name}/Classes/#{@project_name}/view/#{@class_name}FormMediator.h"
         template "project/Classes/contacts/view/UserFormMediator.m.tt" , "#{@project_name}/Classes/#{@project_name}/view/#{@class_name}FormMediator.m"
         template "project/Classes/contacts/view/UserListMediator.h.tt" , "#{@project_name}/Classes/#{@project_name}/view/#{@class_name}ListMediator.h"
@@ -109,6 +109,8 @@ module Appjam
       
       =================================================================
       Your #{@project_name} application has been generated.
+      Open #{@xcode_project_name.capitalize}.xcodeproj
+      Build and Run
       =================================================================
       
       TEXT

@@ -2,6 +2,9 @@
 //  Delete<%= @class_name %>Command.m
 //  PureMVC_ObjectiveC
 //
+//  <%= @project_name %> by <%= @developer.capitalize %>
+//  Copyright(c) <%= Time.now.year %>, All rights reserved.
+//
 
 #import "Delete<%= @class_name %>Command.h"
 #import "<%= @class_name %>Proxy.h"
