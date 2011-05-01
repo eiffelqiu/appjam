@@ -98,6 +98,8 @@ Gem::Specification.new do |s|
     "lib/appjam/generators/project/utils/UIDevice.m",
     "lib/appjam/generators/project/utils/URLEncodeString.h",
     "lib/appjam/generators/project/utils/URLEncodeString.m",
+    "lib/appjam/tasks.rb",
+    "lib/appjam/tasks/plugin.rb",
     "lib/appjam/version.rb"
   ]
   s.homepage = %q{http://github.com/eiffelqiu/appjam}

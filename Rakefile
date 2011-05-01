@@ -1,6 +1,6 @@
 require 'rubygems'
 require 'bundler'
-require './lib/appjam/version.rb'
+
 begin
   Bundler.setup(:default, :development)
 rescue Bundler::BundlerError => e
@@ -9,6 +9,10 @@ rescue Bundler::BundlerError => e
   exit e.status_code
 end
 require 'rake'
+require './lib/appjam/version.rb'
+require './lib/appjam/tasks.rb'
+
+Appjam::Tasks.files.each  { |ext| load(ext) }
 
 require 'jeweler'
 Jeweler::Tasks.new do |gem|
