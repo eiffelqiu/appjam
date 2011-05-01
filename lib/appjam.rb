@@ -1,5 +1,6 @@
 require 'thread'
 require 'appjam/version.rb'
+require 'appjam/tasks.rb'
 require 'active_support' 
 
 module Appjam
@@ -57,3 +58,8 @@ end # IphoneMvc
 # We add our generators to Appjam::Genererator
 #
 Appjam::Generators.load_paths << Dir[File.dirname(__FILE__) + '/appjam/generators/{project,model}.rb']
+
+##
+# We add our tasks to appjam
+#
+Appjam::Tasks.files << Dir[File.dirname(__FILE__) + "/appjam/tasks/**/*.rb"]
