@@ -6,13 +6,25 @@ for PureMVC framework, see http://trac.puremvc.org/PureMVC_ObjectiveC/
 
 == Installation
 
-$ gem install appjam --pre
+$ gem install appjam
 
 == Usage
 
-$ appjam project contact 
-$ cd contact
-$ open Contacts.xcodeproj
+Usage 1: generate iphone app project
+
+$ appjam project todo 
+$ cd todo
+$ open Todo.xcodeproj
+
+Xcode build and run 
+
+Usage 2: add model to iphone app project
+
+$ cd todo 
+$ appjam model user 
+$ open Todo.xcodeproj
+
+Add "Classes/user/" folder to the "Classes/apps" Group
 
 Xcode build and run 
 

@@ -2,7 +2,7 @@
 //  NSStringWhiteSpace.m
 //  YueBao
 //
-//  Created by <%= @developer.capitalize %> on <%= created_on %>
+//  Created by <%= @developer.capitalize %> on <%= @created_on %>
 //  Copyright(c) <%= Time.now.year %>, All rights reserved.
 //
 
