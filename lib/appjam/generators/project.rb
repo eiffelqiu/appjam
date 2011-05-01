@@ -111,7 +111,7 @@ module Appjam
       
       =================================================================
       Your #{@project_name} application has been generated.
-      Open #{@xcode_project_name.capitalize}.xcodeproj
+      Open #{@project_name.capitalize}.xcodeproj
       Build and Run
       =================================================================
       
