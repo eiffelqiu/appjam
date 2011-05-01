@@ -10,18 +10,22 @@ $ gem install appjam
 
 == Usage
 
-Usage 1: generate iphone app project
+==== Usage 1: generate iphone app project
 
-$ appjam project todo 
+$ appjam project todo
+
 $ cd todo
+
 $ open Todo.xcodeproj
 
 Xcode build and run 
 
-Usage 2: add model to iphone app project
+==== Usage 2: add model to iphone app project
 
 $ cd todo 
+
 $ appjam model user 
+
 $ open Todo.xcodeproj
 
 Add "Classes/user/" folder to the "Classes/apps" Group
