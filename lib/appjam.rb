@@ -1,6 +1,6 @@
 require 'thread'
-require 'appjam/version.rb'
-require 'appjam/tasks.rb'
+require 'appjam/version'
+require 'appjam/tasks'
 require 'active_support' 
 
 module Appjam
@@ -58,5 +58,4 @@ end # Appjam
 # We add our generators to Appjam::Genererator
 #
 Appjam::Generators.load_paths << Dir[File.dirname(__FILE__) + '/appjam/generators/{project,model}.rb']
-
 

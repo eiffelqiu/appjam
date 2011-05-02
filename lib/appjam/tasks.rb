@@ -16,7 +16,7 @@ module Appjam
     # Returns a list of files to handle with appjam rake
     #
     def self.files
-      @files ||= Dir[File.dirname(__FILE__) + "/tasks/**/*.rake"]
+      @files ||= Dir[File.dirname(__FILE__) + "/tasks/**/*.rb"]
     end
   end # Tasks
 end # Appjam
