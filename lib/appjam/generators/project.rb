@@ -4,11 +4,12 @@ require 'thor/actions'
 require 'active_support/core_ext/string'
 require 'active_support/inflector'
 require File.dirname(__FILE__) + '/actions'
+require File.dirname(__FILE__) + '/jam'
 require 'date' 
 
 module Appjam
   module Generators
-    class Project < Thor::Group
+    class Project < Jam
 
       # Add this generator to our appjam
       Appjam::Generators.add_generator(:project, self)
