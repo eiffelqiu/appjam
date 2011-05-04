@@ -29,6 +29,7 @@ Jeweler::Tasks.new do |gem|
   gem.files = Dir.glob('lib/**/*.*')
   gem.add_dependency 'activesupport'
   gem.add_dependency 'grit'
+  gem.add_dependency 'i18n'
 end
 Jeweler::RubygemsDotOrgTasks.new
 Jeweler::GemcutterTasks.new
