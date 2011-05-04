@@ -14,11 +14,11 @@ Appjam require ruby installed on your mac machine. Since now all Mac OSX system 
 
 Appjam has an dependency on "thor" gem , which require latest rubygem installed, so you need to update your rubygem to latest version, run command below to update your rubygem to the latest one.
 
-$ gem update --system  # double dash option
+$ sudo gem update --system  # double dash option
 
 == Installation
 
-$ gem install appjam
+$ sudo gem install appjam
 
 == Usage
 

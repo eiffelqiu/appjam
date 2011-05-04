@@ -5,11 +5,11 @@
 
 Gem::Specification.new do |s|
   s.name = %q{appjam}
-  s.version = "0.1.2"
+  s.version = "0.1.4"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Eiffel Q"]
-  s.date = %q{2011-05-01}
+  s.date = %q{2011-05-04}
   s.description = %q{generate iphone app skeleton based on pure mvc framework}
   s.email = %q{eiffelqiu@gmail.com}
   s.executables = ["appjam"]
@@ -22,6 +22,7 @@ Gem::Specification.new do |s|
     "lib/appjam/command.rb",
     "lib/appjam/generators/actions.rb",
     "lib/appjam/generators/cli.rb",
+    "lib/appjam/generators/jam.rb",
     "lib/appjam/generators/model.rb",
     "lib/appjam/generators/project.rb",
     "lib/appjam/generators/project/Classes/ContactsAppDelegate.h.tt",
@@ -135,6 +136,7 @@ Gem::Specification.new do |s|
       s.add_development_dependency(%q<system_timer>, [">= 1.0"])
       s.add_runtime_dependency(%q<activesupport>, [">= 0"])
       s.add_runtime_dependency(%q<grit>, [">= 0"])
+      s.add_runtime_dependency(%q<i18n>, [">= 0"])
     else
       s.add_dependency(%q<thor>, [">= 0"])
       s.add_dependency(%q<activesupport>, [">= 0"])
@@ -154,6 +156,7 @@ Gem::Specification.new do |s|
       s.add_dependency(%q<system_timer>, [">= 1.0"])
       s.add_dependency(%q<activesupport>, [">= 0"])
       s.add_dependency(%q<grit>, [">= 0"])
+      s.add_dependency(%q<i18n>, [">= 0"])
     end
   else
     s.add_dependency(%q<thor>, [">= 0"])
@@ -174,6 +177,7 @@ Gem::Specification.new do |s|
     s.add_dependency(%q<system_timer>, [">= 1.0"])
     s.add_dependency(%q<activesupport>, [">= 0"])
     s.add_dependency(%q<grit>, [">= 0"])
+    s.add_dependency(%q<i18n>, [">= 0"])
   end
 end
 
