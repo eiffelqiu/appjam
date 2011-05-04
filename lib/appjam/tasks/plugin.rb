@@ -1,15 +1,9 @@
 TEMPLATE = (<<-TEMPLATE)
-require 'thor'
-require 'thor/group'
-require 'thor/actions'
-require 'active_support/core_ext/string'
-require 'active_support/inflector'
-require File.dirname(__FILE__) + '/actions'
-require 'date' 
+require File.dirname(__FILE__) + '/jam'
 
 module Appjam
   module Generators
-    class Template < Thor::Group
+    class Template < Jam
 
       # Add this generator to our appjam
       Appjam::Generators.add_generator(:template, self)

@@ -3,12 +3,12 @@ require 'thor/group'
 require 'thor/actions'
 require 'active_support/core_ext/string'
 require 'active_support/inflector'
-require File.dirname(__FILE__) + '/actions'
 require 'date' 
+require File.dirname(__FILE__) + '/actions'
 
 module Appjam
   module Generators
-    class Jam < Thor::Group
+    class Jam < Thor::Group   
 
       # Add this generator to our appjam
       Appjam::Generators.add_generator(:jam, self)
@@ -51,6 +51,23 @@ module Appjam
       
       TEXT
       end
+      
+      class << self
+          # The methods below define the JAM DSL.
+          attr_reader :stable, :unstable
+          
+          def self.attr_rw(*attrs)
+            attrs.each do |attr|
+              class_eval %Q{
+                def #{attr}(val=nil)
+                  val.nil? ? @#{attr} : @#{attr} = val
+                end
+              }
+            end
+          end
+          attr_rw :version, :homepage, :author, :email
+      end
+      
     end # Jam
   end # Generators
 end # Appjam
