@@ -27,10 +27,6 @@ module Appjam
       class_option :root, :desc => "The root destination", :aliases => '-r', :default => ".", :type => :string
       class_option :destroy, :aliases => '-d', :default => false,   :type    => :boolean
 
-      def in_app_root?
-        File.exist?('Classes')
-      end     
-
       def create_app
         valid_constant?(options[:project] || name)
         @project_name = (options[:app] || name).gsub(/\W/, "_").downcase

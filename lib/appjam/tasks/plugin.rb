@@ -1,4 +1,4 @@
-TEMPLATE = (<<-TEMPLATE)
+TEMPLATE = <<-BLOCK
 require File.dirname(__FILE__) + '/jam'
 
 module Appjam
@@ -22,14 +22,14 @@ module Appjam
 
       class_option :root, :desc => "The root destination", :aliases => '-r', :default => ".", :type => :string
       class_option :destroy, :aliases => '-d', :default => false,   :type    => :boolean
-    
+
       def in_app_root?
         File.exist?('Classes')
       end     
 
       def create_app
         if in_app_root?
-          
+
 say (<<-TEXT).gsub(/ {10}/,'')
 
 =================================================================
@@ -42,7 +42,7 @@ TEXT
     end # Template
   end # Generators
 end # Appjam
-TEMPLATE
+BLOCK
 
 namespace :appjam do
   namespace :plugin do
@@ -56,6 +56,9 @@ namespace :appjam do
       Dir.mkdir plugin_dir unless File.exist?(plugin_dir)
       File.open(plugin_name, 'w') {|f| f.write(TEMPLATE) }  
     end
+    
+
 
   end # plugin
 end # appjam
+
