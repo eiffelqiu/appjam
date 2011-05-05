@@ -1,15 +1,13 @@
-require 'thor'
-require 'thor/group'
-require 'thor/actions'
-require 'active_support/core_ext/string'
-require 'active_support/inflector'
-require File.dirname(__FILE__) + '/actions'
 require File.dirname(__FILE__) + '/jam'
-require 'date' 
 
 module Appjam
   module Generators
     class Model < Jam
+      
+      author 'Eiffel Qiu'
+      homepage 'http://www.likenote.com'
+      email 'eiffelqiu@gmail.com'
+      version Appjam::Version::STRING      
 
       # Add this generator to our appjam
       Appjam::Generators.add_generator(:model, self)
@@ -28,10 +26,6 @@ module Appjam
 
       class_option :root, :desc => "The root destination", :aliases => '-r', :default => ".", :type => :string
       class_option :destroy, :aliases => '-d', :default => false,   :type    => :boolean
-    
-      def in_app_root?
-        File.exist?('Classes')
-      end     
 
       def create_app
         if in_app_root?

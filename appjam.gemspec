@@ -5,11 +5,20 @@
 
 Gem::Specification.new do |s|
   s.name = %q{appjam}
+<<<<<<< HEAD
   s.version = "0.1.4"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Eiffel Q"]
   s.date = %q{2011-05-04}
+=======
+  s.version = "0.1.3"
+
+  s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
+  s.authors = ["Eiffel Q"]
+  s.date = %q{2011-05-03}
+  s.default_executable = %q{appjam}
+>>>>>>> 4009750a8302c10e1951191ca70605f2f443bed8
   s.description = %q{generate iphone app skeleton based on pure mvc framework}
   s.email = %q{eiffelqiu@gmail.com}
   s.executables = ["appjam"]
@@ -22,7 +31,11 @@ Gem::Specification.new do |s|
     "lib/appjam/command.rb",
     "lib/appjam/generators/actions.rb",
     "lib/appjam/generators/cli.rb",
+<<<<<<< HEAD
     "lib/appjam/generators/jam.rb",
+=======
+    "lib/appjam/generators/fun.rb",
+>>>>>>> 4009750a8302c10e1951191ca70605f2f443bed8
     "lib/appjam/generators/model.rb",
     "lib/appjam/generators/project.rb",
     "lib/appjam/generators/project/Classes/ContactsAppDelegate.h.tt",
@@ -106,7 +119,7 @@ Gem::Specification.new do |s|
   s.homepage = %q{http://github.com/eiffelqiu/appjam}
   s.licenses = ["MIT"]
   s.require_paths = ["lib"]
-  s.rubygems_version = %q{1.7.2}
+  s.rubygems_version = %q{1.3.7}
   s.summary = %q{an iphone app generator}
   s.test_files = [
     "test/helper.rb",
@@ -115,6 +128,7 @@ Gem::Specification.new do |s|
   ]
 
   if s.respond_to? :specification_version then
+    current_version = Gem::Specification::CURRENT_SPECIFICATION_VERSION
     s.specification_version = 3
 
     if Gem::Version.new(Gem::VERSION) >= Gem::Version.new('1.2.0') then
