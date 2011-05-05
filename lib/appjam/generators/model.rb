@@ -7,18 +7,12 @@ module Appjam
       author 'Eiffel Qiu'
       homepage 'http://www.likenote.com'
       email 'eiffelqiu@gmail.com'
-      version Appjam::Version::STRING      
-
+      version Appjam::Version::STRING   
+      
       # Add this generator to our appjam
       Appjam::Generators.add_generator(:model, self)
-
-      # Define the source template root
-      def self.source_root; File.expand_path(File.dirname(__FILE__)); end
-      def self.banner; "appjam model [name]"; end
-
-      # Include related modules
-      include Thor::Actions
-      include Appjam::Generators::Actions            
+  
+      init_generator      
 
       desc "Description:\n\n\tappjam will generates an new PureMvc Model for iphone"
 
@@ -39,7 +33,32 @@ module Appjam
           self.destination_root = options[:root]
           project = options[:project]
           self.behavior = :revoke if options[:destroy]
-        
+          
+          eval(File.read(__FILE__) =~ /^__END__\n/ && $' || '')
+
+          say (<<-TEXT).gsub(/ {10}/,'')
+      
+      =================================================================
+      Your [#{@model_name.capitalize}] Model has been generated.
+      Open #{@xcode_project_name.capitalize}.xcodeproj
+      Add "Classes/#{@model_name}/" folder to the "Classes/apps" Group
+      Build and Run
+      =================================================================
+      
+        TEXT
+        else 
+          puts
+          puts '-'*70
+          puts "You are not in an iphone project folder"
+          puts '-'*70
+          puts
+        end
+      end
+    end # Model
+  end # Generators
+end # Appjam
+
+__END__
           header = "
 #define ShowNew#{@class_name} @\"ShowNew#{@class_name}\"
 #define ShowEdit#{@class_name} @\"ShowEdit#{@class_name}\"
@@ -76,26 +95,3 @@ module Appjam
           template "project/Classes/contacts/view/components/UserForm.m.tt" , "Classes/#{@model_name}/view/components/#{@class_name}Form.m"
           template "project/Classes/contacts/view/components/UserList.h.tt" , "Classes/#{@model_name}/view/components/#{@class_name}List.h"
           template "project/Classes/contacts/view/components/UserList.m.tt" , "Classes/#{@model_name}/view/components/#{@class_name}List.m"
-
-
-          say (<<-TEXT).gsub(/ {10}/,'')
-      
-      =================================================================
-      Your [#{@model_name.capitalize}] Model has been generated.
-      Open #{@xcode_project_name.capitalize}.xcodeproj
-      Add "Classes/#{@model_name}/" folder to the "Classes/apps" Group
-      Build and Run
-      =================================================================
-      
-        TEXT
-        else 
-          puts
-          puts '-'*70
-          puts "You are not in an iphone project folder"
-          puts '-'*70
-          puts
-        end
-      end
-    end # Model
-  end # Generators
-end # Appjam
