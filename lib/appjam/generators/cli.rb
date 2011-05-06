@@ -11,7 +11,7 @@ module Appjam
     #
     class Cli < Thor::Group
       
-      RENDER_OPTIONS = {:fields=>[:command,:description]}   
+      RENDER_OPTIONS = { :fields => [:category,:command,:description] }   
       # Include related modules
       include Thor::Actions
 
@@ -41,8 +41,8 @@ module Appjam
           puts "Usage: appjam [OPTIONS] [ARGS]"
           puts
           puts "APPJAM OPTIONS"
-          opt = [{ :command => "appjam project todo", :description => "generate iphone project skeleton"},
-                 { :command => "appjam model user",   :description => "generate iphone project data model"}] 
+          opt = [{ :category => "objective c", :command => "appjam project todo", :description => "generate iphone project skeleton"},
+                 { :category => "objective c", :command => "appjam model user",   :description => "generate iphone project data model"}] 
           View.render(opt, RENDER_OPTIONS)
           puts
         end
