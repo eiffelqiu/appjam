@@ -44,7 +44,7 @@ module Appjam
         else
           puts colorize("Usage: appjam [OPTIONS] [ARGS]")
           puts
-          puts colorize("APPJAM OPTIONS", { :foreground => :blue, :background => :yellow, :config => :underline })
+          puts colorize("APPJAM OPTIONS", { :foreground => :blue})
           opt = [{ :category => "objective c (iphone)", :command => "appjam project todo", :description => "generate iphone project skeleton"},
                  { :category => "objective c (iphone)", :command => "appjam model user",   :description => "generate iphone project data model"}] 
           View.render(opt, RENDER_OPTIONS)
