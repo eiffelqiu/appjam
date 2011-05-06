@@ -1,7 +1,7 @@
 source "http://rubygems.org"
 gem "thor"
 gem "activesupport"
-gem "wirble"
+gem "cli-colorize"
 gem "hirb"
 
 # Add dependencies to develop your gem here.

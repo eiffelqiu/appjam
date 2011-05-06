@@ -1,4 +1,5 @@
 require 'rubygems'
+require 'cli-colorize'
 require 'thor/group'
 require 'hirb'
 require File.dirname(__FILE__) + '/../view'
@@ -10,6 +11,9 @@ module Appjam
     # 3rd party generators
     #
     class Cli < Thor::Group
+      include CLIColorize
+      
+      CLIColorize.default_color = :red
       
       RENDER_OPTIONS = { :fields => [:category,:command,:description] }   
       # Include related modules
@@ -38,11 +42,11 @@ module Appjam
           args = ARGV.empty? && generator_class.require_arguments? ? ["-h"] : ARGV
           generator_class.start(args)
         else
-          puts "Usage: appjam [OPTIONS] [ARGS]"
+          puts colorize("Usage: appjam [OPTIONS] [ARGS]")
           puts
-          puts "APPJAM OPTIONS"
-          opt = [{ :category => "objective c", :command => "appjam project todo", :description => "generate iphone project skeleton"},
-                 { :category => "objective c", :command => "appjam model user",   :description => "generate iphone project data model"}] 
+          puts colorize("APPJAM OPTIONS", { :foreground => :blue, :background => :yellow, :config => :underline })
+          opt = [{ :category => "objective c (iphone)", :command => "appjam project todo", :description => "generate iphone project skeleton"},
+                 { :category => "objective c (iphone)", :command => "appjam model user",   :description => "generate iphone project data model"}] 
           View.render(opt, RENDER_OPTIONS)
           puts
         end
