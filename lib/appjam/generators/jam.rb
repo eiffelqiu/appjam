@@ -1,10 +1,12 @@
 require 'thor'
+require 'hirb'
 require 'thor/group'
 require 'thor/actions'
 require 'active_support/core_ext/string'
 require 'active_support/inflector'
 require 'date' 
 require File.dirname(__FILE__) + '/actions'
+require File.dirname(__FILE__) + '/../view'
 
 module Appjam
   module Generators
@@ -45,7 +47,8 @@ module Appjam
         self.behavior = :revoke if options[:destroy]
         
         #empty_directory "#{@jam_name}"
-
+        
+        View.render(options)
         say (<<-TEXT).gsub(/ {10}/,'')
       
       =================================================================

@@ -30,6 +30,8 @@ Jeweler::Tasks.new do |gem|
   gem.add_dependency 'activesupport'
   gem.add_dependency 'grit'
   gem.add_dependency 'i18n'
+  gem.add_dependency 'wirble'
+  gem.add_dependency 'hirb'
 end
 Jeweler::RubygemsDotOrgTasks.new
 Jeweler::GemcutterTasks.new

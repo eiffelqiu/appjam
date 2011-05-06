@@ -1,4 +1,7 @@
+require 'rubygems'
 require 'thor/group'
+require 'hirb'
+require File.dirname(__FILE__) + '/../view'
 
 module Appjam
   module Generators
@@ -7,7 +10,8 @@ module Appjam
     # 3rd party generators
     #
     class Cli < Thor::Group
-
+      
+      RENDER_OPTIONS = {:fields=>[:command,:description]}   
       # Include related modules
       include Thor::Actions
 
@@ -34,13 +38,12 @@ module Appjam
           args = ARGV.empty? && generator_class.require_arguments? ? ["-h"] : ARGV
           generator_class.start(args)
         else
+          puts "Usage: appjam [OPTIONS] [ARGS]"
           puts
-          puts '-'*70
-          puts "Please specify generator to use (#{Appjam::Generators.mappings.keys.join(", ")})"
-          puts '-'*70
-          puts 'Usage1: appjam project todo      # generate iphone project skeleton'
-          puts 'Usage2: appjam model user        # generate iphone project data model'
-          puts '-'*70
+          puts "APPJAM OPTIONS"
+          opt = [{ :command => "appjam project todo", :description => "generate iphone project skeleton"},
+                 { :command => "appjam model user",   :description => "generate iphone project data model"}] 
+          View.render(opt, RENDER_OPTIONS)
           puts
         end
       end

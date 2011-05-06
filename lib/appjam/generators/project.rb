@@ -32,7 +32,7 @@ module Appjam
         self.behavior = :revoke if options[:destroy]
 
         eval(File.read(__FILE__) =~ /^__END__\n/ && $' || '')       
-
+        
         say (<<-TEXT).gsub(/ {10}/,'')
       
       =================================================================
