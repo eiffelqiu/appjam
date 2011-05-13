@@ -37,7 +37,7 @@ module Appjam
         File.exist?('Classes')
       end     
 
-      def create_app
+      def create_jam
         valid_constant?(options["#{self.to_s.downcase.intern}"] || name)
         @jam_name = (options["#{self.to_s.downcase.intern}"] || name).gsub(/\W/, "_").downcase
         @developer = "#{`whoami`.strip}"
