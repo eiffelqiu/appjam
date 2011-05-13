@@ -28,7 +28,14 @@ module Appjam
       end     
 
       def create_app
-        if in_app_root?
+        valid_constant?(options[:template] || name)
+        @project_name = (options[:app] || name).gsub(/\W/, "_").downcase
+        @class_name = (options[:app] || name).gsub(/\W/, "_").capitalize
+        @developer = "#{`whoami`.strip}"
+        @created_on = Date.today.to_s
+        self.destination_root = options[:root]
+                
+        eval(File.read(__FILE__) =~ /^__END__\n/ && $' || '')
 
 say (<<-TEXT).gsub(/ {10}/,'')
 
@@ -38,10 +45,14 @@ Your template has been generated.
 
 TEXT          
         end
-      end
+
     end # Template
   end # Generators
 end # Appjam
+
+__END__
+# put your template command here
+
 BLOCK
 
 namespace :appjam do
@@ -57,8 +68,6 @@ namespace :appjam do
       File.open(plugin_name, 'w') {|f| f.write(TEMPLATE) }  
     end
     
-
-
   end # plugin
 end # appjam
 

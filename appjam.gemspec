@@ -5,20 +5,11 @@
 
 Gem::Specification.new do |s|
   s.name = %q{appjam}
-<<<<<<< HEAD
-  s.version = "0.1.4"
+  s.version = "0.1.5"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Eiffel Q"]
-  s.date = %q{2011-05-04}
-=======
-  s.version = "0.1.3"
-
-  s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
-  s.authors = ["Eiffel Q"]
-  s.date = %q{2011-05-03}
-  s.default_executable = %q{appjam}
->>>>>>> 4009750a8302c10e1951191ca70605f2f443bed8
+  s.date = %q{2011-05-06}
   s.description = %q{generate iphone app skeleton based on pure mvc framework}
   s.email = %q{eiffelqiu@gmail.com}
   s.executables = ["appjam"]
@@ -31,11 +22,7 @@ Gem::Specification.new do |s|
     "lib/appjam/command.rb",
     "lib/appjam/generators/actions.rb",
     "lib/appjam/generators/cli.rb",
-<<<<<<< HEAD
     "lib/appjam/generators/jam.rb",
-=======
-    "lib/appjam/generators/fun.rb",
->>>>>>> 4009750a8302c10e1951191ca70605f2f443bed8
     "lib/appjam/generators/model.rb",
     "lib/appjam/generators/project.rb",
     "lib/appjam/generators/project/Classes/ContactsAppDelegate.h.tt",
@@ -114,12 +101,13 @@ Gem::Specification.new do |s|
     "lib/appjam/generators/project/utils/URLEncodeString.m",
     "lib/appjam/tasks.rb",
     "lib/appjam/tasks/plugin.rb",
-    "lib/appjam/version.rb"
+    "lib/appjam/version.rb",
+    "lib/appjam/view.rb"
   ]
   s.homepage = %q{http://github.com/eiffelqiu/appjam}
   s.licenses = ["MIT"]
   s.require_paths = ["lib"]
-  s.rubygems_version = %q{1.3.7}
+  s.rubygems_version = %q{1.7.2}
   s.summary = %q{an iphone app generator}
   s.test_files = [
     "test/helper.rb",
@@ -128,12 +116,13 @@ Gem::Specification.new do |s|
   ]
 
   if s.respond_to? :specification_version then
-    current_version = Gem::Specification::CURRENT_SPECIFICATION_VERSION
     s.specification_version = 3
 
     if Gem::Version.new(Gem::VERSION) >= Gem::Version.new('1.2.0') then
       s.add_runtime_dependency(%q<thor>, [">= 0"])
       s.add_runtime_dependency(%q<activesupport>, [">= 0"])
+      s.add_runtime_dependency(%q<cli-colorize>, [">= 0"])
+      s.add_runtime_dependency(%q<hirb>, [">= 0"])
       s.add_development_dependency(%q<rake>, [">= 0.8.7"])
       s.add_development_dependency(%q<mocha>, [">= 0.9.8"])
       s.add_development_dependency(%q<rack-test>, [">= 0.5.0"])
@@ -151,9 +140,13 @@ Gem::Specification.new do |s|
       s.add_runtime_dependency(%q<activesupport>, [">= 0"])
       s.add_runtime_dependency(%q<grit>, [">= 0"])
       s.add_runtime_dependency(%q<i18n>, [">= 0"])
+      s.add_runtime_dependency(%q<hirb>, [">= 0"])
+      s.add_runtime_dependency(%q<cli-colorize>, [">= 0"])
     else
       s.add_dependency(%q<thor>, [">= 0"])
       s.add_dependency(%q<activesupport>, [">= 0"])
+      s.add_dependency(%q<cli-colorize>, [">= 0"])
+      s.add_dependency(%q<hirb>, [">= 0"])
       s.add_dependency(%q<rake>, [">= 0.8.7"])
       s.add_dependency(%q<mocha>, [">= 0.9.8"])
       s.add_dependency(%q<rack-test>, [">= 0.5.0"])
@@ -171,10 +164,14 @@ Gem::Specification.new do |s|
       s.add_dependency(%q<activesupport>, [">= 0"])
       s.add_dependency(%q<grit>, [">= 0"])
       s.add_dependency(%q<i18n>, [">= 0"])
+      s.add_dependency(%q<hirb>, [">= 0"])
+      s.add_dependency(%q<cli-colorize>, [">= 0"])
     end
   else
     s.add_dependency(%q<thor>, [">= 0"])
     s.add_dependency(%q<activesupport>, [">= 0"])
+    s.add_dependency(%q<cli-colorize>, [">= 0"])
+    s.add_dependency(%q<hirb>, [">= 0"])
     s.add_dependency(%q<rake>, [">= 0.8.7"])
     s.add_dependency(%q<mocha>, [">= 0.9.8"])
     s.add_dependency(%q<rack-test>, [">= 0.5.0"])
@@ -192,6 +189,8 @@ Gem::Specification.new do |s|
     s.add_dependency(%q<activesupport>, [">= 0"])
     s.add_dependency(%q<grit>, [">= 0"])
     s.add_dependency(%q<i18n>, [">= 0"])
+    s.add_dependency(%q<hirb>, [">= 0"])
+    s.add_dependency(%q<cli-colorize>, [">= 0"])
   end
 end
 
