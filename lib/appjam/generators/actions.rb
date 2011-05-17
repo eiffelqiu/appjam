@@ -133,6 +133,18 @@ module Appjam
           raise ::NameError, "Project name #{name} cannot start with non-word character"
         end
       end
+      
+      ## Detect command and dump it's path 
+      def which cmd
+        exts = ENV['PATHEXT'] ? ENV['PATHEXT'].split(';') : ['']
+        ENV['PATH'].split(File::PATH_SEPARATOR).each do |path|
+          exts.each { |ext|
+            exe = "#{path}/#{cmd}#{ext}"
+            return exe if File.executable? exe
+          }
+        end
+        return nil
+      end
 
       module ClassMethods
         # Defines a class option to allow a component to be chosen and add to component type list

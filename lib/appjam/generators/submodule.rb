@@ -27,41 +27,47 @@ module Appjam
       end     
 
       def create_app
-        if in_app_root?
-          valid_constant?(options[:submodule] || name)
-          @submodule_name = (options[:app] || name).gsub(/W/, "_").downcase
-          @xcode_project_name = File.basename(Dir.glob('*.xcodeproj')[0],'.xcodeproj').downcase          
-          @class_name = (options[:app] || name).gsub(/W/, "_").capitalize
-          @developer = "eiffel"
-          @created_on = Date.today.to_s
-          self.destination_root = options[:root]
+        if which('git') != nil
+          if in_app_root? 
+            valid_constant?(options[:submodule] || name)
+            @submodule_name = (options[:app] || name).gsub(/W/, "_").downcase
+            @xcode_project_name = File.basename(Dir.glob('*.xcodeproj')[0],'.xcodeproj').downcase          
+            @class_name = (options[:app] || name).gsub(/W/, "_").capitalize
+            @developer = "eiffel"
+            @created_on = Date.today.to_s
+            self.destination_root = options[:root]
         
-          if @submodule_name == 'three20'
+            if @submodule_name == 'three20'
                 
-          eval(File.read(__FILE__) =~ /^__END__\n/ && $' || '')       
+            eval(File.read(__FILE__) =~ /^__END__\n/ && $' || '')       
 
-          say (<<-TEXT).gsub(/ {10}/,'')
+            say (<<-TEXT).gsub(/ {10}/,'')
 
-          =================================================================
-          Three20 submodule has been imported
+            =================================================================
+            Three20 submodule has been imported
 
-          Open #{@xcode_project_name.capitalize}.xcodeproj
-          Add "three20/src/Three20/Three20.xcodeproj" folder to the "Other Sources" Group
-          Add "three20/src/Three20.bundle" folder to the "Other Sources" Group
-          Build and Run
-          =================================================================
-          TEXT
+            Open #{@xcode_project_name.capitalize}.xcodeproj
+            Add "three20/src/Three20/Three20.xcodeproj" folder to the "Other Sources" Group
+            Add "three20/src/Three20.bundle" folder to the "Other Sources" Group
+            Build and Run
+            =================================================================
+            TEXT
+            else
+              say "="*70
+              say "Only support three20 submodule now!"
+              say "="*70
+            end
           else
-            say "="*70
-            say "Only support three20 submodule now!"
-            say "="*70
+            puts
+            puts '-'*70
+            puts "You are not in an iphone project folder"
+            puts '-'*70
+            puts          
           end
         else
-          puts
-          puts '-'*70
-          puts "You are not in an iphone project folder"
-          puts '-'*70
-          puts          
+          say "="*70
+          say "Git was not installed!! check http://git-scm.com/ for installation."
+          say "="*70          
         end
       end
 
