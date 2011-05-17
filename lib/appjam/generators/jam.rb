@@ -48,14 +48,14 @@ module Appjam
         
         #empty_directory "#{@jam_name}"
         
-        View.render(options)
-        say (<<-TEXT).gsub(/ {10}/,'')
-      
-      =================================================================
-      Your #{@jam_name} has been generated.
-      =================================================================
-      
-      TEXT
+      #   View.render(options)
+      #   say (<<-TEXT).gsub(/ {10}/,'')
+      # 
+      # =================================================================
+      # Your #{@jam_name} has been generated.
+      # =================================================================
+      # 
+      # TEXT
       end
       
       class << self

@@ -113,17 +113,17 @@ module Appjam
         result.blank? ? default : result
       end
 
-      # Raise SystemExit if the app is inexistent
+      # Raise SystemExit if the app is iexistent
       def check_app_existence(app)
         unless File.exist?(destination_root(app))
           say
           say "================================================================="
-          say "We didn't found #{app.underscore.downcase}!                      "
+          say "We didn't found #{app.underscore.camelize}!                      "
           say "================================================================="
           say
           # raise SystemExit
         end
-      end
+      end   
 
       # Ensure that project name is valid, else raise an NameError
       def valid_constant?(name)

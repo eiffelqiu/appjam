@@ -32,15 +32,15 @@ module Appjam
         self.behavior = :revoke if options[:destroy]
 
         eval(File.read(__FILE__) =~ /^__END__\n/ && $' || '')       
-        
-        say (<<-TEXT).gsub(/ {10}/,'')
       
+        say (<<-TEXT).gsub(/ {10}/,'')
+    
       =================================================================
       Your #{@project_name} application has been generated.
       Open #{@project_name.capitalize}.xcodeproj
       Build and Run
       =================================================================
-      
+    
       TEXT
       end
     end # Project

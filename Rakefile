@@ -26,7 +26,7 @@ Jeweler::Tasks.new do |gem|
   gem.authors = ["Eiffel Q"]
   gem.version = Appjam::Version::STRING
   gem.executables = ['appjam']
-  gem.files = Dir.glob('lib/**/*.*')
+  gem.files = Dir.glob('lib/**/*.*') 
   gem.add_dependency 'activesupport'
   gem.add_dependency 'grit'
   gem.add_dependency 'i18n'
