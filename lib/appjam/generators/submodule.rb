@@ -30,6 +30,7 @@ module Appjam
         if in_app_root?
           valid_constant?(options[:submodule] || name)
           @submodule_name = (options[:app] || name).gsub(/W/, "_").downcase
+          @xcode_project_name = File.basename(Dir.glob('*.xcodeproj')[0],'.xcodeproj').downcase          
           @class_name = (options[:app] || name).gsub(/W/, "_").capitalize
           @developer = "eiffel"
           @created_on = Date.today.to_s
@@ -43,8 +44,12 @@ module Appjam
 
           =================================================================
           Three20 submodule has been imported
-          =================================================================
 
+          Open #{@xcode_project_name.capitalize}.xcodeproj
+          Add "three20/src/Three20/Three20.xcodeproj" folder to the "Other Sources" Group
+          Add "three20/src/Three20.bundle" folder to the "Other Sources" Group
+          Build and Run
+          =================================================================
           TEXT
           else
             say "="*70
@@ -65,13 +70,14 @@ module Appjam
 end # Appjam
 
 __END__
-gitsub = "
-[submodule \"three20\"]
-        url = git://github.com/facebook/three20.git
-"
+unless File.exist?("./.git")
 system "git init"
 template "submodule/gitignore.tt", "./.gitignore"
-template "submodule/gitmodules.tt", "./.gitmodules"
-inject_into_file destination_root(".git/config"), gitsub, :after => "ignorecase = true\n"   
+system "git add ."
+system "git commit -m 'init commit'"
+end
 system "rm -rf three20"
-system "git submodule update --init"
+system "git submodule add git://github.com/facebook/three20.git three20"
+system "git add ."
+system "git commit -m 'import three20 submodule'"
+

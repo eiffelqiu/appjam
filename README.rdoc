@@ -44,6 +44,19 @@ Add "Classes/user/" folder to the "Classes/apps" Group
 
 Xcode build and run 
 
+==== Usage 3: add three20 submodule (## this require git installed)
+
+$ cd todo 
+
+$ appjam submodule three20 
+
+$ open Todo.xcodeproj
+
+Add "three20/src/Three20/Three20.xcodeproj" folder to the "Other Sources" Group
+Add "three20/src/Three20.bundle" folder to the "Other Sources" Group
+
+Xcode build and run
+
 == Contributing to appjam
  
 * Check out the latest master to make sure the feature hasn't been implemented or the bug hasn't been fixed yet
