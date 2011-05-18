@@ -40,7 +40,7 @@ Usage 2: add model to iphone app project
 
 	$ open Todo.xcodeproj
 
-Add "Classes/user/" folder to the "Classes/apps" Group
+Add "Classes/user/" folder to the "Classes/apps" Group  
 
 Xcode build and run 
 
@@ -52,8 +52,8 @@ Usage 3: add three20 submodule (## this require git installed)
 
 	$ open Todo.xcodeproj
 
-Add "three20/src/Three20/Three20.xcodeproj" folder to the "Other Sources" Group
-Add "three20/src/Three20.bundle" folder to the "Other Sources" Group
+Add "three20/src/Three20/Three20.xcodeproj" folder to the "Other Sources" Group  
+Add "three20/src/Three20.bundle" folder to the "Other Sources" Group  
 
 Xcode build and run
 
@@ -69,7 +69,7 @@ Add "asihttp" folder to the "Other Sources" Group
 
 Xcode build and run
 
-Usage 5: add json-framework submodule (## this require git installed)
+Usage 5: add json-framework submodule (## this require git installed)  
 -------
 	$ cd todo 
 
@@ -81,7 +81,7 @@ Add "json-framework" folder to the "Other Sources" Group
 
 Xcode build and run
 
-Usage 6: add kissxml submodule (## this require mercurial installed)
+Usage 6: add kissxml submodule (## this require mercurial installed)  
 -------
     $ cd todo 
 
