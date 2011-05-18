@@ -39,8 +39,13 @@ module Appjam
         
             if @submodule_name == 'three20'
                 
-            eval(File.read(__FILE__) =~ /^__END__\n/ && $' || '')       
-
+            eval(File.read(__FILE__) =~ /^__END__\n/ && $' || '')  
+                 
+            system "rm -rf three20"
+            system "git submodule add git://github.com/facebook/three20.git three20"
+            system "git add ."
+            system "git commit -m 'import three20 submodule'"
+            
             say (<<-TEXT).gsub(/ {10}/,'')
 
             =================================================================
@@ -52,9 +57,44 @@ module Appjam
             Build and Run
             =================================================================
             TEXT
+            elsif @submodule_name == 'asihttp'
+              eval(File.read(__FILE__) =~ /^__END__\n/ && $' || '')  
+
+              system "rm -rf asihttp"
+              system "git submodule add git://github.com/pokeb/asi-http-request.git asihttp"
+              system "git add ."
+              system "git commit -m 'import asihttp submodule'"
+
+              say (<<-TEXT).gsub(/ {10}/,'')
+
+              =================================================================
+              Asihttp submodule has been imported
+
+              Open #{@xcode_project_name.capitalize}.xcodeproj
+              Add "asihttp" folder to the "Other Sources" Group
+              Build and Run
+              =================================================================
+              TEXT
+            elsif @submodule_name == 'json'
+              eval(File.read(__FILE__) =~ /^__END__\n/ && $' || '')  
+
+              system "rm -rf json-framework"
+              system "git submodule add git://github.com/stig/json-framework json-framework"
+              system "git add ."
+              system "git commit -m 'import json-framework submodule'"      
+              say (<<-TEXT).gsub(/ {10}/,'')
+
+              =================================================================
+              json-framework submodule has been imported
+
+              Open #{@xcode_project_name.capitalize}.xcodeproj
+              Add "json-framework" folder to the "Other Sources" Group
+              Build and Run
+              =================================================================
+              TEXT
             else
               say "="*70
-              say "Only support three20 submodule now!"
+              say "Only support three20 and asihttp submodule now!"
               say "="*70
             end
           else
@@ -82,8 +122,5 @@ template "submodule/gitignore.tt", "./.gitignore"
 system "git add ."
 system "git commit -m 'init commit'"
 end
-system "rm -rf three20"
-system "git submodule add git://github.com/facebook/three20.git three20"
-system "git add ."
-system "git commit -m 'import three20 submodule'"
+
 

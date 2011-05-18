@@ -47,7 +47,9 @@ module Appjam
           puts colorize("APPJAM OPTIONS", { :foreground => :blue})
           opt = [{ :category => "objective c (iphone)", :command => "appjam project todo", :description => "generate iphone project skeleton"},
                  { :category => "objective c (iphone)", :command => "appjam model user",   :description => "generate iphone project data model"},
-                 { :category => "objective c (iphone)", :command => "appjam submodule three20",   :description => "fetch three20 subproject from github.com"}] 
+                 { :category => "objective c (iphone)", :command => "appjam submodule three20",   :description => "fetch three20 subproject from github.com"},
+                 { :category => "objective c (iphone)", :command => "appjam submodule asihttp",   :description => "fetch asi-http-request subproject from github.com"},
+                 { :category => "objective c (iphone)", :command => "appjam submodule json",   :description => "fetch json-framework subproject from github.com"}] 
           View.render(opt, RENDER_OPTIONS)
           puts
         end
