@@ -160,6 +160,7 @@ __END__
 unless File.exist?("./.git")
 system "git init"
 template "submodule/gitignore.tt", "./.gitignore"
+template "submodule/gitattributes.tt", "./.gitattributes"
 system "git add ."
 system "git commit -m 'init commit'"
 end
