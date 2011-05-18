@@ -71,13 +71,11 @@ Xcode build and run
 
 ==== Usage 5: add json-framework submodule (## this require git installed)
 
-```
 $ cd todo 
 
 $ appjam submodule json 
 
 $ open Todo.xcodeproj
-```
 
 Add "json-framework" folder to the "Other Sources" Group
 
@@ -85,13 +83,11 @@ Xcode build and run
 
 ==== Usage 6: add kissxml submodule (## this require mercurial installed)
 
-<code> 
 $ cd todo 
 
 $ appjam submodule json 
 
 $ open Todo.xcodeproj
-</code> 
 
 Add "kissxml" folder to the "Other Sources" Group
 
