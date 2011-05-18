@@ -1,27 +1,27 @@
 appjam
--------
+=======
 Appjam is iphone app generator, which generate iphone app skeleton based on PureMVC framework(Objective C port).
 
 for PureMVC framework, see http://trac.puremvc.org/PureMVC_ObjectiveC/
 
 Prerequisites
--------
+=======
 Ruby
-
+-------
 Appjam require ruby installed on your mac machine. Since now all Mac OSX system preinstalled ruby enviroment, that's not a big issue. 
 
 Rubygem(latest)
-
+-------
 Appjam has an dependency on "thor" gem , which require latest rubygem installed, so you need to update your rubygem to latest version, run command below to update your rubygem to the latest one.
 
 	$ sudo gem update --system  # double dash option
 
 Installation
--------
+=======
 	$ sudo gem install appjam
 
 Usage
--------
+=======
 Usage 1: generate iphone app project
 -------
 	$ appjam project todo
@@ -94,7 +94,7 @@ Add "kissxml" folder to the "Other Sources" Group
 Xcode build and run
 
 Contributing to appjam
--------
+=======
 * Check out the latest master to make sure the feature hasn't been implemented or the bug hasn't been fixed yet
 * Check out the issue tracker to make sure someone already hasn't requested it and/or contributed it
 * Fork the project
@@ -104,6 +104,6 @@ Contributing to appjam
 * Please try not to mess with the Rakefile, version, or history. If you want to have your own version, or is otherwise necessary, that is fine, but please isolate to its own commit so I can cherry-pick around it.
 
 Copyright
--------
+=======
 Copyright (c) 2011 Eiffel Q. See LICENSE.txt for
 further details.
