@@ -57,6 +57,30 @@ Add "three20/src/Three20.bundle" folder to the "Other Sources" Group
 
 Xcode build and run
 
+==== Usage 4: add asihttp submodule (## this require git installed)
+
+$ cd todo 
+
+$ appjam submodule asihttp 
+
+$ open Todo.xcodeproj
+
+Add "asihttp" folder to the "Other Sources" Group
+
+Xcode build and run
+
+==== Usage 5: add json-framework submodule (## this require git installed)
+
+$ cd todo 
+
+$ appjam submodule json 
+
+$ open Todo.xcodeproj
+
+Add "json-framework" folder to the "Other Sources" Group
+
+Xcode build and run
+
 == Contributing to appjam
  
 * Check out the latest master to make sure the feature hasn't been implemented or the bug hasn't been fixed yet

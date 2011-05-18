@@ -70,6 +70,8 @@ template "project/main.m.tt", "#{@project_name}/main.m"
 
 empty_directory "#{@project_name}/Classes/utils"
 
+empty_directory "#{@project_name}/Support"
+
 copy_file "project/utils/NSStringWhiteSpace.h", "#{@project_name}/Classes/utils/NSStringWhiteSpace.h"
 copy_file "project/utils/NSStringWhiteSpace.m", "#{@project_name}/Classes/utils/NSStringWhiteSpace.m"   
 copy_file "project/utils/UIDevice.h", "#{@project_name}/Classes/utils/UIDevice.h"  
