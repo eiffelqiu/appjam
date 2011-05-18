@@ -26,17 +26,56 @@ module Appjam
         File.exist?('Classes')
       end     
 
-      def create_app
+      def create_submodule
+        valid_constant?(options[:submodule] || name)
+        @submodule_name = (options[:app] || name).gsub(/W/, "_").downcase
+        @xcode_project_name = File.basename(Dir.glob('*.xcodeproj')[0],'.xcodeproj').downcase          
+        @class_name = (options[:app] || name).gsub(/W/, "_").capitalize
+        @developer = "eiffel"
+        @created_on = Date.today.to_s
+        self.destination_root = options[:root]
+        
+        if which('hg') != nil
+          if in_app_root?
+            if @submodule_name == 'kissxml'
+              eval(File.read(__FILE__) =~ /^__END__\n/ && $' || '')  
+
+              system "rm -rf kissxml"
+              system "hg clone https://kissxml.googlecode.com/hg/ kissxml"
+              system "git add ."
+              system "git commit -m 'import kissxml submodule'"
+              say (<<-TEXT).gsub(/ {10}/,'')
+
+              =================================================================
+              kissxml submodule has been imported
+
+              Open #{@xcode_project_name.capitalize}.xcodeproj
+              Add "kissxml" folder to the "Other Sources" Group
+              Build and Run
+              =================================================================
+              TEXT
+            else
+              unless %w(three20 sihttp json-framework kissxml).include?(@submodule_name)
+                say "="*70
+                say "Only support three20,asihttp,json-framework,kissxml submodule now!"
+                say "="*70
+              end            
+            end
+          else
+            puts
+            puts '-'*70
+            puts "You are not in an iphone project folder"
+            puts '-'*70
+            puts            
+          end
+        else
+          say "="*70
+          say "Mercurial was not installed!! check http://mercurial.selenic.com/ for installation."
+          say "="*70          
+        end        
+        
         if which('git') != nil
           if in_app_root? 
-            valid_constant?(options[:submodule] || name)
-            @submodule_name = (options[:app] || name).gsub(/W/, "_").downcase
-            @xcode_project_name = File.basename(Dir.glob('*.xcodeproj')[0],'.xcodeproj').downcase          
-            @class_name = (options[:app] || name).gsub(/W/, "_").capitalize
-            @developer = "eiffel"
-            @created_on = Date.today.to_s
-            self.destination_root = options[:root]
-        
             if @submodule_name == 'three20'
                 
             eval(File.read(__FILE__) =~ /^__END__\n/ && $' || '')  
@@ -93,9 +132,11 @@ module Appjam
               =================================================================
               TEXT
             else
-              say "="*70
-              say "Only support three20 and asihttp submodule now!"
-              say "="*70
+              unless %w(three20 sihttp json-framework kissxml).include?(@submodule_name)
+                say "="*70
+                say "Only support three20,asihttp,json-framework,kissxml submodule now!"
+                say "="*70
+              end
             end
           else
             puts

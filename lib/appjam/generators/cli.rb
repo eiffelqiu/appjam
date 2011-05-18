@@ -49,7 +49,9 @@ module Appjam
                  { :category => "objective c (iphone)", :command => "appjam model user",   :description => "generate iphone project data model"},
                  { :category => "objective c (iphone)", :command => "appjam submodule three20",   :description => "fetch three20 subproject from github.com"},
                  { :category => "objective c (iphone)", :command => "appjam submodule asihttp",   :description => "fetch asi-http-request subproject from github.com"},
-                 { :category => "objective c (iphone)", :command => "appjam submodule json",   :description => "fetch json-framework subproject from github.com"}] 
+                 { :category => "objective c (iphone)", :command => "appjam submodule json",   :description => "fetch json-framework subproject from github.com"},
+                 { :category => "objective c (iphone)", :command => "appjam submodule kissxml",   :description => "fetch kissxml subproject from code.google.com"}
+                 ] 
           View.render(opt, RENDER_OPTIONS)
           puts
         end
