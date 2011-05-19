@@ -5,7 +5,7 @@
 
 Gem::Specification.new do |s|
   s.name = %q{appjam}
-  s.version = "0.1.7"
+  s.version = "0.1.7.1"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Eiffel Q"]
@@ -15,7 +15,7 @@ Gem::Specification.new do |s|
   s.executables = ["appjam"]
   s.extra_rdoc_files = [
     "LICENSE.txt",
-    "README.rdoc"
+    "README.md"
   ]
   s.files = [
     "lib/appjam.rb",
@@ -100,6 +100,7 @@ Gem::Specification.new do |s|
     "lib/appjam/generators/project/utils/URLEncodeString.h",
     "lib/appjam/generators/project/utils/URLEncodeString.m",
     "lib/appjam/generators/submodule.rb",
+    "lib/appjam/generators/submodule/gitattributes.tt",
     "lib/appjam/generators/submodule/gitignore.tt",
     "lib/appjam/generators/submodule/gitmodules.tt",
     "lib/appjam/tasks.rb",
