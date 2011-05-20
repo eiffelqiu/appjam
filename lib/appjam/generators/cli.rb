@@ -54,9 +54,9 @@ module Appjam
                  ] 
           View.render(opt, RENDER_OPTIONS)
           puts 
-          puts colorize("Gist Option")
+          puts colorize("Gist Sub Options")
           gitopt = [
-                 { :category => "singleton", :command => "appjam gist singleton",   :description => "Simple Singleton Objective C Snippet"}
+                 { :category => "design pattern", :command => "appjam gist singleton",   :description => "Simple Singleton Objective C Snippet"}
                  ]      
           View.render(gitopt, RENDER_OPTIONS)           
           puts

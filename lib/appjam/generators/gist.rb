@@ -21,7 +21,7 @@ module Appjam
             }
           end
         end        
-        attr_rw :gist_name, :gist_description, :gist_id, :gist_body
+        attr_rw :gist_name, :gist_description, :gist_id, :gist_body   
         def preview_gist(gid)
           uri  = URI("https://gist.github.com/#{gid}.txt")
           http = Net::HTTP.new(uri.host, uri.port)
@@ -70,7 +70,11 @@ module Appjam
           end
         end                 
       end
-
+      
+      gist_name "singleton"
+      gist_id "https://gist.github.com/979981"
+      gist_description "Singletons in Objective C"
+      
       # Add this generator to our appjam
       Appjam::Generators.add_generator(:gist, self)
 
@@ -93,8 +97,32 @@ module Appjam
         File.exist?('Classes')
       end     
 
-      def create_gist
+      def create_git  
+        if in_app_root? 
+          valid_constant?(options[:gist] || name)
+          @gist_name = (options[:app] || name).gsub(/W/, "_").downcase
+          @class_name = (options[:app] || name).gsub(/W/, "_").capitalize
+          @developer = "eiffel"
+          @created_on = Date.today.to_s
+          self.destination_root = options[:root]
+        
+          if @gist_name == 'singleton'
+            Gist::download_gist(979981)
+            Gist::preview_gist(979981)
+            eval(File.read(__FILE__) =~ /^__END__/ && $' || '')
 
+            say "================================================================="
+            say "Your function snippet has been generated."
+            say "================================================================="
+          
+          end
+        else 
+          puts
+          puts '-'*70
+          puts "You are not in an iphone project folder"
+          puts '-'*70
+          puts
+        end
       end
 
     end # Gist
