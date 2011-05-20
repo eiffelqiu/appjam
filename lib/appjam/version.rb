@@ -3,7 +3,7 @@ module Appjam
     MAJOR = 0
     MINOR = 1
     PATCH = 7
-    BUILD = '1'
+    BUILD = '2pre'
     
     STRING = [MAJOR, MINOR, PATCH, BUILD].compact.join('.').chomp('.')
   end
