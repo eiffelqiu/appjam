@@ -1,0 +1,8 @@
+--- 
+design_pattern: 
+- singleton:
+  - id : 979981
+  - name : Singleton
+  - description : Singleton in Objective C  
+  - author : eiffelqiu
+  - email : eiffelqiu@gmail.com

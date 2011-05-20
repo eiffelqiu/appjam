@@ -105,17 +105,18 @@ module Appjam
           @developer = "eiffel"
           @created_on = Date.today.to_s
           self.destination_root = options[:root]
-        
-          if @gist_name == 'singleton'
-            Gist::download_gist(979981)
-            Gist::preview_gist(979981)
-            eval(File.read(__FILE__) =~ /^__END__/ && $' || '')
-
-            say "================================================================="
-            say "Your function snippet has been generated."
-            say "================================================================="
           
-          end
+          require 'yaml'
+          thing = YAML.load_file(File.expand_path(File.dirname(__FILE__) + '/gist.yml'))         
+          
+          pattern = thing['design_pattern'][0]['singleton'][0]
+          Gist::download_gist("#{pattern['id']}".to_i)
+          Gist::preview_gist("#{pattern['id']}".to_i)
+          eval(File.read(__FILE__) =~ /^__END__/ && $' || '')
+          
+          say "================================================================="
+          say "Your '#{pattern['name'].capitalize}' design pattern snippet has been generated."
+          say "================================================================="
         else 
           puts
           puts '-'*70
