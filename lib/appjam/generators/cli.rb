@@ -44,7 +44,7 @@ module Appjam
         else
           puts colorize("Usage: appjam [OPTIONS] [ARGS]")
           puts
-          puts colorize("APPJAM OPTIONS", { :foreground => :blue})
+          puts colorize("Appjam Options")
           opt = [{ :category => "objective c (iphone)", :command => "appjam project todo", :description => "generate iphone project skeleton"},
                  { :category => "objective c (iphone)", :command => "appjam model user",   :description => "generate iphone project data model"},
                  { :category => "objective c (iphone)", :command => "appjam submodule three20",   :description => "fetch three20 subproject from github.com"},
@@ -53,6 +53,12 @@ module Appjam
                  { :category => "objective c (iphone)", :command => "appjam submodule kissxml",   :description => "fetch kissxml subproject from code.google.com"}
                  ] 
           View.render(opt, RENDER_OPTIONS)
+          puts 
+          puts colorize("Gist Option")
+          gitopt = [
+                 { :category => "singleton", :command => "appjam gist singleton",   :description => "Simple Singleton Objective C Snippet"}
+                 ]      
+          View.render(gitopt, RENDER_OPTIONS)           
           puts
         end
       end

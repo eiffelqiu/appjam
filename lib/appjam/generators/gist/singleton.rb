@@ -10,23 +10,31 @@ module Appjam
         # Add this generator to our appjam
         Appjam::Generators.add_generator(:gist, self)
 
-        def create_git   
-          valid_constant?(options[:gist] || name)
-          @gist_name = (options[:app] || name).gsub(/W/, "_").downcase
-          @class_name = (options[:app] || name).gsub(/W/, "_").capitalize
-          @developer = "eiffel"
-          @created_on = Date.today.to_s
-          self.destination_root = options[:root]
+        def create_git  
+          if in_app_root? 
+            valid_constant?(options[:gist] || name)
+            @gist_name = (options[:app] || name).gsub(/W/, "_").downcase
+            @class_name = (options[:app] || name).gsub(/W/, "_").capitalize
+            @developer = "eiffel"
+            @created_on = Date.today.to_s
+            self.destination_root = options[:root]
           
-          if @gist_name == 'singleton'
-            Gist::download_gist(979981)
-            Gist::preview_gist(979981)
-            eval(File.read(__FILE__) =~ /^__END__/ && $' || '')
+            if @gist_name == 'singleton'
+              Gist::download_gist(979981)
+              Gist::preview_gist(979981)
+              eval(File.read(__FILE__) =~ /^__END__/ && $' || '')
 
-            say "================================================================="
-            say "Your function snippet has been generated."
-            say "================================================================="
+              say "================================================================="
+              say "Your function snippet has been generated."
+              say "================================================================="
             
+            end
+          else 
+            puts
+            puts '-'*70
+            puts "You are not in an iphone project folder"
+            puts '-'*70
+            puts
           end
         end
         
