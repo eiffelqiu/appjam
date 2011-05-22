@@ -107,16 +107,23 @@ module Appjam
           self.destination_root = options[:root]
           
           require 'yaml'
-          thing = YAML.load_file(File.expand_path(File.dirname(__FILE__) + '/gist.yml'))         
-          
-          pattern = thing['design_pattern'][0]['singleton'][0]
-          Gist::download_gist("#{pattern['id']}".to_i)
-          Gist::preview_gist("#{pattern['id']}".to_i)
-          eval(File.read(__FILE__) =~ /^__END__/ && $' || '')
-          
-          say "================================================================="
-          say "Your '#{pattern['name'].capitalize}' design pattern snippet has been generated."
-          say "================================================================="
+          g = YAML.load_file(File.expand_path(File.dirname(__FILE__) + '/gist.yml'))   
+          g.each_pair {|key,value|
+            g[key].each { |k|
+              k.each_pair { |k1,v1|
+                if "#{k1}" == @gist_name
+                  gid = k[k1][0]['id']
+                  gname = k[k1][1]['name']
+                  Gist::download_gist("#{gid}".to_i)
+                  Gist::preview_gist("#{gid}".to_i)
+                  eval(File.read(__FILE__) =~ /^__END__/ && $' || '')
+                  say "================================================================="
+                  say "Your '#{gname.capitalize}' design pattern snippet has been generated."
+                  say "================================================================="              
+                end                  
+              }
+            }
+          }
         else 
           puts
           puts '-'*70

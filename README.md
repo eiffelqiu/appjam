@@ -85,7 +85,7 @@ Usage 6: add kissxml submodule (## this require mercurial installed)
 -------
     $ cd todo 
 
-    $ appjam submodule json 
+    $ appjam submodule kissxml 
 
     $ open Todo.xcodeproj
 

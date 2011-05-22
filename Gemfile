@@ -19,6 +19,7 @@ group :development do
   gem "rcov", "~> 0.9.8"
   gem "grit"
   gem "i18n"
+  gem "rdoc"
   platforms :mri_18 do
     gem "ruby-prof", ">= 0.9.1"
     gem "system_timer", ">= 1.0"

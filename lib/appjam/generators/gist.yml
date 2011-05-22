@@ -3,6 +3,10 @@ design_pattern:
 - singleton:
   - id : 979981
   - name : Singleton
-  - description : Singleton in Objective C  
-  - author : eiffelqiu
+  - description : Singleton Snippet for Objective C
+  - email : eiffelqiu@gmail.com
+- delegate:
+  - id : 985279
+  - name : Delegation
+  - description : Delegation Snippet for Objective C
   - email : eiffelqiu@gmail.com

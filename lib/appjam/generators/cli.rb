@@ -55,9 +55,17 @@ module Appjam
           View.render(opt, RENDER_OPTIONS)
           puts 
           puts colorize("Gist Sub Options")
-          gitopt = [
-                 { :category => "design pattern", :command => "appjam gist singleton",   :description => "Simple Singleton Objective C Snippet"}
-                 ]      
+          gitopt = []   
+          require 'yaml'
+          g = YAML.load_file(File.expand_path(File.dirname(__FILE__) + '/gist.yml'))   
+          
+          g.each_pair {|key,value|
+            g[key].each { |k|
+              k.each_pair { |k1,v1|
+                gitopt << {:category => "design pattern", :command => "appjam gist #{k1}",   :description => "#{k[k1][2]['description']}" }
+              }
+            }
+          }
           View.render(gitopt, RENDER_OPTIONS)           
           puts
         end

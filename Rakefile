@@ -1,5 +1,11 @@
 require 'rubygems'
 require 'bundler'
+require 'rdoc/task'
+
+# temp hacking for "undefined method `sh'" error in Rake task
+class Object
+  alias sh system
+end
 
 begin
   Bundler.setup(:default, :development)
@@ -32,6 +38,7 @@ Jeweler::Tasks.new do |gem|
   gem.add_dependency 'i18n'
   gem.add_dependency 'hirb'
   gem.add_dependency 'cli-colorize'
+  gem.add_dependency 'rdoc'
 end
 Jeweler::RubygemsDotOrgTasks.new
 Jeweler::GemcutterTasks.new
@@ -52,7 +59,7 @@ end
 
 task :default => :test
 
-require 'rake/rdoctask'
+require 'rdoc/task'
 Rake::RDocTask.new do |rdoc|
   version = File.exist?('VERSION') ? File.read('VERSION') : ""
 
