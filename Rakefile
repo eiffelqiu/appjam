@@ -39,6 +39,7 @@ Jeweler::Tasks.new do |gem|
   gem.add_dependency 'hirb'
   gem.add_dependency 'cli-colorize'
   gem.add_dependency 'rdoc'
+  gem.add_dependency 'yajl-ruby'
 end
 Jeweler::RubygemsDotOrgTasks.new
 Jeweler::GemcutterTasks.new

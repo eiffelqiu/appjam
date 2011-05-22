@@ -3,6 +3,7 @@ gem "thor"
 gem "activesupport"
 gem "cli-colorize"
 gem "hirb"
+gem "yajl-ruby"
 
 # Add dependencies to develop your gem here.
 # Include everything needed to run rake, tests, features, etc.

@@ -36,7 +36,7 @@ module Appjam
           tempfile.close
 
           if system('which qlmanage')
-            system("qlmanage -c public.plain-text -p #{tempfile.path} >& /dev/null")
+            system("qlmanage -p #{tempfile.path} >& /dev/null")
           end          
         end  
         
@@ -60,13 +60,21 @@ module Appjam
           end
         end     
         
-        def download_gist(gist_id)
-          puts "-- fetching gist --"
-          puts "#{gist_id}.git"
-          if File.directory?("Support/#{gist_id}")
-            `cd Support/#{gist_id} && git pull ; cd ..`
-          else
-            `git clone git://gist.github.com/#{gist_id}.git Support/#{gist_id}`
+        def download_gist(gist_id,git_category,gist_name)
+          puts "-- fetching gist [#{gist_name}] --"
+          # require 'uri'
+          # require 'yajl/http_stream'
+          # 
+          # uri = URI.parse("http://gist.github.com/api/v1/json/#{gist_id}")
+          # Yajl::HttpStream.get(uri, :symbolize_keys => true) do |hash|
+          #   
+          # end      
+          if File.directory?("Support/#{gist_name}")
+            `rm -rf Support/#{gist_name}`
+          end
+          `git clone git://gist.github.com/#{gist_id}.git Support/#{git_category}/#{gist_name} && rm -rf Support/#{git_category}/#{gist_name}/.git`
+          if system('which qlmanage')
+            system("qlmanage -p Support/#{git_category}/#{gist_name}/*.* >& /dev/null")
           end
         end                 
       end
@@ -102,6 +110,7 @@ module Appjam
           valid_constant?(options[:gist] || name)
           @gist_name = (options[:app] || name).gsub(/W/, "_").downcase
           @class_name = (options[:app] || name).gsub(/W/, "_").capitalize
+          @xcode_project_name = File.basename(Dir.glob('*.xcodeproj')[0],'.xcodeproj').downcase
           @developer = "eiffel"
           @created_on = Date.today.to_s
           self.destination_root = options[:root]
@@ -109,16 +118,20 @@ module Appjam
           require 'yaml'
           g = YAML.load_file(File.expand_path(File.dirname(__FILE__) + '/gist.yml'))   
           g.each_pair {|key,value|
+            gcategory = key.downcase
             g[key].each { |k|
               k.each_pair { |k1,v1|
                 if "#{k1}" == @gist_name
                   gid = k[k1][0]['id']
-                  gname = k[k1][1]['name']
-                  Gist::download_gist("#{gid}".to_i)
-                  Gist::preview_gist("#{gid}".to_i)
+                  gname = k[k1][1]['name'].downcase
+                  Gist::download_gist("#{gid}".to_i,gcategory,gname)
                   eval(File.read(__FILE__) =~ /^__END__/ && $' || '')
                   say "================================================================="
                   say "Your '#{gname.capitalize}' design pattern snippet has been generated."
+                  say "Check Support/#{gcategory}/#{gname}/ for Snippet"
+                  say "Open #{@xcode_project_name.capitalize}.xcodeproj"
+                  say "Add 'Support/#{gcategory}/#{gname}/' folder to the 'Classes/apps' Group"
+                  say "Build and Run"          
                   say "================================================================="              
                 end                  
               }
