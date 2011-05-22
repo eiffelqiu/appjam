@@ -69,8 +69,8 @@ module Appjam
           # Yajl::HttpStream.get(uri, :symbolize_keys => true) do |hash|
           #   
           # end      
-          if File.directory?("Support/#{gist_name}")
-            `rm -rf Support/#{gist_name}`
+          if File.directory?("Support/#{git_category}/#{gist_name}")
+            `rm -rf Support/#{git_category}/#{gist_name}`
           end
           `git clone git://gist.github.com/#{gist_id}.git Support/#{git_category}/#{gist_name} && rm -rf Support/#{git_category}/#{gist_name}/.git`
           if system('which qlmanage')
