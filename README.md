@@ -22,7 +22,7 @@ Installation
 
 Usage
 =======
-![appjam usage](http://ww1.sinaimg.cn/large/5da420edjw1dhgyr0mg6ej.jpg)
+![appjam usage](http://eiffelqiu.github.com/appjam/appjam.jpg)
 Usage 1: generate iphone app project
 -------
 	$ appjam project todo
