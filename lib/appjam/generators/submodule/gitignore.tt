@@ -1,6 +1,7 @@
 # osx noise
 .DS_Store
 profile
+xcuserdata
 
 # Textmate - if you build your xcode projects with it
 *.tm_build_errors
@@ -12,12 +13,14 @@ profile
 *.perspective
 *.perspectivev3
 *.pbxuser
+*.moved-aside
+*.xcworkspace
 
 # Generated files
 VersionX-revision.h
 
 # build products
-build/
+build/*
 *.[oa]
 
 # Other source repository archive directories (protects when importing)
