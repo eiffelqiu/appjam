@@ -10,3 +10,8 @@ design_pattern:
   - name : Delegation
   - description : Delegation Snippet for Objective C
   - email : eiffelqiu@gmail.com
+- injection:
+  - id : 986087
+  - name : Injection
+  - description : Ruby's injection method for Objective C
+  - email : eiffelqiu@gmail.com
