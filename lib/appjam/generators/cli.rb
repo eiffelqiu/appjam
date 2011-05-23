@@ -44,29 +44,36 @@ module Appjam
         else
           puts colorize("Usage: appjam [OPTIONS] [ARGS]")
           puts
-          puts colorize("Appjam Options")
+          puts colorize("Project Options")
           opt = [{ :category => "objective c (iphone)", :command => "appjam project todo", :description => "generate iphone project skeleton"},
-                 { :category => "objective c (iphone)", :command => "appjam model user",   :description => "generate iphone project data model"},
-                 { :category => "objective c (iphone)", :command => "appjam submodule three20",   :description => "fetch three20 subproject from github.com"},
-                 { :category => "objective c (iphone)", :command => "appjam submodule asihttp",   :description => "fetch asi-http-request subproject from github.com"},
-                 { :category => "objective c (iphone)", :command => "appjam submodule json",   :description => "fetch json-framework subproject from github.com"},
-                 { :category => "objective c (iphone)", :command => "appjam submodule kissxml",   :description => "fetch kissxml subproject from code.google.com"}
+                 { :category => "objective c (iphone)", :command => "appjam model user",   :description => "generate iphone project data model"}
                  ] 
           View.render(opt, RENDER_OPTIONS)
+          puts
+          puts colorize("Submodule Options")
+          puts          
+          opt = [
+           { :category => "objective c (iphone)", :command => "appjam submodule three20",   :description => "fetch three20 subproject from github.com"},
+           { :category => "objective c (iphone)", :command => "appjam submodule asihttp",   :description => "fetch asi-http-request subproject from github.com"},
+           { :category => "objective c (iphone)", :command => "appjam submodule json",   :description => "fetch json-framework subproject from github.com"},
+           { :category => "objective c (iphone)", :command => "appjam submodule kissxml",   :description => "fetch kissxml subproject from code.google.com"}]
+          View.render(opt, RENDER_OPTIONS)
           puts 
-          puts colorize("Gist Sub Options")
-          gitopt = []   
+          puts colorize("Gist Options")
           require 'yaml'
           g = YAML.load_file(File.expand_path(File.dirname(__FILE__) + '/gist.yml'))   
           
           g.each_pair {|key,value|
+            gitopt = []   
+            puts 
+            puts colorize("Gist #{key} Options")            
             g[key].each { |k|
               k.each_pair { |k1,v1|
-                gitopt << {:category => "design pattern", :command => "appjam gist #{k1}",   :description => "#{k[k1][2]['description']}" }
+                gitopt << {:category => "#{key.gsub('_',' ')}", :command => "appjam gist #{k1}",   :description => "#{k[k1][2]['description']}" }
               }
             }
-          }
-          View.render(gitopt, RENDER_OPTIONS)           
+            View.render(gitopt, RENDER_OPTIONS) 
+          }          
           puts
         end
       end

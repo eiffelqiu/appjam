@@ -15,3 +15,9 @@ design_pattern:
   - name : Injection
   - description : Ruby's injection method for Objective C
   - email : eiffelqiu@gmail.com
+utiliy_function:
+- get_ip_address: 
+  - id : 986132
+  - name : GetIPAddress
+  - description : Get IP address in iphone
+  - email : eiffelqiu@gmail.com   
