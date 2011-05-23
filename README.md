@@ -22,6 +22,52 @@ Installation
 
 Usage
 =======
+$ appjam
+
+Usage: appjam [OPTIONS] [ARGS]
+
+Project Options
++----------------------+---------------------+------------------------------------+
+| category             | command             | description                        |
++----------------------+---------------------+------------------------------------+
+| objective c (iphone) | appjam project todo | generate iphone project skeleton   |
+| objective c (iphone) | appjam model user   | generate iphone project data model |
++----------------------+---------------------+------------------------------------+
+2 rows in set
+
+Submodule Options
+
++----------------------+--------------------------+---------------------------------------------------+
+| category             | command                  | description                                       |
++----------------------+--------------------------+---------------------------------------------------+
+| objective c (iphone) | appjam submodule three20 | fetch three20 subproject from github.com          |
+| objective c (iphone) | appjam submodule asihttp | fetch asi-http-request subproject from github.com |
+| objective c (iphone) | appjam submodule json    | fetch json-framework subproject from github.com   |
+| objective c (iphone) | appjam submodule kissxml | fetch kissxml subproject from code.google.com     |
++----------------------+--------------------------+---------------------------------------------------+
+4 rows in set
+
+Gist Options
+
+Gist design_pattern Options
++----------------+-----------------------+-----------------------------------------+
+| category       | command               | description                             |
++----------------+-----------------------+-----------------------------------------+
+| design pattern | appjam gist singleton | Singleton Snippet for Objective C       |
+| design pattern | appjam gist delegate  | Delegation Snippet for Objective C      |
+| design pattern | appjam gist injection | Ruby's injection method for Objective C |
++----------------+-----------------------+-----------------------------------------+
+3 rows in set
+
+Gist utiliy_function Options
++-----------------+----------------------------+--------------------------+
+| category        | command                    | description              |
++-----------------+----------------------------+--------------------------+
+| utiliy function | appjam gist get_ip_address | Get IP address in iphone |
++-----------------+----------------------------+--------------------------+
+1 row in set
+
+
 Usage 1: generate iphone app project
 -------
 	$ appjam project todo
