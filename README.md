@@ -24,16 +24,16 @@ Usage
 =======
 $ appjam
 
-Usage: appjam [OPTIONS] [ARGS]
+Usage: appjam [OPTIONS] [ARGS]  
 
-Project Options
-+----------------------+---------------------+------------------------------------+
-| category             | command             | description                        |
-+----------------------+---------------------+------------------------------------+
-| objective c (iphone) | appjam project todo | generate iphone project skeleton   |
-| objective c (iphone) | appjam model user   | generate iphone project data model |
-+----------------------+---------------------+------------------------------------+
-2 rows in set
+Project Options  
++----------------------+---------------------+------------------------------------+  
+| category             | command             | description                        |  
++----------------------+---------------------+------------------------------------+  
+| objective c (iphone) | appjam project todo | generate iphone project skeleton   |  
+| objective c (iphone) | appjam model user   | generate iphone project data model |  
++----------------------+---------------------+------------------------------------+  
+2 rows in set  
 
 Submodule Options
 
