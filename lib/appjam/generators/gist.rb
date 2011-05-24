@@ -127,8 +127,8 @@ module Appjam
                   Gist::download_gist("#{gid}".to_i,gcategory,gname)
                   eval(File.read(__FILE__) =~ /^__END__/ && $' || '')
                   say "================================================================="
-                  say "Your '#{gname.capitalize}' design pattern snippet has been generated."
-                  say "Check Gist/#{gcategory}/#{gname}/ for Snippet"
+                  say "Your '#{gname.capitalize}' snippet code has been generated."
+                  say "Check Gist/#{gcategory}/#{gname}/ for snippet"
                   say "Open #{@xcode_project_name.capitalize}.xcodeproj"
                   say "Add 'Gist/#{gcategory}/#{gname}/' folder to the 'Classes/apps' Group"
                   say "Build and Run"          
