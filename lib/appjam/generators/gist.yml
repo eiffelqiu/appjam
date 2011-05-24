@@ -1,23 +1,36 @@
 --- 
 design_pattern: 
 - singleton:
-  - id : 979981
+  - id : 988211
   - name : Singleton
-  - description : Singleton Snippet for Objective C
-  - email : eiffelqiu@gmail.com
+  - description : An Objective-C template for singleton classes
 - delegate:
   - id : 985279
   - name : Delegation
   - description : Delegation Snippet for Objective C
-  - email : eiffelqiu@gmail.com
 - injection:
   - id : 986087
   - name : Injection
   - description : Ruby's injection method for Objective C
-  - email : eiffelqiu@gmail.com
+  
+algorithm:
+- binary_search:
+  - id : 988219
+  - name : Binary_Search
+  - description : A binary search algorithm written Objective C
+        
 utiliy_function:
 - get_ip_address: 
   - id : 986132
-  - name : GetIPAddress
+  - name : Get_IP_Address
   - description : Get IP address in iphone
-  - email : eiffelqiu@gmail.com   
+- nsstring_truncation: 
+  - id : 988236
+  - name : NSString_Truncation
+  - description : NSString truncate to given size
+      
+snippet:
+- load_assets_in_webview: 
+  - id : 988227
+  - name : Load_Assets_In_Webview
+  - description : Load assets in Webview

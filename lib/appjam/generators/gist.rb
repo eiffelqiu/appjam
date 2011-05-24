@@ -49,10 +49,10 @@ module Appjam
                 links = get_links(response.body)
                 links.each do |link, gist_id|
                   puts "git://gist.github.com/#{gist_id}.git"
-                  if File.directory?("Support/#{gist_id}")
-                    `cd Support/#{gist_id} && git pull ; cd ..`
+                  if File.directory?("Gist/#{gist_id}")
+                    `cd Gist/#{gist_id} && git pull ; cd ..`
                   else
-                    `git clone git://gist.github.com/#{gist_id}.git Support/#{gist_id}`
+                    `git clone git://gist.github.com/#{gist_id}.git Gist/#{gist_id}`
                   end
                 end
                 download_gists(username, page+1) unless links.empty?
@@ -69,12 +69,12 @@ module Appjam
           # Yajl::HttpStream.get(uri, :symbolize_keys => true) do |hash|
           #   
           # end      
-          if File.directory?("Support/#{git_category}/#{gist_name}")
-            `rm -rf Support/#{git_category}/#{gist_name}`
+          if File.directory?("Gist/#{git_category}/#{gist_name}")
+            `rm -rf Gist/#{git_category}/#{gist_name}`
           end
-          `git clone git://gist.github.com/#{gist_id}.git Support/#{git_category}/#{gist_name} && rm -rf Support/#{git_category}/#{gist_name}/.git`
+          `git clone git://gist.github.com/#{gist_id}.git Gist/#{git_category}/#{gist_name} && rm -rf Gist/#{git_category}/#{gist_name}/.git`
           if system('which qlmanage')
-            system("qlmanage -p Support/#{git_category}/#{gist_name}/*.* >& /dev/null")
+            system("qlmanage -p Gist/#{git_category}/#{gist_name}/*.* >& /dev/null")
           end
         end                 
       end
@@ -128,9 +128,9 @@ module Appjam
                   eval(File.read(__FILE__) =~ /^__END__/ && $' || '')
                   say "================================================================="
                   say "Your '#{gname.capitalize}' design pattern snippet has been generated."
-                  say "Check Support/#{gcategory}/#{gname}/ for Snippet"
+                  say "Check Gist/#{gcategory}/#{gname}/ for Snippet"
                   say "Open #{@xcode_project_name.capitalize}.xcodeproj"
-                  say "Add 'Support/#{gcategory}/#{gname}/' folder to the 'Classes/apps' Group"
+                  say "Add 'Gist/#{gcategory}/#{gname}/' folder to the 'Classes/apps' Group"
                   say "Build and Run"          
                   say "================================================================="              
                 end                  
