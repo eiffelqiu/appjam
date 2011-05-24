@@ -30,7 +30,20 @@ utiliy_function:
   - description : NSString truncate to given size
       
 snippet:
+- common_macro:
+  - id : 988462
+  - name : Common_Macro
+  - description : Most often used Macro in iphone/ipad project    
 - load_assets_in_webview: 
   - id : 988227
   - name : Load_Assets_In_Webview
   - description : Load assets in Webview
+- validate_email:
+  - id : 988453
+  - name : Validate_Email
+  - description : Validating email address without using RegexKitLite
+  
+  
+  
+  
+  
