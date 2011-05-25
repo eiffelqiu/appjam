@@ -2,7 +2,7 @@
 require 'rubygems' unless defined?(Gem) 
 
 unless RUBY_PLATFORM =~ /darwin/i 
-  $stderr.puts "what? you do not have a MAC, dude?　Shame on you!!!"
+  $stderr.puts "what? you do not have a MAC, dude? Shame on you!!!"
 end
 
 lib_dir = File.expand_path(File.join(File.dirname(__FILE__),'..','lib'))
