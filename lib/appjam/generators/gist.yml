@@ -28,6 +28,14 @@ utiliy_function:
   - id : 988236
   - name : NSString_Truncation
   - description : NSString truncate to given size
+- get_gps_info: 
+  - id : 990073
+  - name : Get_GPS_Info
+  - description : Get GPS From using CLLocationManager  
+- determine_iphone_device: 
+  - id : 990157
+  - name : Determine_Iphone_Device
+  - description : Determine iPhone device info
       
 snippet:
 - common_macro:
@@ -42,8 +50,29 @@ snippet:
   - id : 988453
   - name : Validate_Email
   - description : Validating email address without using RegexKitLite
-  
-  
-  
+- round_corner_image:
+  - id : 990058
+  - name : Round_Corner_Image
+  - description : How to make an image with rounded corners  
+- check_network_availability:
+  - id : 990085
+  - name : Check_Network_Availability
+  - description : Checking network availability on iOS
+- get_random_mumber_in_range:
+  - id : 990090
+  - name : Get random number in a range
+  - description : Get random number in Objective C
+- mailComposeViewController_usage:
+  - id : 990122
+  - name : MFMailComposeViewController_Usage
+  - description : MFMailComposeViewController with availability check  
+- nsstring_md5:  
+  - id : 990141
+  - name : NSString_MD5
+  - description : NSString MD5 Function
+- stripping_html:  
+  - id : 990166
+  - name : Stripping_HTML
+  - description : Stripping HTML Function  
   
   
