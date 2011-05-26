@@ -19,6 +19,7 @@ Appjam has an dependency on "thor" gem , which require latest rubygem installed,
 Installation
 =======
 	$ sudo gem install appjam
+	$ sudo gem install appjam --pre  # for testing new functionality
 
 Usage
 =======
