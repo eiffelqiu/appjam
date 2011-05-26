@@ -60,7 +60,7 @@ snippet:
   - description : Checking network availability on iOS
 - get_random_mumber_in_range:
   - id : 990090
-  - name : Get random number in a range
+  - name : Get_Random_Number_In_A_Range
   - description : Get random number in Objective C
 - mailComposeViewController_usage:
   - id : 990122

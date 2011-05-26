@@ -66,7 +66,7 @@ module Appjam
           g.each_pair {|key,value|
             gitopt = []   
             puts 
-            puts colorize("Gist Options [#{key.gsub('_',' ')}]")            
+            puts colorize("Gist Category [#{key.gsub('_',' ')}]")            
             g[key].each { |k|
               k.each_pair { |k1,v1|
                 gitopt << {:category => "#{key.gsub('_',' ')}", :command => "appjam gist #{k1}",   :description => "#{k[k1][2]['description']}" }
