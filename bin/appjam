@@ -1,6 +1,10 @@
 #!/usr/bin/env ruby
 require 'rubygems' unless defined?(Gem) 
 
+class Object
+  alias sh system
+end
+
 unless RUBY_PLATFORM =~ /darwin/i 
   $stderr.puts "what? you do not have a MAC, dude? Shame on you!!!"
 end
