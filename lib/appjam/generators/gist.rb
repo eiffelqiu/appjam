@@ -7,6 +7,15 @@ require "open-uri"
 require 'tempfile'
 require File.dirname(__FILE__) + '/jam'
 
+class String
+  def is_numeric?
+    Float(self)
+    true 
+  rescue 
+    false
+  end
+end
+
 module Appjam
   module Generators
     class Gist < Jam
@@ -69,12 +78,16 @@ module Appjam
           # Yajl::HttpStream.get(uri, :symbolize_keys => true) do |hash|
           #   
           # end      
-          if File.directory?("Gist/#{git_category}/#{gist_name}")
-            `rm -rf Gist/#{git_category}/#{gist_name}`
+          if File.directory?("Gist/#{git_category}/#{gist_name.downcase}")
+            `rm -rf Gist/#{git_category}/#{gist_name.downcase}`
           end
-          `git clone git://gist.github.com/#{gist_id}.git Gist/#{git_category}/#{gist_name} && rm -rf Gist/#{git_category}/#{gist_name}/.git`
+          if("#{gist_id}".is_numeric?)
+            `git clone git://gist.github.com/#{gist_id}.git Gist/#{git_category}/#{gist_name.downcase} && rm -rf Gist/#{git_category}/#{gist_name.downcase}/.git`
+          else
+            `git clone #{gist_id} Gist/#{git_category}/#{gist_name.downcase} && rm -rf Gist/#{git_category}/#{gist_name.downcase}/.git`
+          end
           if system('which qlmanage')
-            system("qlmanage -p Gist/#{git_category}/#{gist_name}/*.* >& /dev/null")
+            system("qlmanage -p Gist/#{git_category}/#{gist_name.downcase}/*.* >& /dev/null")
           end
         end                 
       end
@@ -123,8 +136,8 @@ module Appjam
               k.each_pair { |k1,v1|
                 if "#{k1}" == @gist_name
                   gid = k[k1][0]['id']
-                  gname = k[k1][1]['name'].downcase
-                  Gist::download_gist("#{gid}".to_i,gcategory,gname)
+                  gname = k[k1][1]['name']
+                  Gist::download_gist("#{gid}",gcategory,gname)
                   eval(File.read(__FILE__) =~ /^__END__/ && $' || '')
                   say "================================================================="
                   say "Your '#{gname.capitalize}' snippet code has been generated."

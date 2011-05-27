@@ -36,6 +36,18 @@ utiliy_function:
   - id : 990157
   - name : Determine_Iphone_Device
   - description : Determine iPhone device info
+- reachability:
+  - id : 994400
+  - name : Reachability
+  - description : Another way to check network availability
+- hexcolor_to_uicolor:
+  - id : 994410
+  - name : Hexcolor_To_UIColor
+  - description : Hex color to UIColor
+- category_additions:
+  - id : git://github.com/mkernel/iphone-snippets.git
+  - name : CategoryAdditions
+  - description : Some important category additions Base64 Keychain
       
 snippet:
 - common_macro:
@@ -74,5 +86,9 @@ snippet:
   - id : 990166
   - name : Stripping_HTML
   - description : Stripping HTML Function  
+- check_if_simulator:  
+  - id : 994426
+  - name : Check_If_Simulator
+  - description : A Macro to check if app run in Simulator
   
   
