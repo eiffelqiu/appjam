@@ -90,8 +90,4 @@ snippet:
   - id : 994426
   - name : Check_If_Simulator
   - description : A Macro to check if app run in A Simulator
-- check_if_simulator:  
-  - id : 994426
-  - name : Check_If_Simulator
-  - description : A Macro to check if app run in A Simulator  
   
