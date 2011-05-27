@@ -130,13 +130,15 @@ module Appjam
           
           require 'yaml'
           begin
-            page_source = Net::HTTP.get(URI.parse("eiffelqiu.github.com/appjam/gist.yml"))
+            page_source = Net::HTTP.get(URI.parse("http://eiffelqiu.github.com/appjam/gist.yml"))
           rescue SocketError => e
             puts "can not access github.com, back to local version gist.yml"
-          end       
-          if page_source    
-            g = YAML::parse(page_source)  
-          else
+          end   
+          begin 
+            puts "fetching new gists ..." 
+            g = YAML::load(page_source)  
+          rescue ArgumentError => e
+            puts "can't fetch new gists, loading local gists ..."
             g = YAML.load_file(File.expand_path(File.dirname(__FILE__) + '/gist.yml'))
           end
           g.each_pair {|key,value|
