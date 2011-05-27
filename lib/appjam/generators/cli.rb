@@ -61,8 +61,15 @@ module Appjam
           puts 
           puts colorize("Gist Options")
           require 'yaml'
-          g = YAML.load_file(File.expand_path(File.dirname(__FILE__) + '/gist.yml'))   
-          
+          begin
+            page_source = Net::HTTP.get(URI.parse("http://eiffelqiu.github.com/appjam/gist.yml"))
+          rescue SocketError => e
+          end   
+          begin 
+            g = YAML::load(page_source)  
+          rescue ArgumentError => e
+            g = YAML.load_file(File.expand_path(File.dirname(__FILE__) + '/gist.yml'))
+          end
           g.each_pair {|key,value|
             gitopt = []   
             puts 
