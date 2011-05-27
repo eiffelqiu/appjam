@@ -129,7 +129,16 @@ module Appjam
           self.destination_root = options[:root]
           
           require 'yaml'
-          g = YAML.load_file(File.expand_path(File.dirname(__FILE__) + '/gist.yml'))   
+          begin
+            page_source = Net::HTTP.get(URI.parse("eiffelqiu.github.com/appjam/gist.yml"))
+          rescue SocketError => e
+            puts "can not access github.com, back to local version gist.yml"
+          end       
+          if page_source    
+            g = YAML::parse(page_source)  
+          else
+            g = YAML.load_file(File.expand_path(File.dirname(__FILE__) + '/gist.yml'))
+          end
           g.each_pair {|key,value|
             gcategory = key.downcase
             g[key].each { |k|
