@@ -1,9 +1,15 @@
+require 'rubygems'
+require 'cli-colorize'
+require 'hirb'
+require File.dirname(__FILE__) + '/../view'
 require File.dirname(__FILE__) + '/jam'
 
 module Appjam
   module Generators
     class Project < Jam
+      include CLIColorize
       
+      CLIColorize.default_color = :red
       author 'Eiffel Qiu'
       homepage 'http://www.likenote.com'
       email 'eiffelqiu@gmail.com'
@@ -30,6 +36,9 @@ module Appjam
         self.destination_root = options[:root]
         project = options[:project]
         self.behavior = :revoke if options[:destroy]
+        
+        puts colorize( "Appjam Version: #{Appjam::Version::STRING}", { :foreground => :red, :background => :white, :config => :underline } )
+        puts        
 
         eval(File.read(__FILE__) =~ /^__END__\n/ && $' || '')       
       

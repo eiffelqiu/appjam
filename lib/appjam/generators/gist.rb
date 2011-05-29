@@ -5,6 +5,9 @@ require 'net/https'
 require 'uri'
 require "open-uri"
 require 'tempfile'
+require 'cli-colorize'
+require 'hirb'
+require File.dirname(__FILE__) + '/../view'
 require File.dirname(__FILE__) + '/jam'
 
 class String
@@ -19,7 +22,9 @@ end
 module Appjam
   module Generators
     class Gist < Jam
+      include CLIColorize
       
+      CLIColorize.default_color = :red
       class << self
         def self.attr_rw(*attrs)
           attrs.each do |attr|
@@ -138,7 +143,10 @@ module Appjam
           @developer = "eiffel"
           @created_on = Date.today.to_s
           self.destination_root = options[:root]
-          
+
+          puts colorize( "Appjam Version: #{Appjam::Version::STRING}", { :foreground => :red, :background => :white, :config => :underline } )
+          puts
+                    
           unless @gist_name == 'update'
             require 'yaml'
             # begin

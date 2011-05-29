@@ -1,6 +1,6 @@
 require 'rubygems'
-require 'cli-colorize'
 require 'thor/group'
+require 'cli-colorize'
 require 'hirb'
 require File.dirname(__FILE__) + '/../view'
 
@@ -42,6 +42,8 @@ module Appjam
           args = ARGV.empty? && generator_class.require_arguments? ? ["-h"] : ARGV
           generator_class.start(args)
         else
+          puts colorize( "Appjam Version: #{Appjam::Version::STRING}", { :foreground => :red, :background => :white, :config => :underline } )
+          puts
           puts colorize("Usage: appjam [OPTIONS] [ARGS]")
           puts
           puts colorize("Generator Options")

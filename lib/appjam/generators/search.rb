@@ -42,6 +42,7 @@ module Appjam
         @developer = "eiffel"
         @created_on = Date.today.to_s
         self.destination_root = options[:root]
+        puts colorize( "Appjam Version: #{Appjam::Version::STRING}", { :foreground => :red, :background => :white, :config => :underline } )
         puts
         puts colorize("Available Options contains [#{@gist_name}]")
         puts
