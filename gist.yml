@@ -64,6 +64,10 @@ lib:
   - id : git://github.com/cocos2d/cocos2d-iphone.git
   - name : Cocos2dIphone
   - description : Cocos2d iPhone Framework  
+- sparrow: 
+  - id : git://github.com/PrimaryFeather/Sparrow-Framework.git
+  - name : SparrowFramework
+  - description : Sparrow Framework for iPhone
         
 utiliy_function:
 - get_ip_address: 
