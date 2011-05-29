@@ -116,9 +116,9 @@ snippet:
   - id : 990090
   - name : Get_Random_Number_In_A_Range
   - description : Get random number in Objective C
-- mailComposeViewController_usage:
+- mail_usage:
   - id : 990122
-  - name : MFMailComposeViewController_Usage
+  - name : mail_usage
   - description : MFMailComposeViewController with availability check  
 - nsstring_md5:  
   - id : 990141
