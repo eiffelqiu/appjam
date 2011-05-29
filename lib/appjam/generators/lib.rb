@@ -158,9 +158,9 @@ module Appjam
                     Lib::download_gist("#{gid}",gcategory,gname)
                     eval(File.read(__FILE__) =~ /^__END__/ && $' || '')
                     say "================================================================="
-                    say "Check Frameworks/#{gcategory}/#{gname}/ for lib"
+                    say "Check Frameworks/#{gname}/ for lib"
                     say "Open #{@xcode_project_name.capitalize}.xcodeproj"
-                    say "Add 'Frameworks/#{gcategory}/#{gname}/' folder to the 'Classes' Group"
+                    say "Add 'Frameworks/#{gname}/' folder to the 'Classes' Group"
                     say "Build and Run"          
                     say "================================================================="              
                   end                  
