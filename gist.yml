@@ -52,6 +52,10 @@ lib:
   - id : git://github.com/TouchCode/TouchXML.git
   - name : TouchXML
   - description : TouchXML Framework 
+- touchjson: 
+  - id : git://github.com/TouchCode/TouchJSON.git
+  - name : TouchJSON
+  - description : TouchJSON Framework  
 - kissxml: 
   - id : https://kissxml.googlecode.com/hg/
   - name : KissXML
