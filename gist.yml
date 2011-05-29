@@ -1,0 +1,93 @@
+--- 
+design_pattern: 
+- singleton:
+  - id : 988211
+  - name : Singleton
+  - description : An Objective-C template for singleton classes
+- delegate:
+  - id : 985279
+  - name : Delegation
+  - description : Delegation Snippet for Objective C
+- injection:
+  - id : 986087
+  - name : Injection
+  - description : Ruby's injection method for Objective C
+  
+algorithm:
+- binary_search:
+  - id : 988219
+  - name : Binary_Search
+  - description : A binary search algorithm written Objective C
+        
+utiliy_function:
+- get_ip_address: 
+  - id : 986132
+  - name : Get_IP_Address
+  - description : Get IP address in iphone
+- nsstring_truncation: 
+  - id : 988236
+  - name : NSString_Truncation
+  - description : NSString truncate to given size
+- get_gps_info: 
+  - id : 990073
+  - name : Get_GPS_Info
+  - description : Get GPS From using CLLocationManager  
+- determine_iphone_device: 
+  - id : 990157
+  - name : Determine_Iphone_Device
+  - description : Determine iPhone device info
+- reachability:
+  - id : 994400
+  - name : Reachability
+  - description : Another way to check network availability
+- hexcolor_to_uicolor:
+  - id : 994410
+  - name : Hexcolor_To_UIColor
+  - description : Hex color to UIColor
+- category_additions:
+  - id : git://github.com/mkernel/iphone-snippets.git
+  - name : CategoryAdditions
+  - description : Some important category additions Base64 Keychain
+      
+snippet:
+- common_macro:
+  - id : 988462
+  - name : Common_Macro
+  - description : Most often used Macro in iphone/ipad project    
+- load_assets_in_webview: 
+  - id : 988227
+  - name : Load_Assets_In_Webview
+  - description : Load assets in Webview
+- validate_email:
+  - id : 988453
+  - name : Validate_Email
+  - description : Validating email address without using RegexKitLite
+- round_corner_image:
+  - id : 990058
+  - name : Round_Corner_Image
+  - description : How to make an image with rounded corners  
+- check_network_availability:
+  - id : 990085
+  - name : Check_Network_Availability
+  - description : Checking network availability on iOS
+- get_random_mumber_in_range:
+  - id : 990090
+  - name : Get_Random_Number_In_A_Range
+  - description : Get random number in Objective C
+- mailComposeViewController_usage:
+  - id : 990122
+  - name : MFMailComposeViewController_Usage
+  - description : MFMailComposeViewController with availability check  
+- nsstring_md5:  
+  - id : 990141
+  - name : NSString_MD5
+  - description : NSString MD5 Function
+- stripping_html:  
+  - id : 990166
+  - name : Stripping_HTML
+  - description : Stripping HTML Function  
+- check_if_simulator:  
+  - id : 994426
+  - name : Check_If_Simulator
+  - description : A Macro to check if app run in A Simulator
+  
