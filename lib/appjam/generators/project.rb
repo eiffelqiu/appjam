@@ -72,6 +72,8 @@ empty_directory "#{@project_name}/Classes/utils"
 
 empty_directory "#{@project_name}/Gist"
 
+empty_directory "#{@project_name}/Frameworks"
+
 copy_file "project/utils/NSStringWhiteSpace.h", "#{@project_name}/Classes/utils/NSStringWhiteSpace.h"
 copy_file "project/utils/NSStringWhiteSpace.m", "#{@project_name}/Classes/utils/NSStringWhiteSpace.m"   
 copy_file "project/utils/UIDevice.h", "#{@project_name}/Classes/utils/UIDevice.h"  

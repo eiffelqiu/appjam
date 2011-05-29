@@ -92,10 +92,6 @@ module Appjam
         end                 
       end
       
-      gist_name "singleton"
-      gist_id "https://gist.github.com/979981"
-      gist_description "Singletons in Objective C"
-      
       # Add this generator to our appjam
       Appjam::Generators.add_generator(:gist, self)
 
