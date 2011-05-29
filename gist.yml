@@ -60,6 +60,10 @@ lib:
   - id : https://kissxml.googlecode.com/hg/
   - name : KissXML
   - description : KissXML Framework  
+- cocos2d: 
+  - id : git://github.com/cocos2d/cocos2d-iphone.git
+  - name : Cocos2dIphone
+  - description : Cocos2d iPhone Framework  
         
 utiliy_function:
 - get_ip_address: 
