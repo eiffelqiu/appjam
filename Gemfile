@@ -3,7 +3,6 @@ gem "thor"
 gem "activesupport"
 gem "cli-colorize"
 gem "hirb"
-gem "yajl-ruby"
 
 # Add dependencies to develop your gem here.
 # Include everything needed to run rake, tests, features, etc.
@@ -21,6 +20,7 @@ group :development do
   gem "grit"
   gem "i18n"
   gem "rdoc"
+  gem "yajl-ruby"
   platforms :mri_18 do
     gem "ruby-prof", ">= 0.9.1"
     gem "system_timer", ">= 1.0"
