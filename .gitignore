@@ -1,5 +1,5 @@
 .document
-.DS_Store
+Gemfile.lock
 *.rbc
 .bundle
 .idea
@@ -8,3 +8,5 @@ coverage
 pkg
 rdoc
 Gemfile.lock
+pkg/*
+.bundle/*
