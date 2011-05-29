@@ -9,4 +9,4 @@ pkg
 rdoc
 Gemfile.lock
 pkg/*
-.bundle/*
+
