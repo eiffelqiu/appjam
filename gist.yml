@@ -47,7 +47,15 @@ lib:
 - fmdb: 
   - id : git://github.com/ccgus/fmdb.git
   - name : fmdb
-  - description : A Cocoa / Objective-C wrapper around SQLite
+  - description : A Cocoa / Objective-C wrapper around
+- touchxml: 
+  - id : git://github.com/TouchCode/TouchXML.git
+  - name : TouchXML
+  - description : TouchXML Framework 
+- kissxml: 
+  - id : https://kissxml.googlecode.com/hg/
+  - name : KissXML
+  - description : KissXML Framework  
         
 utiliy_function:
 - get_ip_address: 
