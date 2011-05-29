@@ -1,18 +1,4 @@
 --- 
-lib:
-- three20: 
-  - id : git://github.com/facebook/three20.git
-  - name : Three20
-  - description : three20 frameworks   
-- asi: 
-  - id : git://github.com/pokeb/asi-http-request.git
-  - name : AsiHttpRequest
-  - description : asi http request frameworks  	
-- json: 
-  - id : git://github.com/stig/json-framework
-  - name : JsonFramework
-  - description : json framework    
-  
 design_pattern: 
 - singleton:
   - id : 988211
@@ -25,13 +11,43 @@ design_pattern:
 - injection:
   - id : 986087
   - name : Injection
-  - description : Ruby's injection method for Objective C
+  - description : Ruby's injection method for Objective C 
   
 algorithm:
 - binary_search:
   - id : 988219
   - name : Binary_Search
   - description : A binary search algorithm written Objective C
+
+lib:
+- three20: 
+  - id : git://github.com/facebook/three20.git
+  - name : Three20
+  - description : three20 frameworks   
+- asi: 
+  - id : git://github.com/pokeb/asi-http-request.git
+  - name : AsiHttpRequest
+  - description : asi http request frameworks  
+- json: 
+  - id : git://github.com/stig/json-framework
+  - name : JsonFramework
+  - description : json framework 
+- facebook: 
+  - id : git://github.com/facebook/facebook-ios-sdk.git
+  - name : FacebookIOSSdk
+  - description : facebook-ios-sdk framework  
+- yajl: 
+  - id : git://github.com/gabriel/yajl-objc.git
+  - name : YAJLFramework
+  - description : YAJL Framework 
+- oauth: 
+  - id : git://github.com/jdg/oauthconsumer.git
+  - name : OauthConsumer
+  - description : oauth consumer 
+- fmdb: 
+  - id : git://github.com/ccgus/fmdb.git
+  - name : fmdb
+  - description : A Cocoa / Objective-C wrapper around SQLite
         
 utiliy_function:
 - get_ip_address: 
@@ -103,5 +119,6 @@ snippet:
 - check_if_simulator:  
   - id : 994426
   - name : Check_If_Simulator
-  - description : A Macro to check if app run in A Simulator
+  - description : A Macro to check if app run in Simulator
+  
   
