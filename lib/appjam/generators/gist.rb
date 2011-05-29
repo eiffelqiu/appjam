@@ -49,6 +49,21 @@ module Appjam
           end          
         end  
         
+        def update_gist
+          appjam_dir = '~/.appjam'
+          appjam_gist = File.expand_path("~") + '/.appjam/gist.yml'
+          system "mkdir -p #{appjam_dir}" unless File.exist?(appjam_dir)
+          begin
+            puts "fetching new gist list from server ... "
+            page_source = Net::HTTP.get(URI.parse("http://eiffelqiu.github.com/appjam/gist.yml"))
+            File.open(appjam_gist, 'w') {|f| f.write(page_source) }
+          rescue SocketError => e
+            puts "can not access github.com, back to local version gist.yml"
+            origin_gist = File.expand_path(File.dirname(__FILE__) + '/gist.yml')
+            system "cp #{origin_gist} #{appjam_gist}"
+          end      
+        end
+        
         def download_gists(username, page=1)
           puts "-- Downloading page #{page} of gists --"
           url = URI.parse("http://gist.github.com")
@@ -124,39 +139,47 @@ module Appjam
           @created_on = Date.today.to_s
           self.destination_root = options[:root]
           
-          require 'yaml'
-          begin
-            page_source = Net::HTTP.get(URI.parse("http://eiffelqiu.github.com/appjam/gist.yml"))
-          rescue SocketError => e
-            puts "can not access github.com, back to local version gist.yml"
-          end   
-          begin 
-            puts "fetching new gists ..." 
-            g = YAML::load(page_source)  
-          rescue ArgumentError => e
-            puts "can't fetch new gists, loading local gists ..."
-            g = YAML.load_file(File.expand_path(File.dirname(__FILE__) + '/gist.yml'))
-          end
-          g.each_pair {|key,value|
-            gcategory = key.downcase
-            g[key].each { |k|
-              k.each_pair { |k1,v1|
-                if "#{k1}" == @gist_name
-                  gid = k[k1][0]['id']
-                  gname = k[k1][1]['name']
-                  Gist::download_gist("#{gid}",gcategory,gname)
-                  eval(File.read(__FILE__) =~ /^__END__/ && $' || '')
-                  say "================================================================="
-                  say "Your '#{gname.capitalize}' snippet code has been generated."
-                  say "Check Gist/#{gcategory}/#{gname}/ for snippet"
-                  say "Open #{@xcode_project_name.capitalize}.xcodeproj"
-                  say "Add 'Gist/#{gcategory}/#{gname}/' folder to the 'Classes/apps' Group"
-                  say "Build and Run"          
-                  say "================================================================="              
-                end                  
-              }
+          unless @gist_name == 'update'
+            require 'yaml'
+            # begin
+            #   page_source = Net::HTTP.get(URI.parse("http://eiffelqiu.github.com/appjam/gist.yml"))
+            # rescue SocketError => e
+            #   puts "can not access github.com, back to local version gist.yml"
+            # end   
+            gistfile = File.expand_path("~") + '/.appjam/gist.yml'
+            Gist::update_gist unless File.exist?(gistfile)
+            begin 
+              puts "fetching new gists ..." 
+              g = YAML.load_file(gistfile)  
+            rescue ArgumentError => e
+              puts "can't fetch new gists, loading local gists ..."
+              g = YAML.load_file(File.expand_path(File.dirname(__FILE__) + '/gist.yml'))
+            end
+            g.each_pair {|key,value|
+              gcategory = key.downcase
+              unless gcategory == 'lib'
+                g[key].each { |k|
+                  k.each_pair { |k1,v1|
+                    if "#{k1}" == @gist_name
+                      gid = k[k1][0]['id']
+                      gname = k[k1][1]['name']
+                      Gist::download_gist("#{gid}",gcategory,gname)
+                      eval(File.read(__FILE__) =~ /^__END__/ && $' || '')
+                      say "================================================================="
+                      say "Your '#{gname.capitalize}' snippet code has been generated."
+                      say "Check Gist/#{gcategory}/#{gname}/ for snippet"
+                      say "Open #{@xcode_project_name.capitalize}.xcodeproj"
+                      say "Add 'Gist/#{gcategory}/#{gname}/' folder to the 'Classes/apps' Group"
+                      say "Build and Run"          
+                      say "================================================================="              
+                    end                  
+                  }
+                }
+              end
             }
-          }
+          else
+            Gist::update_gist
+          end
         else 
           puts
           puts '-'*70
@@ -164,7 +187,7 @@ module Appjam
           puts '-'*70
           puts
         end
-      end
+      end # create_gist
 
     end # Gist
   end # Generators

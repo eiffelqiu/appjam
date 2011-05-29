@@ -1,4 +1,18 @@
 --- 
+lib:
+- three20: 
+  - id : git://github.com/facebook/three20.git
+  - name : Three20
+  - description : three20 frameworks   
+- asi: 
+  - id : git://github.com/pokeb/asi-http-request.git
+  - name : AsiHttpRequest
+  - description : asi http request frameworks  	
+- json: 
+  - id : git://github.com/stig/json-framework
+  - name : JsonFramework
+  - description : json framework    
+  
 design_pattern: 
 - singleton:
   - id : 988211

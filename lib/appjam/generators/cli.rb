@@ -44,39 +44,37 @@ module Appjam
         else
           puts colorize("Usage: appjam [OPTIONS] [ARGS]")
           puts
-          puts colorize("Project Options")
+          puts colorize("Generator Options")
           opt = [{ :category => "objective c (iphone)", :command => "appjam project todo", :description => "generate iphone project skeleton"},
                  { :category => "objective c (iphone)", :command => "appjam model user",   :description => "generate iphone project data model"}
                  ] 
           View.render(opt, RENDER_OPTIONS)
-          puts
-          puts colorize("Submodule Options")
-          puts          
-          opt = [
-           { :category => "objective c (iphone)", :command => "appjam submodule three20",   :description => "fetch three20 subproject from github.com"},
-           { :category => "objective c (iphone)", :command => "appjam submodule asihttp",   :description => "fetch asi-http-request subproject from github.com"},
-           { :category => "objective c (iphone)", :command => "appjam submodule json",   :description => "fetch json-framework subproject from github.com"},
-           { :category => "objective c (iphone)", :command => "appjam submodule kissxml",   :description => "fetch kissxml subproject from code.google.com"}]
-          View.render(opt, RENDER_OPTIONS)
           puts 
-          puts colorize("Gist Options")
+          puts colorize("Appjam Options")
           require 'yaml'
-          begin
-            page_source = Net::HTTP.get(URI.parse("http://eiffelqiu.github.com/appjam/gist.yml"))
-          rescue SocketError => e
-          end   
+          gistfile = File.expand_path("~") + '/.appjam/gist.yml'
+          Gist::update_gist unless File.exist?(gistfile)          
           begin 
-            g = YAML::load(page_source)  
+            g = YAML.load_file(gistfile)  
           rescue ArgumentError => e
             g = YAML.load_file(File.expand_path(File.dirname(__FILE__) + '/gist.yml'))
           end
           g.each_pair {|key,value|
             gitopt = []   
+            gname = key.gsub('_',' ')
             puts 
-            puts colorize("Gist Category [#{key.gsub('_',' ')}]")            
+            if gname == 'lib'
+              puts colorize("Framework Lib")   
+            else
+              puts colorize("Gist Category [#{gname}]")  
+            end         
             g[key].each { |k|
               k.each_pair { |k1,v1|
-                gitopt << {:category => "#{key.gsub('_',' ')}", :command => "appjam gist #{k1}",   :description => "#{k[k1][2]['description']}" }
+                if gname == 'lib'
+                  gitopt << {:category => "#{key.gsub('_',' ')}", :command => "appjam lib #{k1}",   :description => "#{k[k1][2]['description']}" }
+                else
+                  gitopt << {:category => "#{key.gsub('_',' ')}", :command => "appjam gist #{k1}",   :description => "#{k[k1][2]['description']}" }
+                end
               }
             }
             View.render(gitopt, RENDER_OPTIONS) 

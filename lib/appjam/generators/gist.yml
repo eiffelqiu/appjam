@@ -11,7 +11,7 @@ design_pattern:
 - injection:
   - id : 986087
   - name : Injection
-  - description : Ruby's injection method for Objective C
+  - description : Ruby's injection method for Objective C 
   
 algorithm:
 - binary_search:
@@ -32,6 +32,42 @@ lib:
   - id : git://github.com/stig/json-framework
   - name : JsonFramework
   - description : json framework 
+- facebook: 
+  - id : git://github.com/facebook/facebook-ios-sdk.git
+  - name : FacebookIOSSdk
+  - description : facebook-ios-sdk framework  
+- yajl: 
+  - id : git://github.com/gabriel/yajl-objc.git
+  - name : YAJLFramework
+  - description : YAJL Framework 
+- oauth: 
+  - id : git://github.com/jdg/oauthconsumer.git
+  - name : OauthConsumer
+  - description : oauth consumer 
+- fmdb: 
+  - id : git://github.com/ccgus/fmdb.git
+  - name : fmdb
+  - description : A Cocoa / Objective-C wrapper around
+- touchxml: 
+  - id : git://github.com/TouchCode/TouchXML.git
+  - name : TouchXML
+  - description : TouchXML Framework 
+- touchjson: 
+  - id : git://github.com/TouchCode/TouchJSON.git
+  - name : TouchJSON
+  - description : TouchJSON Framework  
+- kissxml: 
+  - id : https://kissxml.googlecode.com/hg/
+  - name : KissXML
+  - description : KissXML Framework  
+- cocos2d: 
+  - id : git://github.com/cocos2d/cocos2d-iphone.git
+  - name : Cocos2dIphone
+  - description : Cocos2d iPhone Framework  
+- sparrow: 
+  - id : git://github.com/PrimaryFeather/Sparrow-Framework.git
+  - name : SparrowFramework
+  - description : Sparrow Framework for iPhone
         
 utiliy_function:
 - get_ip_address: 
@@ -88,9 +124,9 @@ snippet:
   - id : 990090
   - name : Get_Random_Number_In_A_Range
   - description : Get random number in Objective C
-- mailComposeViewController_usage:
+- mail_usage:
   - id : 990122
-  - name : MFMailComposeViewController_Usage
+  - name : mail_usage
   - description : MFMailComposeViewController with availability check  
 - nsstring_md5:  
   - id : 990141

@@ -6,6 +6,7 @@ require 'uri'
 require "open-uri"
 require 'tempfile'
 require File.dirname(__FILE__) + '/jam'
+require File.dirname(__FILE__) + '/gist'
 
 module Appjam
   module Generators
@@ -61,34 +62,52 @@ module Appjam
         end     
         
         def download_gist(gist_id,git_category,gist_name)
-          puts "-- fetching gist [#{gist_name}] --"
+          puts "-- fetching [#{gist_name}] lib --"
           # require 'uri'
           # require 'yajl/http_stream'
           # 
           # uri = URI.parse("http://gist.github.com/api/v1/json/#{gist_id}")
           # Yajl::HttpStream.get(uri, :symbolize_keys => true) do |hash|
           #   
-          # end      
-          if File.directory?("Gist/#{git_category}/#{gist_name.downcase}")
-            `rm -rf Gist/#{git_category}/#{gist_name.downcase}`
-          end
-          if("#{gist_id}".is_numeric?)
-            `git clone git://gist.github.com/#{gist_id}.git Gist/#{git_category}/#{gist_name.downcase} && rm -rf Gist/#{git_category}/#{gist_name.downcase}/.git`
+          # end    
+          #     if @submodule_name == 'kissxml'
+          #       eval(File.read(__FILE__) =~ /^__END__\n/ && $' || '')  
+          # 
+          #       system "rm -rf kissxml"
+          #       system "hg clone https://kissxml.googlecode.com/hg/ Frameworks/kissxml"
+          #       system "git add ."
+          #       system "git commit -m 'import kissxml submodule'"
+          #       say (<<-TEXT).gsub(/ {10}/,'')      
+          if gist_id.include?('github.com')               
+            if File.directory?("Frameworks/#{gist_name.downcase}")
+              `rm -rf Frameworks/#{gist_name.downcase}`
+            end
+            if("#{gist_id}".is_numeric?)
+              `git clone git://gist.github.com/#{gist_id}.git Frameworks/#{gist_name.downcase} && rm -rf Frameworks/#{gist_name.downcase}/.git`
+            else
+              `git clone #{gist_id} Frameworks/#{gist_name.downcase} && rm -rf Frameworks/#{gist_name.downcase}/.git`
+            end
           else
-            `git clone #{gist_id} Gist/#{git_category}/#{gist_name.downcase} && rm -rf Gist/#{git_category}/#{gist_name.downcase}/.git`
-          end
-          if system('which qlmanage')
-            system("qlmanage -p Gist/#{git_category}/#{gist_name.downcase}/*.* >& /dev/null")
+            if system('which hg') != nil
+               system "rm -rf Frameworks/#{gist_name.downcase}"
+               system "hg clone https://kissxml.googlecode.com/hg/ Frameworks/#{gist_name.downcase}"
+               system "git add ."
+               system "git commit -m 'import #{gist_name.downcase} submodule'"     
+            else
+               say "="*70
+               say "Mercurial was not installed!! check http://mercurial.selenic.com/ for installation."
+               say "="*70              
+            end       
           end
         end                 
       end      
 
       # Add this generator to our appjam
-      Appjam::Generators.add_generator(:submodule, self)
+      Appjam::Generators.add_generator(:lib, self)
 
-      # Define the source submodule root
+      # Define the source lib root
       def self.source_root; File.expand_path(File.dirname(__FILE__)); end
-      def self.banner; "appjam submodule [name]"; end
+      def self.banner; "appjam lib [name]"; end
 
       # Include related modules
       include Thor::Actions
@@ -96,7 +115,7 @@ module Appjam
 
       desc "Description:\n\n\tappjam will generates an new PureMvc Model for iphone"
 
-      argument :name, :desc => "The name of your puremvc submodule"
+      argument :name, :desc => "The name of your lib"
 
       class_option :root, :desc => "The root destination", :aliases => '-r', :default => ".", :type => :string
       class_option :destroy, :aliases => '-d', :default => false,   :type    => :boolean
@@ -105,14 +124,15 @@ module Appjam
         File.exist?('Classes')
       end     
 
-      def create_submodule
-        valid_constant?(options[:submodule] || name)
-        @submodule_name = (options[:app] || name).gsub(/W/, "_").downcase
-        @xcode_project_name = File.basename(Dir.glob('*.xcodeproj')[0],'.xcodeproj').downcase          
-        @class_name = (options[:app] || name).gsub(/W/, "_").capitalize
-        @developer = "eiffel"
-        @created_on = Date.today.to_s
-        self.destination_root = options[:root]
+      def create_lib
+        if in_app_root? 
+          valid_constant?(options[:lib] || name)
+          @lib_name = (options[:app] || name).gsub(/W/, "_").downcase
+          @xcode_project_name = File.basename(Dir.glob('*.xcodeproj')[0],'.xcodeproj').downcase          
+          @class_name = (options[:app] || name).gsub(/W/, "_").capitalize
+          @developer = "eiffel"
+          @created_on = Date.today.to_s
+          self.destination_root = options[:root]
         
         # if which('hg') != nil
         #   if in_app_root?
@@ -231,13 +251,14 @@ module Appjam
         # end
         
           require 'yaml'
-          begin
-            page_source = Net::HTTP.get(URI.parse("http://eiffelqiu.github.com/appjam/gist.yml"))
-          rescue SocketError => e
-          end   
+          # begin
+          #   page_source = Net::HTTP.get(URI.parse("http://eiffelqiu.github.com/appjam/gist.yml"))
+          # rescue SocketError => e
+          # end   
+          gistfile = File.expand_path("~") + '/.appjam/gist.yml'
+          Gist::update_gist unless File.exist?(gistfile)          
           begin 
-            puts "fetching new gists ..." 
-            g = YAML::load(page_source)  
+            g = YAML.load_file(gistfile)  
           rescue ArgumentError => e
             g = YAML.load_file(File.expand_path(File.dirname(__FILE__) + '/gist.yml'))
           end
@@ -246,16 +267,16 @@ module Appjam
             if gcategory == 'lib'
               g[key].each { |k|
                 k.each_pair { |k1,v1|
-                  if "#{k1}" == @gist_name
+                  if "#{k1}" == @lib_name
                     gid = k[k1][0]['id']
                     gname = k[k1][1]['name']
-                    Gist::download_gist("#{gid}",gcategory,gname)
+                    eval(File.read(__FILE__) =~ /^__END__\n/ && $' || '')                       
+                    Lib::download_gist("#{gid}",gcategory,gname)
                     eval(File.read(__FILE__) =~ /^__END__/ && $' || '')
                     say "================================================================="
-                    say "Your '#{gname.capitalize}' snippet code has been generated."
-                    say "Check Gist/#{gcategory}/#{gname}/ for snippet"
+                    say "Check Frameworks/#{gcategory}/#{gname}/ for lib"
                     say "Open #{@xcode_project_name.capitalize}.xcodeproj"
-                    say "Add 'Gist/#{gcategory}/#{gname}/' folder to the 'Classes/apps' Group"
+                    say "Add 'Frameworks/#{gcategory}/#{gname}/' folder to the 'Classes' Group"
                     say "Build and Run"          
                     say "================================================================="              
                   end                  
@@ -279,8 +300,8 @@ end # Appjam
 __END__
 unless File.exist?("./.git")
 system "git init"
-template "submodule/gitignore.tt", "./.gitignore"
-template "submodule/gitattributes.tt", "./.gitattributes"
+template "lib/gitignore.tt", "./.gitignore"
+template "lib/gitattributes.tt", "./.gitattributes"
 system "git add ."
 system "git commit -m 'init commit'"
 end
