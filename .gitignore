@@ -1,12 +1,12 @@
-.document
+.bundle/*
+.document/*
 Gemfile.lock
 *.rbc
-.bundle
 .idea
 .rvmrc
 coverage
-pkg
-rdoc
+pkg/*
+rdoc/*
 Gemfile.lock
 pkg/*
 
