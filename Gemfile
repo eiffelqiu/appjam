@@ -7,7 +7,7 @@ gem "hirb"
 # Add dependencies to develop your gem here.
 # Include everything needed to run rake, tests, features, etc.
 group :development do
-  gem "rake",  ">= 0.8.7"
+  gem "rake",  "~> 0.9.2"
   gem "mocha", ">= 0.9.8"
   gem "rack-test", ">= 0.5.0"
   gem "fakeweb",  ">=1.2.8"
