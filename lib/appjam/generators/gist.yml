@@ -102,6 +102,74 @@ utiliy_function:
   - id : git://github.com/klazuka/Kal.git
   - name : CalendarComponent
   - description : A calendar component for the iPhone
+- ts_alert_view:
+  - id : git://github.com/TomSwift/TSAlertView.git
+  - name : TSAlertView
+  - description : UIAlertView drop-in replacement. Supports more
+- dd_alert_prompt:
+  - id : git://github.com/digdog/DDAlertPrompt.git
+  - name : DDAlertPrompt
+  - description : DDAlertPrompt for iOS  
+- ego_text_field_alert_view:
+  - id : git://github.com/enormego/EGOTextFieldAlertView.git
+  - name : EGOTextFieldAlertView
+  - description : UIAlertView subclass that adds support for UITextFields 
+- lka_ccount_panel:
+  - id : git://github.com/lakesoft/LKAccountPanel.git
+  - name : LKAccountPanel
+  - description : Custom UIAlertView for iOS 
+- sb_table_alert:
+  - id : git://github.com/simonb/SBTableAlert.git
+  - name : SBTableAlert
+  - description : A great looking UIAlertView with an UITableView inside
+- bubble_view:
+  - id : git://github.com/m5h/bubble-view.git
+  - name : Bubble View
+  - description : Some examples of drawing a popover bubble for iPhone. 
+- hg_page_scroll_view:
+  - id : git://github.com/100grams/HGPageScrollView.git
+  - name : HGPageScrollView
+  - description : UIScrollView for iPhone with horizontal paging like mobile Safari tabs.
+- stack_scroll_view:
+  - id : git://github.com/raweng/StackScrollView.git
+  - name : StackScrollView
+  - description : Stack Scroll View Panel like Twitter Ipad app for iOS developers   
+- tweetie_bar:
+  - id : git://github.com/briancollins/BCTabBarController.git
+  - name : TweetieBar
+  - description : a Tweetie-style tab bar for the iPhone
+- tab_bar_kit:
+  - id : git://github.com/davidmorford/TabBarKit.git
+  - name : TabBarKit
+  - description : A flexible Tab Bar implementation for iPhone and iPad 
+- ftutils:
+  - id : git://github.com/neror/ftutils.git
+  - name : FTUtils
+  - description : iPhone utilities mostly for Core Animation 
+- nyx_images_utilities:
+  - id : git://github.com/Nyx0uf/NYXImagesUtilities.git
+  - name : NYXImagesUtilities
+  - description : A set of handy categories for UIImage class.  
+- mg_image_utilities:
+  - id : git://github.com/mattgemmell/MGImageUtilities.git
+  - name : MGImageUtilities
+  - description : Useful UIImage categories for iPhone/iPad developers         
+- ma_collection_utilities:
+  - id : git://github.com/mikeash/MACollectionUtilities.git
+  - name : MACollectionUtilities
+  - description : Smalltalk-inspired collection utility methods and macros for Cocoa
+- dc_introspect:
+  - id : git://github.com/domesticcatsoftware/DCIntrospect.git
+  - name : DCIntrospect
+  - description : Small library of visual debugging tools for iOS.  
+- long_weekend_dev_tools:
+  - id : git://github.com/LongWeekend/Long-Weekend-Dev-Tools.git
+  - name : Long-Weekend-Dev-Tools
+  - description : A free toolkit for professional iOS app developers
+- cocoa_web_resource:
+  - id : git://github.com/robin/cocoa-web-resource.git
+  - name : cocoa-web-resource
+  - description : A file transfer solution for iPhone and iPod Touch. Support uploading and download.  
       
 snippet:
 - common_macro:
