@@ -24,7 +24,17 @@ Installation
 Usage
 =======
 ![appjam usage](http://eiffelqiu.github.com/appjam/appjam.jpg)
-Usage 1: generate iphone app project
+
+Usage 1: search related function
+-------
+	$ appjam search image
+	$ appjam search string
+	
+Usage 2: update latest gists index 
+-------
+	$ appjam gist update
+
+Usage 3: generate iphone app project
 -------
 	$ appjam project todo
 
@@ -34,7 +44,7 @@ Usage 1: generate iphone app project
 
 Xcode build and run 
 
-Usage 2: add model to iphone app project
+Usage 4: add model to iphone app project
 -------
 	$ cd todo 
 
@@ -46,7 +56,7 @@ Add "Classes/user/" folder to the "Classes/apps" Group
 
 Xcode build and run 
 
-Usage 3: add three20 submodule (## this require git installed)
+Usage 5: add three20 submodule (## this require git installed)
 -------
 	$ cd todo 
 
@@ -59,7 +69,7 @@ Add "three20/src/Three20.bundle" folder to the "Other Sources" Group
 
 Xcode build and run
 
-Usage 4: add asihttp submodule (## this require git installed)
+Usage 6: add asihttp submodule (## this require git installed)
 -------
 	$ cd todo 
 
@@ -71,7 +81,7 @@ Add "asihttp" folder to the "Other Sources" Group
 
 Xcode build and run
 
-Usage 5: add json-framework submodule (## this require git installed)  
+Usage 7: add json-framework submodule (## this require git installed)  
 -------
 	$ cd todo 
 
@@ -83,7 +93,7 @@ Add "json-framework" folder to the "Other Sources" Group
 
 Xcode build and run
 
-Usage 6: add kissxml submodule (## this require mercurial installed)  
+Usage 8: add kissxml submodule (## this require mercurial installed)  
 -------
     $ cd todo 
 
