@@ -97,7 +97,11 @@ utiliy_function:
 - category_additions:
   - id : git://github.com/mkernel/iphone-snippets.git
   - name : CategoryAdditions
-  - description : Some important category additions Base64 Keychain
+  - description : Some important category additions Base64 Keychain 
+- calendar_component:
+  - id : git://github.com/klazuka/Kal.git
+  - name : CalendarComponent
+  - description : A calendar component for the iPhone
       
 snippet:
 - common_macro:
