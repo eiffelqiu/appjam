@@ -1,5 +1,9 @@
 --- 
-design_pattern: 
+design_pattern:
+- singleton_macro:
+  - id : git://github.com/cjhanson/Objective-C-Optimized-Singleton.git
+  - name :  Objective-C-Optimized-Singleton
+  - description : A Singleton Macro that swaps method implementations at runtime      
 - singleton:
   - id : 988211
   - name : Singleton
@@ -11,13 +15,25 @@ design_pattern:
 - injection:
   - id : 986087
   - name : Injection
-  - description : Ruby's injection method for Objective C 
+  - description : Ruby's injection method for Objective C
+- objc_patterns:
+  - id : git://github.com/zbyhoo/ObjC_Patterns_Kata.git
+  - name : ObjC_Patterns
+  - description : Objective-C implementation of Gang of Four design patterns   
   
 algorithm:
 - binary_search:
   - id : 988219
   - name : Binary_Search
   - description : A binary search algorithm written Objective C
+- objective_sort:
+  - id : git://github.com/jkubicek/Objective-Sort.git
+  - name : Objective-Sort
+  - description : Implementations of various sorting algorithms in Objective C 
+- quick_sort:
+  - id : git://github.com/cdemyanovich/DemyanoSort.git
+  - name : QuickSort
+  - description : quicksort in Objective-C for 8LU   
 
 lib:
 - three20: 
@@ -69,7 +85,7 @@ lib:
   - name : SparrowFramework
   - description : Sparrow Framework for iPhone
         
-utiliy_function:
+utiliy:
 - get_ip_address: 
   - id : 986132
   - name : Get_IP_Address
@@ -169,7 +185,39 @@ utiliy_function:
 - cocoa_web_resource:
   - id : git://github.com/robin/cocoa-web-resource.git
   - name : cocoa-web-resource
-  - description : A file transfer solution for iPhone and iPod Touch. Support uploading and download.  
+  - description : A file transfer solution for iPhone and iPod Touch. Support uploading and download. 
+- aq_grid_view:
+  - id : git://github.com/AlanQuatermain/AQGridView.git
+  - name : AQGridView
+  - description : An grid view for iPhone/iPad
+- i_carousel:
+  - id : git://github.com/demosthenese/iCarousel.git
+  - name : iCarousel
+  - description : iCarousel is a class to simplify implementation of various types on iPhone/iPad
+- dd_share_view_controller:
+  - id : git://github.com/digdog/DDShareViewController.git
+  - name : DDShareViewController
+  - description : Share facebook "Post" rapidly on small iOS devices. 
+- ios_streaming_browser:
+  - id : git://github.com/rubelw/IOS-Streaming-Browser.git
+  - name : IOS-Streaming-Browser
+  - description : An embedded HTTP server for iPhone or iPad 
+- dd_action_header_view:
+  - id : git://github.com/digdog/DDActionHeaderView.git
+  - name : DDActionHeaderView
+  - description : Header with title and actions and rapid UI component for iOS 4
+- calendar_ui:
+  - id : git://github.com/muhku/calendar-ui.git
+  - name : calendar-ui
+  - description : MACalendarUI offers calendar user interface for iPhone applications
+- sliding_tabs:
+  - id : git://github.com/MPiccinato/SlidingTabs.git
+  - name : SlidingTabs
+  - description : Sliding tabs UI element for iPhone  
+- ks_popover_view:
+  - id : git://github.com/katokichisoft/KSPopoverView.git
+  - name : KSPopoverView
+  - description : A pulldown menu UI for iOS       
       
 snippet:
 - common_macro:
