@@ -49,6 +49,10 @@ module Appjam
           puts
           puts "appjam help"
           puts
+          puts colorize("Update latest repository info")
+          puts
+          puts "appjam gist update"
+          puts          
         end
       end
     end # Cli
