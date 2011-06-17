@@ -1,6 +1,6 @@
 appjam
 =======
-Appjam is iOS code snippet hub, including framework, snippet, code, generators.
+Appjam is an iOS code repository, including framework, snippet, generators, etc.
 
 Prerequisites
 =======

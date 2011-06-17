@@ -32,11 +32,11 @@ module Appjam
         @created_on = Date.today.to_s
         puts colorize( "Appjam Version: #{Appjam::Version::STRING}", { :foreground => :red, :background => :white, :config => :underline } )
         puts
-        puts "Appjam is iOS code snippet hub, including framework, snippet, code, generators."
+        puts "Appjam is an iOS code repository, including framework, snippet, generators, etc."
         puts          
         puts colorize("Generator Options")
-        opt = [{ :category => "objective c (iphone)", :command => "appjam project todo", :description => "generate iphone project skeleton"},
-               { :category => "objective c (iphone)", :command => "appjam model user",   :description => "generate iphone project data model"}
+        opt = [{ :category => "puremvc", :command => "appjam mvc_project todo", :description => "generate puremvc iphone project"},
+               { :category => "puremvc", :command => "appjam mvc_model user",   :description => "generate puremvc iphone model"}
                ] 
         View.render(opt, RENDER_OPTIONS)
         puts 

@@ -6,7 +6,7 @@ require File.dirname(__FILE__) + '/jam'
 
 module Appjam
   module Generators
-    class Project < Jam
+    class MvcProject < Jam
       include CLIColorize
       
       CLIColorize.default_color = :red
@@ -16,7 +16,7 @@ module Appjam
       version Appjam::Version::STRING  
 
       # Add this generator to our appjam
-      Appjam::Generators.add_generator(:project, self)
+      Appjam::Generators.add_generator(:mvc_project, self)
   
       init_generator
 

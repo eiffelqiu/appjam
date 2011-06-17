@@ -26,8 +26,8 @@ Jeweler::Tasks.new do |gem|
   gem.name = "appjam"
   gem.homepage = "http://github.com/eiffelqiu/appjam"
   gem.license = "MIT"
-  gem.summary = %Q{Appjam is iOS code snippet hub, including framework, snippet, code, generators.}
-  gem.description = %Q{Appjam is iOS code snippet hub, including framework, snippet, code, generators.}
+  gem.summary = %Q{Appjam is an iOS code repository, including framework, snippet, generators, etc.}
+  gem.description = %Q{Appjam is iOS code repository, including framework, snippet, generators, etc.}
   gem.email = "eiffelqiu@gmail.com"
   gem.authors = ["Eiffel Q"]
   gem.version = Appjam::Version::STRING

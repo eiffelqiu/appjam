@@ -57,6 +57,6 @@ end # Appjam
 ##
 # We add our generators to Appjam::Genererator
 #
-Appjam::Generators.load_paths << Dir[File.dirname(__FILE__) + '/appjam/generators/{project,model,lib,gist,search,help}.rb']
+Appjam::Generators.load_paths << Dir[File.dirname(__FILE__) + '/appjam/generators/{mvc_project,mvc_model,lib,gist,search,help}.rb']
 
 

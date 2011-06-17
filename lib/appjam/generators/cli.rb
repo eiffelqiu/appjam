@@ -43,11 +43,11 @@ module Appjam
         else
           puts colorize( "Appjam Version: #{Appjam::Version::STRING}", { :foreground => :red, :background => :white, :config => :underline } )
           puts
-          puts "Appjam is iOS code snippet hub, including framework, snippet, code, generators."
+          puts "Appjam is an iOS code repository, including framework, snippet, generators, etc."
           puts          
-          puts colorize("For more information:")
+          puts colorize("For more information")
           puts
-          puts "appjam help  # Help screen"
+          puts "appjam help"
           puts
         end
       end
