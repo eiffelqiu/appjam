@@ -28,9 +28,6 @@ module Appjam
 
       argument :name, :desc => "The name of option"
 
-      class_option :root, :desc => "The root destination", :aliases => '-r', :default => ".", :type => :string
-      class_option :destroy, :aliases => '-d', :default => false,   :type    => :boolean
-
       def in_app_root?
         File.exist?('Classes')
       end     

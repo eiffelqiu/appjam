@@ -217,7 +217,11 @@ utiliy:
 - ks_popover_view:
   - id : git://github.com/katokichisoft/KSPopoverView.git
   - name : KSPopoverView
-  - description : A pulldown menu UI for iOS       
+  - description : A pulldown menu UI for iOS 
+- tapkulibrary:
+  - id : git://github.com/devinross/tapkulibrary.git
+  - name : tapkulibrary
+  - description : a well crafted open source iOS framework for iPhone/iPad        
       
 snippet:
 - common_macro:

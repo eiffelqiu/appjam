@@ -18,9 +18,9 @@ module Appjam
       RENDER_OPTIONS = { :fields => [:category,:command,:description] }   
       # Include related modules
       include Thor::Actions
-
-      class_option :root, :desc => "The root destination", :aliases => '-r', :default => ".", :type => :string
-
+      desc "Appjam Version:\t#{Appjam::Version::STRING}"
+      class_option :help, :desc => "Help screen", :aliases => '-h', :type => :string
+      
       # We need to TRY to load boot because some of our app dependencies maybe have
       # custom generators, so is necessary know who are.
       def load_boot
@@ -37,50 +37,17 @@ module Appjam
 
         generator_kind  = ARGV.delete_at(0).to_s.downcase.to_sym if ARGV[0].present?
         generator_class = Appjam::Generators.mappings[generator_kind]
-
         if generator_class
-          args = ARGV.empty? && generator_class.require_arguments? ? ["-h"] : ARGV
-          generator_class.start(args)
+          args = ARGV.empty? && generator_class.require_arguments? ? ["-h"] : ARGV  
+          generator_class.start(args)            
         else
           puts colorize( "Appjam Version: #{Appjam::Version::STRING}", { :foreground => :red, :background => :white, :config => :underline } )
           puts
-          puts colorize("Usage: appjam [OPTIONS] [ARGS]")
+          puts "Appjam is iOS code snippet hub, including framework, snippet, code, generators."
+          puts          
+          puts colorize("For more information:")
           puts
-          puts colorize("Generator Options")
-          opt = [{ :category => "objective c (iphone)", :command => "appjam project todo", :description => "generate iphone project skeleton"},
-                 { :category => "objective c (iphone)", :command => "appjam model user",   :description => "generate iphone project data model"}
-                 ] 
-          View.render(opt, RENDER_OPTIONS)
-          puts 
-          puts colorize("Appjam Options")
-          require 'yaml'
-          gistfile = File.expand_path("~") + '/.appjam/gist.yml'
-          Gist::update_gist unless File.exist?(gistfile)          
-          begin 
-            g = YAML.load_file(gistfile)  
-          rescue ArgumentError => e
-            g = YAML.load_file(File.expand_path(File.dirname(__FILE__) + '/gist.yml'))
-          end
-          g.each_pair {|key,value|
-            gitopt = []   
-            gname = key.gsub('_',' ')
-            puts 
-            if gname == 'lib'
-              puts colorize("Framework Lib")   
-            else
-              puts colorize("Gist Category [#{gname}]")  
-            end         
-            g[key].each { |k|
-              k.each_pair { |k1,v1|
-                if gname == 'lib'
-                  gitopt << {:category => "#{key.gsub('_',' ')}", :command => "appjam lib #{k1}",   :description => "#{k[k1][2]['description']}" }
-                else
-                  gitopt << {:category => "#{key.gsub('_',' ')}", :command => "appjam gist #{k1}",   :description => "#{k[k1][2]['description']}" }
-                end
-              }
-            }
-            View.render(gitopt, RENDER_OPTIONS) 
-          }          
+          puts "appjam help  # Help screen"
           puts
         end
       end
