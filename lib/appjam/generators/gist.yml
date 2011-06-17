@@ -222,7 +222,11 @@ utiliy:
   - id : git://github.com/devinross/tapkulibrary.git
   - name : tapkulibrary
   - description : a well crafted open source iOS framework for iPhone/iPad        
-      
+-  iphone_utils:
+  - id : git://github.com/jlopez/iphone-utils.git
+  - name : IphoneUtils
+  - description : Useful additions to Cocoa/UIKit/etc iPhone libraries 
+              
 snippet:
 - common_macro:
   - id : 988462
