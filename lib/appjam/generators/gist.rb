@@ -163,7 +163,7 @@ module Appjam
                 puts "can't fetch new gists, loading local gists ..."
                 g = YAML.load_file(File.expand_path(File.dirname(__FILE__) + '/gist.yml'))
               end
-              puts "notice: #{g['info']}" if g['info']
+              puts "notice: a new version '#{g['info']}' released" if g['info'] and g['info'].strip != "#{Appjam::Version::STRING}"
               puts
               g.each_pair {|key,value|
                 gcategory = key.downcase

@@ -51,7 +51,7 @@ module Appjam
           rescue ArgumentError => e
             g = YAML.load_file(File.expand_path(File.dirname(__FILE__) + '/gist.yml'))
           end
-          puts "notice: #{g['info']}" if g['info']
+          puts "notice: a new version '#{g['info']}' released" if g['info'] and g['info'].strip != "#{Appjam::Version::STRING}"
           puts          
           puts "Appjam is an iOS code repository, including framework, snippet, generators, etc."
           puts          

@@ -42,7 +42,7 @@ module Appjam
         rescue ArgumentError => e
           g = YAML.load_file(File.expand_path(File.dirname(__FILE__) + '/gist.yml'))
         end
-        puts "notice: #{g['info']}" if g['info']
+        puts "notice: a new version '#{g['info']}' released" if g['info'] and g['info'].strip != "#{Appjam::Version::STRING}"
         puts                      
         puts colorize("Generator Options")
         opt = [{ :category => "puremvc", :command => "appjam mvc_project todo", :description => "generate puremvc iphone project"},

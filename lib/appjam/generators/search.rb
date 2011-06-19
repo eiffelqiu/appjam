@@ -59,7 +59,7 @@ module Appjam
           g = YAML.load_file(File.expand_path(File.dirname(__FILE__) + '/gist.yml'))
         end        
         gitopt = []  
-        puts "notice: #{g['info']}" if g['info']
+        puts "notice: a new version '#{g['info']}' released" if g['info'] and g['info'].strip != "#{Appjam::Version::STRING}"
         puts
         puts colorize("Available Options contains [#{@gist_name}]")
         puts        

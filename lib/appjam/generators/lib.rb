@@ -153,7 +153,7 @@ module Appjam
           rescue ArgumentError => e
             g = YAML.load_file(File.expand_path(File.dirname(__FILE__) + '/gist.yml'))
           end
-          puts "notice: #{g['info']}" if g['info']
+          puts "notice: a new version '#{g['info']}' released" if g['info'] and g['info'].strip != "#{Appjam::Version::STRING}"
           puts
           g.each_pair {|key,value|
             gcategory = key.downcase
@@ -167,10 +167,7 @@ module Appjam
                     Lib::download_gist("#{gid}",gcategory,gname)
                     eval(File.read(__FILE__) =~ /^__END__/ && $' || '')
                     say "================================================================="
-                    say "Check Frameworks/#{gname}/ for lib"
-                    say "Open #{@xcode_project_name.capitalize}.xcodeproj"
-                    say "Add 'Frameworks/#{gname}/' folder to the 'Classes' Group"
-                    say "Build and Run"          
+                    say "Check Frameworks/#{gname}/ for new framework [#{gname}]"       
                     say "================================================================="              
                   end                  
                 }
@@ -195,8 +192,6 @@ unless File.exist?("./.git")
 system "git init"
 template "lib/gitignore.tt", "./.gitignore"
 template "lib/gitattributes.tt", "./.gitattributes"
-system "git add ."
-system "git commit -m 'init commit'"
 end
 
 
