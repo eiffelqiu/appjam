@@ -60,11 +60,7 @@ Usage 5: add asihttp library (## this require git installed)
 
 	$ appjam lib asihttp 
 
-	$ open Todo.xcodeproj
-
-Add "Frameworks/asihttprequest" folder to the "Classes" Group
-
-Xcode build and run
+Check Frameworks/AsiHttpRequest/ for new framework [AsiHttpRequest]
 
 Usage 6: add get_gps_info snippet to your project (## this require git installed)
 -------
