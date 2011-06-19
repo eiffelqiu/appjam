@@ -1,3 +1,4 @@
+info:new version 1.8.2 released
 --- 
 design_pattern:
 - singleton_macro:
@@ -217,8 +218,16 @@ utiliy:
 - ks_popover_view:
   - id : git://github.com/katokichisoft/KSPopoverView.git
   - name : KSPopoverView
-  - description : A pulldown menu UI for iOS       
-      
+  - description : A pulldown menu UI for iOS 
+- tapkulibrary:
+  - id : git://github.com/devinross/tapkulibrary.git
+  - name : tapkulibrary
+  - description : a well crafted open source iOS framework for iPhone/iPad        
+-  iphone_utils:
+  - id : git://github.com/jlopez/iphone-utils.git
+  - name : IphoneUtils
+  - description : Useful additions to Cocoa/UIKit/etc iPhone libraries 
+              
 snippet:
 - common_macro:
   - id : 988462
