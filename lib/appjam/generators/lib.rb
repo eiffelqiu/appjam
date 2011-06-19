@@ -153,6 +153,8 @@ module Appjam
           rescue ArgumentError => e
             g = YAML.load_file(File.expand_path(File.dirname(__FILE__) + '/gist.yml'))
           end
+          puts "notice: #{g['info']}" if g['info']
+          puts
           g.each_pair {|key,value|
             gcategory = key.downcase
             if gcategory == 'lib'

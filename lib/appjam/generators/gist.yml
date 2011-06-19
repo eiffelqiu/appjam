@@ -1,4 +1,4 @@
---- 
+info: new version 1.8.2 released
 design_pattern:
 - singleton_macro:
   - id : git://github.com/cjhanson/Objective-C-Optimized-Singleton.git
@@ -222,7 +222,7 @@ utiliy:
   - id : git://github.com/devinross/tapkulibrary.git
   - name : tapkulibrary
   - description : a well crafted open source iOS framework for iPhone/iPad        
--  iphone_utils:
+- iphone_utils:
   - id : git://github.com/jlopez/iphone-utils.git
   - name : IphoneUtils
   - description : Useful additions to Cocoa/UIKit/etc iPhone libraries 

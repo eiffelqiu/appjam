@@ -40,9 +40,19 @@ module Appjam
         if generator_class
           args = ARGV.empty? && generator_class.require_arguments? ? ["-h"] : ARGV  
           generator_class.start(args)            
-        else
+        else                 
           puts colorize( "Appjam Version: #{Appjam::Version::STRING}", { :foreground => :red, :background => :white, :config => :underline } )
           puts
+          require 'yaml'
+          gistfile = File.expand_path("~") + '/.appjam/gist.yml'
+          Gist::update_gist unless File.exist?(gistfile)          
+          begin 
+            g = YAML.load_file(gistfile)  
+          rescue ArgumentError => e
+            g = YAML.load_file(File.expand_path(File.dirname(__FILE__) + '/gist.yml'))
+          end
+          puts "notice: #{g['info']}" if g['info']
+          puts          
           puts "Appjam is an iOS code repository, including framework, snippet, generators, etc."
           puts          
           puts colorize("For more information")

@@ -41,8 +41,6 @@ module Appjam
         self.destination_root = options[:root]
         puts colorize( "Appjam Version: #{Appjam::Version::STRING}", { :foreground => :red, :background => :white, :config => :underline } )
         puts
-        puts colorize("Available Options contains [#{@gist_name}]")
-        puts
         require 'yaml'
         # begin
         #   page_source = Net::HTTP.get(URI.parse("http://eiffelqiu.github.com/appjam/gist.yml"))
@@ -61,22 +59,28 @@ module Appjam
           g = YAML.load_file(File.expand_path(File.dirname(__FILE__) + '/gist.yml'))
         end        
         gitopt = []  
+        puts "notice: #{g['info']}" if g['info']
+        puts
+        puts colorize("Available Options contains [#{@gist_name}]")
+        puts        
         g.each_pair {|key,value|
           # puts colorize("Gist Category [#{key.gsub('_',' ')}]")    
           gname = key.gsub('_',' ')        
           g[key].each { |k|
-            k.each_pair { |k1,v1|
-              gist_name = k1.downcase
-              gist_desc = k[k1][2]['description'].downcase
-              if gist_name.include?(@gist_name) or gist_desc.include?(@gist_name)
-                # gitopt << {:category => "#{key.gsub('_',' ')}", :command => "appjam gist #{k1}",   :description => "#{k[k1][2]['description']}" }
-                if gname == 'lib'
-                  gitopt << {:category => "#{key.gsub('_',' ')}", :command => "appjam lib #{k1}",   :description => "#{k[k1][2]['description']}" }
-                else
-                  gitopt << {:category => "#{key.gsub('_',' ')}", :command => "appjam gist #{k1}",   :description => "#{k[k1][2]['description']}" }
-                end              
-              end
-            }
+            unless key.downcase == 'info'
+              k.each_pair { |k1,v1|
+                gist_name = k1.downcase
+                gist_desc = k[k1][2]['description'].downcase
+                if gist_name.include?(@gist_name) or gist_desc.include?(@gist_name)
+                  # gitopt << {:category => "#{key.gsub('_',' ')}", :command => "appjam gist #{k1}",   :description => "#{k[k1][2]['description']}" }
+                  if gname == 'lib'
+                    gitopt << {:category => "#{key.gsub('_',' ')}", :command => "appjam lib #{k1}",   :description => "#{k[k1][2]['description']}" }
+                  else
+                    gitopt << {:category => "#{key.gsub('_',' ')}", :command => "appjam gist #{k1}",   :description => "#{k[k1][2]['description']}" }
+                  end              
+                end
+              }
+            end
           }
         } 
         View.render(gitopt, RENDER_OPTIONS)          
