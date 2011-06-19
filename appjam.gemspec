@@ -5,12 +5,12 @@
 
 Gem::Specification.new do |s|
   s.name = %q{appjam}
-  s.version = "0.1.8.1"
+  s.version = "0.1.8.2"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Eiffel Q"]
-  s.date = %q{2011-05-29}
-  s.description = %q{generate iphone app skeleton based on pure mvc framework}
+  s.date = %q{2011-06-19}
+  s.description = %q{Appjam is iOS code repository, including framework, snippet, generators, etc.}
   s.email = %q{eiffelqiu@gmail.com}
   s.executables = ["appjam"]
   s.extra_rdoc_files = [
@@ -24,13 +24,14 @@ Gem::Specification.new do |s|
     "lib/appjam/generators/cli.rb",
     "lib/appjam/generators/gist.rb",
     "lib/appjam/generators/gist.yml",
+    "lib/appjam/generators/help.rb",
     "lib/appjam/generators/jam.rb",
     "lib/appjam/generators/lib.rb",
     "lib/appjam/generators/lib/gitattributes.tt",
     "lib/appjam/generators/lib/gitignore.tt",
     "lib/appjam/generators/lib/gitmodules.tt",
-    "lib/appjam/generators/model.rb",
-    "lib/appjam/generators/project.rb",
+    "lib/appjam/generators/mvc_model.rb",
+    "lib/appjam/generators/mvc_project.rb",
     "lib/appjam/generators/project/Classes/ContactsAppDelegate.h.tt",
     "lib/appjam/generators/project/Classes/ContactsAppDelegate.m.tt",
     "lib/appjam/generators/project/Classes/contacts/ApplicationFacade.h.tt",
@@ -108,6 +109,7 @@ Gem::Specification.new do |s|
     "lib/appjam/generators/search.rb",
     "lib/appjam/tasks.rb",
     "lib/appjam/tasks/plugin.rb",
+    "lib/appjam/utility.rb",
     "lib/appjam/version.rb",
     "lib/appjam/view.rb"
   ]
@@ -115,7 +117,7 @@ Gem::Specification.new do |s|
   s.licenses = ["MIT"]
   s.require_paths = ["lib"]
   s.rubygems_version = %q{1.7.2}
-  s.summary = %q{an iphone app generator}
+  s.summary = %q{Appjam is an iOS code repository, including framework, snippet, generators, etc.}
   s.test_files = [
     "test/helper.rb",
     "test/test_model_generator.rb",
@@ -130,7 +132,7 @@ Gem::Specification.new do |s|
       s.add_runtime_dependency(%q<activesupport>, [">= 0"])
       s.add_runtime_dependency(%q<cli-colorize>, [">= 0"])
       s.add_runtime_dependency(%q<hirb>, [">= 0"])
-      s.add_development_dependency(%q<rake>, [">= 0.8.7"])
+      s.add_development_dependency(%q<rake>, ["~> 0.9.2"])
       s.add_development_dependency(%q<mocha>, [">= 0.9.8"])
       s.add_development_dependency(%q<rack-test>, [">= 0.5.0"])
       s.add_development_dependency(%q<fakeweb>, [">= 1.2.8"])
@@ -157,7 +159,7 @@ Gem::Specification.new do |s|
       s.add_dependency(%q<activesupport>, [">= 0"])
       s.add_dependency(%q<cli-colorize>, [">= 0"])
       s.add_dependency(%q<hirb>, [">= 0"])
-      s.add_dependency(%q<rake>, [">= 0.8.7"])
+      s.add_dependency(%q<rake>, ["~> 0.9.2"])
       s.add_dependency(%q<mocha>, [">= 0.9.8"])
       s.add_dependency(%q<rack-test>, [">= 0.5.0"])
       s.add_dependency(%q<fakeweb>, [">= 1.2.8"])
@@ -185,7 +187,7 @@ Gem::Specification.new do |s|
     s.add_dependency(%q<activesupport>, [">= 0"])
     s.add_dependency(%q<cli-colorize>, [">= 0"])
     s.add_dependency(%q<hirb>, [">= 0"])
-    s.add_dependency(%q<rake>, [">= 0.8.7"])
+    s.add_dependency(%q<rake>, ["~> 0.9.2"])
     s.add_dependency(%q<mocha>, [">= 0.9.8"])
     s.add_dependency(%q<rack-test>, [">= 0.5.0"])
     s.add_dependency(%q<fakeweb>, [">= 1.2.8"])

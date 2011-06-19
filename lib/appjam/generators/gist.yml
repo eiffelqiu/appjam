@@ -1,4 +1,4 @@
-info: new version 1.8.2 released
+info: 1.8.2
 design_pattern:
 - singleton_macro:
   - id : git://github.com/cjhanson/Objective-C-Optimized-Singleton.git

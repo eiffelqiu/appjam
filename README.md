@@ -32,9 +32,9 @@ Usage 2: update latest gists index
 -------
 	$ appjam gist update
 
-Usage 3: generate iphone app project
+Usage 3: generate iphone app project based on puremvc framework
 -------
-	$ appjam project todo
+	$ appjam mvc_project todo
 
 	$ cd todo
 
@@ -42,11 +42,11 @@ Usage 3: generate iphone app project
 
 Xcode build and run 
 
-Usage 4: add model to iphone app project
+Usage 4: add model to iphone app project based on puremvc framework
 -------
 	$ cd todo 
 
-	$ appjam model user 
+	$ appjam mvc_model user 
 
 	$ open Todo.xcodeproj
 
@@ -54,52 +54,27 @@ Add "Classes/user/" folder to the "Classes/apps" Group
 
 Xcode build and run 
 
-Usage 5: add three20 submodule (## this require git installed)
+Usage 5: add asihttp library (## this require git installed)
 -------
 	$ cd todo 
 
-	$ appjam submodule three20 
+	$ appjam lib asihttp 
 
 	$ open Todo.xcodeproj
 
-Add "three20/src/Three20/Three20.xcodeproj" folder to the "Other Sources" Group  
-Add "three20/src/Three20.bundle" folder to the "Other Sources" Group  
+Add "Frameworks/asihttprequest" folder to the "Classes" Group
 
 Xcode build and run
 
-Usage 6: add asihttp submodule (## this require git installed)
+Usage 6: add get_gps_info snippet to your project (## this require git installed)
 -------
 	$ cd todo 
 
-	$ appjam submodule asihttp 
+	$ appjam gist get_gps_info
 
 	$ open Todo.xcodeproj
 
-Add "asihttp" folder to the "Other Sources" Group
-
-Xcode build and run
-
-Usage 7: add json-framework submodule (## this require git installed)  
--------
-	$ cd todo 
-
-	$ appjam submodule json 
-
-	$ open Todo.xcodeproj
-
-Add "json-framework" folder to the "Other Sources" Group
-
-Xcode build and run
-
-Usage 8: add kissxml submodule (## this require mercurial installed)  
--------
-    $ cd todo 
-
-    $ appjam submodule kissxml 
-
-    $ open Todo.xcodeproj
-
-Add "kissxml" folder to the "Other Sources" Group
+Add 'Gist/utiliy/Get_GPS_Info/' folder to the 'Classes' Group
 
 Xcode build and run
 
