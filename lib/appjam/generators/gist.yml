@@ -89,7 +89,17 @@ lib:
   - id : https://regexkit.svn.sourceforge.net/svnroot/regexkit
   - name : RegexKit
   - description : RegexKit Lib
-  - type : svn    
+  - type : svn  
+- core_plot: 
+  - id : https://core-plot.googlecode.com/hg/
+  - name : CorePlot
+  - description : Cocoa plotting framework for Mac OS X and iOS
+  - type : hg
+- gdata_objectivec_client: 
+  - id : http://gdata-objectivec-client.googlecode.com/svn/trunk/
+  - name : Corgdata-objectivec-clientePlot
+  - description : Google Data APIs Objective-C Client Library
+  - type : svn  
         
 utiliy:
 - get_ip_address: 

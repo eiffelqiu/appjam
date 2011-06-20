@@ -128,7 +128,7 @@ module Appjam
                  say "="*70              
               end 
             end 
-            if "#{gist_type}".strip == ''   
+            if "#{gist_type}".strip == 'git'   
               if system('which git') != nil                  
                 `git clone #{gist_id} Gist/#{git_category}/#{gist_name.downcase} && rm -rf Gist/#{git_category}/#{gist_name.downcase}/.git`
               else
@@ -205,7 +205,10 @@ module Appjam
                       if "#{k1}" == @gist_name
                         gid = k[k1][0]['id']
                         gname = k[k1][1]['name']
-                        gtype = k[k1][3]['type']
+                        gtype = 'git'
+                        if k[k1].length == 4
+                          gtype = k[k1][3]['type']
+                        end
                         puts "repository type: #{gtype}"
                         Gist::download_gist("#{gid}",gcategory,gname,gtype)
                         eval(File.read(__FILE__) =~ /^__END__/ && $' || '')

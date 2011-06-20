@@ -177,7 +177,10 @@ module Appjam
                   if "#{k1}" == @lib_name
                     gid = k[k1][0]['id']
                     gname = k[k1][1]['name']
-                    gtype = k[k1][3]['type']
+                    gtype = 'git'
+                    if k[k1].length == 4
+                      gtype = k[k1][3]['type']
+                    end                    
                     puts "repository type: #{gtype}"
                     eval(File.read(__FILE__) =~ /^__END__\n/ && $' || '')                       
                     Lib::download_gist("#{gid}",gcategory,gname,gtype)
