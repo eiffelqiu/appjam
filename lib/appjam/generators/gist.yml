@@ -78,9 +78,10 @@ lib:
   - description : KissXML Framework 
   - type : hg   
 - cocos2d: 
-  - id : git://github.com/cocos2d/cocos2d-iphone.git
+  - id : http://cocos2d-iphone.googlecode.com/svn/trunk/
   - name : Cocos2dIphone
-  - description : Cocos2d iPhone Framework  
+  - description : Cocos2d iPhone Framework 
+  - type : svn 
 - sparrow: 
   - id : git://github.com/PrimaryFeather/Sparrow-Framework.git
   - name : SparrowFramework
@@ -280,7 +281,24 @@ utiliy:
   - id : https://bitbucket.org/KristopherJohnson/gradientbuttons
   - name : GradientButtons
   - description : shiny buttons implemented using CAGradientLayer
-  - type : hg    
+  - type : hg
+- in_app_settings:
+  - id : https://bitbucket.org/keegan3d/inappsettings
+  - name : InAppSettings
+  - description : InAppSettings provides a view controller displays iPhone settings
+  - type : hg
+- mn_color_picker:
+  - id : https://bitbucket.org/aquarius/mncolorpicker
+  - name : MNColorPicker
+  - description : MNColorPicker is a color picker for the iPhone.
+  - type : hg 
+  
+app:
+- mobile_terminal:
+  - id : http://mobileterminal.googlecode.com/svn/
+  - name : MobileTerminal
+  - description : A GUI Terminal application for the iPhone
+  - type : svn        
                          
 snippet:
 - common_macro:
