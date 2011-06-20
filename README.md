@@ -2,6 +2,8 @@ appjam
 =======
 Appjam is an iOS code repository, including framework, snippet, generators, etc.
 
+**upgrade to 0.1.8.3 as soon as possible**
+
 Prerequisites
 =======
 Ruby

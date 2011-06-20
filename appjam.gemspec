@@ -5,11 +5,12 @@
 
 Gem::Specification.new do |s|
   s.name = %q{appjam}
-  s.version = "0.1.8.2"
+  s.version = "0.1.8.3"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Eiffel Q"]
-  s.date = %q{2011-06-19}
+  s.date = %q{2011-06-20}
+  s.default_executable = %q{appjam}
   s.description = %q{Appjam is iOS code repository, including framework, snippet, generators, etc.}
   s.email = %q{eiffelqiu@gmail.com}
   s.executables = ["appjam"]
@@ -116,7 +117,7 @@ Gem::Specification.new do |s|
   s.homepage = %q{http://github.com/eiffelqiu/appjam}
   s.licenses = ["MIT"]
   s.require_paths = ["lib"]
-  s.rubygems_version = %q{1.7.2}
+  s.rubygems_version = %q{1.5.3}
   s.summary = %q{Appjam is an iOS code repository, including framework, snippet, generators, etc.}
   s.test_files = [
     "test/helper.rb",
