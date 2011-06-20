@@ -99,8 +99,18 @@ lib:
   - id : http://gdata-objectivec-client.googlecode.com/svn/trunk/
   - name : Corgdata-objectivec-clientePlot
   - description : Google Data APIs Objective-C Client Library
+  - type : svn
+- photoshopframew: 
+  - id : https://photoshopframew.svn.sourceforge.net/svnroot/photoshopframew
+  - name : PSFrameworkForIPhone
+  - description : PSFramework is one powerful library to manipulate images
   - type : svn  
-        
+- log4cocoa: 
+  - id : https://log4cocoa.svn.sourceforge.net/svnroot/log4cocoa
+  - name : Log4Cocoa
+  - description : Log4Cocoa is an Objective-C based port of Log4J
+  - type : svn
+            
 utiliy:
 - get_ip_address: 
   - id : 986132
@@ -288,5 +298,4 @@ snippet:
   - id : 994426
   - name : Check_If_Simulator
   - description : A Macro to check if app run in Simulator
-  
   

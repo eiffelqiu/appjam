@@ -199,9 +199,12 @@ module Appjam
               puts
               g.each_pair {|key,value|
                 gcategory = key.downcase
+                puts "gcategory #{gcategory}"
                 unless (gcategory == 'lib' or gcategory == 'info')
+                  
                   g[key].each { |k|
                     k.each_pair { |k1,v1|
+                      puts "OK [#{k1}]　[#{@gist_name}]"
                       if "#{k1}" == @gist_name
                         gid = k[k1][0]['id']
                         gname = k[k1][1]['name']

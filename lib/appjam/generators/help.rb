@@ -57,7 +57,7 @@ module Appjam
           if gname == 'lib'
             puts colorize("Framework Lib")   
           else
-            puts colorize("Gist Category [#{gname}]")  
+            puts colorize("Gist Category [#{gname}]") unless gname == 'info'  
           end 
           unless gname == 'info'       
             g[key].each { |k|
@@ -70,7 +70,7 @@ module Appjam
               }
             }
           end
-          View.render(gitopt, RENDER_OPTIONS) 
+          View.render(gitopt, RENDER_OPTIONS) unless gname == 'info' 
         }          
         puts  
       end
