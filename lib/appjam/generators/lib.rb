@@ -66,7 +66,7 @@ module Appjam
           end
         end     
         
-        def download_gist(gist_id,git_category,gist_name)
+        def download_gist(gist_id,git_category,gist_name,gist_type)
           puts "-- fetching [#{gist_name}] lib --"
           # require 'uri'
           # require 'yajl/http_stream'
@@ -93,16 +93,30 @@ module Appjam
               `git clone #{gist_id} Frameworks/#{gist_name.downcase} && rm -rf Frameworks/#{gist_name.downcase}/.git`
             end
           else
-            if system('which hg') != nil
-               system "rm -rf Frameworks/#{gist_name.downcase}"
-               system "hg clone https://kissxml.googlecode.com/hg/ Frameworks/#{gist_name.downcase}"
-               system "git add ."
-               system "git commit -m 'import #{gist_name.downcase} submodule'"     
-            else
-               say "="*70
-               say "Mercurial was not installed!! check http://mercurial.selenic.com/ for installation."
-               say "="*70              
-            end       
+            if "#{gist_type}".strip == 'hg'
+              if system('which hg') != nil
+                 system "rm -rf Frameworks/#{gist_name.downcase}"
+                 system "hg clone https://kissxml.googlecode.com/hg/ Frameworks/#{gist_name.downcase}"
+                 # system "git add ."
+                 # system "git commit -m 'import #{gist_name.downcase} submodule'"     
+              else
+                 say "="*70
+                 say "Mercurial was not installed!! check http://mercurial.selenic.com/ for installation."
+                 say "="*70              
+              end 
+            end 
+            if "#{gist_type}".strip == 'svn'
+              if system('which svn') != nil
+                 system "rm -rf Frameworks/#{gist_name.downcase}"
+                 system "svn co #{gist_id} Frameworks/#{gist_name.downcase}"
+                 # system "git add ."
+                 # system "git commit -m 'import #{gist_name.downcase} submodule'"     
+              else
+                 say "="*70
+                 say "Subversion was not installed!! check http://www.open.collab.net/downloads/community/ for installation."
+                 say "="*70              
+              end 
+            end                 
           end
         end                 
       end      
@@ -163,11 +177,13 @@ module Appjam
                   if "#{k1}" == @lib_name
                     gid = k[k1][0]['id']
                     gname = k[k1][1]['name']
+                    gtype = k[k1][3]['type']
+                    puts "repository type: #{gtype}"
                     eval(File.read(__FILE__) =~ /^__END__\n/ && $' || '')                       
-                    Lib::download_gist("#{gid}",gcategory,gname)
+                    Lib::download_gist("#{gid}",gcategory,gname,gtype)
                     eval(File.read(__FILE__) =~ /^__END__/ && $' || '')
                     say "================================================================="
-                    say "Check Frameworks/#{gname}/ for new framework [#{gname}]"       
+                    say "Check Frameworks/#{gname.downcase}/ for new framework [#{gname}]"       
                     say "================================================================="              
                   end                  
                 }

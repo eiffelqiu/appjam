@@ -75,7 +75,8 @@ lib:
 - kissxml: 
   - id : https://kissxml.googlecode.com/hg/
   - name : KissXML
-  - description : KissXML Framework  
+  - description : KissXML Framework 
+  - type : hg   
 - cocos2d: 
   - id : git://github.com/cocos2d/cocos2d-iphone.git
   - name : Cocos2dIphone
@@ -84,6 +85,11 @@ lib:
   - id : git://github.com/PrimaryFeather/Sparrow-Framework.git
   - name : SparrowFramework
   - description : Sparrow Framework for iPhone
+- regexkit: 
+  - id : https://regexkit.svn.sourceforge.net/svnroot/regexkit
+  - name : RegexKit
+  - description : RegexKit Lib
+  - type : svn    
         
 utiliy:
 - get_ip_address: 
@@ -226,7 +232,11 @@ utiliy:
   - id : git://github.com/jlopez/iphone-utils.git
   - name : IphoneUtils
   - description : Useful additions to Cocoa/UIKit/etc iPhone libraries 
-              
+- sd_web_image:
+  - id : git://github.com/rs/SDWebImage.git
+  - name : SDWebImage
+  - description : Asynchronous image downloader with an UIImageView category
+                  
 snippet:
 - common_macro:
   - id : 988462

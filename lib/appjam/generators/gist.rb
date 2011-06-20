@@ -89,7 +89,7 @@ module Appjam
           end
         end     
         
-        def download_gist(gist_id,git_category,gist_name)
+        def download_gist(gist_id,git_category,gist_name,gist_type)
           puts "-- fetching gist [#{gist_name}] --"
           # require 'uri'
           # require 'yajl/http_stream'
@@ -102,9 +102,41 @@ module Appjam
             `rm -rf Gist/#{git_category}/#{gist_name.downcase}`
           end
           if("#{gist_id}".is_numeric?)
-            `git clone git://gist.github.com/#{gist_id}.git Gist/#{git_category}/#{gist_name.downcase} && rm -rf Gist/#{git_category}/#{gist_name.downcase}/.git`
+            if system('which git') != nil  
+              `git clone git://gist.github.com/#{gist_id}.git Gist/#{git_category}/#{gist_name.downcase} && rm -rf Gist/#{git_category}/#{gist_name.downcase}/.git`
+            else
+              say "="*70
+              say "Git was not installed!! check http://git-scm.com/ for installation."
+              say "="*70              
+            end
           else
-            `git clone #{gist_id} Gist/#{git_category}/#{gist_name.downcase} && rm -rf Gist/#{git_category}/#{gist_name.downcase}/.git`
+            if "#{gist_type}".strip == 'hg'
+              if system('which hg') != nil
+                `hg clone #{gist_id} Gist/#{git_category}/#{gist_name.downcase} && rm -rf Gist/#{git_category}/#{gist_name.downcase}/.hg`
+              else
+                 say "="*70
+                 say "Mercurial was not installed!! check http://mercurial.selenic.com/ for installation."
+                 say "="*70              
+              end 
+            end  
+            if "#{gist_type}".strip == 'svn'
+              if system('which svn') != nil
+                `svn co #{gist_id} Gist/#{git_category}/#{gist_name.downcase} && rm -rf Gist/#{git_category}/#{gist_name.downcase}/.svn`
+              else
+                 say "="*70
+                 say "Subversion was not installed!! check http://www.open.collab.net/downloads/community/ for installation."
+                 say "="*70              
+              end 
+            end 
+            if "#{gist_type}".strip == ''   
+              if system('which git') != nil                  
+                `git clone #{gist_id} Gist/#{git_category}/#{gist_name.downcase} && rm -rf Gist/#{git_category}/#{gist_name.downcase}/.git`
+              else
+                say "="*70
+                say "Git was not installed!! check http://git-scm.com/ for installation."
+                say "="*70              
+              end
+            end
           end
           if system('which qlmanage')
             system("qlmanage -p Gist/#{git_category}/#{gist_name.downcase}/*.* >& /dev/null")
@@ -173,7 +205,9 @@ module Appjam
                       if "#{k1}" == @gist_name
                         gid = k[k1][0]['id']
                         gname = k[k1][1]['name']
-                        Gist::download_gist("#{gid}",gcategory,gname)
+                        gtype = k[k1][3]['type']
+                        puts "repository type: #{gtype}"
+                        Gist::download_gist("#{gid}",gcategory,gname,gtype)
                         eval(File.read(__FILE__) =~ /^__END__/ && $' || '')
                         say "================================================================="
                         say "Your '#{gname.capitalize}' snippet code has been generated."
