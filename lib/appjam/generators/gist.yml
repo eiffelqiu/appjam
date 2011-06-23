@@ -291,7 +291,11 @@ utiliy:
   - id : https://bitbucket.org/aquarius/mncolorpicker
   - name : MNColorPicker
   - description : MNColorPicker is a color picker for the iPhone.
-  - type : hg 
+  - type : hg
+- ti_swipeable_table_view:
+  - id : git://github.com/thermogl/TISwipeableTableView.git
+  - name : TISwipeableTableView
+  - description : swipe a UITableViewCell and reveal a back view   
   
 app:
 - mobile_terminal:
