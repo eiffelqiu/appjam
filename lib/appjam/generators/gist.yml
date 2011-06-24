@@ -295,7 +295,12 @@ utiliy:
 - ti_swipeable_table_view:
   - id : git://github.com/thermogl/TISwipeableTableView.git
   - name : TISwipeableTableView
-  - description : swipe a UITableViewCell and reveal a back view   
+  - description : swipe a UITableViewCell and reveal a back view 
+- google_toolbox_for_mac:
+  - id : http://google-toolbox-for-mac.googlecode.com/svn/trunk/
+  - name : GoogleToolboxforMac
+  - description : Google projects for developers working other Mac projects 
+  - type : svn  
   
 app:
 - mobile_terminal:
