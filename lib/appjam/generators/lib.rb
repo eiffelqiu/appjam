@@ -82,41 +82,68 @@ module Appjam
           #       system "hg clone https://kissxml.googlecode.com/hg/ Frameworks/kissxml"
           #       system "git add ."
           #       system "git commit -m 'import kissxml submodule'"
-          #       say (<<-TEXT).gsub(/ {10}/,'')      
-          if gist_id.include?('github.com')               
-            if File.directory?("Frameworks/#{gist_name.downcase}")
-              `rm -rf Frameworks/#{gist_name.downcase}`
+          #       say (<<-TEXT).gsub(/ {10}/,'')  
+          if 'ftp' == "#{gist_type.strip}"  
+            system "ftp #{gist_id}"
+            dir = "#{File.basename(gist_id.strip)}"
+            case "#{File.basename(gist_id.strip)}"
+              when /.tar$/
+                system "tar xvf #{File.basename(gist_id.strip)}"
+              when /.gz$/
+                system "tar zxvf #{File.basename(gist_id.strip)}"
+              when /.bz2$/
+                system "tar jxvf #{File.basename(gist_id.strip)}"
+              when /.bz$/
+                system "tar zxvf #{File.basename(gist_id.strip)}"
+              when /.Z$/
+                system "tar Zxvf #{File.basename(gist_id.strip)}"
+              when /.zip$/
+                system "unzip #{File.basename(gist_id.strip)}"
             end
-            if("#{gist_id}".is_numeric?)
-              `git clone git://gist.github.com/#{gist_id}.git Frameworks/#{gist_name.downcase} && rm -rf Frameworks/#{gist_name.downcase}/.git`
+            dir = File.basename(dir, '.gz')
+            dir = File.basename(dir, '.tar')
+            dir = File.basename(dir, '.bz2')
+            dir = File.basename(dir, '.bz')
+            dir = File.basename(dir, '.Z')
+            dir = File.basename(dir, '.zip')            
+            system "rm #{File.basename(gist_id.strip)}"
+            system "mv #{dir} Frameworks/"
+          else   
+            if gist_id.include?('github.com')               
+              if File.directory?("Frameworks/#{gist_name.downcase}")
+                `rm -rf Frameworks/#{gist_name.downcase}`
+              end
+              if("#{gist_id}".is_numeric?)
+                `git clone git://gist.github.com/#{gist_id}.git Frameworks/#{gist_name.downcase} && rm -rf Frameworks/#{gist_name.downcase}/.git`
+              else
+                `git clone #{gist_id} Frameworks/#{gist_name.downcase} && rm -rf Frameworks/#{gist_name.downcase}/.git`
+              end
             else
-              `git clone #{gist_id} Frameworks/#{gist_name.downcase} && rm -rf Frameworks/#{gist_name.downcase}/.git`
-            end
-          else
-            if "#{gist_type}".strip == 'hg'
-              if system('which hg') != nil
-                 system "rm -rf Frameworks/#{gist_name.downcase}"
-                 system "hg clone https://kissxml.googlecode.com/hg/ Frameworks/#{gist_name.downcase}"
-                 # system "git add ."
-                 # system "git commit -m 'import #{gist_name.downcase} submodule'"     
-              else
-                 say "="*70
-                 say "Mercurial was not installed!! check http://mercurial.selenic.com/ for installation."
-                 say "="*70              
+              if "#{gist_type}".strip == 'hg'
+                if system('which hg') != nil
+                   system "rm -rf Frameworks/#{gist_name.downcase}"
+                   system "hg clone https://kissxml.googlecode.com/hg/ Frameworks/#{gist_name.downcase}"
+                   # system "git add ."
+                   # system "git commit -m 'import #{gist_name.downcase} submodule'"     
+                else
+                   say "="*70
+                   say "Mercurial was not installed!! check http://mercurial.selenic.com/ for installation."
+                   say "="*70              
+                end 
               end 
-            end 
-            if "#{gist_type}".strip == 'svn'
-              if system('which svn') != nil
-                 system "rm -rf Frameworks/#{gist_name.downcase}"
-                 system "svn co #{gist_id} Frameworks/#{gist_name.downcase}"
-                 # system "git add ."
-                 # system "git commit -m 'import #{gist_name.downcase} submodule'"     
-              else
-                 say "="*70
-                 say "Subversion was not installed!! check http://www.open.collab.net/downloads/community/ for installation."
-                 say "="*70              
-              end 
-            end                 
+              if "#{gist_type}".strip == 'svn'
+                if system('which svn') != nil
+                   system "rm -rf Frameworks/#{gist_name.downcase}"
+                   system "svn co #{gist_id} Frameworks/#{gist_name.downcase}"
+                   # system "git add ."
+                   # system "git commit -m 'import #{gist_name.downcase} submodule'"     
+                else
+                   say "="*70
+                   say "Subversion was not installed!! check http://www.open.collab.net/downloads/community/ for installation."
+                   say "="*70              
+                end 
+              end                 
+            end            
           end
         end                 
       end      

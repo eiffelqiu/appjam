@@ -78,10 +78,10 @@ lib:
   - description : KissXML Framework 
   - type : hg   
 - cocos2d: 
-  - id : http://cocos2d-iphone.googlecode.com/svn/trunk/
+  - id : http://cocos2d-iphone.googlecode.com/files/cocos2d-iphone-0.99.5.tar.gz
   - name : Cocos2dIphone
   - description : Cocos2d iPhone Framework 
-  - type : svn 
+  - type : ftp 
 - sparrow: 
   - id : git://github.com/PrimaryFeather/Sparrow-Framework.git
   - name : SparrowFramework
@@ -300,7 +300,11 @@ utiliy:
   - id : http://google-toolbox-for-mac.googlecode.com/svn/trunk/
   - name : GoogleToolboxforMac
   - description : Google projects for developers working other Mac projects 
-  - type : svn  
+  - type : svn
+- we_popover:
+  - id : git://github.com/werner77/WEPopover.git
+  - name : WEPopover
+  - description : Generic popover implementation for iOS
   
 app:
 - mobile_terminal:
