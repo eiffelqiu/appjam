@@ -80,7 +80,7 @@ lib:
 - cocos2d: 
   - id : git://github.com/cocos2d/cocos2d-iphone.git
   - name : Cocos2dIphone
-  - description : Cocos2d iPhone Framework  
+  - description : Cocos2d iPhone Framework
 - sparrow: 
   - id : git://github.com/PrimaryFeather/Sparrow-Framework.git
   - name : SparrowFramework
@@ -266,6 +266,55 @@ utiliy:
   - name : MYCrypto
   - description : A high-level cryptography API for Mac OS X and iPhone.
   - type : hg  
+- cocoahttpserver:
+  - id : https://cocoahttpserver.googlecode.com/hg/
+  - name : CocoaHttpserver
+  - description : An embedded HTTP server written in Cocoa.
+  - type : hg
+- iphone_tts:
+  - id : https://bitbucket.org/sfoster/iphone-tts 
+  - name : iPhoneTTS
+  - description : Text to Speech wrapper library (and demo app) for the iPhone/iOS platform
+  - type : hg
+- gradient_buttons:
+  - id : https://bitbucket.org/KristopherJohnson/gradientbuttons
+  - name : GradientButtons
+  - description : shiny buttons implemented using CAGradientLayer
+  - type : hg
+- in_app_settings:
+  - id : https://bitbucket.org/keegan3d/inappsettings
+  - name : InAppSettings
+  - description : InAppSettings provides a view controller displays iPhone settings
+  - type : hg
+- mn_color_picker:
+  - id : https://bitbucket.org/aquarius/mncolorpicker
+  - name : MNColorPicker
+  - description : MNColorPicker is a color picker for the iPhone.
+  - type : hg
+- ti_swipeable_table_view:
+  - id : git://github.com/thermogl/TISwipeableTableView.git
+  - name : TISwipeableTableView
+  - description : swipe a UITableViewCell and reveal a back view 
+- google_toolbox_for_mac:
+  - id : http://google-toolbox-for-mac.googlecode.com/svn/trunk/
+  - name : GoogleToolboxforMac
+  - description : Google projects for developers working other Mac projects 
+  - type : svn
+- we_popover:
+  - id : git://github.com/werner77/WEPopover.git
+  - name : WEPopover
+  - description : Generic popover implementation for iOS
+- page_peel_example:
+  - id : git://github.com/markrickert/iOS-PagePeel-Example.git
+  - name : iOS_PagePeel_Example
+  - description : the cool page peel effect
+  
+app:
+- mobile_terminal:
+  - id : http://mobileterminal.googlecode.com/svn/
+  - name : MobileTerminal
+  - description : A GUI Terminal application for the iPhone
+  - type : svn        
                          
 snippet:
 - common_macro:
