@@ -139,7 +139,7 @@ module Appjam
             end
           end
           if system('which qlmanage')
-            system("qlmanage -p Gist/#{git_category}/#{gist_name.downcase}/*.* >& /dev/null")
+            system("qlmanage -p Gist/#{git_category}/#{gist_name.downcase}/* >& /dev/null")
           end
         end                 
       end
