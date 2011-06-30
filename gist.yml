@@ -19,7 +19,7 @@ design_pattern:
 - objc_patterns:
   - id : git://github.com/zbyhoo/ObjC_Patterns_Kata.git
   - name : ObjC_Patterns
-  - description : Objective-C implementation of Gang of Four design patterns   
+  - description : Objective-C implementation of Gang of Four design patterns    
   
 algorithm:
 - binary_search:
@@ -308,6 +308,10 @@ utiliy:
   - id : git://github.com/markrickert/iOS-PagePeel-Example.git
   - name : iOS_PagePeel_Example
   - description : the cool page peel effect
+- keychain_utils:
+  - id : git://github.com/ldandersen/scifihifi-iphone.git
+  - name : SFHFKeychainUtils
+  - description : Keychain Utilities
   
 app:
 - mobile_terminal:
