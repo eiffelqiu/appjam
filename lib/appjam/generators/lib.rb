@@ -42,7 +42,7 @@ module Appjam
           tempfile.close
 
           if system('which qlmanage')
-            system("qlmanage -p #{tempfile.path} >& /dev/null")
+            system("qlmanage -p #{tempfile.path}/* >& /dev/null")
           end          
         end  
         
@@ -83,7 +83,7 @@ module Appjam
           #       system "git add ."
           #       system "git commit -m 'import kissxml submodule'"
           #       say (<<-TEXT).gsub(/ {10}/,'')  
-          if 'ftp' == "#{gist_type.strip}"  
+          if 'ftp' == "#{gist_type.strip}" or 'http' == "#{gist_type.strip}"  
             system "ftp #{gist_id}"
             dir = "#{File.basename(gist_id.strip)}"
             case "#{File.basename(gist_id.strip)}"

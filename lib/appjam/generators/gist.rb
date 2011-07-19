@@ -50,7 +50,7 @@ module Appjam
           tempfile.close
 
           if system('which qlmanage')
-            system("qlmanage -p #{tempfile.path} >& /dev/null")
+            system("qlmanage -p #{tempfile.path}/* >& /dev/null")
           end          
         end  
         
