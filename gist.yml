@@ -1,4 +1,4 @@
-info: 0.1.8.3
+info: 0.1.8.4
 design_pattern:
 - singleton_macro:
   - id : git://github.com/cjhanson/Objective-C-Optimized-Singleton.git
@@ -81,6 +81,11 @@ lib:
   - id : git://github.com/cocos2d/cocos2d-iphone.git
   - name : Cocos2dIphone
   - description : Cocos2d iPhone Framework
+- cocos2d_stable: 
+  - id : http://cocos2d-iphone.googlecode.com/files/cocos2d-iphone-1.0.0.tar.gz
+  - name : Cocos2d_iPhone_1.0
+  - description : Cocos2d iPhone Framework Stable 1.0 
+  - type: http
 - sparrow: 
   - id : git://github.com/PrimaryFeather/Sparrow-Framework.git
   - name : SparrowFramework
@@ -312,6 +317,10 @@ utiliy:
   - id : git://github.com/ldandersen/scifihifi-iphone.git
   - name : SFHFKeychainUtils
   - description : Keychain Utilities
+- ios_components:
+  - id : git://github.com/doukasd/iOS-Components.git
+  - name : iOS_Components
+  - description : Misc components for the iOS
   
 app:
 - mobile_terminal:
