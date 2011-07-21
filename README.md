@@ -2,7 +2,7 @@ appjam
 =======
 Appjam is an iOS code repository, including framework, snippet, generators, etc.
 
-**upgrade to 0.1.8.3 as soon as possible**
+**upgrade to 0.1.8.4 as soon as possible**
 
 Prerequisites
 =======
@@ -68,7 +68,15 @@ Usage 5: add asihttp library (## this require git installed)
 
 Check Frameworks/AsiHttpRequest/ for new framework [AsiHttpRequest]
 
-Usage 6: add get_gps_info snippet to your project (## this require git installed)
+Usage 6: add cocos2d stable library (## this require appjam 1.8.4)
+-------
+	$ cd todo 
+
+	$ appjam lib cocos2d_stable 
+
+Check Frameworks/cocos2d-iphone-1.0.0/ for new framework [Cocos2d_iPhone_1.0]
+
+Usage 7: add get_gps_info snippet to your project (## this require git installed)
 -------
 	$ cd todo 
 

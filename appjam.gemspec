@@ -5,11 +5,11 @@
 
 Gem::Specification.new do |s|
   s.name = %q{appjam}
-  s.version = "0.1.8.3"
+  s.version = "0.1.8.4"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Eiffel Q"]
-  s.date = %q{2011-06-20}
+  s.date = %q{2011-07-19}
   s.default_executable = %q{appjam}
   s.description = %q{Appjam is iOS code repository, including framework, snippet, generators, etc.}
   s.email = %q{eiffelqiu@gmail.com}
