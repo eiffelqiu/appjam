@@ -364,7 +364,32 @@ app:
   - id : git://github.com/akosma/nib2objc.git
   - name : nib2objc
   - description : transform NIB files for the iPhone into Objective-C code files  
-        
+- lastfm:
+  - id : git://github.com/c99koder/lastfm-iphone.git
+  - name : lastfm
+  - description : The official Last.fm iPhone application
+- photo_viewer:
+  - id : git://github.com/enormego/PhotoViewer.git
+  - name : PhotoViewer
+  - description : Quick PhotoViewer for the iPhone
+- kt_photo_browser:
+  - id : git://github.com/kirbyt/KTPhotoBrowser.git
+  - name : KTPhotoBrowser
+  - description : a lightweight photo browser library for the iPhone
+  
+game:
+- tweejump:
+  - id : git://github.com/haqu/tweejump.git
+  - name : tweejump
+  - description : iPhone game  
+- physics_game:
+  - id : git://github.com/beepscore/PhysicsGame.git
+  - name : PhysicsGame
+  - description : Physics Game Snowball Toss 
+- game_kit_p2p:
+  - id : git://github.com/shrtlist/GameKitP2P.git
+  - name : GameKitP2P
+  - description : Peer-to-peer networking using iPhone OS 3.0 GameKit    
                          
 snippet:
 - common_macro:
