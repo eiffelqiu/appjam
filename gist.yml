@@ -115,7 +115,19 @@ lib:
   - name : Log4Cocoa
   - description : Log4Cocoa is an Objective-C based port of Log4J
   - type : svn
-            
+- tapkulibrary: 
+  - id : git://github.com/devinross/tapkulibrary.git
+  - name : TapkuLibrary
+  - description : TapkuLibrary Framework 
+- briefs: 
+  - id : git://github.com/capttaco/Briefs.git
+  - name : Briefs
+  - description : Framework for iPhone wireframes
+- mgt_witter_engine: 
+  - id : git://github.com/mattgemmell/MGTwitterEngine.git
+  - name : MGTwitterEngine
+  - description : Objective-C Twitter integration library
+              
 utiliy:
 - get_ip_address: 
   - id : 986132
@@ -321,13 +333,38 @@ utiliy:
   - id : git://github.com/doukasd/iOS-Components.git
   - name : iOS_Components
   - description : Misc components for the iOS
+- libcat:
+  - id : git://github.com/wookay/libcat.git
+  - name : libcat
+  - description : interactive iPhone application development 
+- share_kit:
+  - id : git://github.com/ideashower/ShareKit.git
+  - name : ShareKit
+  - description : Drop in sharing features for all iPhone and iPad apps 
+- pull_to_refresh:
+  - id : git://github.com/leah/PullToRefresh.git
+  - name :  PullToRefresh
+  - description : A simple Controller for adding pull-to-refresh functionality 
+- leaves:
+  - id : git://github.com/brow/leaves.git
+  - name :  Leaves
+  - description : An iBooks-like page-turning interface for iPhone and iPad 
   
 app:
 - mobile_terminal:
   - id : http://mobileterminal.googlecode.com/svn/
   - name : MobileTerminal
   - description : A GUI Terminal application for the iPhone
-  - type : svn        
+  - type : svn  
+- appsales_mobile:
+  - id : git://github.com/omz/AppSales-Mobile.git
+  - name : AppSales-Mobile
+  - description : download and analyze sales reports from iTunes Connect.
+- nib2objc:
+  - id : git://github.com/akosma/nib2objc.git
+  - name : nib2objc
+  - description : transform NIB files for the iPhone into Objective-C code files  
+        
                          
 snippet:
 - common_macro:
