@@ -376,6 +376,10 @@ app:
   - id : git://github.com/kirbyt/KTPhotoBrowser.git
   - name : KTPhotoBrowser
   - description : a lightweight photo browser library for the iPhone
+- quick_dialog:
+  - id : git://github.com/escoz/QuickDialog.git
+  - name : QuickDialog
+  - description : Quick and easy dialog screens for iOS
   
 game:
 - tweejump:
