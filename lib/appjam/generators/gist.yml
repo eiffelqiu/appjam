@@ -127,6 +127,10 @@ lib:
   - id : git://github.com/mattgemmell/MGTwitterEngine.git
   - name : MGTwitterEngine
   - description : Objective-C Twitter integration library
+- cedar: 
+  - id : git://github.com/pivotal/cedar.git
+  - name : cedar
+  - description : BDD-style testing using Objective-C  
               
 utiliy:
 - get_ip_address: 
