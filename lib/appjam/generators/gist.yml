@@ -130,7 +130,23 @@ lib:
 - cedar: 
   - id : git://github.com/pivotal/cedar.git
   - name : cedar
-  - description : BDD-style testing using Objective-C  
+  - description : BDD-style testing using Objective-C
+- af_networking: 
+  - id : git://github.com/gowalla/AFNetworking.git
+  - name : AFNetworking 
+  - description : A delightful iOS networking library with NSOperations and block-based callbacks   
+- route_me: 
+  - id : git://github.com/route-me/route-me.git
+  - name : route-me 
+  - description : Open source map library for iOS 
+- lr_resty: 
+  - id : git://github.com/lukeredpath/LRResty.git
+  - name : LRResty
+  - description : Yet another Objective-C REST client library
+- wa_toolkit_ios: 
+  - id : git://github.com/microsoft-dpe/wa-toolkit-ios.git
+  - name : wa-toolkit-ios
+  - description : windows azure toolkit for ios - library (source and compiled)  
               
 utiliy:
 - get_ip_address: 
@@ -352,7 +368,52 @@ utiliy:
 - leaves:
   - id : git://github.com/brow/leaves.git
   - name :  Leaves
-  - description : An iBooks-like page-turning interface for iPhone and iPad 
+  - description : An iBooks-like page-turning interface for iPhone and iPad
+- bamboo:
+  - id : git://github.com/ryanscott/bamboo.git
+  - name :  Bamboo
+  - description : a lightweight library of facebook's graph api
+- fb_dialog:
+  - id : git://github.com/cglong/FBDialog.git
+  - name :  FBDialog
+  - description : a lightweight library
+- hj_cache:
+  - id : git://github.com/markofjohnson/HJCache.git
+  - name :  HJCache
+  - description : iOS asynchronous download and sharing and caching library
+- quick_dialog:
+  - id : git://github.com/escoz/QuickDialog.git
+  - name : QuickDialog
+  - description : Quick and easy dialog screens for iOS
+- DKSocial:
+  - id : git://github.com/keithpitt/DKSocial.git
+  - name : DKSocial
+  - description : A block based API to interact with Twitter and Facebook
+- share_kit:
+  - id : git://github.com/ShareKit/ShareKit.git
+  - name : ShareKit
+  - description : Drop in sharing features for all iPhone and iPad apps 
+- elc_image_picker_controller:
+  - id : git://github.com/elc/ELCImagePickerController.git
+  - name : ELCImagePickerController
+  - description : A clone of the UIImagePickerController allowing for multiple asset selection  
+- cl_cascade:
+  - id : git://github.com/appunite/CLCascade.git
+  - name : CLCascade
+  - description : Twitter-like cascade UI library 
+- coconut_kit:
+  - id : git://github.com/defagos/CoconutKit.git
+  - name : CoconutKit
+  - description : CoconutKit is a library of high-quality iOS components   
+- flicktabcontrol:
+  - id : git://github.com/enormego/flicktabcontrol.git
+  - name : flicktabcontrol
+  - description : FlickTabControl is an easy to use library of the "Flick" tab bar 
+- plain_oauth:
+  - id : git://github.com/jaanus/PlainOAuth.git
+  - name : PlainOAuth
+  - description : A plain OAuth library in Objective-C 
+     
   
 app:
 - mobile_terminal:
@@ -380,10 +441,18 @@ app:
   - id : git://github.com/kirbyt/KTPhotoBrowser.git
   - name : KTPhotoBrowser
   - description : a lightweight photo browser library for the iPhone
-- quick_dialog:
-  - id : git://github.com/escoz/QuickDialog.git
-  - name : QuickDialog
-  - description : Quick and easy dialog screens for iOS
+- mov_io:
+  - id : git://github.com/holtwick/mov.io.git
+  - name : mov.io
+  - description : app capture and share your video on twitter
+- movis:
+  - id : git://github.com/wientjes/Movis.git
+  - name : Movis
+  - description : Movis is a mobile video sharing application
+- let_s_share:
+  - id : git://github.com/nvrooij/Let-s-Share.git
+  - name : Let-s-Share
+  - description : app sharing contacts and photo's over a bluetooth connection  
   
 game:
 - tweejump:
