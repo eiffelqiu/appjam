@@ -146,7 +146,31 @@ lib:
 - wa_toolkit_ios: 
   - id : git://github.com/microsoft-dpe/wa-toolkit-ios.git
   - name : wa-toolkit-ios
-  - description : windows azure toolkit for ios - library (source and compiled)  
+  - description : windows azure toolkit for ios - library (source and compiled)
+- opencv_ios: 
+  - id : git://github.com/macmade/OpenCV-iOS.git
+  - name : OpenCV-iOS
+  - description : a port of the OpenCV library for Apple iOS  
+- fremont: 
+  - id : git://github.com/BigHillSoftware/Fremont.git
+  - name : Fremont
+  - description : an library which provides serialization between XML documents and ObjC object 
+- simpleGeo_framework: 
+  - id : git://github.com/simplegeo/SimpleGeo.framework.git
+  - name : SimpleGeo.framework
+  - description : Objective-C client library for SimpleGeo  
+- touch_rss: 
+  - id : git://github.com/TouchCode/TouchRSS.git
+  - name :　TouchRSS
+  - description : Simple iPhpne RSS reading library
+- yos_social_objc: 
+  - id : git://github.com/yahoo/yos-social-objc.git
+  - name :　yos-social-objc
+  - description : Yahoo! Social SDK 
+- deferred_kit: 
+  - id : git://github.com/samuraisam/DeferredKit.git
+  - name :　DeferredKit
+  - description : Asynchronous programming library for cocoa and cocoa touch.
               
 utiliy:
 - get_ip_address: 
@@ -413,7 +437,34 @@ utiliy:
   - id : git://github.com/jaanus/PlainOAuth.git
   - name : PlainOAuth
   - description : A plain OAuth library in Objective-C 
-     
+- md_audio_player_controller:
+  - id : git://github.com/mattdonnelly/MDAudioPlayerController.git
+  - name : MDAudioPlayerController
+  - description : library for iPhone used to play MP3 files 
+- photo_appLink:
+  - id : git://github.com/pocketpixels/PhotoAppLink.git
+  - name : PhotoAppLink
+  - description : iOS library for connecting photo editing apps  
+- accordion:
+  - id : git://github.com/nacho4d/Accordion.git
+  - name : Accordion
+  - description : a small library for iOS that implements file navigation using accordions 
+- fb_encryptor:
+  - id : git://github.com/dev5tec/FBEncryptor.git
+  - name : FBEncryptor
+  - description : Easy Encryption library (CCCrypt wrapper　AES 256bit support) 
+- imagestore:
+  - id : git://github.com/psychs/imagestore.git
+  - name : imagestore
+  - description : A library to download and cache images automatically 
+- build_kit:
+  - id : git://github.com/davidmorford/BuildKit.git
+  - name : BuildKit
+  - description : A structured project layout with configurations 
+- iBoost:
+  - id : git://github.com/ZaBlanc/iBoost.git
+  - name :  iBoost
+  - description : Rapid Objective-C Interface Development System 
   
 app:
 - mobile_terminal:
