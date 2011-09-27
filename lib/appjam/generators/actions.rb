@@ -87,6 +87,7 @@ module Appjam
       # Returns true if inside a Appjam application
       def in_app_root?
         File.exist?(destination_root('Classes'))
+        # Dir.glob("*.xcodeproj").count >= 1
       end
 
       # Returns the field with an unacceptable name(for symbol) else returns nil
