@@ -171,6 +171,15 @@ lib:
   - id : git://github.com/samuraisam/DeferredKit.git
   - name :　DeferredKit
   - description : Asynchronous programming library for cocoa and cocoa touch.
+- wonderxml: 
+  - id : http://wonderxml.googlecode.com/svn/trunk/
+  - name :　wonderxml
+  - description : a simple objective-c library to serialize objects to XML and back again.
+  - type : svn
+- restkit: 
+  - id : git://github.com/RestKit/RestKit.git
+  - name :　RestKit
+  - description : ramework for consuming and modeling RESTful web resources on iOS and OS X  
               
 utiliy:
 - get_ip_address: 
