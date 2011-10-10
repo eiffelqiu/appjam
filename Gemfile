@@ -1,4 +1,5 @@
 source "http://rubygems.org"
+source "http://gems.github.com"
 gem "thor"
 gem "activesupport"
 gem "cli-colorize"

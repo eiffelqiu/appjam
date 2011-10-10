@@ -1,6 +1,8 @@
 require 'rubygems'
 require 'bundler'
 require 'rdoc/task'
+require 'rake/dsl_definition'
+require 'rake'
 
 # temp hacking for "undefined method `sh'" error in Rake task
 class Object
