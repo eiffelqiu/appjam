@@ -1,5 +1,6 @@
 require 'rubygems'
 require 'bundler'
+require 'rake/dsl_definition'
 require 'rdoc/task'
 require 'rake/dsl_definition'
 require 'rake'
