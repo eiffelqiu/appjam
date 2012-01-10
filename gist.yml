@@ -1,4 +1,4 @@
-info: 0.1.8.5
+info: 0.1.8.6
 design_pattern:
 - singleton_macro:
   - id : git://github.com/cjhanson/Objective-C-Optimized-Singleton.git
@@ -101,7 +101,7 @@ lib:
   - description : Cocoa plotting framework for Mac OS X and iOS
   - type : hg
 - gdata_objectivec_client: 
-  - id : http://gdata-objectivec-client.googlecode.com/svn/trunk/
+  - id : http://gdata-objectivec-client.googlecode.com/svn/trunk
   - name : Corgdata-objectivec-clientePlot
   - description : Google Data APIs Objective-C Client Library
   - type : svn
@@ -172,14 +172,18 @@ lib:
   - name :　DeferredKit
   - description : Asynchronous programming library for cocoa and cocoa touch.
 - wonderxml: 
-  - id : http://wonderxml.googlecode.com/svn/trunk/
-  - name :　wonderxml
+  - id : http://wonderxml.googlecode.com/svn/trunk
+  - name :　WonderXml
   - description : a simple objective-c library to serialize objects to XML and back again.
   - type : svn
 - restkit: 
   - id : git://github.com/RestKit/RestKit.git
   - name :　RestKit
-  - description : ramework for consuming and modeling RESTful web resources on iOS and OS X  
+  - description : framework for consuming and modeling RESTful web resources on iOS and OS X  
+- rapture_xml: 
+  - id : git://github.com/ZaBlanc/RaptureXML.git
+  - name :　RaptureXML
+  - description : A simple block-based XML API for iOS and Mac development 
               
 utiliy:
 - get_ip_address: 
@@ -366,7 +370,7 @@ utiliy:
   - name : TISwipeableTableView
   - description : swipe a UITableViewCell and reveal a back view 
 - google_toolbox_for_mac:
-  - id : http://google-toolbox-for-mac.googlecode.com/svn/trunk/
+  - id : http://google-toolbox-for-mac.googlecode.com/svn/trunk
   - name : GoogleToolboxforMac
   - description : Google projects for developers working other Mac projects 
   - type : svn
