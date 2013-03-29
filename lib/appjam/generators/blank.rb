@@ -116,17 +116,18 @@ template "templates/blank/EiffelApplication/AppDelegate.h.tt", "#{@project_name}
 template "templates/blank/EiffelApplication/AppDelegate.m.tt", "#{@project_name}/#{@project_name}/AppDelegate.m"
 
 directory "templates/blank/EiffelApplication/en.lproj", "#{@project_name}/#{@project_name}/en.lproj"
-directory "templates/blank/EiffelApplication/EiffelApplication.xcdatamodeld", "#{@project_name}/#{@project_name}/EiffelApplication.xcdatamodeld"
+system "mkdir -p #{options[:root]}/#{@project_name}/#{@project_name}/#{@project_name}.xcdatamodeld/#{@project_name}.xcdatamodel"
 empty_directory "#{@project_name}/#{@project_name}/app"
 empty_directory "#{@project_name}/#{@project_name}/resources"
 directory "templates/blank/EiffelApplication/libs", "#{@project_name}/#{@project_name}/libs"
 
 template "templates/blank/EiffelApplication/EiffelApplication-Info.plist", "#{@project_name}/#{@project_name}/#{@project_name}-Info.plist"
-template "templates/blank/EiffelApplicationTests/EiffelApplicationTests-Info.plist.tt", "#{@project_name}/#{@project_name}Tests/#{@project_name}Tests-Info.plist"
+template "templates/blank/EiffelApplicationTests/EiffelApplicationTests-Info.plist", "#{@project_name}/#{@project_name}Tests/#{@project_name}Tests-Info.plist"
 template "templates/blank/EiffelApplicationTests/EiffelApplicationTests.h.tt", "#{@project_name}/#{@project_name}Tests/#{@project_name}Tests.h"
 template "templates/blank/EiffelApplicationTests/EiffelApplicationTests.m.tt", "#{@project_name}/#{@project_name}Tests/#{@project_name}Tests.m"
 
 copy_file "templates/resources/Default-568h@2x.png", "#{@project_name}/#{@project_name}/Default-568h@2x.png"
 copy_file "templates/resources/Default@2x.png", "#{@project_name}/#{@project_name}/Default@2x.png"
 copy_file "templates/resources/Default.png", "#{@project_name}/#{@project_name}/Default.png"
+copy_file "templates/resources/xcdata_contents", "#{@project_name}/#{@project_name}/#{@project_name}.xcdatamodeld/#{@project_name}.xcdatamodel/contents"
 
