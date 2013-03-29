@@ -129,5 +129,5 @@ template "templates/blank/EiffelApplicationTests/EiffelApplicationTests.m.tt", "
 copy_file "templates/resources/Default-568h@2x.png", "#{@project_name}/#{@project_name}/Default-568h@2x.png"
 copy_file "templates/resources/Default@2x.png", "#{@project_name}/#{@project_name}/Default@2x.png"
 copy_file "templates/resources/Default.png", "#{@project_name}/#{@project_name}/Default.png"
-copy_file "templates/resources/contents", "#{@project_name}/#{@project_name}/#{@project_name}.xcdatamodeld/#{@project_name}.xcdatamodel/contents"
+template "templates/resources/contents.tt", "#{@project_name}/#{@project_name}/#{@project_name}.xcdatamodeld/#{@project_name}.xcdatamodel/contents"
 
