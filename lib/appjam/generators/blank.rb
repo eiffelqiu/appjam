@@ -17,7 +17,7 @@ module Appjam
       version Appjam::Version::STRING  
 
       # Add this generator to our appjam
-      Appjam::Generators.add_generator(:blank, self)
+      Appjam::Generators.add_generator(:start, self)
   
       init_generator
 
