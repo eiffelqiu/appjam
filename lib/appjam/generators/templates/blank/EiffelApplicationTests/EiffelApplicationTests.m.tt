@@ -1,0 +1,32 @@
+//
+//  EiffelApplicationTests.m
+//  EiffelApplicationTests
+//
+//  Created by SWH on 3/29/13.
+//  Copyright (c) 2013 likenote. All rights reserved.
+//
+
+#import "EiffelApplicationTests.h"
+
+@implementation EiffelApplicationTests
+
+- (void)setUp
+{
+    [super setUp];
+    
+    // Set-up code here.
+}
+
+- (void)tearDown
+{
+    // Tear-down code here.
+    
+    [super tearDown];
+}
+
+- (void)testExample
+{
+    STFail(@"Unit tests are not implemented yet in EiffelApplicationTests");
+}
+
+@end

@@ -1,0 +1,13 @@
+//
+//  EiffelApplicationTests.h
+//  EiffelApplicationTests
+//
+//  Created by SWH on 3/29/13.
+//  Copyright (c) 2013 likenote. All rights reserved.
+//
+
+#import <SenTestingKit/SenTestingKit.h>
+
+@interface EiffelApplicationTests : SenTestCase
+
+@end
