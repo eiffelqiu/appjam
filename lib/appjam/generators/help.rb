@@ -45,8 +45,9 @@ module Appjam
         puts "notice: a new version '#{g['info']}' released" if g['info'] and g['info'].strip != "#{Appjam::Version::STRING}"
         puts                      
         puts colorize("Generator Options")
-        opt = [{ :category => "puremvc", :command => "appjam mvc_project todo", :description => "generate puremvc iphone project"},
-               { :category => "puremvc", :command => "appjam mvc_model user",   :description => "generate puremvc iphone model"}
+        opt = [{ :category => "puremvc", :command => "appjam mvc_project todo", :description => "generate puremvc iOS project"},
+               { :category => "puremvc", :command => "appjam mvc_model user",   :description => "generate puremvc model"},
+               { :category => "normal", :command => "appjam blank demo",   :description => "generate  a starter application with most popular framework included"}
                ] 
         View.render(opt, RENDER_OPTIONS)
         puts        

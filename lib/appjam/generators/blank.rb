@@ -60,6 +60,7 @@ __END__
 empty_directory "#{@project_name}"
 
 directory "templates/blank/EiffelApplication.xcodeproj", "#{@project_name}/#{@project_name}.xcodeproj"
+directory "templates/blank/EiffelApplicationTests/en.lproj", "#{@project_name}/#{@project_name}Tests/en.lproj"
 
 fileName = "#{options[:root]}/#{@project_name}/#{@project_name}.xcodeproj/project.pbxproj"
 aFile = File.open(fileName, "r")
@@ -68,21 +69,21 @@ aFile.close
 aString.gsub!('EiffelApplication', "#{@project_name}")
 File.open(fileName, "w") { |file| file << aString }
 
-fileName = "#{options[:root]}/#{@project_name}/#{@project_name}.xcodeproj/xcuserdata/swh.xcuserdatad/xcschemes/WaxApplication.xcscheme"
+fileName = "#{options[:root]}/#{@project_name}/#{@project_name}.xcodeproj/xcuserdata/eiffel.xcuserdatad/xcschemes/EiffelApplication.xcscheme"
 aFile = File.open(fileName, "r")
 aString = aFile.read
 aFile.close
 aString.gsub!('EiffelApplication', "#{@project_name}")
 File.open(fileName, "w") { |file| file << aString }
 
-fileName = "#{options[:root]}/#{@project_name}/#{@project_name}.xcodeproj/xcuserdata/swh.xcuserdatad/xcschemes/xcschememanagement.plist"
+fileName = "#{options[:root]}/#{@project_name}/#{@project_name}.xcodeproj/xcuserdata/eiffel.xcuserdatad/xcschemes/xcschememanagement.plist"
 aFile = File.open(fileName, "r")
 aString = aFile.read
 aFile.close
 aString.gsub!('EiffelApplication', "#{@project_name}")
 File.open(fileName, "w") { |file| file << aString }
 
-fileName = "#{options[:root]}/#{@project_name}/#{@project_name}.xcodeproj/xcuserdata/swh.xcuserdatad/xcschemes/WaxApplication.xcscheme"
+fileName = "#{options[:root]}/#{@project_name}/#{@project_name}.xcodeproj/xcuserdata/eiffel.xcuserdatad/xcschemes/EiffelApplication.xcscheme"
 aFile = File.open(fileName, "r")
 aString = aFile.read
 aFile.close
@@ -96,26 +97,34 @@ aFile.close
 aString.gsub!('EiffelApplication', "#{@project_name}")
 File.open(fileName, "w") { |file| file << aString }
 
-fileName = "#{options[:root]}/#{@project_name}/#{@project_name}.xcodeproj/project.xcworkspace/xcuserdata/swh.xcuserdatad/UserInterfaceState.xcuserstate"
+fileName = "#{options[:root]}/#{@project_name}/#{@project_name}.xcodeproj/project.xcworkspace/xcuserdata/eiffel.xcuserdatad/UserInterfaceState.xcuserstate"
 aFile = File.open(fileName, "r")
 aString = aFile.read.unpack("C*").pack("U*")
 aFile.close
 aString.gsub!('EiffelApplication', "#{@project_name}")
 File.open(fileName, "w") { |file| file << aString }
 
-system "mv #{options[:root]}/#{@project_name}/#{@project_name}.xcodeproj/project.xcworkspace/xcuserdata/swh.xcuserdatad #{options[:root]}/#{@project_name}/#{@project_name}.xcodeproj/project.xcworkspace/xcuserdata/#{`whoami`.strip}.xcuserdatad" if `whoami`.strip != 'swh'
+system "mv #{options[:root]}/#{@project_name}/#{@project_name}.xcodeproj/project.xcworkspace/xcuserdata/eiffel.xcuserdatad #{options[:root]}/#{@project_name}/#{@project_name}.xcodeproj/project.xcworkspace/xcuserdata/#{`whoami`.strip}.xcuserdatad" if `whoami`.strip != 'eiffel'
 
-system "mv #{options[:root]}/#{@project_name}/#{@project_name}.xcodeproj/xcuserdata/swh.xcuserdatad #{options[:root]}/#{@project_name}/#{@project_name}.xcodeproj/xcuserdata/#{`whoami`.strip}.xcuserdatad" if `whoami`.strip != 'swh'
+system "mv #{options[:root]}/#{@project_name}/#{@project_name}.xcodeproj/xcuserdata/eiffel.xcuserdatad #{options[:root]}/#{@project_name}/#{@project_name}.xcodeproj/xcuserdata/#{`whoami`.strip}.xcuserdatad" if `whoami`.strip != 'eiffel'
 
-system "mv #{options[:root]}/#{@project_name}/#{@project_name}.xcodeproj/xcuserdata/#{`whoami`.strip}.xcuserdatad/xcschemes/WaxApplication.xcscheme #{options[:root]}/#{@project_name}/#{@project_name}.xcodeproj/xcuserdata/#{`whoami`.strip}.xcuserdatad/xcschemes/#{@project_name}.xcscheme" 
+system "mv #{options[:root]}/#{@project_name}/#{@project_name}.xcodeproj/xcuserdata/#{`whoami`.strip}.xcuserdatad/xcschemes/EiffelApplication.xcscheme #{options[:root]}/#{@project_name}/#{@project_name}.xcodeproj/xcuserdata/#{`whoami`.strip}.xcuserdatad/xcschemes/#{@project_name}.xcscheme" 
 
 template "templates/blank/EiffelApplication/main.m.tt", "#{@project_name}/#{@project_name}/main.m"
+template "templates/blank/EiffelApplication/EiffelApplication-Prefix.pch.tt", "#{@project_name}/#{@project_name}/#{@project_name}-Prefix.pch"
 template "templates/blank/EiffelApplication/AppDelegate.h.tt", "#{@project_name}/#{@project_name}/AppDelegate.h"
 template "templates/blank/EiffelApplication/AppDelegate.m.tt", "#{@project_name}/#{@project_name}/AppDelegate.m"
-directory "templates/blank/EiffelApplication/en.lproj", "#{@project_name}/#{@project_name}/en.lproj"
 
-template "templates/blank/EiffelApplication/EiffelApplication-Info.plist.tt", "#{@project_name}/#{@project_name}/#{@project_name}-Info.plist"
-template "templates/blank/EiffelApplication/EiffelApplication-Prefix.pch.tt", "#{@project_name}/#{@project_name}/#{@project_name}-Prefix.pch"
+directory "templates/blank/EiffelApplication/en.lproj", "#{@project_name}/#{@project_name}/en.lproj"
+directory "templates/blank/EiffelApplication/EiffelApplication.xcdatamodeld", "#{@project_name}/#{@project_name}/EiffelApplication.xcdatamodeld"
+empty_directory "#{@project_name}/#{@project_name}/app"
+empty_directory "#{@project_name}/#{@project_name}/resources"
+directory "templates/blank/EiffelApplication/libs", "#{@project_name}/#{@project_name}/libs"
+
+template "templates/blank/EiffelApplication/EiffelApplication-Info.plist", "#{@project_name}/#{@project_name}/#{@project_name}-Info.plist"
+template "templates/blank/EiffelApplicationTests/EiffelApplicationTests-Info.plist.tt", "#{@project_name}/#{@project_name}Tests/#{@project_name}Tests-Info.plist"
+template "templates/blank/EiffelApplicationTests/EiffelApplicationTests.h.tt", "#{@project_name}/#{@project_name}Tests/#{@project_name}Tests.h"
+template "templates/blank/EiffelApplicationTests/EiffelApplicationTests.m.tt", "#{@project_name}/#{@project_name}Tests/#{@project_name}Tests.m"
 
 copy_file "templates/resources/Default-568h@2x.png", "#{@project_name}/#{@project_name}/Default-568h@2x.png"
 copy_file "templates/resources/Default@2x.png", "#{@project_name}/#{@project_name}/Default@2x.png"

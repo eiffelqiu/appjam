@@ -2,7 +2,7 @@
 //  AppDelegate.m
 //  EiffelApplication
 //
-//  Created by SWH on 3/29/13.
+//  Created by eiffel on 3/29/13.
 //  Copyright (c) 2013 likenote. All rights reserved.
 //
 
@@ -10,12 +10,19 @@
 
 @implementation AppDelegate
 
+static const int ddLogLevel = LOG_LEVEL_VERBOSE;
+
 @synthesize managedObjectContext = _managedObjectContext;
 @synthesize managedObjectModel = _managedObjectModel;
 @synthesize persistentStoreCoordinator = _persistentStoreCoordinator;
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+    [DDLog addLogger:[DDASLLogger sharedInstance]];
+    [DDLog addLogger:[DDTTYLogger sharedInstance]];
+    
+    DDLogVerbose(@"Start App");
+    DLog(@"didFinishLaunching...");
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
     self.window.backgroundColor = [UIColor whiteColor];

@@ -1,14 +1,8 @@
+# encoding: utf-8
+
 require 'rubygems'
 require 'bundler'
-require 'rake/dsl_definition'
-require 'rdoc/task'
-require 'rake/dsl_definition'
 require 'rake'
-
-# temp hacking for "undefined method `sh'" error in Rake task
-class Object
-  alias sh system
-end
 
 begin
   Bundler.setup(:default, :development)
@@ -17,7 +11,14 @@ rescue Bundler::BundlerError => e
   $stderr.puts "Run `bundle install` to install missing gems"
   exit e.status_code
 end
-require 'rake'
+
+
+
+# temp hacking for "undefined method `sh'" error in Rake task
+class Object
+  alias sh system
+end
+
 require './lib/appjam/version.rb'
 require './lib/appjam/tasks.rb'
 
@@ -35,16 +36,16 @@ Jeweler::Tasks.new do |gem|
   gem.authors = ["Eiffel Q"]
   gem.version = Appjam::Version::STRING
   gem.executables = ['appjam']
-  gem.files = Dir.glob('lib/**/*.*') 
-  gem.add_dependency 'activesupport'
+  gem.files = %w(LICENSE.txt README.md VERSION) + Dir.glob('lib/**/*.*') 
+  gem.add_dependency 'activesupport', '>= 3.2.8'  
   gem.add_dependency 'grit'
   gem.add_dependency 'i18n'
   gem.add_dependency 'hirb'
   gem.add_dependency 'cli-colorize'
   gem.add_dependency 'rdoc'
-  # gem.add_dependency 'yajl-ruby'
+  gem.add_dependency 'yajl-ruby'  
+  gem.add_dependency 'plist' 
 end
-Jeweler::RubygemsDotOrgTasks.new
 Jeweler::GemcutterTasks.new
 
 require 'rake/testtask'
@@ -68,7 +69,7 @@ Rake::RDocTask.new do |rdoc|
   version = File.exist?('VERSION') ? File.read('VERSION') : ""
 
   rdoc.rdoc_dir = 'rdoc'
-  rdoc.title = "hello #{version}"
+  rdoc.title = "appjam #{version}"
   rdoc.rdoc_files.include('README*')
   rdoc.rdoc_files.include('lib/**/*.rb')
 end

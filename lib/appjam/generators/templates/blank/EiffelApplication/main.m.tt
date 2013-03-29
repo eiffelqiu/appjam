@@ -1,9 +1,9 @@
 //
 //  main.m
-//  EiffelApplication
+//  <%= @project_name %>
 //
-//  Created by SWH on 3/29/13.
-//  Copyright (c) 2013 likenote. All rights reserved.
+//  Created by <%= @developer.capitalize %> on <%= @created_on %>
+//  Copyright(c) <%= Time.now.year %>, All rights reserved.
 //
 
 #import <UIKit/UIKit.h>

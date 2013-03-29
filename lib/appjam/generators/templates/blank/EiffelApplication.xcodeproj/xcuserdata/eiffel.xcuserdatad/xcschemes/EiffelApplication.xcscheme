@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "CC9244AC17052A6500103A26"
+               BlueprintIdentifier = "C52561BC1705AD5200AC76A2"
                BuildableName = "EiffelApplication.app"
                BlueprintName = "EiffelApplication"
                ReferencedContainer = "container:EiffelApplication.xcodeproj">
@@ -32,7 +32,7 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "CC9244D117052A6500103A26"
+               BlueprintIdentifier = "C52561E11705AD5200AC76A2"
                BuildableName = "EiffelApplicationTests.octest"
                BlueprintName = "EiffelApplicationTests"
                ReferencedContainer = "container:EiffelApplication.xcodeproj">
@@ -42,7 +42,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "CC9244AC17052A6500103A26"
+            BlueprintIdentifier = "C52561BC1705AD5200AC76A2"
             BuildableName = "EiffelApplication.app"
             BlueprintName = "EiffelApplication"
             ReferencedContainer = "container:EiffelApplication.xcodeproj">
@@ -61,7 +61,7 @@
       <BuildableProductRunnable>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "CC9244AC17052A6500103A26"
+            BlueprintIdentifier = "C52561BC1705AD5200AC76A2"
             BuildableName = "EiffelApplication.app"
             BlueprintName = "EiffelApplication"
             ReferencedContainer = "container:EiffelApplication.xcodeproj">
@@ -79,7 +79,7 @@
       <BuildableProductRunnable>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "CC9244AC17052A6500103A26"
+            BlueprintIdentifier = "C52561BC1705AD5200AC76A2"
             BuildableName = "EiffelApplication.app"
             BlueprintName = "EiffelApplication"
             ReferencedContainer = "container:EiffelApplication.xcodeproj">
