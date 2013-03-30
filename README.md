@@ -88,6 +88,14 @@ Add 'Gist/utiliy/Get_GPS_Info/' folder to the 'Classes' Group
 
 Xcode build and run
 
+Usage 8: generate iOS project with most popular framework included
+-------
+	$ appjam start todo
+
+	$ cd todo
+
+	$ open todo.xcodeproj
+
 Contributing to appjam
 =======
 * Check out the latest master to make sure the feature hasn't been implemented or the bug hasn't been fixed yet
