@@ -77,6 +77,45 @@
 		C52562981705AE2000AC76A2 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = C52562951705AE2000AC76A2 /* libsqlite3.dylib */; };
 		C52562991705AE2000AC76A2 /* libxml2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = C52562961705AE2000AC76A2 /* libxml2.dylib */; };
 		C525629A1705AE2000AC76A2 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = C52562971705AE2000AC76A2 /* libz.dylib */; };
+		C531746917090858004C1FB9 /* Toast+UIView.m in Sources */ = {isa = PBXBuildFile; fileRef = C531746817090858004C1FB9 /* Toast+UIView.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		C53174FA17090DA4004C1FB9 /* NSString+Versioning.m in Sources */ = {isa = PBXBuildFile; fileRef = C53174C317090DA4004C1FB9 /* NSString+Versioning.m */; };
+		C53174FB17090DA4004C1FB9 /* SS+Functions.m in Sources */ = {isa = PBXBuildFile; fileRef = C53174C517090DA4004C1FB9 /* SS+Functions.m */; };
+		C53174FC17090DA4004C1FB9 /* SS+System.m in Sources */ = {isa = PBXBuildFile; fileRef = C53174C717090DA4004C1FB9 /* SS+System.m */; };
+		C53174FD17090DA4004C1FB9 /* NSArray+JavaScript.m in Sources */ = {isa = PBXBuildFile; fileRef = C53174CB17090DA4004C1FB9 /* NSArray+JavaScript.m */; };
+		C53174FE17090DA4004C1FB9 /* NSDate+JavaScript.m in Sources */ = {isa = PBXBuildFile; fileRef = C53174CD17090DA4004C1FB9 /* NSDate+JavaScript.m */; };
+		C53174FF17090DA4004C1FB9 /* NSDictionary+JavaScript.m in Sources */ = {isa = PBXBuildFile; fileRef = C53174CF17090DA4004C1FB9 /* NSDictionary+JavaScript.m */; };
+		C531750017090DA4004C1FB9 /* NSMutableArray+JavaScript.m in Sources */ = {isa = PBXBuildFile; fileRef = C53174D117090DA4004C1FB9 /* NSMutableArray+JavaScript.m */; };
+		C531750117090DA4004C1FB9 /* NSMutableDictionary+JavaScript.m in Sources */ = {isa = PBXBuildFile; fileRef = C53174D317090DA4004C1FB9 /* NSMutableDictionary+JavaScript.m */; };
+		C531750217090DA4004C1FB9 /* NSMutableString+JavaScript.m in Sources */ = {isa = PBXBuildFile; fileRef = C53174D517090DA4004C1FB9 /* NSMutableString+JavaScript.m */; };
+		C531750317090DA4004C1FB9 /* NSNumber+JavaScript.m in Sources */ = {isa = PBXBuildFile; fileRef = C53174D717090DA4004C1FB9 /* NSNumber+JavaScript.m */; };
+		C531750417090DA4004C1FB9 /* NSObject+JavaScript.m in Sources */ = {isa = PBXBuildFile; fileRef = C53174D917090DA4004C1FB9 /* NSObject+JavaScript.m */; };
+		C531750517090DA4004C1FB9 /* NSString+JavaScript.m in Sources */ = {isa = PBXBuildFile; fileRef = C53174DB17090DA4004C1FB9 /* NSString+JavaScript.m */; };
+		C531750617090DA4004C1FB9 /* SS+JavaScript.m in Sources */ = {isa = PBXBuildFile; fileRef = C53174DD17090DA4004C1FB9 /* SS+JavaScript.m */; };
+		C531750717090DA4004C1FB9 /* SS+Types.m in Sources */ = {isa = PBXBuildFile; fileRef = C53174DF17090DA4004C1FB9 /* SS+Types.m */; };
+		C531750817090DA4004C1FB9 /* NSDictionary+NamedProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = C53174E117090DA4004C1FB9 /* NSDictionary+NamedProperties.m */; };
+		C531750917090DA4004C1FB9 /* SS.m in Sources */ = {isa = PBXBuildFile; fileRef = C53174E317090DA4004C1FB9 /* SS.m */; };
+		C531750A17090DA4004C1FB9 /* SubjectiveScript.m in Sources */ = {isa = PBXBuildFile; fileRef = C53174E517090DA4004C1FB9 /* SubjectiveScript.m */; };
+		C531750B17090DA4004C1FB9 /* NSArray+SS.m in Sources */ = {isa = PBXBuildFile; fileRef = C53174E817090DA4004C1FB9 /* NSArray+SS.m */; };
+		C531750C17090DA4004C1FB9 /* NSDate+SS.m in Sources */ = {isa = PBXBuildFile; fileRef = C53174EA17090DA4004C1FB9 /* NSDate+SS.m */; };
+		C531750D17090DA4004C1FB9 /* NSDictionary+SS.m in Sources */ = {isa = PBXBuildFile; fileRef = C53174EC17090DA4004C1FB9 /* NSDictionary+SS.m */; };
+		C531750E17090DA4004C1FB9 /* NSMutableArray+SS.m in Sources */ = {isa = PBXBuildFile; fileRef = C53174EE17090DA4004C1FB9 /* NSMutableArray+SS.m */; };
+		C531750F17090DA4004C1FB9 /* NSMutableDictionary+SS.m in Sources */ = {isa = PBXBuildFile; fileRef = C53174F017090DA4004C1FB9 /* NSMutableDictionary+SS.m */; };
+		C531751017090DA4004C1FB9 /* NSMutableString+SS.m in Sources */ = {isa = PBXBuildFile; fileRef = C53174F217090DA4004C1FB9 /* NSMutableString+SS.m */; };
+		C531751117090DA4004C1FB9 /* NSNumber+SS.m in Sources */ = {isa = PBXBuildFile; fileRef = C53174F417090DA4004C1FB9 /* NSNumber+SS.m */; };
+		C531751217090DA4004C1FB9 /* NSObject+SS.m in Sources */ = {isa = PBXBuildFile; fileRef = C53174F617090DA4004C1FB9 /* NSObject+SS.m */; };
+		C531751317090DA4004C1FB9 /* NSString+SS.m in Sources */ = {isa = PBXBuildFile; fileRef = C53174F817090DA4004C1FB9 /* NSString+SS.m */; };
+		C531751917090DC7004C1FB9 /* HTMLNode.m in Sources */ = {isa = PBXBuildFile; fileRef = C531751617090DC7004C1FB9 /* HTMLNode.m */; };
+		C531751A17090DC7004C1FB9 /* HTMLParser.m in Sources */ = {isa = PBXBuildFile; fileRef = C531751817090DC7004C1FB9 /* HTMLParser.m */; };
+		C531752017090F66004C1FB9 /* SSKeychain.m in Sources */ = {isa = PBXBuildFile; fileRef = C531751D17090F66004C1FB9 /* SSKeychain.m */; };
+		C531752117090F66004C1FB9 /* SSKeychainQuery.m in Sources */ = {isa = PBXBuildFile; fileRef = C531751F17090F66004C1FB9 /* SSKeychainQuery.m */; };
+		C531753017090F83004C1FB9 /* NSArray+ObjectiveSugar.m in Sources */ = {isa = PBXBuildFile; fileRef = C531752417090F83004C1FB9 /* NSArray+ObjectiveSugar.m */; };
+		C531753117090F83004C1FB9 /* NSDictionary+ObjectiveSugar.m in Sources */ = {isa = PBXBuildFile; fileRef = C531752617090F83004C1FB9 /* NSDictionary+ObjectiveSugar.m */; };
+		C531753217090F83004C1FB9 /* NSMutableArray+ObjectiveSugar.m in Sources */ = {isa = PBXBuildFile; fileRef = C531752817090F83004C1FB9 /* NSMutableArray+ObjectiveSugar.m */; };
+		C531753317090F83004C1FB9 /* NSNumber+ObjectiveSugar.m in Sources */ = {isa = PBXBuildFile; fileRef = C531752A17090F83004C1FB9 /* NSNumber+ObjectiveSugar.m */; };
+		C531753417090F83004C1FB9 /* NSSet+ObjectiveSugar.m in Sources */ = {isa = PBXBuildFile; fileRef = C531752C17090F83004C1FB9 /* NSSet+ObjectiveSugar.m */; };
+		C531753517090F83004C1FB9 /* NSString+ObjectiveSugar.m in Sources */ = {isa = PBXBuildFile; fileRef = C531752E17090F83004C1FB9 /* NSString+ObjectiveSugar.m */; };
+		C5317539170911F7004C1FB9 /* RXMLElement.m in Sources */ = {isa = PBXBuildFile; fileRef = C5317538170911F7004C1FB9 /* RXMLElement.m */; };
+		C531753D170919DE004C1FB9 /* SecureUDID.m in Sources */ = {isa = PBXBuildFile; fileRef = C531753C170919DE004C1FB9 /* SecureUDID.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -195,6 +234,87 @@
 		C52562951705AE2000AC76A2 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
 		C52562961705AE2000AC76A2 /* libxml2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libxml2.dylib; path = usr/lib/libxml2.dylib; sourceTree = SDKROOT; };
 		C52562971705AE2000AC76A2 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		C531746717090858004C1FB9 /* Toast+UIView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Toast+UIView.h"; sourceTree = "<group>"; };
+		C531746817090858004C1FB9 /* Toast+UIView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Toast+UIView.m"; sourceTree = "<group>"; };
+		C53174C217090DA4004C1FB9 /* NSString+Versioning.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Versioning.h"; sourceTree = "<group>"; };
+		C53174C317090DA4004C1FB9 /* NSString+Versioning.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Versioning.m"; sourceTree = "<group>"; };
+		C53174C417090DA4004C1FB9 /* SS+Functions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SS+Functions.h"; sourceTree = "<group>"; };
+		C53174C517090DA4004C1FB9 /* SS+Functions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "SS+Functions.m"; sourceTree = "<group>"; };
+		C53174C617090DA4004C1FB9 /* SS+System.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SS+System.h"; sourceTree = "<group>"; };
+		C53174C717090DA4004C1FB9 /* SS+System.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "SS+System.m"; sourceTree = "<group>"; };
+		C53174C817090DA4004C1FB9 /* SSArguments.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSArguments.h; sourceTree = "<group>"; };
+		C53174CA17090DA4004C1FB9 /* NSArray+JavaScript.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+JavaScript.h"; sourceTree = "<group>"; };
+		C53174CB17090DA4004C1FB9 /* NSArray+JavaScript.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+JavaScript.m"; sourceTree = "<group>"; };
+		C53174CC17090DA4004C1FB9 /* NSDate+JavaScript.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+JavaScript.h"; sourceTree = "<group>"; };
+		C53174CD17090DA4004C1FB9 /* NSDate+JavaScript.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+JavaScript.m"; sourceTree = "<group>"; };
+		C53174CE17090DA4004C1FB9 /* NSDictionary+JavaScript.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+JavaScript.h"; sourceTree = "<group>"; };
+		C53174CF17090DA4004C1FB9 /* NSDictionary+JavaScript.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+JavaScript.m"; sourceTree = "<group>"; };
+		C53174D017090DA4004C1FB9 /* NSMutableArray+JavaScript.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableArray+JavaScript.h"; sourceTree = "<group>"; };
+		C53174D117090DA4004C1FB9 /* NSMutableArray+JavaScript.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableArray+JavaScript.m"; sourceTree = "<group>"; };
+		C53174D217090DA4004C1FB9 /* NSMutableDictionary+JavaScript.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableDictionary+JavaScript.h"; sourceTree = "<group>"; };
+		C53174D317090DA4004C1FB9 /* NSMutableDictionary+JavaScript.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableDictionary+JavaScript.m"; sourceTree = "<group>"; };
+		C53174D417090DA4004C1FB9 /* NSMutableString+JavaScript.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableString+JavaScript.h"; sourceTree = "<group>"; };
+		C53174D517090DA4004C1FB9 /* NSMutableString+JavaScript.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableString+JavaScript.m"; sourceTree = "<group>"; };
+		C53174D617090DA4004C1FB9 /* NSNumber+JavaScript.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSNumber+JavaScript.h"; sourceTree = "<group>"; };
+		C53174D717090DA4004C1FB9 /* NSNumber+JavaScript.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSNumber+JavaScript.m"; sourceTree = "<group>"; };
+		C53174D817090DA4004C1FB9 /* NSObject+JavaScript.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+JavaScript.h"; sourceTree = "<group>"; };
+		C53174D917090DA4004C1FB9 /* NSObject+JavaScript.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+JavaScript.m"; sourceTree = "<group>"; };
+		C53174DA17090DA4004C1FB9 /* NSString+JavaScript.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+JavaScript.h"; sourceTree = "<group>"; };
+		C53174DB17090DA4004C1FB9 /* NSString+JavaScript.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+JavaScript.m"; sourceTree = "<group>"; };
+		C53174DC17090DA4004C1FB9 /* SS+JavaScript.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SS+JavaScript.h"; sourceTree = "<group>"; };
+		C53174DD17090DA4004C1FB9 /* SS+JavaScript.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "SS+JavaScript.m"; sourceTree = "<group>"; };
+		C53174DE17090DA4004C1FB9 /* SS+Types.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SS+Types.h"; sourceTree = "<group>"; };
+		C53174DF17090DA4004C1FB9 /* SS+Types.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "SS+Types.m"; sourceTree = "<group>"; };
+		C53174E017090DA4004C1FB9 /* NSDictionary+NamedProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+NamedProperties.h"; sourceTree = "<group>"; };
+		C53174E117090DA4004C1FB9 /* NSDictionary+NamedProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+NamedProperties.m"; sourceTree = "<group>"; };
+		C53174E217090DA4004C1FB9 /* SS.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SS.h; sourceTree = "<group>"; };
+		C53174E317090DA4004C1FB9 /* SS.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SS.m; sourceTree = "<group>"; };
+		C53174E417090DA4004C1FB9 /* SubjectiveScript.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SubjectiveScript.h; sourceTree = "<group>"; };
+		C53174E517090DA4004C1FB9 /* SubjectiveScript.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SubjectiveScript.m; sourceTree = "<group>"; };
+		C53174E717090DA4004C1FB9 /* NSArray+SS.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+SS.h"; sourceTree = "<group>"; };
+		C53174E817090DA4004C1FB9 /* NSArray+SS.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+SS.m"; sourceTree = "<group>"; };
+		C53174E917090DA4004C1FB9 /* NSDate+SS.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+SS.h"; sourceTree = "<group>"; };
+		C53174EA17090DA4004C1FB9 /* NSDate+SS.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+SS.m"; sourceTree = "<group>"; };
+		C53174EB17090DA4004C1FB9 /* NSDictionary+SS.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+SS.h"; sourceTree = "<group>"; };
+		C53174EC17090DA4004C1FB9 /* NSDictionary+SS.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+SS.m"; sourceTree = "<group>"; };
+		C53174ED17090DA4004C1FB9 /* NSMutableArray+SS.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableArray+SS.h"; sourceTree = "<group>"; };
+		C53174EE17090DA4004C1FB9 /* NSMutableArray+SS.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableArray+SS.m"; sourceTree = "<group>"; };
+		C53174EF17090DA4004C1FB9 /* NSMutableDictionary+SS.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableDictionary+SS.h"; sourceTree = "<group>"; };
+		C53174F017090DA4004C1FB9 /* NSMutableDictionary+SS.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableDictionary+SS.m"; sourceTree = "<group>"; };
+		C53174F117090DA4004C1FB9 /* NSMutableString+SS.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableString+SS.h"; sourceTree = "<group>"; };
+		C53174F217090DA4004C1FB9 /* NSMutableString+SS.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableString+SS.m"; sourceTree = "<group>"; };
+		C53174F317090DA4004C1FB9 /* NSNumber+SS.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSNumber+SS.h"; sourceTree = "<group>"; };
+		C53174F417090DA4004C1FB9 /* NSNumber+SS.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSNumber+SS.m"; sourceTree = "<group>"; };
+		C53174F517090DA4004C1FB9 /* NSObject+SS.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+SS.h"; sourceTree = "<group>"; };
+		C53174F617090DA4004C1FB9 /* NSObject+SS.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+SS.m"; sourceTree = "<group>"; };
+		C53174F717090DA4004C1FB9 /* NSString+SS.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+SS.h"; sourceTree = "<group>"; };
+		C53174F817090DA4004C1FB9 /* NSString+SS.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+SS.m"; sourceTree = "<group>"; };
+		C53174F917090DA4004C1FB9 /* SSTypes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSTypes.h; sourceTree = "<group>"; };
+		C531751517090DC7004C1FB9 /* HTMLNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HTMLNode.h; sourceTree = "<group>"; };
+		C531751617090DC7004C1FB9 /* HTMLNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HTMLNode.m; sourceTree = "<group>"; };
+		C531751717090DC7004C1FB9 /* HTMLParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HTMLParser.h; sourceTree = "<group>"; };
+		C531751817090DC7004C1FB9 /* HTMLParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HTMLParser.m; sourceTree = "<group>"; };
+		C531751C17090F66004C1FB9 /* SSKeychain.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSKeychain.h; sourceTree = "<group>"; };
+		C531751D17090F66004C1FB9 /* SSKeychain.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SSKeychain.m; sourceTree = "<group>"; };
+		C531751E17090F66004C1FB9 /* SSKeychainQuery.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSKeychainQuery.h; sourceTree = "<group>"; };
+		C531751F17090F66004C1FB9 /* SSKeychainQuery.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SSKeychainQuery.m; sourceTree = "<group>"; };
+		C531752317090F83004C1FB9 /* NSArray+ObjectiveSugar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+ObjectiveSugar.h"; sourceTree = "<group>"; };
+		C531752417090F83004C1FB9 /* NSArray+ObjectiveSugar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+ObjectiveSugar.m"; sourceTree = "<group>"; };
+		C531752517090F83004C1FB9 /* NSDictionary+ObjectiveSugar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+ObjectiveSugar.h"; sourceTree = "<group>"; };
+		C531752617090F83004C1FB9 /* NSDictionary+ObjectiveSugar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+ObjectiveSugar.m"; sourceTree = "<group>"; };
+		C531752717090F83004C1FB9 /* NSMutableArray+ObjectiveSugar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableArray+ObjectiveSugar.h"; sourceTree = "<group>"; };
+		C531752817090F83004C1FB9 /* NSMutableArray+ObjectiveSugar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableArray+ObjectiveSugar.m"; sourceTree = "<group>"; };
+		C531752917090F83004C1FB9 /* NSNumber+ObjectiveSugar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSNumber+ObjectiveSugar.h"; sourceTree = "<group>"; };
+		C531752A17090F83004C1FB9 /* NSNumber+ObjectiveSugar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSNumber+ObjectiveSugar.m"; sourceTree = "<group>"; };
+		C531752B17090F83004C1FB9 /* NSSet+ObjectiveSugar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSSet+ObjectiveSugar.h"; sourceTree = "<group>"; };
+		C531752C17090F83004C1FB9 /* NSSet+ObjectiveSugar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSSet+ObjectiveSugar.m"; sourceTree = "<group>"; };
+		C531752D17090F83004C1FB9 /* NSString+ObjectiveSugar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+ObjectiveSugar.h"; sourceTree = "<group>"; };
+		C531752E17090F83004C1FB9 /* NSString+ObjectiveSugar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+ObjectiveSugar.m"; sourceTree = "<group>"; };
+		C531752F17090F83004C1FB9 /* ObjectiveSugar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ObjectiveSugar.h; sourceTree = "<group>"; };
+		C5317537170911F7004C1FB9 /* RXMLElement.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RXMLElement.h; sourceTree = "<group>"; };
+		C5317538170911F7004C1FB9 /* RXMLElement.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RXMLElement.m; sourceTree = "<group>"; };
+		C531753B170919DE004C1FB9 /* SecureUDID.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SecureUDID.h; sourceTree = "<group>"; };
+		C531753C170919DE004C1FB9 /* SecureUDID.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SecureUDID.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -361,6 +481,7 @@
 		C52561FC1705ADAB00AC76A2 /* libs */ = {
 			isa = PBXGroup;
 			children = (
+				C531746517090858004C1FB9 /* components */,
 				C52561FD1705ADAB00AC76A2 /* frameworks */,
 				C52562231705ADAB00AC76A2 /* toolkit */,
 			);
@@ -370,6 +491,7 @@
 		C52561FD1705ADAB00AC76A2 /* frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				C5317536170911F7004C1FB9 /* RaptureXML */,
 				C52561FE1705ADAB00AC76A2 /* AFNetworking */,
 				C52562121705ADAB00AC76A2 /* fmdb */,
 				C525621E1705ADAB00AC76A2 /* JSONKit */,
@@ -432,6 +554,12 @@
 		C52562231705ADAB00AC76A2 /* toolkit */ = {
 			isa = PBXGroup;
 			children = (
+				C531753A170919DE004C1FB9 /* SecureUDID */,
+				C531752217090F83004C1FB9 /* ObjectiveSugar */,
+				C531751B17090F66004C1FB9 /* SSKeychain */,
+				C531751417090DC7004C1FB9 /* Objective-C-HMTL-Parser */,
+				C53174BF17090DA4004C1FB9 /* _m */,
+				C53174C017090DA4004C1FB9 /* SubjectiveScript */,
 				C52562241705ADAB00AC76A2 /* EGOCache */,
 				C52562281705ADAB00AC76A2 /* Lumberjack */,
 				C52562391705ADAB00AC76A2 /* ObjectiveMixin */,
@@ -509,6 +637,175 @@
 			children = (
 			);
 			path = resources;
+			sourceTree = "<group>";
+		};
+		C531746517090858004C1FB9 /* components */ = {
+			isa = PBXGroup;
+			children = (
+				C531746617090858004C1FB9 /* Toast */,
+			);
+			path = components;
+			sourceTree = "<group>";
+		};
+		C531746617090858004C1FB9 /* Toast */ = {
+			isa = PBXGroup;
+			children = (
+				C531746717090858004C1FB9 /* Toast+UIView.h */,
+				C531746817090858004C1FB9 /* Toast+UIView.m */,
+			);
+			path = Toast;
+			sourceTree = "<group>";
+		};
+		C53174BF17090DA4004C1FB9 /* _m */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = _m;
+			sourceTree = "<group>";
+		};
+		C53174C017090DA4004C1FB9 /* SubjectiveScript */ = {
+			isa = PBXGroup;
+			children = (
+				C53174C117090DA4004C1FB9 /* Helpers */,
+				C53174C917090DA4004C1FB9 /* JavaScript */,
+				C53174E017090DA4004C1FB9 /* NSDictionary+NamedProperties.h */,
+				C53174E117090DA4004C1FB9 /* NSDictionary+NamedProperties.m */,
+				C53174E217090DA4004C1FB9 /* SS.h */,
+				C53174E317090DA4004C1FB9 /* SS.m */,
+				C53174E417090DA4004C1FB9 /* SubjectiveScript.h */,
+				C53174E517090DA4004C1FB9 /* SubjectiveScript.m */,
+				C53174E617090DA4004C1FB9 /* Types */,
+			);
+			path = SubjectiveScript;
+			sourceTree = "<group>";
+		};
+		C53174C117090DA4004C1FB9 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				C53174C217090DA4004C1FB9 /* NSString+Versioning.h */,
+				C53174C317090DA4004C1FB9 /* NSString+Versioning.m */,
+				C53174C417090DA4004C1FB9 /* SS+Functions.h */,
+				C53174C517090DA4004C1FB9 /* SS+Functions.m */,
+				C53174C617090DA4004C1FB9 /* SS+System.h */,
+				C53174C717090DA4004C1FB9 /* SS+System.m */,
+				C53174C817090DA4004C1FB9 /* SSArguments.h */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		C53174C917090DA4004C1FB9 /* JavaScript */ = {
+			isa = PBXGroup;
+			children = (
+				C53174CA17090DA4004C1FB9 /* NSArray+JavaScript.h */,
+				C53174CB17090DA4004C1FB9 /* NSArray+JavaScript.m */,
+				C53174CC17090DA4004C1FB9 /* NSDate+JavaScript.h */,
+				C53174CD17090DA4004C1FB9 /* NSDate+JavaScript.m */,
+				C53174CE17090DA4004C1FB9 /* NSDictionary+JavaScript.h */,
+				C53174CF17090DA4004C1FB9 /* NSDictionary+JavaScript.m */,
+				C53174D017090DA4004C1FB9 /* NSMutableArray+JavaScript.h */,
+				C53174D117090DA4004C1FB9 /* NSMutableArray+JavaScript.m */,
+				C53174D217090DA4004C1FB9 /* NSMutableDictionary+JavaScript.h */,
+				C53174D317090DA4004C1FB9 /* NSMutableDictionary+JavaScript.m */,
+				C53174D417090DA4004C1FB9 /* NSMutableString+JavaScript.h */,
+				C53174D517090DA4004C1FB9 /* NSMutableString+JavaScript.m */,
+				C53174D617090DA4004C1FB9 /* NSNumber+JavaScript.h */,
+				C53174D717090DA4004C1FB9 /* NSNumber+JavaScript.m */,
+				C53174D817090DA4004C1FB9 /* NSObject+JavaScript.h */,
+				C53174D917090DA4004C1FB9 /* NSObject+JavaScript.m */,
+				C53174DA17090DA4004C1FB9 /* NSString+JavaScript.h */,
+				C53174DB17090DA4004C1FB9 /* NSString+JavaScript.m */,
+				C53174DC17090DA4004C1FB9 /* SS+JavaScript.h */,
+				C53174DD17090DA4004C1FB9 /* SS+JavaScript.m */,
+				C53174DE17090DA4004C1FB9 /* SS+Types.h */,
+				C53174DF17090DA4004C1FB9 /* SS+Types.m */,
+			);
+			path = JavaScript;
+			sourceTree = "<group>";
+		};
+		C53174E617090DA4004C1FB9 /* Types */ = {
+			isa = PBXGroup;
+			children = (
+				C53174E717090DA4004C1FB9 /* NSArray+SS.h */,
+				C53174E817090DA4004C1FB9 /* NSArray+SS.m */,
+				C53174E917090DA4004C1FB9 /* NSDate+SS.h */,
+				C53174EA17090DA4004C1FB9 /* NSDate+SS.m */,
+				C53174EB17090DA4004C1FB9 /* NSDictionary+SS.h */,
+				C53174EC17090DA4004C1FB9 /* NSDictionary+SS.m */,
+				C53174ED17090DA4004C1FB9 /* NSMutableArray+SS.h */,
+				C53174EE17090DA4004C1FB9 /* NSMutableArray+SS.m */,
+				C53174EF17090DA4004C1FB9 /* NSMutableDictionary+SS.h */,
+				C53174F017090DA4004C1FB9 /* NSMutableDictionary+SS.m */,
+				C53174F117090DA4004C1FB9 /* NSMutableString+SS.h */,
+				C53174F217090DA4004C1FB9 /* NSMutableString+SS.m */,
+				C53174F317090DA4004C1FB9 /* NSNumber+SS.h */,
+				C53174F417090DA4004C1FB9 /* NSNumber+SS.m */,
+				C53174F517090DA4004C1FB9 /* NSObject+SS.h */,
+				C53174F617090DA4004C1FB9 /* NSObject+SS.m */,
+				C53174F717090DA4004C1FB9 /* NSString+SS.h */,
+				C53174F817090DA4004C1FB9 /* NSString+SS.m */,
+				C53174F917090DA4004C1FB9 /* SSTypes.h */,
+			);
+			path = Types;
+			sourceTree = "<group>";
+		};
+		C531751417090DC7004C1FB9 /* Objective-C-HMTL-Parser */ = {
+			isa = PBXGroup;
+			children = (
+				C531751517090DC7004C1FB9 /* HTMLNode.h */,
+				C531751617090DC7004C1FB9 /* HTMLNode.m */,
+				C531751717090DC7004C1FB9 /* HTMLParser.h */,
+				C531751817090DC7004C1FB9 /* HTMLParser.m */,
+			);
+			path = "Objective-C-HMTL-Parser";
+			sourceTree = "<group>";
+		};
+		C531751B17090F66004C1FB9 /* SSKeychain */ = {
+			isa = PBXGroup;
+			children = (
+				C531751C17090F66004C1FB9 /* SSKeychain.h */,
+				C531751D17090F66004C1FB9 /* SSKeychain.m */,
+				C531751E17090F66004C1FB9 /* SSKeychainQuery.h */,
+				C531751F17090F66004C1FB9 /* SSKeychainQuery.m */,
+			);
+			path = SSKeychain;
+			sourceTree = "<group>";
+		};
+		C531752217090F83004C1FB9 /* ObjectiveSugar */ = {
+			isa = PBXGroup;
+			children = (
+				C531752317090F83004C1FB9 /* NSArray+ObjectiveSugar.h */,
+				C531752417090F83004C1FB9 /* NSArray+ObjectiveSugar.m */,
+				C531752517090F83004C1FB9 /* NSDictionary+ObjectiveSugar.h */,
+				C531752617090F83004C1FB9 /* NSDictionary+ObjectiveSugar.m */,
+				C531752717090F83004C1FB9 /* NSMutableArray+ObjectiveSugar.h */,
+				C531752817090F83004C1FB9 /* NSMutableArray+ObjectiveSugar.m */,
+				C531752917090F83004C1FB9 /* NSNumber+ObjectiveSugar.h */,
+				C531752A17090F83004C1FB9 /* NSNumber+ObjectiveSugar.m */,
+				C531752B17090F83004C1FB9 /* NSSet+ObjectiveSugar.h */,
+				C531752C17090F83004C1FB9 /* NSSet+ObjectiveSugar.m */,
+				C531752D17090F83004C1FB9 /* NSString+ObjectiveSugar.h */,
+				C531752E17090F83004C1FB9 /* NSString+ObjectiveSugar.m */,
+				C531752F17090F83004C1FB9 /* ObjectiveSugar.h */,
+			);
+			path = ObjectiveSugar;
+			sourceTree = "<group>";
+		};
+		C5317536170911F7004C1FB9 /* RaptureXML */ = {
+			isa = PBXGroup;
+			children = (
+				C5317537170911F7004C1FB9 /* RXMLElement.h */,
+				C5317538170911F7004C1FB9 /* RXMLElement.m */,
+			);
+			path = RaptureXML;
+			sourceTree = "<group>";
+		};
+		C531753A170919DE004C1FB9 /* SecureUDID */ = {
+			isa = PBXGroup;
+			children = (
+				C531753B170919DE004C1FB9 /* SecureUDID.h */,
+				C531753C170919DE004C1FB9 /* SecureUDID.m */,
+			);
+			path = SecureUDID;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -651,6 +948,45 @@
 				C52562661705ADAB00AC76A2 /* Underscore.m in Sources */,
 				C52562671705ADAB00AC76A2 /* USArrayWrapper.m in Sources */,
 				C52562681705ADAB00AC76A2 /* USDictionaryWrapper.m in Sources */,
+				C531746917090858004C1FB9 /* Toast+UIView.m in Sources */,
+				C53174FA17090DA4004C1FB9 /* NSString+Versioning.m in Sources */,
+				C53174FB17090DA4004C1FB9 /* SS+Functions.m in Sources */,
+				C53174FC17090DA4004C1FB9 /* SS+System.m in Sources */,
+				C53174FD17090DA4004C1FB9 /* NSArray+JavaScript.m in Sources */,
+				C53174FE17090DA4004C1FB9 /* NSDate+JavaScript.m in Sources */,
+				C53174FF17090DA4004C1FB9 /* NSDictionary+JavaScript.m in Sources */,
+				C531750017090DA4004C1FB9 /* NSMutableArray+JavaScript.m in Sources */,
+				C531750117090DA4004C1FB9 /* NSMutableDictionary+JavaScript.m in Sources */,
+				C531750217090DA4004C1FB9 /* NSMutableString+JavaScript.m in Sources */,
+				C531750317090DA4004C1FB9 /* NSNumber+JavaScript.m in Sources */,
+				C531750417090DA4004C1FB9 /* NSObject+JavaScript.m in Sources */,
+				C531750517090DA4004C1FB9 /* NSString+JavaScript.m in Sources */,
+				C531750617090DA4004C1FB9 /* SS+JavaScript.m in Sources */,
+				C531750717090DA4004C1FB9 /* SS+Types.m in Sources */,
+				C531750817090DA4004C1FB9 /* NSDictionary+NamedProperties.m in Sources */,
+				C531750917090DA4004C1FB9 /* SS.m in Sources */,
+				C531750A17090DA4004C1FB9 /* SubjectiveScript.m in Sources */,
+				C531750B17090DA4004C1FB9 /* NSArray+SS.m in Sources */,
+				C531750C17090DA4004C1FB9 /* NSDate+SS.m in Sources */,
+				C531750D17090DA4004C1FB9 /* NSDictionary+SS.m in Sources */,
+				C531750E17090DA4004C1FB9 /* NSMutableArray+SS.m in Sources */,
+				C531750F17090DA4004C1FB9 /* NSMutableDictionary+SS.m in Sources */,
+				C531751017090DA4004C1FB9 /* NSMutableString+SS.m in Sources */,
+				C531751117090DA4004C1FB9 /* NSNumber+SS.m in Sources */,
+				C531751217090DA4004C1FB9 /* NSObject+SS.m in Sources */,
+				C531751317090DA4004C1FB9 /* NSString+SS.m in Sources */,
+				C531751917090DC7004C1FB9 /* HTMLNode.m in Sources */,
+				C531751A17090DC7004C1FB9 /* HTMLParser.m in Sources */,
+				C531752017090F66004C1FB9 /* SSKeychain.m in Sources */,
+				C531752117090F66004C1FB9 /* SSKeychainQuery.m in Sources */,
+				C531753017090F83004C1FB9 /* NSArray+ObjectiveSugar.m in Sources */,
+				C531753117090F83004C1FB9 /* NSDictionary+ObjectiveSugar.m in Sources */,
+				C531753217090F83004C1FB9 /* NSMutableArray+ObjectiveSugar.m in Sources */,
+				C531753317090F83004C1FB9 /* NSNumber+ObjectiveSugar.m in Sources */,
+				C531753417090F83004C1FB9 /* NSSet+ObjectiveSugar.m in Sources */,
+				C531753517090F83004C1FB9 /* NSString+ObjectiveSugar.m in Sources */,
+				C5317539170911F7004C1FB9 /* RXMLElement.m in Sources */,
+				C531753D170919DE004C1FB9 /* SecureUDID.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -717,6 +1053,10 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					/usr/include/libxml2,
+					"\"$(SDK_DIR)\"/usr/include/libxml2",
+				);
 				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -742,6 +1082,10 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					/usr/include/libxml2,
+					"\"$(SDK_DIR)\"/usr/include/libxml2",
+				);
 				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
 				SDKROOT = iphoneos;
@@ -755,6 +1099,10 @@
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "EiffelApplication/EiffelApplication-Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					/usr/include/libxml2,
+					"\"$(SDK_DIR)\"/usr/include/libxml2",
+				);
 				INFOPLIST_FILE = "EiffelApplication/EiffelApplication-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -767,6 +1115,10 @@
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "EiffelApplication/EiffelApplication-Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					/usr/include/libxml2,
+					"\"$(SDK_DIR)\"/usr/include/libxml2",
+				);
 				INFOPLIST_FILE = "EiffelApplication/EiffelApplication-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -784,6 +1136,7 @@
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "EiffelApplication/EiffelApplication-Prefix.pch";
+				HEADER_SEARCH_PATHS = "$SDKROOT/usr/include/libxml2/**";
 				INFOPLIST_FILE = "EiffelApplicationTests/EiffelApplicationTests-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUNDLE_LOADER)";
@@ -801,6 +1154,7 @@
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "EiffelApplication/EiffelApplication-Prefix.pch";
+				HEADER_SEARCH_PATHS = "$SDKROOT/usr/include/libxml2/**";
 				INFOPLIST_FILE = "EiffelApplicationTests/EiffelApplicationTests-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUNDLE_LOADER)";
@@ -827,6 +1181,7 @@
 				C52561F71705AD5200AC76A2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C52561F81705AD5200AC76A2 /* Build configuration list for PBXNativeTarget "EiffelApplicationTests" */ = {
 			isa = XCConfigurationList;
@@ -835,6 +1190,7 @@
 				C52561FA1705AD5200AC76A2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

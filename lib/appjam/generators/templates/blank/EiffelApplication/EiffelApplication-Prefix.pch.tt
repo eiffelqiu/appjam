@@ -1,5 +1,5 @@
 //
-// Prefix header for all source files of the 'EiffelApplication' target in the 'EiffelApplication' project
+// Prefix header for all source files of the '<%= @project_name %>' target in the '<%= @project_name %>' project
 //
 
 #import <Availability.h>

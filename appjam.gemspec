@@ -4,24 +4,26 @@
 # -*- encoding: utf-8 -*-
 
 Gem::Specification.new do |s|
-  s.name = %q{appjam}
-  s.version = "0.1.8.6"
+  s.name = "appjam"
+  s.version = "0.1.8.7"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Eiffel Q"]
-  s.date = %q{2012-01-10}
-  s.default_executable = %q{appjam}
-  s.description = %q{Appjam is iOS code repository, including framework, snippet, generators, etc.}
-  s.email = %q{eiffelqiu@gmail.com}
+  s.date = "2013-03-29"
+  s.description = "Appjam is iOS code repository, including framework, snippet, generators, etc."
+  s.email = "eiffelqiu@gmail.com"
   s.executables = ["appjam"]
   s.extra_rdoc_files = [
     "LICENSE.txt",
     "README.md"
   ]
   s.files = [
+    "LICENSE.txt",
+    "README.md",
     "lib/appjam.rb",
     "lib/appjam/command.rb",
     "lib/appjam/generators/actions.rb",
+    "lib/appjam/generators/blank.rb",
     "lib/appjam/generators/cli.rb",
     "lib/appjam/generators/gist.rb",
     "lib/appjam/generators/gist.yml",
@@ -108,109 +110,184 @@ Gem::Specification.new do |s|
     "lib/appjam/generators/project/utils/URLEncodeString.h",
     "lib/appjam/generators/project/utils/URLEncodeString.m",
     "lib/appjam/generators/search.rb",
+    "lib/appjam/generators/templates/blank/EiffelApplication.xcodeproj/project.pbxproj",
+    "lib/appjam/generators/templates/blank/EiffelApplication.xcodeproj/project.xcworkspace/contents.xcworkspacedata",
+    "lib/appjam/generators/templates/blank/EiffelApplication.xcodeproj/project.xcworkspace/xcuserdata/eiffel.xcuserdatad/UserInterfaceState.xcuserstate",
+    "lib/appjam/generators/templates/blank/EiffelApplication.xcodeproj/xcuserdata/eiffel.xcuserdatad/xcschemes/EiffelApplication.xcscheme",
+    "lib/appjam/generators/templates/blank/EiffelApplication.xcodeproj/xcuserdata/eiffel.xcuserdatad/xcschemes/xcschememanagement.plist",
+    "lib/appjam/generators/templates/blank/EiffelApplication/AppDelegate.h.tt",
+    "lib/appjam/generators/templates/blank/EiffelApplication/AppDelegate.m.tt",
+    "lib/appjam/generators/templates/blank/EiffelApplication/EiffelApplication-Info.plist",
+    "lib/appjam/generators/templates/blank/EiffelApplication/EiffelApplication-Prefix.pch.tt",
+    "lib/appjam/generators/templates/blank/EiffelApplication/en.lproj/InfoPlist.strings",
+    "lib/appjam/generators/templates/blank/EiffelApplication/libs/frameworks/AFNetworking/AFHTTPClient.h",
+    "lib/appjam/generators/templates/blank/EiffelApplication/libs/frameworks/AFNetworking/AFHTTPClient.m",
+    "lib/appjam/generators/templates/blank/EiffelApplication/libs/frameworks/AFNetworking/AFHTTPRequestOperation.h",
+    "lib/appjam/generators/templates/blank/EiffelApplication/libs/frameworks/AFNetworking/AFHTTPRequestOperation.m",
+    "lib/appjam/generators/templates/blank/EiffelApplication/libs/frameworks/AFNetworking/AFImageRequestOperation.h",
+    "lib/appjam/generators/templates/blank/EiffelApplication/libs/frameworks/AFNetworking/AFImageRequestOperation.m",
+    "lib/appjam/generators/templates/blank/EiffelApplication/libs/frameworks/AFNetworking/AFJSONRequestOperation.h",
+    "lib/appjam/generators/templates/blank/EiffelApplication/libs/frameworks/AFNetworking/AFJSONRequestOperation.m",
+    "lib/appjam/generators/templates/blank/EiffelApplication/libs/frameworks/AFNetworking/AFNetworkActivityIndicatorManager.h",
+    "lib/appjam/generators/templates/blank/EiffelApplication/libs/frameworks/AFNetworking/AFNetworkActivityIndicatorManager.m",
+    "lib/appjam/generators/templates/blank/EiffelApplication/libs/frameworks/AFNetworking/AFNetworking.h",
+    "lib/appjam/generators/templates/blank/EiffelApplication/libs/frameworks/AFNetworking/AFPropertyListRequestOperation.h",
+    "lib/appjam/generators/templates/blank/EiffelApplication/libs/frameworks/AFNetworking/AFPropertyListRequestOperation.m",
+    "lib/appjam/generators/templates/blank/EiffelApplication/libs/frameworks/AFNetworking/AFURLConnectionOperation.h",
+    "lib/appjam/generators/templates/blank/EiffelApplication/libs/frameworks/AFNetworking/AFURLConnectionOperation.m",
+    "lib/appjam/generators/templates/blank/EiffelApplication/libs/frameworks/AFNetworking/AFXMLRequestOperation.h",
+    "lib/appjam/generators/templates/blank/EiffelApplication/libs/frameworks/AFNetworking/AFXMLRequestOperation.m",
+    "lib/appjam/generators/templates/blank/EiffelApplication/libs/frameworks/AFNetworking/UIImageView+AFNetworking.h",
+    "lib/appjam/generators/templates/blank/EiffelApplication/libs/frameworks/AFNetworking/UIImageView+AFNetworking.m",
+    "lib/appjam/generators/templates/blank/EiffelApplication/libs/frameworks/JSONKit/JSONKit.h",
+    "lib/appjam/generators/templates/blank/EiffelApplication/libs/frameworks/JSONKit/JSONKit.m",
+    "lib/appjam/generators/templates/blank/EiffelApplication/libs/frameworks/fmdb/FMDatabase.h",
+    "lib/appjam/generators/templates/blank/EiffelApplication/libs/frameworks/fmdb/FMDatabase.m",
+    "lib/appjam/generators/templates/blank/EiffelApplication/libs/frameworks/fmdb/FMDatabaseAdditions.h",
+    "lib/appjam/generators/templates/blank/EiffelApplication/libs/frameworks/fmdb/FMDatabaseAdditions.m",
+    "lib/appjam/generators/templates/blank/EiffelApplication/libs/frameworks/fmdb/FMDatabasePool.h",
+    "lib/appjam/generators/templates/blank/EiffelApplication/libs/frameworks/fmdb/FMDatabasePool.m",
+    "lib/appjam/generators/templates/blank/EiffelApplication/libs/frameworks/fmdb/FMDatabaseQueue.h",
+    "lib/appjam/generators/templates/blank/EiffelApplication/libs/frameworks/fmdb/FMDatabaseQueue.m",
+    "lib/appjam/generators/templates/blank/EiffelApplication/libs/frameworks/fmdb/FMResultSet.h",
+    "lib/appjam/generators/templates/blank/EiffelApplication/libs/frameworks/fmdb/FMResultSet.m",
+    "lib/appjam/generators/templates/blank/EiffelApplication/libs/toolkit/EGOCache/EGOCache.h",
+    "lib/appjam/generators/templates/blank/EiffelApplication/libs/toolkit/EGOCache/EGOCache.m",
+    "lib/appjam/generators/templates/blank/EiffelApplication/libs/toolkit/Lumberjack/DDASLLogger.h",
+    "lib/appjam/generators/templates/blank/EiffelApplication/libs/toolkit/Lumberjack/DDASLLogger.m",
+    "lib/appjam/generators/templates/blank/EiffelApplication/libs/toolkit/Lumberjack/DDAbstractDatabaseLogger.h",
+    "lib/appjam/generators/templates/blank/EiffelApplication/libs/toolkit/Lumberjack/DDAbstractDatabaseLogger.m",
+    "lib/appjam/generators/templates/blank/EiffelApplication/libs/toolkit/Lumberjack/DDFileLogger.h",
+    "lib/appjam/generators/templates/blank/EiffelApplication/libs/toolkit/Lumberjack/DDFileLogger.m",
+    "lib/appjam/generators/templates/blank/EiffelApplication/libs/toolkit/Lumberjack/DDLog.h",
+    "lib/appjam/generators/templates/blank/EiffelApplication/libs/toolkit/Lumberjack/DDLog.m",
+    "lib/appjam/generators/templates/blank/EiffelApplication/libs/toolkit/Lumberjack/DDTTYLogger.h",
+    "lib/appjam/generators/templates/blank/EiffelApplication/libs/toolkit/Lumberjack/DDTTYLogger.m",
+    "lib/appjam/generators/templates/blank/EiffelApplication/libs/toolkit/Lumberjack/Extensions/ContextFilterLogFormatter.h",
+    "lib/appjam/generators/templates/blank/EiffelApplication/libs/toolkit/Lumberjack/Extensions/ContextFilterLogFormatter.m",
+    "lib/appjam/generators/templates/blank/EiffelApplication/libs/toolkit/Lumberjack/Extensions/DispatchQueueLogFormatter.h",
+    "lib/appjam/generators/templates/blank/EiffelApplication/libs/toolkit/Lumberjack/Extensions/DispatchQueueLogFormatter.m",
+    "lib/appjam/generators/templates/blank/EiffelApplication/libs/toolkit/ObjectiveMixin/Mixin.h",
+    "lib/appjam/generators/templates/blank/EiffelApplication/libs/toolkit/ObjectiveMixin/Mixin.m",
+    "lib/appjam/generators/templates/blank/EiffelApplication/libs/toolkit/Underscore/USArrayWrapper.h",
+    "lib/appjam/generators/templates/blank/EiffelApplication/libs/toolkit/Underscore/USArrayWrapper.m",
+    "lib/appjam/generators/templates/blank/EiffelApplication/libs/toolkit/Underscore/USConstants.h",
+    "lib/appjam/generators/templates/blank/EiffelApplication/libs/toolkit/Underscore/USDictionaryWrapper.h",
+    "lib/appjam/generators/templates/blank/EiffelApplication/libs/toolkit/Underscore/USDictionaryWrapper.m",
+    "lib/appjam/generators/templates/blank/EiffelApplication/libs/toolkit/Underscore/Underscore+Functional.h",
+    "lib/appjam/generators/templates/blank/EiffelApplication/libs/toolkit/Underscore/Underscore+Functional.m",
+    "lib/appjam/generators/templates/blank/EiffelApplication/libs/toolkit/Underscore/Underscore-Prefix.pch",
+    "lib/appjam/generators/templates/blank/EiffelApplication/libs/toolkit/Underscore/Underscore.h",
+    "lib/appjam/generators/templates/blank/EiffelApplication/libs/toolkit/Underscore/Underscore.m",
+    "lib/appjam/generators/templates/blank/EiffelApplication/main.m.tt",
+    "lib/appjam/generators/templates/blank/EiffelApplicationTests/EiffelApplicationTests-Info.plist",
+    "lib/appjam/generators/templates/blank/EiffelApplicationTests/EiffelApplicationTests.h.tt",
+    "lib/appjam/generators/templates/blank/EiffelApplicationTests/EiffelApplicationTests.m.tt",
+    "lib/appjam/generators/templates/blank/EiffelApplicationTests/en.lproj/InfoPlist.strings",
+    "lib/appjam/generators/templates/resources/Default-568h@2x.png",
+    "lib/appjam/generators/templates/resources/Default.png",
+    "lib/appjam/generators/templates/resources/Default@2x.png",
+    "lib/appjam/generators/templates/resources/contents.tt",
     "lib/appjam/tasks.rb",
     "lib/appjam/tasks/plugin.rb",
     "lib/appjam/utility.rb",
     "lib/appjam/version.rb",
     "lib/appjam/view.rb"
   ]
-  s.homepage = %q{http://github.com/eiffelqiu/appjam}
+  s.homepage = "http://github.com/eiffelqiu/appjam"
   s.licenses = ["MIT"]
   s.require_paths = ["lib"]
-  s.rubygems_version = %q{1.3.6}
-  s.summary = %q{Appjam is an iOS code repository, including framework, snippet, generators, etc.}
-  s.test_files = [
-    "test/helper.rb",
-    "test/test_model_generator.rb",
-    "test/test_project_generator.rb"
-  ]
+  s.rubygems_version = "1.8.24"
+  s.summary = "Appjam is an iOS code repository, including framework, snippet, generators, etc."
 
   if s.respond_to? :specification_version then
-    current_version = Gem::Specification::CURRENT_SPECIFICATION_VERSION
     s.specification_version = 3
 
-    if Gem::Version.new(Gem::RubyGemsVersion) >= Gem::Version.new('1.2.0') then
+    if Gem::Version.new(Gem::VERSION) >= Gem::Version.new('1.2.0') then
       s.add_runtime_dependency(%q<thor>, [">= 0"])
       s.add_runtime_dependency(%q<activesupport>, [">= 0"])
       s.add_runtime_dependency(%q<cli-colorize>, [">= 0"])
       s.add_runtime_dependency(%q<hirb>, [">= 0"])
-      s.add_development_dependency(%q<rake>, ["= 0.9.2.2"])
       s.add_development_dependency(%q<mocha>, [">= 0.9.8"])
+      s.add_development_dependency(%q<rdoc>, [">= 0"])
       s.add_development_dependency(%q<rack-test>, [">= 0.5.0"])
       s.add_development_dependency(%q<fakeweb>, [">= 1.2.8"])
       s.add_development_dependency(%q<webrat>, ["= 0.5.1"])
       s.add_development_dependency(%q<shoulda>, [">= 2.10.3"])
       s.add_development_dependency(%q<uuid>, [">= 2.3.1"])
       s.add_development_dependency(%q<builder>, [">= 2.1.2"])
-      s.add_development_dependency(%q<jeweler>, ["~> 1.5.2"])
+      s.add_development_dependency(%q<jeweler>, ["~> 1.8.4"])
       s.add_development_dependency(%q<rcov>, ["~> 0.9.8"])
       s.add_development_dependency(%q<grit>, [">= 0"])
       s.add_development_dependency(%q<i18n>, [">= 0"])
-      s.add_development_dependency(%q<rdoc>, [">= 0"])
       s.add_development_dependency(%q<yajl-ruby>, [">= 0"])
       s.add_development_dependency(%q<ruby-prof>, [">= 0.9.1"])
       s.add_development_dependency(%q<system_timer>, [">= 1.0"])
-      s.add_runtime_dependency(%q<activesupport>, [">= 0"])
+      s.add_runtime_dependency(%q<activesupport>, [">= 3.2.8"])
       s.add_runtime_dependency(%q<grit>, [">= 0"])
       s.add_runtime_dependency(%q<i18n>, [">= 0"])
       s.add_runtime_dependency(%q<hirb>, [">= 0"])
       s.add_runtime_dependency(%q<cli-colorize>, [">= 0"])
       s.add_runtime_dependency(%q<rdoc>, [">= 0"])
+      s.add_runtime_dependency(%q<yajl-ruby>, [">= 0"])
+      s.add_runtime_dependency(%q<plist>, [">= 0"])
     else
       s.add_dependency(%q<thor>, [">= 0"])
       s.add_dependency(%q<activesupport>, [">= 0"])
       s.add_dependency(%q<cli-colorize>, [">= 0"])
       s.add_dependency(%q<hirb>, [">= 0"])
-      s.add_dependency(%q<rake>, ["= 0.9.2.2"])
       s.add_dependency(%q<mocha>, [">= 0.9.8"])
+      s.add_dependency(%q<rdoc>, [">= 0"])
       s.add_dependency(%q<rack-test>, [">= 0.5.0"])
       s.add_dependency(%q<fakeweb>, [">= 1.2.8"])
       s.add_dependency(%q<webrat>, ["= 0.5.1"])
       s.add_dependency(%q<shoulda>, [">= 2.10.3"])
       s.add_dependency(%q<uuid>, [">= 2.3.1"])
       s.add_dependency(%q<builder>, [">= 2.1.2"])
-      s.add_dependency(%q<jeweler>, ["~> 1.5.2"])
+      s.add_dependency(%q<jeweler>, ["~> 1.8.4"])
       s.add_dependency(%q<rcov>, ["~> 0.9.8"])
       s.add_dependency(%q<grit>, [">= 0"])
       s.add_dependency(%q<i18n>, [">= 0"])
-      s.add_dependency(%q<rdoc>, [">= 0"])
       s.add_dependency(%q<yajl-ruby>, [">= 0"])
       s.add_dependency(%q<ruby-prof>, [">= 0.9.1"])
       s.add_dependency(%q<system_timer>, [">= 1.0"])
-      s.add_dependency(%q<activesupport>, [">= 0"])
+      s.add_dependency(%q<activesupport>, [">= 3.2.8"])
       s.add_dependency(%q<grit>, [">= 0"])
       s.add_dependency(%q<i18n>, [">= 0"])
       s.add_dependency(%q<hirb>, [">= 0"])
       s.add_dependency(%q<cli-colorize>, [">= 0"])
       s.add_dependency(%q<rdoc>, [">= 0"])
+      s.add_dependency(%q<yajl-ruby>, [">= 0"])
+      s.add_dependency(%q<plist>, [">= 0"])
     end
   else
     s.add_dependency(%q<thor>, [">= 0"])
     s.add_dependency(%q<activesupport>, [">= 0"])
     s.add_dependency(%q<cli-colorize>, [">= 0"])
     s.add_dependency(%q<hirb>, [">= 0"])
-    s.add_dependency(%q<rake>, ["= 0.9.2.2"])
     s.add_dependency(%q<mocha>, [">= 0.9.8"])
+    s.add_dependency(%q<rdoc>, [">= 0"])
     s.add_dependency(%q<rack-test>, [">= 0.5.0"])
     s.add_dependency(%q<fakeweb>, [">= 1.2.8"])
     s.add_dependency(%q<webrat>, ["= 0.5.1"])
     s.add_dependency(%q<shoulda>, [">= 2.10.3"])
     s.add_dependency(%q<uuid>, [">= 2.3.1"])
     s.add_dependency(%q<builder>, [">= 2.1.2"])
-    s.add_dependency(%q<jeweler>, ["~> 1.5.2"])
+    s.add_dependency(%q<jeweler>, ["~> 1.8.4"])
     s.add_dependency(%q<rcov>, ["~> 0.9.8"])
     s.add_dependency(%q<grit>, [">= 0"])
     s.add_dependency(%q<i18n>, [">= 0"])
-    s.add_dependency(%q<rdoc>, [">= 0"])
     s.add_dependency(%q<yajl-ruby>, [">= 0"])
     s.add_dependency(%q<ruby-prof>, [">= 0.9.1"])
     s.add_dependency(%q<system_timer>, [">= 1.0"])
-    s.add_dependency(%q<activesupport>, [">= 0"])
+    s.add_dependency(%q<activesupport>, [">= 3.2.8"])
     s.add_dependency(%q<grit>, [">= 0"])
     s.add_dependency(%q<i18n>, [">= 0"])
     s.add_dependency(%q<hirb>, [">= 0"])
     s.add_dependency(%q<cli-colorize>, [">= 0"])
     s.add_dependency(%q<rdoc>, [">= 0"])
+    s.add_dependency(%q<yajl-ruby>, [">= 0"])
+    s.add_dependency(%q<plist>, [">= 0"])
   end
 end
 

@@ -46,7 +46,7 @@ module Appjam
         puts                      
         puts colorize("Generator Options")
         opt = [
-              { :category => "generator", :command => "appjam start demo",   :description => "generate a starter application with most popular framework included"},
+              { :category => "generator", :command => "appjam start demo",  :description => "generate a starter ARC iOS project with most popular frameworks included"},
               { :category => "puremvc", :command => "appjam mvc_project todo", :description => "generate puremvc iOS project"},
                { :category => "puremvc", :command => "appjam mvc_model user",   :description => "generate puremvc model"}
              ] 

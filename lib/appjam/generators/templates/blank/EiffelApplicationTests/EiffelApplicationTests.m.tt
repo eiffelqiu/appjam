@@ -1,14 +1,14 @@
 //
-//  EiffelApplicationTests.m
-//  EiffelApplicationTests
+//  <%= @project_name %>Tests.m
+//  <%= @project_name %>Tests
 //
-//  Created by eiffel on 3/29/13.
-//  Copyright (c) 2013 likenote. All rights reserved.
+//  Created by <%= @developer.capitalize %> on <%= @created_on %>
+//  Copyright(c) <%= Time.now.year %>, All rights reserved.
 //
 
-#import "EiffelApplicationTests.h"
+#import "<%= @project_name %>Tests.h"
 
-@implementation EiffelApplicationTests
+@implementation <%= @project_name %>Tests
 
 - (void)setUp
 {
@@ -26,7 +26,7 @@
 
 - (void)testExample
 {
-    STFail(@"Unit tests are not implemented yet in EiffelApplicationTests");
+    STFail(@"Unit tests are not implemented yet in <%= @project_name %>Tests");
 }
 
 @end
