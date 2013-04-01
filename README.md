@@ -31,13 +31,13 @@ Usage
 =======
 ![appjam usage](http://eiffelqiu.github.com/appjam/appjam.jpg)
 
-Usage 1: generate iOS project with most popular framework included
+Usage 1: generate a iOS project with most popular frameworks included and ARC enabled
 -------
-	$ appjam start todo
+	$ appjam start demo
 
-	$ cd todo
+	$ cd demo
 
-	$ open todo.xcodeproj
+	$ open demo.xcodeproj
 
 Usage 2: search related function
 -------
@@ -48,39 +48,31 @@ Usage 3: update latest gists index
 -------
 	$ appjam gist update
 
-Usage 4: generate iphone app project based on puremvc framework
--------
-	$ appjam mvc_project todo
-
-	$ cd todo
-
-	$ open Todo.xcodeproj
-
 Xcode build and run 
 
-Usage 5: add asihttp library (## this require git installed)
+Usage 4: add asihttp library (## this require git installed)
 -------
-	$ cd todo 
+	$ cd demo 
 
 	$ appjam lib asihttp 
 
 Check Frameworks/AsiHttpRequest/ for new framework [AsiHttpRequest]
 
-Usage 6: add cocos2d stable library (## this require appjam 1.8.4)
+Usage 5: add cocos2d stable library (## this require appjam 1.8.4)
 -------
-	$ cd todo 
+	$ cd demo 
 
 	$ appjam lib cocos2d_stable 
 
 Check Frameworks/cocos2d-iphone-1.0.0/ for new framework [Cocos2d_iPhone_1.0]
 
-Usage 7: add get_gps_info snippet to your project (## this require git installed)
+Usage 6: add get_gps_info snippet to your project (## this require git installed)
 -------
-	$ cd todo 
+	$ cd demo 
 
 	$ appjam gist get_gps_info
 
-	$ open Todo.xcodeproj
+	$ open demo.xcodeproj
 
 Add 'Gist/utiliy/Get_GPS_Info/' folder to the 'app' Group
 
