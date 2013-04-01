@@ -2,7 +2,7 @@ appjam
 =======
 Appjam is an iOS code repository, including framework, snippet, generators, etc.
 
-**upgrade to 0.1.8.4 as soon as possible**
+**upgrade to 0.1.8.7 as soon as possible**
 
 Prerequisites
 =======
@@ -87,6 +87,14 @@ Usage 7: add get_gps_info snippet to your project (## this require git installed
 Add 'Gist/utiliy/Get_GPS_Info/' folder to the 'Classes' Group
 
 Xcode build and run
+
+Usage 8: generate iOS project with most popular framework included
+-------
+	$ appjam start todo
+
+	$ cd todo
+
+	$ open todo.xcodeproj
 
 Contributing to appjam
 =======
