@@ -558,7 +558,6 @@
 				C531752217090F83004C1FB9 /* ObjectiveSugar */,
 				C531751B17090F66004C1FB9 /* SSKeychain */,
 				C531751417090DC7004C1FB9 /* Objective-C-HMTL-Parser */,
-				C53174BF17090DA4004C1FB9 /* _m */,
 				C53174C017090DA4004C1FB9 /* SubjectiveScript */,
 				C52562241705ADAB00AC76A2 /* EGOCache */,
 				C52562281705ADAB00AC76A2 /* Lumberjack */,
@@ -654,13 +653,6 @@
 				C531746817090858004C1FB9 /* Toast+UIView.m */,
 			);
 			path = Toast;
-			sourceTree = "<group>";
-		};
-		C53174BF17090DA4004C1FB9 /* _m */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = _m;
 			sourceTree = "<group>";
 		};
 		C53174C017090DA4004C1FB9 /* SubjectiveScript */ = {
