@@ -110,5 +110,5 @@ Contributing to appjam
 
 Copyright
 =======
-Copyright (c) 2011 Eiffel Q. See LICENSE.txt for
+Copyright (c) 2013 Eiffel Q. See LICENSE.txt for
 further details.
