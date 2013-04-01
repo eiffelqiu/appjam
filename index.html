@@ -63,18 +63,27 @@ $ appjam gist update
 
 <p><img src="http://eiffelqiu.github.com/appjam/appjam.jpg" alt="appjam usage"></p>
 
-<h2>Usage 1: search related function</h2>
+<h2>Usage 1: generate iOS project with most popular framework included</h2>
+
+<pre><code>$ appjam start todo
+
+$ cd todo
+
+$ open todo.xcodeproj
+</code></pre>
+
+<h2>Usage 2: search related function</h2>
 
 <pre><code>$ appjam search image
 $ appjam search string
 </code></pre>
 
-<h2>Usage 2: update latest gists index </h2>
+<h2>Usage 3: update latest gists index </h2>
 
 <pre><code>$ appjam gist update
 </code></pre>
 
-<h2>Usage 3: generate iphone app project based on puremvc framework</h2>
+<h2>Usage 4: generate iphone app project based on puremvc framework</h2>
 
 <pre><code>$ appjam mvc_project todo
 
@@ -82,19 +91,6 @@ $ cd todo
 
 $ open Todo.xcodeproj
 </code></pre>
-
-<p>Xcode build and run </p>
-
-<h2>Usage 4: add model to iphone app project based on puremvc framework</h2>
-
-<pre><code>$ cd todo 
-
-$ appjam mvc_model user 
-
-$ open Todo.xcodeproj
-</code></pre>
-
-<p>Add "Classes/user/" folder to the "Classes/apps" Group  </p>
 
 <p>Xcode build and run </p>
 
@@ -125,18 +121,9 @@ $ appjam gist get_gps_info
 $ open Todo.xcodeproj
 </code></pre>
 
-<p>Add 'Gist/utiliy/Get_GPS_Info/' folder to the 'Classes' Group</p>
+<p>Add 'Gist/utiliy/Get_GPS_Info/' folder to the 'app' Group</p>
 
 <p>Xcode build and run</p>
-
-<h2>Usage 8: generate iOS project with most popular framework included</h2>
-
-<pre><code>$ appjam start todo
-
-$ cd todo
-
-$ open todo.xcodeproj
-</code></pre>
 
 <h1>Contributing to appjam</h1>
 
