@@ -63,13 +63,13 @@ $ appjam gist update
 
 <p><img src="http://eiffelqiu.github.com/appjam/appjam.jpg" alt="appjam usage"></p>
 
-<h2>Usage 1: generate iOS project with most popular framework included</h2>
+<h2>Usage 1: generate a iOS project with most popular frameworks included and ARC enabled</h2>
 
-<pre><code>$ appjam start todo
+<pre><code>$ appjam start demo
 
-$ cd todo
+$ cd demo
 
-$ open todo.xcodeproj
+$ open demo.xcodeproj
 </code></pre>
 
 <h2>Usage 2: search related function</h2>
@@ -83,42 +83,33 @@ $ appjam search string
 <pre><code>$ appjam gist update
 </code></pre>
 
-<h2>Usage 4: generate iphone app project based on puremvc framework</h2>
-
-<pre><code>$ appjam mvc_project todo
-
-$ cd todo
-
-$ open Todo.xcodeproj
-</code></pre>
-
 <p>Xcode build and run </p>
 
-<h2>Usage 5: add asihttp library (## this require git installed)</h2>
+<h2>Usage 4: add asihttp library (## this require git installed)</h2>
 
-<pre><code>$ cd todo 
+<pre><code>$ cd demo 
 
 $ appjam lib asihttp 
 </code></pre>
 
 <p>Check Frameworks/AsiHttpRequest/ for new framework [AsiHttpRequest]</p>
 
-<h2>Usage 6: add cocos2d stable library (## this require appjam 1.8.4)</h2>
+<h2>Usage 5: add cocos2d stable library (## this require appjam 1.8.4)</h2>
 
-<pre><code>$ cd todo 
+<pre><code>$ cd demo 
 
 $ appjam lib cocos2d_stable 
 </code></pre>
 
 <p>Check Frameworks/cocos2d-iphone-1.0.0/ for new framework [Cocos2d_iPhone_1.0]</p>
 
-<h2>Usage 7: add get_gps_info snippet to your project (## this require git installed)</h2>
+<h2>Usage 6: add get_gps_info snippet to your project (## this require git installed)</h2>
 
-<pre><code>$ cd todo 
+<pre><code>$ cd demo 
 
 $ appjam gist get_gps_info
 
-$ open Todo.xcodeproj
+$ open demo.xcodeproj
 </code></pre>
 
 <p>Add 'Gist/utiliy/Get_GPS_Info/' folder to the 'app' Group</p>
