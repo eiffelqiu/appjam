@@ -31,34 +31,30 @@ Usage
 =======
 ![appjam usage](http://eiffelqiu.github.com/appjam/appjam.jpg)
 
-Usage 1: search related function
+Usage 1: generate iOS project with most popular framework included
+-------
+	$ appjam start todo
+
+	$ cd todo
+
+	$ open todo.xcodeproj
+
+Usage 2: search related function
 -------
 	$ appjam search image
 	$ appjam search string
 	
-Usage 2: update latest gists index 
+Usage 3: update latest gists index 
 -------
 	$ appjam gist update
 
-Usage 3: generate iphone app project based on puremvc framework
+Usage 4: generate iphone app project based on puremvc framework
 -------
 	$ appjam mvc_project todo
 
 	$ cd todo
 
 	$ open Todo.xcodeproj
-
-Xcode build and run 
-
-Usage 4: add model to iphone app project based on puremvc framework
--------
-	$ cd todo 
-
-	$ appjam mvc_model user 
-
-	$ open Todo.xcodeproj
-
-Add "Classes/user/" folder to the "Classes/apps" Group  
 
 Xcode build and run 
 
@@ -86,17 +82,9 @@ Usage 7: add get_gps_info snippet to your project (## this require git installed
 
 	$ open Todo.xcodeproj
 
-Add 'Gist/utiliy/Get_GPS_Info/' folder to the 'Classes' Group
+Add 'Gist/utiliy/Get_GPS_Info/' folder to the 'app' Group
 
 Xcode build and run
-
-Usage 8: generate iOS project with most popular framework included
--------
-	$ appjam start todo
-
-	$ cd todo
-
-	$ open todo.xcodeproj
 
 Contributing to appjam
 =======
