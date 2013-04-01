@@ -1,4 +1,4 @@
-info: 0.1.8.6
+info: 0.1.8.8
 design_pattern:
 - singleton_macro:
   - id : git://github.com/cjhanson/Objective-C-Optimized-Singleton.git
