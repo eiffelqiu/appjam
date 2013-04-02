@@ -199,6 +199,9 @@
 		C5FAFEA9170B0EC300D83034 /* Underscore.m in Sources */ = {isa = PBXBuildFile; fileRef = C5FAFE0B170B0EC300D83034 /* Underscore.m */; };
 		C5FAFEAA170B0EC300D83034 /* USArrayWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = C5FAFE0D170B0EC300D83034 /* USArrayWrapper.m */; };
 		C5FAFEAB170B0EC300D83034 /* USDictionaryWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = C5FAFE10170B0EC300D83034 /* USDictionaryWrapper.m */; };
+		C5FAFEB3170B1A9700D83034 /* TFHpple.m in Sources */ = {isa = PBXBuildFile; fileRef = C5FAFEAE170B1A9700D83034 /* TFHpple.m */; };
+		C5FAFEB4170B1A9700D83034 /* TFHppleElement.m in Sources */ = {isa = PBXBuildFile; fileRef = C5FAFEB0170B1A9700D83034 /* TFHppleElement.m */; };
+		C5FAFEB5170B1A9700D83034 /* XPathQuery.m in Sources */ = {isa = PBXBuildFile; fileRef = C5FAFEB2170B1A9700D83034 /* XPathQuery.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -546,6 +549,12 @@
 		C5FAFE0E170B0EC300D83034 /* USConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = USConstants.h; sourceTree = "<group>"; };
 		C5FAFE0F170B0EC300D83034 /* USDictionaryWrapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = USDictionaryWrapper.h; sourceTree = "<group>"; };
 		C5FAFE10170B0EC300D83034 /* USDictionaryWrapper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = USDictionaryWrapper.m; sourceTree = "<group>"; };
+		C5FAFEAD170B1A9700D83034 /* TFHpple.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TFHpple.h; sourceTree = "<group>"; };
+		C5FAFEAE170B1A9700D83034 /* TFHpple.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TFHpple.m; sourceTree = "<group>"; };
+		C5FAFEAF170B1A9700D83034 /* TFHppleElement.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TFHppleElement.h; sourceTree = "<group>"; };
+		C5FAFEB0170B1A9700D83034 /* TFHppleElement.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TFHppleElement.m; sourceTree = "<group>"; };
+		C5FAFEB1170B1A9700D83034 /* XPathQuery.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XPathQuery.h; sourceTree = "<group>"; };
+		C5FAFEB2170B1A9700D83034 /* XPathQuery.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XPathQuery.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -991,6 +1000,7 @@
 		C5FAFD59170B0EC300D83034 /* toolkit */ = {
 			isa = PBXGroup;
 			children = (
+				C5FAFEAC170B1A9700D83034 /* hpple */,
 				C5FAFD5A170B0EC300D83034 /* CocoaAsyncSocket */,
 				C5FAFD5D170B0EC300D83034 /* CocoaHTTPServer */,
 				C5FAFD92170B0EC300D83034 /* CPAnimationSequence */,
@@ -1339,6 +1349,19 @@
 			path = Underscore;
 			sourceTree = "<group>";
 		};
+		C5FAFEAC170B1A9700D83034 /* hpple */ = {
+			isa = PBXGroup;
+			children = (
+				C5FAFEAD170B1A9700D83034 /* TFHpple.h */,
+				C5FAFEAE170B1A9700D83034 /* TFHpple.m */,
+				C5FAFEAF170B1A9700D83034 /* TFHppleElement.h */,
+				C5FAFEB0170B1A9700D83034 /* TFHppleElement.m */,
+				C5FAFEB1170B1A9700D83034 /* XPathQuery.h */,
+				C5FAFEB2170B1A9700D83034 /* XPathQuery.m */,
+			);
+			path = hpple;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -1601,6 +1624,9 @@
 				C5FAFEA9170B0EC300D83034 /* Underscore.m in Sources */,
 				C5FAFEAA170B0EC300D83034 /* USArrayWrapper.m in Sources */,
 				C5FAFEAB170B0EC300D83034 /* USDictionaryWrapper.m in Sources */,
+				C5FAFEB3170B1A9700D83034 /* TFHpple.m in Sources */,
+				C5FAFEB4170B1A9700D83034 /* TFHppleElement.m in Sources */,
+				C5FAFEB5170B1A9700D83034 /* XPathQuery.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
