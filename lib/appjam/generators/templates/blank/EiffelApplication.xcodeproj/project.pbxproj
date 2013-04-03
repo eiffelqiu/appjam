@@ -124,7 +124,6 @@
 		C5FAFE5C170B0EC300D83034 /* UIButton+WebCache.m in Sources */ = {isa = PBXBuildFile; fileRef = C5FAFD56170B0EC300D83034 /* UIButton+WebCache.m */; };
 		C5FAFE5D170B0EC300D83034 /* UIImageView+WebCache.m in Sources */ = {isa = PBXBuildFile; fileRef = C5FAFD58170B0EC300D83034 /* UIImageView+WebCache.m */; };
 		C5FAFE5E170B0EC300D83034 /* GCDAsyncSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = C5FAFD5C170B0EC300D83034 /* GCDAsyncSocket.m */; };
-		C5FAFE60170B0EC300D83034 /* .hgignore in Resources */ = {isa = PBXBuildFile; fileRef = C5FAFD5F170B0EC300D83034 /* .hgignore */; };
 		C5FAFE61170B0EC300D83034 /* DDData.m in Sources */ = {isa = PBXBuildFile; fileRef = C5FAFD63170B0EC300D83034 /* DDData.m */; };
 		C5FAFE62170B0EC300D83034 /* DDNumber.m in Sources */ = {isa = PBXBuildFile; fileRef = C5FAFD65170B0EC300D83034 /* DDNumber.m */; };
 		C5FAFE63170B0EC300D83034 /* DDRange.m in Sources */ = {isa = PBXBuildFile; fileRef = C5FAFD67170B0EC300D83034 /* DDRange.m */; };
@@ -281,8 +280,6 @@
 		C5FAFCDC170B0EC300D83034 /* icon-star@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-star@2x.png"; sourceTree = "<group>"; };
 		C5FAFCDE170B0EC300D83034 /* CMPopTipView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CMPopTipView.h; sourceTree = "<group>"; };
 		C5FAFCDF170B0EC300D83034 /* CMPopTipView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CMPopTipView.m; sourceTree = "<group>"; };
-		C5FAFCE1170B0EC300D83034 /* .gitattributes */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitattributes; sourceTree = "<group>"; };
-		C5FAFCE2170B0EC300D83034 /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 		C5FAFCE3170B0EC300D83034 /* MBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
 		C5FAFCE4170B0EC300D83034 /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
 		C5FAFCE6170B0EC300D83034 /* FacingView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FacingView.h; sourceTree = "<group>"; };
@@ -309,7 +306,6 @@
 		C5FAFCFC170B0EC300D83034 /* UIView+Screenshot.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Screenshot.m"; sourceTree = "<group>"; };
 		C5FAFCFE170B0EC300D83034 /* Toast+UIView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Toast+UIView.h"; sourceTree = "<group>"; };
 		C5FAFCFF170B0EC300D83034 /* Toast+UIView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Toast+UIView.m"; sourceTree = "<group>"; };
-		C5FAFD01170B0EC300D83034 /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 		C5FAFD03170B0EC300D83034 /* bubbleMine.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bubbleMine.png; sourceTree = "<group>"; };
 		C5FAFD04170B0EC300D83034 /* bubbleMine@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bubbleMine@2x.png"; sourceTree = "<group>"; };
 		C5FAFD05170B0EC300D83034 /* bubbleSomeone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bubbleSomeone.png; sourceTree = "<group>"; };
@@ -391,8 +387,6 @@
 		C5FAFD58170B0EC300D83034 /* UIImageView+WebCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+WebCache.m"; sourceTree = "<group>"; };
 		C5FAFD5B170B0EC300D83034 /* GCDAsyncSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDAsyncSocket.h; sourceTree = "<group>"; };
 		C5FAFD5C170B0EC300D83034 /* GCDAsyncSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCDAsyncSocket.m; sourceTree = "<group>"; };
-		C5FAFD5E170B0EC300D83034 /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
-		C5FAFD5F170B0EC300D83034 /* .hgignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .hgignore; sourceTree = "<group>"; };
 		C5FAFD62170B0EC300D83034 /* DDData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDData.h; sourceTree = "<group>"; };
 		C5FAFD63170B0EC300D83034 /* DDData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDData.m; sourceTree = "<group>"; };
 		C5FAFD64170B0EC300D83034 /* DDNumber.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDNumber.h; sourceTree = "<group>"; };
@@ -437,7 +431,6 @@
 		C5FAFD8F170B0EC300D83034 /* DELETEResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DELETEResponse.m; sourceTree = "<group>"; };
 		C5FAFD90170B0EC300D83034 /* PUTResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PUTResponse.h; sourceTree = "<group>"; };
 		C5FAFD91170B0EC300D83034 /* PUTResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PUTResponse.m; sourceTree = "<group>"; };
-		C5FAFD93170B0EC300D83034 /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 		C5FAFD94170B0EC300D83034 /* CPAnimationProgram.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPAnimationProgram.h; sourceTree = "<group>"; };
 		C5FAFD95170B0EC300D83034 /* CPAnimationSequence.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPAnimationSequence.h; sourceTree = "<group>"; };
 		C5FAFD96170B0EC300D83034 /* CPAnimationStep.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPAnimationStep.h; sourceTree = "<group>"; };
@@ -794,8 +787,6 @@
 		C5FAFCE0170B0EC300D83034 /* MBProgressHUD */ = {
 			isa = PBXGroup;
 			children = (
-				C5FAFCE1170B0EC300D83034 /* .gitattributes */,
-				C5FAFCE2170B0EC300D83034 /* .gitignore */,
 				C5FAFCE3170B0EC300D83034 /* MBProgressHUD.h */,
 				C5FAFCE4170B0EC300D83034 /* MBProgressHUD.m */,
 			);
@@ -851,7 +842,6 @@
 		C5FAFD00170B0EC300D83034 /* UIBubbleTableView */ = {
 			isa = PBXGroup;
 			children = (
-				C5FAFD01170B0EC300D83034 /* .gitignore */,
 				C5FAFD02170B0EC300D83034 /* images */,
 				C5FAFD0D170B0EC300D83034 /* NSBubbleData.h */,
 				C5FAFD0E170B0EC300D83034 /* NSBubbleData.m */,
@@ -1029,8 +1019,6 @@
 		C5FAFD5D170B0EC300D83034 /* CocoaHTTPServer */ = {
 			isa = PBXGroup;
 			children = (
-				C5FAFD5E170B0EC300D83034 /* .gitignore */,
-				C5FAFD5F170B0EC300D83034 /* .hgignore */,
 				C5FAFD60170B0EC300D83034 /* Core */,
 				C5FAFD88170B0EC300D83034 /* Extensions */,
 			);
@@ -1130,7 +1118,6 @@
 		C5FAFD92170B0EC300D83034 /* CPAnimationSequence */ = {
 			isa = PBXGroup;
 			children = (
-				C5FAFD93170B0EC300D83034 /* .gitignore */,
 				C5FAFD94170B0EC300D83034 /* CPAnimationProgram.h */,
 				C5FAFD95170B0EC300D83034 /* CPAnimationSequence.h */,
 				C5FAFD96170B0EC300D83034 /* CPAnimationStep.h */,
@@ -1408,7 +1395,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 0460;
-				ORGANIZATIONNAME = likenote;
+				ORGANIZATIONNAME = yourcompany;
 			};
 			buildConfigurationList = C52561B81705AD5200AC76A2 /* Build configuration list for PBXProject "EiffelApplication" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -1464,7 +1451,6 @@
 				C5FAFE3A170B0EC300D83034 /* typingMine@2x.png in Resources */,
 				C5FAFE3B170B0EC300D83034 /* typingSomeone.png in Resources */,
 				C5FAFE3C170B0EC300D83034 /* typingSomeone@2x.png in Resources */,
-				C5FAFE60170B0EC300D83034 /* .hgignore in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
