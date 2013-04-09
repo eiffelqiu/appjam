@@ -29,54 +29,33 @@ Upgrade
 
 Usage
 =======
-![appjam usage](http://eiffelqiu.github.com/appjam/appjam.jpg)
 
-Usage 1: generate a iOS project with most popular frameworks included and ARC enabled
+Print Help Screen
+-------
+	$ appjam help
+![appjam usage](https://raw.github.com/eiffelqiu/appjam/master/doc/appjam.jpg)
+
+Generate a iOS project with most popular frameworks included and ARC enabled
 -------
 	$ appjam start demo
 
 	$ cd demo
 
 	$ open demo.xcodeproj
+![appjam usage](https://raw.github.com/eiffelqiu/appjam/master/doc/appjam1.png)		
 
-Usage 2: search related function
+Search related function
 -------
 	$ appjam search image
 	$ appjam search string
+![appjam usage](https://raw.github.com/eiffelqiu/appjam/master/doc/appjam2.png)	
 	
-Usage 3: update latest gists index 
+Update latest gists
 -------
 	$ appjam gist update
 
 Xcode build and run 
-
-Usage 4: add asihttp library (## this require git installed)
--------
-	$ cd demo 
-
-	$ appjam lib asihttp 
-
-Check Frameworks/AsiHttpRequest/ for new framework [AsiHttpRequest]
-
-Usage 5: add cocos2d stable library (## this require appjam 1.8.4)
--------
-	$ cd demo 
-
-	$ appjam lib cocos2d_stable 
-
-Check Frameworks/cocos2d-iphone-1.0.0/ for new framework [Cocos2d_iPhone_1.0]
-
-Usage 6: add get_gps_info snippet to your project (## this require git installed)
--------
-	$ cd demo 
-
-	$ appjam gist get_gps_info
-
-	$ open demo.xcodeproj
-
-Add 'Gist/utiliy/Get_GPS_Info/' folder to the 'app' Group
-
-Xcode build and run
+![appjam usage](https://raw.github.com/eiffelqiu/appjam/master/doc/appjam3.png)	
 
 Contributing to appjam
 =======
