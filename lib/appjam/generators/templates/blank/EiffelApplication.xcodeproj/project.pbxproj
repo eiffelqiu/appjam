@@ -42,13 +42,19 @@
 		C525628E1705ADF000AC76A2 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C52562781705ADF000AC76A2 /* MobileCoreServices.framework */; };
 		C525628F1705ADF000AC76A2 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C52562791705ADF000AC76A2 /* OpenGLES.framework */; };
 		C52562901705ADF000AC76A2 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C525627A1705ADF000AC76A2 /* QuartzCore.framework */; };
-		C52562911705ADF000AC76A2 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C525627B1705ADF000AC76A2 /* Security.framework */; };
-		C52562921705ADF000AC76A2 /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C525627C1705ADF000AC76A2 /* Social.framework */; };
+		C52562911705ADF000AC76A2 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C525627B1705ADF000AC76A2 /* Security.framework */; settings = {ATTRIBUTES = (Required, ); }; };
+		C52562921705ADF000AC76A2 /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C525627C1705ADF000AC76A2 /* Social.framework */; settings = {ATTRIBUTES = (Required, ); }; };
 		C52562931705ADF000AC76A2 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C525627D1705ADF000AC76A2 /* StoreKit.framework */; };
 		C52562941705ADF000AC76A2 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C525627E1705ADF000AC76A2 /* SystemConfiguration.framework */; };
 		C52562981705AE2000AC76A2 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = C52562951705AE2000AC76A2 /* libsqlite3.dylib */; };
 		C52562991705AE2000AC76A2 /* libxml2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = C52562961705AE2000AC76A2 /* libxml2.dylib */; };
 		C525629A1705AE2000AC76A2 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = C52562971705AE2000AC76A2 /* libz.dylib */; };
+		C54DA67417140B0B00457BF3 /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C54DA67317140B0B00457BF3 /* CoreFoundation.framework */; };
+		C54DA67817140C7000457BF3 /* FXLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = C54DA67717140C7000457BF3 /* FXLabel.m */; };
+		C54DA6831714126000457BF3 /* AFIncrementalStore.m in Sources */ = {isa = PBXBuildFile; fileRef = C54DA67B1714126000457BF3 /* AFIncrementalStore.m */; };
+		C54DA6841714126000457BF3 /* AFRESTClient.m in Sources */ = {isa = PBXBuildFile; fileRef = C54DA67D1714126000457BF3 /* AFRESTClient.m */; };
+		C54DA6851714126000457BF3 /* NSString+InflectorKit.m in Sources */ = {isa = PBXBuildFile; fileRef = C54DA6801714126000457BF3 /* NSString+InflectorKit.m */; };
+		C54DA6861714126000457BF3 /* TTTStringInflector.m in Sources */ = {isa = PBXBuildFile; fileRef = C54DA6821714126000457BF3 /* TTTStringInflector.m */; };
 		C5FAFE11170B0EC300D83034 /* AwesomeMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = C5FAFCCB170B0EC300D83034 /* AwesomeMenu.m */; };
 		C5FAFE12170B0EC300D83034 /* AwesomeMenuItem.m in Sources */ = {isa = PBXBuildFile; fileRef = C5FAFCCD170B0EC300D83034 /* AwesomeMenuItem.m */; };
 		C5FAFE13170B0EC300D83034 /* bg-addbutton-highlighted.png in Resources */ = {isa = PBXBuildFile; fileRef = C5FAFCCF170B0EC300D83034 /* bg-addbutton-highlighted.png */; };
@@ -260,6 +266,17 @@
 		C52562951705AE2000AC76A2 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
 		C52562961705AE2000AC76A2 /* libxml2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libxml2.dylib; path = usr/lib/libxml2.dylib; sourceTree = SDKROOT; };
 		C52562971705AE2000AC76A2 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		C54DA67317140B0B00457BF3 /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
+		C54DA67617140C7000457BF3 /* FXLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FXLabel.h; sourceTree = "<group>"; };
+		C54DA67717140C7000457BF3 /* FXLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FXLabel.m; sourceTree = "<group>"; };
+		C54DA67A1714126000457BF3 /* AFIncrementalStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFIncrementalStore.h; sourceTree = "<group>"; };
+		C54DA67B1714126000457BF3 /* AFIncrementalStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFIncrementalStore.m; sourceTree = "<group>"; };
+		C54DA67C1714126000457BF3 /* AFRESTClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFRESTClient.h; sourceTree = "<group>"; };
+		C54DA67D1714126000457BF3 /* AFRESTClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFRESTClient.m; sourceTree = "<group>"; };
+		C54DA67F1714126000457BF3 /* NSString+InflectorKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+InflectorKit.h"; sourceTree = "<group>"; };
+		C54DA6801714126000457BF3 /* NSString+InflectorKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+InflectorKit.m"; sourceTree = "<group>"; };
+		C54DA6811714126000457BF3 /* TTTStringInflector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTTStringInflector.h; sourceTree = "<group>"; };
+		C54DA6821714126000457BF3 /* TTTStringInflector.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTTStringInflector.m; sourceTree = "<group>"; };
 		C5FAFCCA170B0EC300D83034 /* AwesomeMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AwesomeMenu.h; sourceTree = "<group>"; };
 		C5FAFCCB170B0EC300D83034 /* AwesomeMenu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AwesomeMenu.m; sourceTree = "<group>"; };
 		C5FAFCCC170B0EC300D83034 /* AwesomeMenuItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AwesomeMenuItem.h; sourceTree = "<group>"; };
@@ -558,6 +575,7 @@
 				C52562981705AE2000AC76A2 /* libsqlite3.dylib in Frameworks */,
 				C52562991705AE2000AC76A2 /* libxml2.dylib in Frameworks */,
 				C525629A1705AE2000AC76A2 /* libz.dylib in Frameworks */,
+				C54DA67417140B0B00457BF3 /* CoreFoundation.framework in Frameworks */,
 				C525627F1705ADF000AC76A2 /* Accelerate.framework in Frameworks */,
 				C52562801705ADF000AC76A2 /* AudioToolbox.framework in Frameworks */,
 				C52562811705ADF000AC76A2 /* AVFoundation.framework in Frameworks */,
@@ -626,6 +644,7 @@
 				C52562951705AE2000AC76A2 /* libsqlite3.dylib */,
 				C52562961705AE2000AC76A2 /* libxml2.dylib */,
 				C52562971705AE2000AC76A2 /* libz.dylib */,
+				C54DA67317140B0B00457BF3 /* CoreFoundation.framework */,
 				C52562691705ADF000AC76A2 /* Accelerate.framework */,
 				C525626A1705ADF000AC76A2 /* AudioToolbox.framework */,
 				C525626B1705ADF000AC76A2 /* AVFoundation.framework */,
@@ -728,9 +747,41 @@
 			path = resources;
 			sourceTree = "<group>";
 		};
+		C54DA67517140C7000457BF3 /* FXLabel */ = {
+			isa = PBXGroup;
+			children = (
+				C54DA67617140C7000457BF3 /* FXLabel.h */,
+				C54DA67717140C7000457BF3 /* FXLabel.m */,
+			);
+			path = FXLabel;
+			sourceTree = "<group>";
+		};
+		C54DA6791714126000457BF3 /* AFIncrementalStore */ = {
+			isa = PBXGroup;
+			children = (
+				C54DA67A1714126000457BF3 /* AFIncrementalStore.h */,
+				C54DA67B1714126000457BF3 /* AFIncrementalStore.m */,
+				C54DA67C1714126000457BF3 /* AFRESTClient.h */,
+				C54DA67D1714126000457BF3 /* AFRESTClient.m */,
+			);
+			path = AFIncrementalStore;
+			sourceTree = "<group>";
+		};
+		C54DA67E1714126000457BF3 /* InflectorKit */ = {
+			isa = PBXGroup;
+			children = (
+				C54DA67F1714126000457BF3 /* NSString+InflectorKit.h */,
+				C54DA6801714126000457BF3 /* NSString+InflectorKit.m */,
+				C54DA6811714126000457BF3 /* TTTStringInflector.h */,
+				C54DA6821714126000457BF3 /* TTTStringInflector.m */,
+			);
+			path = InflectorKit;
+			sourceTree = "<group>";
+		};
 		C5FAFCC8170B0EC300D83034 /* components */ = {
 			isa = PBXGroup;
 			children = (
+				C54DA67517140C7000457BF3 /* FXLabel */,
 				C5FAFCC9170B0EC300D83034 /* AwesomeMenu */,
 				C5FAFCDD170B0EC300D83034 /* CMPopTipView */,
 				C5FAFCE0170B0EC300D83034 /* MBProgressHUD */,
@@ -889,6 +940,8 @@
 		C5FAFD1D170B0EC300D83034 /* frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				C54DA6791714126000457BF3 /* AFIncrementalStore */,
+				C54DA67E1714126000457BF3 /* InflectorKit */,
 				C5FAFD1E170B0EC300D83034 /* AFNetworking */,
 				C5FAFD32170B0EC300D83034 /* fmdb */,
 				C5FAFD3D170B0EC300D83034 /* JSONKit */,
@@ -1613,6 +1666,11 @@
 				C5FAFEB3170B1A9700D83034 /* TFHpple.m in Sources */,
 				C5FAFEB4170B1A9700D83034 /* TFHppleElement.m in Sources */,
 				C5FAFEB5170B1A9700D83034 /* XPathQuery.m in Sources */,
+				C54DA67817140C7000457BF3 /* FXLabel.m in Sources */,
+				C54DA6831714126000457BF3 /* AFIncrementalStore.m in Sources */,
+				C54DA6841714126000457BF3 /* AFRESTClient.m in Sources */,
+				C54DA6851714126000457BF3 /* NSString+InflectorKit.m in Sources */,
+				C54DA6861714126000457BF3 /* TTTStringInflector.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1683,7 +1741,7 @@
 					/usr/include/libxml2,
 					"\"$(SDK_DIR)\"/usr/include/libxml2",
 				);
-				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -1712,7 +1770,7 @@
 					/usr/include/libxml2,
 					"\"$(SDK_DIR)\"/usr/include/libxml2",
 				);
-				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
