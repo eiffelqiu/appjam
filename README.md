@@ -51,7 +51,7 @@ Usage
 	$ appjam search string
 ![appjam usage](https://raw.github.com/eiffelqiu/appjam/master/doc/appjam2.png)	
 	
-update latest gists
+4: update latest gists
 -------
 	$ appjam gist update
 ![appjam usage](https://raw.github.com/eiffelqiu/appjam/master/doc/appjam3.png)	
