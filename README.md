@@ -30,31 +30,30 @@ Upgrade
 Usage
 =======
 
-Print Help Screen
+1: print help screen
 -------
 	$ appjam help
 ![appjam usage](https://raw.github.com/eiffelqiu/appjam/master/doc/appjam.jpg)
 
-Generate a iOS project with most popular frameworks included and ARC enabled
+2: generate an iOS(ARC) project with most popular frameworks included
 -------
 	$ appjam start demo
 
 	$ cd demo
 
 	$ open demo.xcodeproj
-![appjam usage](https://raw.github.com/eiffelqiu/appjam/master/doc/appjam1.png)		
+![appjam usage](https://raw.github.com/eiffelqiu/appjam/master/doc/appjam1.png)
+![appjam usage](https://raw.github.com/eiffelqiu/appjam/master/doc/appjam4.png)			
 
-Search related function
+3: search related function and library
 -------
 	$ appjam search image
 	$ appjam search string
 ![appjam usage](https://raw.github.com/eiffelqiu/appjam/master/doc/appjam2.png)	
 	
-Update latest gists
+update latest gists
 -------
 	$ appjam gist update
-
-Xcode build and run 
 ![appjam usage](https://raw.github.com/eiffelqiu/appjam/master/doc/appjam3.png)	
 
 Contributing to appjam
