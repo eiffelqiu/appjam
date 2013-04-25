@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "DCIntrospect.h"
 
 @implementation AppDelegate
 
@@ -23,10 +24,21 @@ static const int ddLogLevel = LOG_LEVEL_VERBOSE;
     
     DDLogVerbose(@"Start App");
     DLog(@"didFinishLaunching...");
+    
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
-    // Override point for customization after application launch.
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
+
+// press space bar to toggle debug state
+// press '?' to show help
+// press 'o' to show outline 
+// press 'O' to show background
+// press 'p' to show view properties
+
+#if TARGET_IPHONE_SIMULATOR
+    [[DCIntrospect sharedIntrospector] start];
+#endif
+
     return YES;
 }
 

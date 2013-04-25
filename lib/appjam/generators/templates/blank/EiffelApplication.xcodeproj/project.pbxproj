@@ -55,6 +55,17 @@
 		C54DA6841714126000457BF3 /* AFRESTClient.m in Sources */ = {isa = PBXBuildFile; fileRef = C54DA67D1714126000457BF3 /* AFRESTClient.m */; };
 		C54DA6851714126000457BF3 /* NSString+InflectorKit.m in Sources */ = {isa = PBXBuildFile; fileRef = C54DA6801714126000457BF3 /* NSString+InflectorKit.m */; };
 		C54DA6861714126000457BF3 /* TTTStringInflector.m in Sources */ = {isa = PBXBuildFile; fileRef = C54DA6821714126000457BF3 /* TTTStringInflector.m */; };
+		C5BD358B1728B2A700509984 /* DCCrossHairView.m in Sources */ = {isa = PBXBuildFile; fileRef = C5BD35831728B2A700509984 /* DCCrossHairView.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		C5BD358C1728B2A700509984 /* DCFrameView.m in Sources */ = {isa = PBXBuildFile; fileRef = C5BD35851728B2A700509984 /* DCFrameView.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		C5BD358D1728B2A700509984 /* DCIntrospect.m in Sources */ = {isa = PBXBuildFile; fileRef = C5BD35871728B2A700509984 /* DCIntrospect.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		C5BD358E1728B2A700509984 /* DCStatusBarOverlay.m in Sources */ = {isa = PBXBuildFile; fileRef = C5BD358A1728B2A700509984 /* DCStatusBarOverlay.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		C5E068471728E4190056F1DD /* OpenAL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C5E068461728E4190056F1DD /* OpenAL.framework */; };
+		C5E068B41728E6640056F1DD /* CustomBadge.m in Sources */ = {isa = PBXBuildFile; fileRef = C5E068A91728E6640056F1DD /* CustomBadge.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		C5E068B51728E6640056F1DD /* MyLauncherItem.m in Sources */ = {isa = PBXBuildFile; fileRef = C5E068AB1728E6640056F1DD /* MyLauncherItem.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		C5E068B61728E6640056F1DD /* MyLauncherPageControl.m in Sources */ = {isa = PBXBuildFile; fileRef = C5E068AD1728E6640056F1DD /* MyLauncherPageControl.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		C5E068B71728E6640056F1DD /* MyLauncherScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = C5E068AF1728E6640056F1DD /* MyLauncherScrollView.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		C5E068B81728E6640056F1DD /* MyLauncherView.m in Sources */ = {isa = PBXBuildFile; fileRef = C5E068B11728E6640056F1DD /* MyLauncherView.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		C5E068B91728E6640056F1DD /* MyLauncherViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C5E068B31728E6640056F1DD /* MyLauncherViewController.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		C5FAFE11170B0EC300D83034 /* AwesomeMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = C5FAFCCB170B0EC300D83034 /* AwesomeMenu.m */; };
 		C5FAFE12170B0EC300D83034 /* AwesomeMenuItem.m in Sources */ = {isa = PBXBuildFile; fileRef = C5FAFCCD170B0EC300D83034 /* AwesomeMenuItem.m */; };
 		C5FAFE13170B0EC300D83034 /* bg-addbutton-highlighted.png in Resources */ = {isa = PBXBuildFile; fileRef = C5FAFCCF170B0EC300D83034 /* bg-addbutton-highlighted.png */; };
@@ -207,6 +218,10 @@
 		C5FAFEB3170B1A9700D83034 /* TFHpple.m in Sources */ = {isa = PBXBuildFile; fileRef = C5FAFEAE170B1A9700D83034 /* TFHpple.m */; };
 		C5FAFEB4170B1A9700D83034 /* TFHppleElement.m in Sources */ = {isa = PBXBuildFile; fileRef = C5FAFEB0170B1A9700D83034 /* TFHppleElement.m */; };
 		C5FAFEB5170B1A9700D83034 /* XPathQuery.m in Sources */ = {isa = PBXBuildFile; fileRef = C5FAFEB2170B1A9700D83034 /* XPathQuery.m */; };
+		C5FCC4751728DAA300D5E07F /* AESCrypt.m in Sources */ = {isa = PBXBuildFile; fileRef = C5FCC46D1728DAA300D5E07F /* AESCrypt.m */; };
+		C5FCC4761728DAA300D5E07F /* NSData+Base64.m in Sources */ = {isa = PBXBuildFile; fileRef = C5FCC46F1728DAA300D5E07F /* NSData+Base64.m */; };
+		C5FCC4771728DAA300D5E07F /* NSData+CommonCrypto.m in Sources */ = {isa = PBXBuildFile; fileRef = C5FCC4711728DAA300D5E07F /* NSData+CommonCrypto.m */; };
+		C5FCC4781728DAA300D5E07F /* NSString+Base64.m in Sources */ = {isa = PBXBuildFile; fileRef = C5FCC4731728DAA300D5E07F /* NSString+Base64.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -277,6 +292,28 @@
 		C54DA6801714126000457BF3 /* NSString+InflectorKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+InflectorKit.m"; sourceTree = "<group>"; };
 		C54DA6811714126000457BF3 /* TTTStringInflector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTTStringInflector.h; sourceTree = "<group>"; };
 		C54DA6821714126000457BF3 /* TTTStringInflector.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTTStringInflector.m; sourceTree = "<group>"; };
+		C5BD35821728B2A700509984 /* DCCrossHairView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DCCrossHairView.h; sourceTree = "<group>"; };
+		C5BD35831728B2A700509984 /* DCCrossHairView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DCCrossHairView.m; sourceTree = "<group>"; };
+		C5BD35841728B2A700509984 /* DCFrameView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DCFrameView.h; sourceTree = "<group>"; };
+		C5BD35851728B2A700509984 /* DCFrameView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DCFrameView.m; sourceTree = "<group>"; };
+		C5BD35861728B2A700509984 /* DCIntrospect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DCIntrospect.h; sourceTree = "<group>"; };
+		C5BD35871728B2A700509984 /* DCIntrospect.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DCIntrospect.m; sourceTree = "<group>"; };
+		C5BD35881728B2A700509984 /* DCIntrospectSettings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DCIntrospectSettings.h; sourceTree = "<group>"; };
+		C5BD35891728B2A700509984 /* DCStatusBarOverlay.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DCStatusBarOverlay.h; sourceTree = "<group>"; };
+		C5BD358A1728B2A700509984 /* DCStatusBarOverlay.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DCStatusBarOverlay.m; sourceTree = "<group>"; };
+		C5E068461728E4190056F1DD /* OpenAL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenAL.framework; path = System/Library/Frameworks/OpenAL.framework; sourceTree = SDKROOT; };
+		C5E068A81728E6640056F1DD /* CustomBadge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomBadge.h; sourceTree = "<group>"; };
+		C5E068A91728E6640056F1DD /* CustomBadge.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomBadge.m; sourceTree = "<group>"; };
+		C5E068AA1728E6640056F1DD /* MyLauncherItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyLauncherItem.h; sourceTree = "<group>"; };
+		C5E068AB1728E6640056F1DD /* MyLauncherItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyLauncherItem.m; sourceTree = "<group>"; };
+		C5E068AC1728E6640056F1DD /* MyLauncherPageControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyLauncherPageControl.h; sourceTree = "<group>"; };
+		C5E068AD1728E6640056F1DD /* MyLauncherPageControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyLauncherPageControl.m; sourceTree = "<group>"; };
+		C5E068AE1728E6640056F1DD /* MyLauncherScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyLauncherScrollView.h; sourceTree = "<group>"; };
+		C5E068AF1728E6640056F1DD /* MyLauncherScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyLauncherScrollView.m; sourceTree = "<group>"; };
+		C5E068B01728E6640056F1DD /* MyLauncherView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyLauncherView.h; sourceTree = "<group>"; };
+		C5E068B11728E6640056F1DD /* MyLauncherView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyLauncherView.m; sourceTree = "<group>"; };
+		C5E068B21728E6640056F1DD /* MyLauncherViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyLauncherViewController.h; sourceTree = "<group>"; };
+		C5E068B31728E6640056F1DD /* MyLauncherViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyLauncherViewController.m; sourceTree = "<group>"; };
 		C5FAFCCA170B0EC300D83034 /* AwesomeMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AwesomeMenu.h; sourceTree = "<group>"; };
 		C5FAFCCB170B0EC300D83034 /* AwesomeMenu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AwesomeMenu.m; sourceTree = "<group>"; };
 		C5FAFCCC170B0EC300D83034 /* AwesomeMenuItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AwesomeMenuItem.h; sourceTree = "<group>"; };
@@ -565,6 +602,14 @@
 		C5FAFEB0170B1A9700D83034 /* TFHppleElement.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TFHppleElement.m; sourceTree = "<group>"; };
 		C5FAFEB1170B1A9700D83034 /* XPathQuery.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XPathQuery.h; sourceTree = "<group>"; };
 		C5FAFEB2170B1A9700D83034 /* XPathQuery.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XPathQuery.m; sourceTree = "<group>"; };
+		C5FCC46C1728DAA300D5E07F /* AESCrypt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AESCrypt.h; sourceTree = "<group>"; };
+		C5FCC46D1728DAA300D5E07F /* AESCrypt.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AESCrypt.m; sourceTree = "<group>"; };
+		C5FCC46E1728DAA300D5E07F /* NSData+Base64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+Base64.h"; sourceTree = "<group>"; };
+		C5FCC46F1728DAA300D5E07F /* NSData+Base64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+Base64.m"; sourceTree = "<group>"; };
+		C5FCC4701728DAA300D5E07F /* NSData+CommonCrypto.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+CommonCrypto.h"; sourceTree = "<group>"; };
+		C5FCC4711728DAA300D5E07F /* NSData+CommonCrypto.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+CommonCrypto.m"; sourceTree = "<group>"; };
+		C5FCC4721728DAA300D5E07F /* NSString+Base64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Base64.h"; sourceTree = "<group>"; };
+		C5FCC4731728DAA300D5E07F /* NSString+Base64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Base64.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -572,6 +617,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C5E068471728E4190056F1DD /* OpenAL.framework in Frameworks */,
 				C52562981705AE2000AC76A2 /* libsqlite3.dylib in Frameworks */,
 				C52562991705AE2000AC76A2 /* libxml2.dylib in Frameworks */,
 				C525629A1705AE2000AC76A2 /* libz.dylib in Frameworks */,
@@ -644,6 +690,7 @@
 				C52562951705AE2000AC76A2 /* libsqlite3.dylib */,
 				C52562961705AE2000AC76A2 /* libxml2.dylib */,
 				C52562971705AE2000AC76A2 /* libz.dylib */,
+				C5E068461728E4190056F1DD /* OpenAL.framework */,
 				C54DA67317140B0B00457BF3 /* CoreFoundation.framework */,
 				C52562691705ADF000AC76A2 /* Accelerate.framework */,
 				C525626A1705ADF000AC76A2 /* AudioToolbox.framework */,
@@ -778,9 +825,45 @@
 			path = InflectorKit;
 			sourceTree = "<group>";
 		};
+		C5BD35811728B2A700509984 /* DCIntrospect */ = {
+			isa = PBXGroup;
+			children = (
+				C5BD35821728B2A700509984 /* DCCrossHairView.h */,
+				C5BD35831728B2A700509984 /* DCCrossHairView.m */,
+				C5BD35841728B2A700509984 /* DCFrameView.h */,
+				C5BD35851728B2A700509984 /* DCFrameView.m */,
+				C5BD35861728B2A700509984 /* DCIntrospect.h */,
+				C5BD35871728B2A700509984 /* DCIntrospect.m */,
+				C5BD35881728B2A700509984 /* DCIntrospectSettings.h */,
+				C5BD35891728B2A700509984 /* DCStatusBarOverlay.h */,
+				C5BD358A1728B2A700509984 /* DCStatusBarOverlay.m */,
+			);
+			path = DCIntrospect;
+			sourceTree = "<group>";
+		};
+		C5E068A71728E6640056F1DD /* MyLauncher */ = {
+			isa = PBXGroup;
+			children = (
+				C5E068A81728E6640056F1DD /* CustomBadge.h */,
+				C5E068A91728E6640056F1DD /* CustomBadge.m */,
+				C5E068AA1728E6640056F1DD /* MyLauncherItem.h */,
+				C5E068AB1728E6640056F1DD /* MyLauncherItem.m */,
+				C5E068AC1728E6640056F1DD /* MyLauncherPageControl.h */,
+				C5E068AD1728E6640056F1DD /* MyLauncherPageControl.m */,
+				C5E068AE1728E6640056F1DD /* MyLauncherScrollView.h */,
+				C5E068AF1728E6640056F1DD /* MyLauncherScrollView.m */,
+				C5E068B01728E6640056F1DD /* MyLauncherView.h */,
+				C5E068B11728E6640056F1DD /* MyLauncherView.m */,
+				C5E068B21728E6640056F1DD /* MyLauncherViewController.h */,
+				C5E068B31728E6640056F1DD /* MyLauncherViewController.m */,
+			);
+			path = MyLauncher;
+			sourceTree = "<group>";
+		};
 		C5FAFCC8170B0EC300D83034 /* components */ = {
 			isa = PBXGroup;
 			children = (
+				C5E068A71728E6640056F1DD /* MyLauncher */,
 				C54DA67517140C7000457BF3 /* FXLabel */,
 				C5FAFCC9170B0EC300D83034 /* AwesomeMenu */,
 				C5FAFCDD170B0EC300D83034 /* CMPopTipView */,
@@ -1043,6 +1126,8 @@
 		C5FAFD59170B0EC300D83034 /* toolkit */ = {
 			isa = PBXGroup;
 			children = (
+				C5FCC46A1728DAA300D5E07F /* AESCrypt-ObjC */,
+				C5BD35811728B2A700509984 /* DCIntrospect */,
 				C5FAFEAC170B1A9700D83034 /* hpple */,
 				C5FAFD5A170B0EC300D83034 /* CocoaAsyncSocket */,
 				C5FAFD5D170B0EC300D83034 /* CocoaHTTPServer */,
@@ -1402,6 +1487,21 @@
 			path = hpple;
 			sourceTree = "<group>";
 		};
+		C5FCC46A1728DAA300D5E07F /* AESCrypt-ObjC */ = {
+			isa = PBXGroup;
+			children = (
+				C5FCC46C1728DAA300D5E07F /* AESCrypt.h */,
+				C5FCC46D1728DAA300D5E07F /* AESCrypt.m */,
+				C5FCC46E1728DAA300D5E07F /* NSData+Base64.h */,
+				C5FCC46F1728DAA300D5E07F /* NSData+Base64.m */,
+				C5FCC4701728DAA300D5E07F /* NSData+CommonCrypto.h */,
+				C5FCC4711728DAA300D5E07F /* NSData+CommonCrypto.m */,
+				C5FCC4721728DAA300D5E07F /* NSString+Base64.h */,
+				C5FCC4731728DAA300D5E07F /* NSString+Base64.m */,
+			);
+			path = "AESCrypt-ObjC";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -1671,6 +1771,20 @@
 				C54DA6841714126000457BF3 /* AFRESTClient.m in Sources */,
 				C54DA6851714126000457BF3 /* NSString+InflectorKit.m in Sources */,
 				C54DA6861714126000457BF3 /* TTTStringInflector.m in Sources */,
+				C5BD358B1728B2A700509984 /* DCCrossHairView.m in Sources */,
+				C5BD358C1728B2A700509984 /* DCFrameView.m in Sources */,
+				C5BD358D1728B2A700509984 /* DCIntrospect.m in Sources */,
+				C5BD358E1728B2A700509984 /* DCStatusBarOverlay.m in Sources */,
+				C5FCC4751728DAA300D5E07F /* AESCrypt.m in Sources */,
+				C5FCC4761728DAA300D5E07F /* NSData+Base64.m in Sources */,
+				C5FCC4771728DAA300D5E07F /* NSData+CommonCrypto.m in Sources */,
+				C5FCC4781728DAA300D5E07F /* NSString+Base64.m in Sources */,
+				C5E068B41728E6640056F1DD /* CustomBadge.m in Sources */,
+				C5E068B51728E6640056F1DD /* MyLauncherItem.m in Sources */,
+				C5E068B61728E6640056F1DD /* MyLauncherPageControl.m in Sources */,
+				C5E068B71728E6640056F1DD /* MyLauncherScrollView.m in Sources */,
+				C5E068B81728E6640056F1DD /* MyLauncherView.m in Sources */,
+				C5E068B91728E6640056F1DD /* MyLauncherViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

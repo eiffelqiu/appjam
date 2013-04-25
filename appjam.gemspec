@@ -9,7 +9,7 @@ Gem::Specification.new do |s|
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Eiffel Q"]
-  s.date = "2013-04-07"
+  s.date = "2013-04-09"
   s.description = "Appjam is iOS code repository, including framework, snippet, generators, etc."
   s.email = "eiffelqiu@gmail.com"
   s.executables = ["appjam"]
@@ -140,6 +140,8 @@ Gem::Specification.new do |s|
     "lib/appjam/generators/templates/blank/EiffelApplication/libs/components/AwesomeMenu/Images/icon-star@2x.png",
     "lib/appjam/generators/templates/blank/EiffelApplication/libs/components/CMPopTipView/CMPopTipView.h",
     "lib/appjam/generators/templates/blank/EiffelApplication/libs/components/CMPopTipView/CMPopTipView.m",
+    "lib/appjam/generators/templates/blank/EiffelApplication/libs/components/FXLabel/FXLabel.h",
+    "lib/appjam/generators/templates/blank/EiffelApplication/libs/components/FXLabel/FXLabel.m",
     "lib/appjam/generators/templates/blank/EiffelApplication/libs/components/MBProgressHUD/MBProgressHUD.h",
     "lib/appjam/generators/templates/blank/EiffelApplication/libs/components/MBProgressHUD/MBProgressHUD.m",
     "lib/appjam/generators/templates/blank/EiffelApplication/libs/components/PaperFold/FacingView.h",
@@ -194,6 +196,10 @@ Gem::Specification.new do |s|
     "lib/appjam/generators/templates/blank/EiffelApplication/libs/components/UIGlossyButton/UIGlossyButton.m",
     "lib/appjam/generators/templates/blank/EiffelApplication/libs/components/UIGlossyButton/UIView+LayerEffects.h",
     "lib/appjam/generators/templates/blank/EiffelApplication/libs/components/UIGlossyButton/UIView+LayerEffects.m",
+    "lib/appjam/generators/templates/blank/EiffelApplication/libs/frameworks/AFIncrementalStore/AFIncrementalStore.h",
+    "lib/appjam/generators/templates/blank/EiffelApplication/libs/frameworks/AFIncrementalStore/AFIncrementalStore.m",
+    "lib/appjam/generators/templates/blank/EiffelApplication/libs/frameworks/AFIncrementalStore/AFRESTClient.h",
+    "lib/appjam/generators/templates/blank/EiffelApplication/libs/frameworks/AFIncrementalStore/AFRESTClient.m",
     "lib/appjam/generators/templates/blank/EiffelApplication/libs/frameworks/AFNetworking/AFHTTPClient.h",
     "lib/appjam/generators/templates/blank/EiffelApplication/libs/frameworks/AFNetworking/AFHTTPClient.m",
     "lib/appjam/generators/templates/blank/EiffelApplication/libs/frameworks/AFNetworking/AFHTTPRequestOperation.h",
@@ -213,6 +219,10 @@ Gem::Specification.new do |s|
     "lib/appjam/generators/templates/blank/EiffelApplication/libs/frameworks/AFNetworking/AFXMLRequestOperation.m",
     "lib/appjam/generators/templates/blank/EiffelApplication/libs/frameworks/AFNetworking/UIImageView+AFNetworking.h",
     "lib/appjam/generators/templates/blank/EiffelApplication/libs/frameworks/AFNetworking/UIImageView+AFNetworking.m",
+    "lib/appjam/generators/templates/blank/EiffelApplication/libs/frameworks/InflectorKit/NSString+InflectorKit.h",
+    "lib/appjam/generators/templates/blank/EiffelApplication/libs/frameworks/InflectorKit/NSString+InflectorKit.m",
+    "lib/appjam/generators/templates/blank/EiffelApplication/libs/frameworks/InflectorKit/TTTStringInflector.h",
+    "lib/appjam/generators/templates/blank/EiffelApplication/libs/frameworks/InflectorKit/TTTStringInflector.m",
     "lib/appjam/generators/templates/blank/EiffelApplication/libs/frameworks/JSONKit/JSONKit.h",
     "lib/appjam/generators/templates/blank/EiffelApplication/libs/frameworks/JSONKit/JSONKit.m",
     "lib/appjam/generators/templates/blank/EiffelApplication/libs/frameworks/RaptureXML/RXMLElement.h",
@@ -429,7 +439,7 @@ Gem::Specification.new do |s|
   s.homepage = "http://github.com/eiffelqiu/appjam"
   s.licenses = ["MIT"]
   s.require_paths = ["lib"]
-  s.rubygems_version = "1.8.25"
+  s.rubygems_version = "1.8.24"
   s.summary = "Appjam is an iOS code repository, including framework, snippet, generators, etc."
 
   if s.respond_to? :specification_version then
