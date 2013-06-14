@@ -23,6 +23,7 @@ group :development do
   gem "grit"
   gem "i18n"
   gem "yajl-ruby"
+  gem "plist"
   platforms :mri_18 do
     gem "ruby-prof", ">= 0.9.1"
     gem "system_timer", ">= 1.0"

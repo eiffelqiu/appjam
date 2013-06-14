@@ -5,11 +5,11 @@
 
 Gem::Specification.new do |s|
   s.name = "appjam"
-  s.version = "0.1.8.9"
+  s.version = "0.1.8.10"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Eiffel Q"]
-  s.date = "2013-04-09"
+  s.date = "2013-04-25"
   s.description = "Appjam is iOS code repository, including framework, snippet, generators, etc."
   s.email = "eiffelqiu@gmail.com"
   s.executables = ["appjam"]
@@ -144,6 +144,18 @@ Gem::Specification.new do |s|
     "lib/appjam/generators/templates/blank/EiffelApplication/libs/components/FXLabel/FXLabel.m",
     "lib/appjam/generators/templates/blank/EiffelApplication/libs/components/MBProgressHUD/MBProgressHUD.h",
     "lib/appjam/generators/templates/blank/EiffelApplication/libs/components/MBProgressHUD/MBProgressHUD.m",
+    "lib/appjam/generators/templates/blank/EiffelApplication/libs/components/MyLauncher/CustomBadge.h",
+    "lib/appjam/generators/templates/blank/EiffelApplication/libs/components/MyLauncher/CustomBadge.m",
+    "lib/appjam/generators/templates/blank/EiffelApplication/libs/components/MyLauncher/MyLauncherItem.h",
+    "lib/appjam/generators/templates/blank/EiffelApplication/libs/components/MyLauncher/MyLauncherItem.m",
+    "lib/appjam/generators/templates/blank/EiffelApplication/libs/components/MyLauncher/MyLauncherPageControl.h",
+    "lib/appjam/generators/templates/blank/EiffelApplication/libs/components/MyLauncher/MyLauncherPageControl.m",
+    "lib/appjam/generators/templates/blank/EiffelApplication/libs/components/MyLauncher/MyLauncherScrollView.h",
+    "lib/appjam/generators/templates/blank/EiffelApplication/libs/components/MyLauncher/MyLauncherScrollView.m",
+    "lib/appjam/generators/templates/blank/EiffelApplication/libs/components/MyLauncher/MyLauncherView.h",
+    "lib/appjam/generators/templates/blank/EiffelApplication/libs/components/MyLauncher/MyLauncherView.m",
+    "lib/appjam/generators/templates/blank/EiffelApplication/libs/components/MyLauncher/MyLauncherViewController.h",
+    "lib/appjam/generators/templates/blank/EiffelApplication/libs/components/MyLauncher/MyLauncherViewController.m",
     "lib/appjam/generators/templates/blank/EiffelApplication/libs/components/PaperFold/FacingView.h",
     "lib/appjam/generators/templates/blank/EiffelApplication/libs/components/PaperFold/FacingView.m",
     "lib/appjam/generators/templates/blank/EiffelApplication/libs/components/PaperFold/FoldView.h",
@@ -258,6 +270,14 @@ Gem::Specification.new do |s|
     "lib/appjam/generators/templates/blank/EiffelApplication/libs/frameworks/fmdb/FMDatabaseQueue.m",
     "lib/appjam/generators/templates/blank/EiffelApplication/libs/frameworks/fmdb/FMResultSet.h",
     "lib/appjam/generators/templates/blank/EiffelApplication/libs/frameworks/fmdb/FMResultSet.m",
+    "lib/appjam/generators/templates/blank/EiffelApplication/libs/toolkit/AESCrypt-ObjC/AESCrypt.h",
+    "lib/appjam/generators/templates/blank/EiffelApplication/libs/toolkit/AESCrypt-ObjC/AESCrypt.m",
+    "lib/appjam/generators/templates/blank/EiffelApplication/libs/toolkit/AESCrypt-ObjC/NSData+Base64.h",
+    "lib/appjam/generators/templates/blank/EiffelApplication/libs/toolkit/AESCrypt-ObjC/NSData+Base64.m",
+    "lib/appjam/generators/templates/blank/EiffelApplication/libs/toolkit/AESCrypt-ObjC/NSData+CommonCrypto.h",
+    "lib/appjam/generators/templates/blank/EiffelApplication/libs/toolkit/AESCrypt-ObjC/NSData+CommonCrypto.m",
+    "lib/appjam/generators/templates/blank/EiffelApplication/libs/toolkit/AESCrypt-ObjC/NSString+Base64.h",
+    "lib/appjam/generators/templates/blank/EiffelApplication/libs/toolkit/AESCrypt-ObjC/NSString+Base64.m",
     "lib/appjam/generators/templates/blank/EiffelApplication/libs/toolkit/CPAnimationSequence/CPAnimationProgram.h",
     "lib/appjam/generators/templates/blank/EiffelApplication/libs/toolkit/CPAnimationSequence/CPAnimationSequence.h",
     "lib/appjam/generators/templates/blank/EiffelApplication/libs/toolkit/CPAnimationSequence/CPAnimationStep.h",
@@ -310,6 +330,15 @@ Gem::Specification.new do |s|
     "lib/appjam/generators/templates/blank/EiffelApplication/libs/toolkit/CocoaHTTPServer/Extensions/WebDAV/DELETEResponse.m",
     "lib/appjam/generators/templates/blank/EiffelApplication/libs/toolkit/CocoaHTTPServer/Extensions/WebDAV/PUTResponse.h",
     "lib/appjam/generators/templates/blank/EiffelApplication/libs/toolkit/CocoaHTTPServer/Extensions/WebDAV/PUTResponse.m",
+    "lib/appjam/generators/templates/blank/EiffelApplication/libs/toolkit/DCIntrospect/DCCrossHairView.h",
+    "lib/appjam/generators/templates/blank/EiffelApplication/libs/toolkit/DCIntrospect/DCCrossHairView.m",
+    "lib/appjam/generators/templates/blank/EiffelApplication/libs/toolkit/DCIntrospect/DCFrameView.h",
+    "lib/appjam/generators/templates/blank/EiffelApplication/libs/toolkit/DCIntrospect/DCFrameView.m",
+    "lib/appjam/generators/templates/blank/EiffelApplication/libs/toolkit/DCIntrospect/DCIntrospect.h",
+    "lib/appjam/generators/templates/blank/EiffelApplication/libs/toolkit/DCIntrospect/DCIntrospect.m",
+    "lib/appjam/generators/templates/blank/EiffelApplication/libs/toolkit/DCIntrospect/DCIntrospectSettings.h",
+    "lib/appjam/generators/templates/blank/EiffelApplication/libs/toolkit/DCIntrospect/DCStatusBarOverlay.h",
+    "lib/appjam/generators/templates/blank/EiffelApplication/libs/toolkit/DCIntrospect/DCStatusBarOverlay.m",
     "lib/appjam/generators/templates/blank/EiffelApplication/libs/toolkit/EGOCache/EGOCache.h",
     "lib/appjam/generators/templates/blank/EiffelApplication/libs/toolkit/EGOCache/EGOCache.m",
     "lib/appjam/generators/templates/blank/EiffelApplication/libs/toolkit/Lumberjack/DDASLLogger.h",

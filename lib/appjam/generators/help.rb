@@ -48,10 +48,10 @@ module Appjam
         opt = [
               { :category => "generator", :command => "appjam start demo",  :description => "generate a starter ARC iOS project with most popular frameworks included"},
               { :category => "puremvc", :command => "appjam mvc_project todo", :description => "generate puremvc iOS project"},
-               { :category => "puremvc", :command => "appjam mvc_model user",   :description => "generate puremvc model"}
+              { :category => "puremvc", :command => "appjam mvc_model user",   :description => "generate puremvc model"}
              ] 
         View.render(opt, RENDER_OPTIONS)
-        puts        
+        puts    
         g.each_pair {|key,value|
           gitopt = []   
           gname = key.downcase.gsub('_',' ')

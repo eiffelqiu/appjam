@@ -60,7 +60,7 @@ module Appjam
           system "mkdir -p #{appjam_dir}" unless File.exist?(appjam_dir)
           begin
             puts "fetching new gist list from server ... "
-            page_source = Net::HTTP.get(URI.parse("http://eiffelqiu.github.com/appjam/gist.yml"))
+            page_source = Net::HTTP.get(URI.parse("http://eiffelqiu.github.io/appjam/gist.yml"))
             File.open(appjam_gist, 'w') {|f| f.write(page_source) }
           rescue SocketError => e
             puts "can not access github.com, back to local version gist.yml"
