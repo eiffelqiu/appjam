@@ -5,11 +5,11 @@
 
 Gem::Specification.new do |s|
   s.name = "appjam"
-  s.version = "0.1.8.10"
+  s.version = "0.1.8.11"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Eiffel Q"]
-  s.date = "2013-04-25"
+  s.date = "2013-06-14"
   s.description = "Appjam is iOS code repository, including framework, snippet, generators, etc."
   s.email = "eiffelqiu@gmail.com"
   s.executables = ["appjam"]
@@ -492,6 +492,7 @@ Gem::Specification.new do |s|
       s.add_development_dependency(%q<grit>, [">= 0"])
       s.add_development_dependency(%q<i18n>, [">= 0"])
       s.add_development_dependency(%q<yajl-ruby>, [">= 0"])
+      s.add_development_dependency(%q<plist>, [">= 0"])
       s.add_development_dependency(%q<ruby-prof>, [">= 0.9.1"])
       s.add_development_dependency(%q<system_timer>, [">= 1.0"])
       s.add_runtime_dependency(%q<activesupport>, [">= 3.2.8"])
@@ -520,6 +521,7 @@ Gem::Specification.new do |s|
       s.add_dependency(%q<grit>, [">= 0"])
       s.add_dependency(%q<i18n>, [">= 0"])
       s.add_dependency(%q<yajl-ruby>, [">= 0"])
+      s.add_dependency(%q<plist>, [">= 0"])
       s.add_dependency(%q<ruby-prof>, [">= 0.9.1"])
       s.add_dependency(%q<system_timer>, [">= 1.0"])
       s.add_dependency(%q<activesupport>, [">= 3.2.8"])
@@ -549,6 +551,7 @@ Gem::Specification.new do |s|
     s.add_dependency(%q<grit>, [">= 0"])
     s.add_dependency(%q<i18n>, [">= 0"])
     s.add_dependency(%q<yajl-ruby>, [">= 0"])
+    s.add_dependency(%q<plist>, [">= 0"])
     s.add_dependency(%q<ruby-prof>, [">= 0.9.1"])
     s.add_dependency(%q<system_timer>, [">= 1.0"])
     s.add_dependency(%q<activesupport>, [">= 3.2.8"])

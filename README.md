@@ -23,8 +23,7 @@ Installation
 	
 Upgrade
 =======
-	$ sudo gem uninstall appjam # remove all version
-	$ sudo gem install appjam 
+	$ sudo gem update appjam 
 	$ appjam gist update	
 
 Usage
